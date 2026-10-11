@@ -359,6 +359,57 @@ function renderMarkdown(md) {
       continue;
     }
 
+    // Practical steps block (for toggling between Essay and Field Guide modes)
+    if (line.startsWith('**Practical steps')) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      let stepHtml = `<div class="practical-steps-block"><p>${formatInline(line)}</p><ul class="codex-list">`;
+      i++;
+      while (i < lines.length) {
+        let stepLine = lines[i];
+        if (stepLine.startsWith('### ') || stepLine.startsWith('## ') || stepLine.trim() === '---') {
+          i--;
+          break;
+        }
+        const bulletMatch = stepLine.match(/^(\s*)[*-]\s+(.*)$/);
+        if (bulletMatch) {
+          stepHtml += `<li>${formatInline(bulletMatch[2])}</li>`;
+        } else if (stepLine.startsWith('*') && stepLine.endsWith('*')) {
+          stepHtml += `</ul><p style="margin-top:0.6rem; font-style:italic; color:var(--text-secondary);">${formatInline(stepLine)}</p>`;
+          break;
+        } else if (stepLine.trim().length > 0) {
+          stepHtml += `<p>${formatInline(stepLine)}</p>`;
+        }
+        i++;
+      }
+      if (!stepHtml.includes('</ul>')) stepHtml += '</ul>';
+      stepHtml += '</div>';
+      html.push(stepHtml);
+      continue;
+    }
+
+    // Daily practice block (for toggling between Essay and Field Guide modes)
+    if (line.startsWith('## A Simple Daily Practice')) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      let practiceHtml = `<div class="daily-practice-block"><h2 class="codex-h2" style="margin-top:0; border-bottom:none;">${formatInline(line.slice(3))}</h2>`;
+      i++;
+      while (i < lines.length) {
+        let pLine = lines[i];
+        if (pLine.startsWith('## ') || pLine.trim() === '---') {
+          i--;
+          break;
+        }
+        if (pLine.match(/^\d+\.\s+(.*)$/)) {
+          practiceHtml += `<p style="margin-left:1rem; margin-bottom:0.4rem;">${formatInline(pLine)}</p>`;
+        } else if (pLine.trim().length > 0) {
+          practiceHtml += `<p class="codex-p">${formatInline(pLine)}</p>`;
+        }
+        i++;
+      }
+      practiceHtml += '</div>';
+      html.push(practiceHtml);
+      continue;
+    }
+
     // Headers
     if (line.startsWith('### ')) {
       if (inList) { html.push('</ul>'); inList = false; }
@@ -425,6 +476,27 @@ function formatInline(text) {
 }
 
 let currentActiveCodexId = null;
+let currentReadingMode = 'field';
+
+function setReadingMode(mode) {
+  currentReadingMode = mode;
+  applyReadingMode();
+}
+
+function applyReadingMode() {
+  const viewer = document.getElementById('codex-content');
+  const fieldBtn = document.getElementById('btn-mode-field');
+  const essayBtn = document.getElementById('btn-mode-essay');
+  if (currentReadingMode === 'essay') {
+    if (viewer) viewer.classList.add('reading-mode-essay');
+    if (essayBtn) essayBtn.classList.add('active');
+    if (fieldBtn) fieldBtn.classList.remove('active');
+  } else {
+    if (viewer) viewer.classList.remove('reading-mode-essay');
+    if (fieldBtn) fieldBtn.classList.add('active');
+    if (essayBtn) essayBtn.classList.remove('active');
+  }
+}
 
 function viewCodex(sourceId) {
   if (sourceId === 'MASTER-ASPIRANT-DECISION') {
@@ -448,6 +520,7 @@ function viewCodex(sourceId) {
       .then(r => r.text())
       .then(txt => {
         document.getElementById('codex-content').innerHTML = renderMarkdown(txt);
+        applyReadingMode();
       })
       .catch(err => {
         document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch master synthesis at ${masterUrl}: ${err.message}</p>`;
@@ -476,6 +549,7 @@ function viewCodex(sourceId) {
       .then(r => r.text())
       .then(txt => {
         document.getElementById('codex-content').innerHTML = renderMarkdown(txt);
+        applyReadingMode();
       })
       .catch(err => {
         document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch topic synthesis at ${masterUrl}: ${err.message}</p>`;
@@ -521,6 +595,7 @@ function viewCodex(sourceId) {
 ` : '';
       const renderedHtml = renderMarkdown(banner + txt);
       document.getElementById('codex-content').innerHTML = renderedHtml;
+      applyReadingMode();
     })
     .catch(err => {
       document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch codex at ${codexUrl}: ${err.message}</p>`;
@@ -583,6 +658,13 @@ if (typeof window !== 'undefined' && window.addEventListener) {
   window.addEventListener('DOMContentLoaded', loadManifest);
 }
 
+if (typeof window !== 'undefined') {
+  window.setReadingMode = setReadingMode;
+  window.applyReadingMode = applyReadingMode;
+  window.viewCodex = viewCodex;
+  window.switchTab = switchTab;
+}
+
 // Expose internal helpers for test runners when running in Node.js / vm
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
@@ -597,6 +679,9 @@ if (typeof module !== 'undefined' && module.exports) {
     renderSources,
     renderConcepts,
     renderDocs,
+    setReadingMode,
+    applyReadingMode,
+    renderMarkdown,
     setManifestData: (data) => { manifestData = data; }
   };
 }

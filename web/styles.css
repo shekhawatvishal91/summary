@@ -654,6 +654,70 @@ footer a:hover {
   border-color: var(--accent-color);
 }
 
+/* Reading Mode Toggle (Diagnostic Essay vs Practical Field Guide) */
+.reading-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.mode-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mode-btn:hover {
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+.mode-btn.active {
+  background: var(--accent-color);
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.practical-steps-block {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #1f883d;
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.4rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.practical-steps-block p:first-child {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.daily-practice-block {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #0969da;
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* When in Diagnostic Essay Mode, hide the practical step blocks and daily practice for smooth literary reading */
+.reading-mode-essay .practical-steps-block,
+.reading-mode-essay .daily-practice-block {
+  display: none;
+}
+
 /* Topic Category Grid & Mega-Book Styling */
 .topic-category-grid {
   display: grid;

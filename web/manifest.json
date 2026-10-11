@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T14:41:54.400Z",
+  "built_at": "2026-10-11T15:23:37.523Z",
   "metrics": {
-    "total_sources": 7,
-    "total_concepts": 23,
-    "total_claims": 39,
+    "total_sources": 8,
+    "total_concepts": 27,
+    "total_claims": 44,
     "total_edges": 10,
     "total_docs": 18
   },
@@ -144,6 +144,26 @@
       "source_role": "real_user_source",
       "created_at": "2026-10-11T14:19:25.992Z",
       "updated_at": "2026-10-11T14:21:40.905Z"
+    },
+    {
+      "source_id": "SRC-YT-2026-006",
+      "video_id": "klGTH_Cjw8Q",
+      "title": "How to Make a Woman Miss You- 7 New Steps that Always work ",
+      "author": "The Cool Therapist",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "ed201382c1e005c3be7dcb03a55fa05dd01a096eb93183aa43f19895cdfc1ca9",
+      "raw_path": "sources/raw/SRC-YT-2026-006_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-006.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-006/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T15:17:14.754Z",
+      "updated_at": "2026-10-11T15:21:23.933Z"
     }
   ],
   "concepts": [
@@ -639,6 +659,91 @@
       ],
       "created_at": "2026-10-11T14:21:40.890Z",
       "updated_at": "2026-10-11T14:21:40.890Z"
+    },
+    {
+      "node_id": "CON-085",
+      "node_type": "concept",
+      "canonical_name": "Asymmetric Relational Effort Trap",
+      "aliases": [
+        "90/10 effort trap",
+        "over-functioning in romance",
+        "unilateral relationship burden"
+      ],
+      "domain": "General",
+      "definition": "The dysfunctional dynamic where one partner shoulders the vast majority of relationship initiation, planning, and emotional maintenance, leading to exhaustion, resentment, and loss of respect.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-085-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-006"
+      ],
+      "created_at": "2026-10-11T15:21:23.916Z",
+      "updated_at": "2026-10-11T15:21:23.916Z"
+    },
+    {
+      "node_id": "CON-089",
+      "node_type": "concept",
+      "canonical_name": "Autonomous Absence Scarcity Principle",
+      "aliases": [
+        "oxygen of absence",
+        "scarcity in romantic attraction",
+        "absence principle"
+      ],
+      "domain": "General",
+      "definition": "The psychological rule that persistent over-availability and desperate pursuit extinguish longing, whereas healthy physical and emotional absence creates the cognitive room for curiosity and desire.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-089-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-006"
+      ],
+      "created_at": "2026-10-11T15:21:23.920Z",
+      "updated_at": "2026-10-11T15:21:23.920Z"
+    },
+    {
+      "node_id": "CON-093",
+      "node_type": "concept",
+      "canonical_name": "Behavior-First Boundary Calibration",
+      "aliases": [
+        "behavior before verbal",
+        "action-first boundary",
+        "embodied relational boundaries"
+      ],
+      "domain": "General",
+      "definition": "The interpersonal intervention principle requiring behavioral self-containment, priority resets, and boundary enforcement to precede verbal negotiation, preventing premature emotional dumping.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-093-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-006"
+      ],
+      "created_at": "2026-10-11T15:21:23.924Z",
+      "updated_at": "2026-10-11T15:21:23.924Z"
+    },
+    {
+      "node_id": "CON-097",
+      "node_type": "concept",
+      "canonical_name": "The Walk-Away Relational Threshold",
+      "aliases": [
+        "willingness to walk away",
+        "ultimate exit boundary",
+        "abandonment fear transcendence"
+      ],
+      "domain": "General",
+      "definition": "The foundational emotional capacity to walk away from mistreatment or lack of reciprocity, overcoming abandonment panic to maintain self-worth and non-negotiable standards.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-097-001",
+        "CLM-CON-097-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-006"
+      ],
+      "created_at": "2026-10-11T15:21:23.926Z",
+      "updated_at": "2026-10-11T15:21:23.926Z"
     }
   ],
   "claims": [
@@ -1382,6 +1487,101 @@
         "CON-081"
       ],
       "created_at": "2026-10-11T14:21:40.892Z"
+    },
+    {
+      "node_id": "CLM-CON-085-001",
+      "node_type": "claim",
+      "statement": "When relational effort is distributed asymmetrically (e.g., 90% from one partner and 10% from the other), the dynamic is structurally unhealthy and unsustainable.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-006",
+          "locator_type": "paragraph",
+          "locator": "Cue 30 (00:01:06.895 --> 00:01:10.380)",
+          "verbatim_quote": "90%of the effort is"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-085"
+      ],
+      "created_at": "2026-10-11T15:21:23.917Z"
+    },
+    {
+      "node_id": "CLM-CON-089-001",
+      "node_type": "claim",
+      "statement": "Constantly expressing desperate longing and double-texting prevents a partner from feeling your absence and destroys the cognitive space required to foster organic desire.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-006",
+          "locator_type": "paragraph",
+          "locator": "Cue 7 (00:00:13.520 --> 00:00:16.589)",
+          "verbatim_quote": "Saying \"I miss you\" ten times a day"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-089"
+      ],
+      "created_at": "2026-10-11T15:21:23.920Z"
+    },
+    {
+      "node_id": "CLM-CON-093-001",
+      "node_type": "claim",
+      "statement": "Effective interpersonal re-calibration requires establishing behavioral independence and boundaries before engaging in verbal explanations or emotional discussions.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-006",
+          "locator_type": "paragraph",
+          "locator": "Cue 115 (00:04:37.369 --> 00:04:40.718)",
+          "verbatim_quote": "behavior, then verbal. It is the most"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-093"
+      ],
+      "created_at": "2026-10-11T15:21:23.924Z"
+    },
+    {
+      "node_id": "CLM-CON-097-001",
+      "node_type": "claim",
+      "statement": "The ultimate prerequisite for self-respect and relational correction is the genuine, non-bluffing willingness to walk away from a partner who mistreats you.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-006",
+          "locator_type": "paragraph",
+          "locator": "Cue 119 (00:04:45.904 --> 00:04:49.602)",
+          "verbatim_quote": "willing to walk away"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-097"
+      ],
+      "created_at": "2026-10-11T15:21:23.926Z"
+    },
+    {
+      "node_id": "CLM-CON-097-002",
+      "node_type": "claim",
+      "statement": "Entering an intimate relationship requires psychological acceptance that the partner may leave and that one's life can fully endure and continue without them.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-006",
+          "locator_type": "paragraph",
+          "locator": "Cue 150 (00:06:06.734 --> 00:06:09.808)",
+          "verbatim_quote": "Before entering a relationship,"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-097"
+      ],
+      "created_at": "2026-10-11T15:21:23.927Z"
     }
   ],
   "edges": [

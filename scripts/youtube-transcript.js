@@ -266,13 +266,13 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
     // Connect WebSocket
     const rawResult = await new Promise((resolve, reject) => {
       const timeout = setTimeout(() => {
-        reject(new Error('CDP transcript capture timed out after 30 seconds.'));
-      }, 30000);
+        reject(new Error('CDP transcript capture timed out after 50 seconds.'));
+      }, 50000);
 
       const clientWs = new WebSocket(pageTarget.webSocketDebuggerUrl);
       ws = clientWs;
 
-      let interceptedTimedtextUrl = null;
+      let targetTimedtextRequestId = null;
       let videoTitle = null;
       let channelName = null;
       let videoDuration = 0;
@@ -281,6 +281,9 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
       clientWs.onopen = () => {
         clientWs.send(JSON.stringify({ id: 1, method: 'Network.enable' }));
       };
+
+      // Ad-skipping & player activator ticker
+      let activatorInterval = null;
 
       clientWs.onmessage = async (event) => {
         try {
@@ -291,50 +294,81 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
             if (reqUrl.includes('timedtext')) {
               const parsed = new URL(reqUrl);
               const paramV = parsed.searchParams.get('v');
-              if (paramV === videoId && !interceptedTimedtextUrl) {
-                interceptedTimedtextUrl = reqUrl;
+              if (paramV === videoId) {
+                targetTimedtextRequestId = msg.params.requestId;
                 languageCaptured = parsed.searchParams.get('lang') || 'auto';
-
-                // Fetch full JSON3 in page context where session cookies and player tokens are valid
-                setTimeout(() => {
-                  clientWs.send(JSON.stringify({
-                    id: 500,
-                    method: 'Runtime.evaluate',
-                    params: {
-                      expression: `fetch("${reqUrl}").then(r => r.json())`,
-                      awaitPromise: true,
-                      returnByValue: true
-                    }
-                  }));
-                }, 1000);
               }
             }
           }
 
-          if (msg.id === 500) {
-            clearTimeout(timeout);
-            const val = msg.result && msg.result.result ? msg.result.result.value : null;
-            if (val && val.events) {
-              resolve({
-                json3: val,
-                title: videoTitle,
-                author: channelName,
-                duration: videoDuration,
-                language: languageCaptured
-              });
-            } else {
-              reject(new Error('Timedtext returned empty or non-JSON3 payload.'));
+          if (msg.method === 'Network.responseReceived') {
+            const reqUrl = msg.params.response.url;
+            if (reqUrl.includes('timedtext')) {
+              const parsed = new URL(reqUrl);
+              if (parsed.searchParams.get('v') === videoId) {
+                const reqId = msg.params.requestId;
+                setTimeout(() => {
+                  clientWs.send(JSON.stringify({
+                    id: 501,
+                    method: 'Network.getResponseBody',
+                    params: { requestId: reqId }
+                  }));
+                }, 500);
+              }
             }
           }
 
+          if (msg.id === 501) {
+            const bodyStr = msg.result && msg.result.body ? msg.result.body : null;
+            if (bodyStr) {
+              try {
+                const parsedJson = JSON.parse(bodyStr);
+                if (parsedJson.events && parsedJson.events.length > 0) {
+                  if (activatorInterval) clearInterval(activatorInterval);
+                  clearTimeout(timeout);
+                  return resolve({
+                    json3: parsedJson,
+                    title: videoTitle,
+                    author: channelName,
+                    duration: videoDuration,
+                    language: languageCaptured
+                  });
+                }
+              } catch (e) {}
+            }
+            // Continue waiting for signed timedtext if this response was empty
+          }
+
           if (msg.id === 1) {
-            // Trigger player caption module and metadata collection
-            setTimeout(() => {
+            // Start activator interval to dismiss consent, skip ads, and click captions
+            activatorInterval = setInterval(() => {
               clientWs.send(JSON.stringify({
                 id: 2,
                 method: 'Runtime.evaluate',
                 params: {
                   expression: `(() => {
+                    // 1. Consent dialog
+                    const btns = Array.from(document.querySelectorAll('button'));
+                    const consentBtn = btns.find(b => ['Confirm', 'Accept all', 'I agree'].includes(b.innerText.trim()));
+                    if (consentBtn) consentBtn.click();
+
+                    // 2. Skip ad
+                    const skipBtn = document.querySelector('.ytp-skip-ad-button, .ytp-ad-skip-button, .ytp-ad-skip-button-modern');
+                    if (skipBtn) skipBtn.click();
+
+                    const video = document.querySelector('video');
+                    const isAd = document.querySelector('.ad-showing, .ytp-ad-player-overlay');
+                    if (isAd && video && !isNaN(video.duration) && video.duration > 0) {
+                      video.currentTime = video.duration;
+                    }
+
+                    // 3. Subtitles button
+                    const capBtn = document.querySelector('.ytp-subtitles-button');
+                    if (capBtn && capBtn.getAttribute('aria-pressed') !== 'true') {
+                      capBtn.click();
+                    }
+
+                    // 4. Player metadata
                     const p = document.getElementById("movie_player");
                     let title = document.title.replace(/ - YouTube$/, "").trim();
                     let author = "YouTube Creator";
@@ -347,10 +381,6 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
                       }
                       if (p.getDuration) duration = p.getDuration();
                       if (p.loadModule) p.loadModule("captions");
-                      const tl = p.getOption ? p.getOption("captions", "tracklist") : [];
-                      if (tl && tl.length > 0 && p.setOption) {
-                        p.setOption("captions", "track", tl[0]);
-                      }
                       if (p.playVideo) p.playVideo();
                     }
                     return { title, author, duration };
@@ -358,14 +388,16 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
                   returnByValue: true
                 }
               }));
-            }, 3500);
+            }, 1500);
           }
 
           if (msg.id === 2 && msg.result && msg.result.result) {
             const info = msg.result.result.value;
-            videoTitle = info.title;
-            channelName = info.author;
-            videoDuration = info.duration;
+            if (info) {
+              if (info.title && info.title !== 'YouTube') videoTitle = info.title;
+              if (info.author && info.author !== 'YouTube Creator') channelName = info.author;
+              if (info.duration) videoDuration = info.duration;
+            }
           }
         } catch (err) {
           // Keep listening

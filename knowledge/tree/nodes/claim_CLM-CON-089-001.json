@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-089-001",
+  "node_type": "claim",
+  "statement": "Constantly expressing desperate longing and double-texting prevents a partner from feeling your absence and destroys the cognitive space required to foster organic desire.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-006",
+      "locator_type": "paragraph",
+      "locator": "Cue 7 (00:00:13.520 --> 00:00:16.589)",
+      "verbatim_quote": "Saying \"I miss you\" ten times a day"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-089"
+  ],
+  "created_at": "2026-10-11T15:21:23.920Z"
+}

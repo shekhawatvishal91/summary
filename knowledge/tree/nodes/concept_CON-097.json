@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-097",
+  "node_type": "concept",
+  "canonical_name": "The Walk-Away Relational Threshold",
+  "aliases": [
+    "willingness to walk away",
+    "ultimate exit boundary",
+    "abandonment fear transcendence"
+  ],
+  "domain": "General",
+  "definition": "The foundational emotional capacity to walk away from mistreatment or lack of reciprocity, overcoming abandonment panic to maintain self-worth and non-negotiable standards.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-097-001",
+    "CLM-CON-097-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-006"
+  ],
+  "created_at": "2026-10-11T15:21:23.926Z",
+  "updated_at": "2026-10-11T15:21:23.926Z"
+}

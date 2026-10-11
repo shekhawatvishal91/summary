@@ -137,6 +137,26 @@
       "source_role": "real_user_source",
       "created_at": "2026-10-11T14:19:25.992Z",
       "updated_at": "2026-10-11T14:21:40.905Z"
+    },
+    {
+      "source_id": "SRC-YT-2026-006",
+      "video_id": "klGTH_Cjw8Q",
+      "title": "How to Make a Woman Miss You- 7 New Steps that Always work ",
+      "author": "The Cool Therapist",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "ed201382c1e005c3be7dcb03a55fa05dd01a096eb93183aa43f19895cdfc1ca9",
+      "raw_path": "sources/raw/SRC-YT-2026-006_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-006.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-006/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T15:17:14.754Z",
+      "updated_at": "2026-10-11T15:21:23.933Z"
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-089",
+  "node_type": "concept",
+  "canonical_name": "Autonomous Absence Scarcity Principle",
+  "aliases": [
+    "oxygen of absence",
+    "scarcity in romantic attraction",
+    "absence principle"
+  ],
+  "domain": "General",
+  "definition": "The psychological rule that persistent over-availability and desperate pursuit extinguish longing, whereas healthy physical and emotional absence creates the cognitive room for curiosity and desire.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-089-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-006"
+  ],
+  "created_at": "2026-10-11T15:21:23.920Z",
+  "updated_at": "2026-10-11T15:21:23.920Z"
+}

@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-085-001",
+  "node_type": "claim",
+  "statement": "When relational effort is distributed asymmetrically (e.g., 90% from one partner and 10% from the other), the dynamic is structurally unhealthy and unsustainable.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-006",
+      "locator_type": "paragraph",
+      "locator": "Cue 30 (00:01:06.895 --> 00:01:10.380)",
+      "verbatim_quote": "90%of the effort is"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-085"
+  ],
+  "created_at": "2026-10-11T15:21:23.917Z"
+}

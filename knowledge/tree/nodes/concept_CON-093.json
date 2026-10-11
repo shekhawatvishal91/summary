@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-093",
+  "node_type": "concept",
+  "canonical_name": "Behavior-First Boundary Calibration",
+  "aliases": [
+    "behavior before verbal",
+    "action-first boundary",
+    "embodied relational boundaries"
+  ],
+  "domain": "General",
+  "definition": "The interpersonal intervention principle requiring behavioral self-containment, priority resets, and boundary enforcement to precede verbal negotiation, preventing premature emotional dumping.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-093-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-006"
+  ],
+  "created_at": "2026-10-11T15:21:23.924Z",
+  "updated_at": "2026-10-11T15:21:23.924Z"
+}

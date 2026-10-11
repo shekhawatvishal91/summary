@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-093-001",
+  "node_type": "claim",
+  "statement": "Effective interpersonal re-calibration requires establishing behavioral independence and boundaries before engaging in verbal explanations or emotional discussions.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-006",
+      "locator_type": "paragraph",
+      "locator": "Cue 115 (00:04:37.369 --> 00:04:40.718)",
+      "verbatim_quote": "behavior, then verbal. It is the most"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-093"
+  ],
+  "created_at": "2026-10-11T15:21:23.924Z"
+}

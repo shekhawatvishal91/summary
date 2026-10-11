@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-097-001",
+  "node_type": "claim",
+  "statement": "The ultimate prerequisite for self-respect and relational correction is the genuine, non-bluffing willingness to walk away from a partner who mistreats you.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-006",
+      "locator_type": "paragraph",
+      "locator": "Cue 119 (00:04:45.904 --> 00:04:49.602)",
+      "verbatim_quote": "willing to walk away"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-097"
+  ],
+  "created_at": "2026-10-11T15:21:23.926Z"
+}

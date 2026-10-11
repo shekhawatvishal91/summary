@@ -1,0 +1,30 @@
+# Environment & Secrets
+.env
+.env.*
+*.secret
+*.pat
+*.token
+credentials.json
+
+# Operating System Files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Logs & Diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node / JS dependencies and build artifacts
+node_modules/
+dist/
+build/
+.cache/
+
+# Temporary / Scratch data
+tmp/
+temp/
+scratch/
+.tmp/

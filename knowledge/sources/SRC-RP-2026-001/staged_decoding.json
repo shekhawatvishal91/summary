@@ -1,0 +1,151 @@
+{
+  "source_id": "SRC-RP-2026-001",
+  "agent_identifier": "antigravity-native-agent",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "dimensions": {
+    "dim_1_core_thesis": {
+      "premise": "Human goal-directed execution is physiologically governed by an invariant, discrete biological capacity ceiling in the central executive network, rather than an elastic or motivational resource pool.",
+      "paradigm_shift": "Demolishes the legacy continuous-resource hypothesis and moralized willpower frameworks by proving that executive degradation is a discrete architectural bottleneck driven by extracellular adenosine accumulation."
+    },
+    "dim_2_causal_model": {
+      "mechanism": "Dopaminergic tone in the dorsolateral prefrontal cortex controls the signal-to-noise ratio of task representations. Sustained cognitive exertion produces localized extracellular adenosine accumulation, degrading inhibitory control and triggering subjective executive fatigue.",
+      "ratios_in_prose": "Active unchunked semantic representations degrade catastrophically beyond an absolute limit of 4 plus or minus 1 discrete units. Operational state externalization must occur within 90 seconds, and sensory de-escalation requires a 4-minute reset interval."
+    },
+    "dim_3_master_analogy": {
+      "analogy": "The Central Executive as a High-Speed Static RAM Register with Thermal Throttling: The processor can juggle exactly 4 cache lines simultaneously with zero latency; attempting to force a 5th item does not gracefully slow down throughput but causes an immediate cache flush and thermal throttling mediated by metabolic waste accumulation."
+    },
+    "dim_4_diagnostics": {
+      "classifications": [
+        {
+          "state": "Attentional Hyper-Focus",
+          "symptom": "Tunnel vision, cognitive rigidity, and inability to switch operational tasks",
+          "etiology": "Excessive striatal dopamine and impaired inhibitory gating mechanisms"
+        },
+        {
+          "state": "Cognitive Fragmentation",
+          "symptom": "Rapid working memory churn, high task latency, and frequent state loss",
+          "etiology": "Insufficient prefrontal signal-to-noise ratio"
+        },
+        {
+          "state": "Executive Paralysis",
+          "symptom": "Compulsive procrastination and systematic task avoidance",
+          "etiology": "Elevated anterior cingulate cortex conflict signaling paired with low perceived reward expectation"
+        }
+      ],
+      "failure_modes": [
+        "Unchunked Multitasking Overload: Attempting to hold more than 4 concurrent operational variables triggers catastrophic working memory dump.",
+        "Metabolic Resistance Trap: Attempting to power through adenosine accumulation using caffeine or sheer willpower accelerates cognitive fragmentation."
+      ]
+    },
+    "dim_5_field_protocols": {
+      "algorithm": [
+        "Step 1: Externalize all active working memory representations onto a durable physical or digital substrate within 90 seconds of task ingestion.",
+        "Step 2: Enforce a strict single-token execution policy, restricting the active workspace to exactly 1 primary goal token at any given moment.",
+        "Step 3: Trigger an immediate 4-minute sensory reset when subjective cognitive conflict or perceived friction crosses operational threshold."
+      ],
+      "verbatim_scripts": [
+        "State Externalization Declaration: 'Active buffer full. Halting ingestion for 90 seconds to externalize working memory state before continuing.'",
+        "Single-Token Boundary Defense: 'I cannot process secondary task tokens until the primary active goal token is resolved or committed to disk.'",
+        "Sensory Reset Announcement: 'Anterior cingulate conflict threshold reached. Initiating mandatory 4-minute sensory reset protocol.'"
+      ]
+    },
+    "dim_6_skeptic_box": {
+      "pop_culture_distortion": "Pop-psychology portrays cognitive stamina as moral grit or 'ego depletion' caused by systemic blood glucose depletion that can be solved by consuming sugar or practicing motivational reframing.",
+      "clinical_empirical_reality": "Empirical fMRI and neurochemical profiling demonstrates that ego depletion is mediated by local prefrontal extracellular adenosine buildup and discrete structural capacity limits of 4 ± 1 items, completely independent of systemic glucose levels."
+    }
+  },
+  "extracted_claims": [
+    {
+      "statement": "Unchunked working memory capacity is strictly bounded to 4 plus or minus 1 discrete mental representations under active cognitive load.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "empirical_finding",
+      "locator": "sec: The Prefrontal Capacity Ceiling # para-2",
+      "verbatim_quote": "unchunked active memory representations degrade catastrophically beyond 4 plus or minus 1 discrete semantic units."
+    },
+    {
+      "statement": "The subjective sensation of executive fatigue is mediated by prefrontal adenosine accumulation rather than systemic glucose exhaustion.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "empirical_finding",
+      "locator": "sec: Neurochemical Modulation & Ego Depletion # para-1",
+      "verbatim_quote": "Sustained cognitive control leads to local extracellular adenosine accumulation, generating the subjective phenomenological state traditionally termed \"ego depletion.\""
+    },
+    {
+      "statement": "Under excessive cognitive demand, executive breakdown manifests across three distinct neurochemical typologies: Attentional Hyper-Focus, Cognitive Fragmentation, and Executive Paralysis.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "taxonomic_classification",
+      "locator": "sec: Diagnostic Typology of Executive Overload # table-1",
+      "verbatim_quote": null
+    },
+    {
+      "statement": "Preventing catastrophic executive collapse requires externalizing working memory state within 90 seconds, isolating a single goal token, and enforcing a 4-minute sensory reset upon conflict threshold.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "behavioral_protocol",
+      "locator": "sec: Behavioral De-escalation Protocol # list-1",
+      "verbatim_quote": null
+    }
+  ],
+  "proposed_concepts": [
+    {
+      "name": "Working Memory Capacity Ceiling",
+      "aliases": [
+        "Central Executive Bottleneck",
+        "Chunk Capacity Limit",
+        "Prefrontal Capacity Ceiling"
+      ],
+      "domain": "Cognitive Neuroscience",
+      "definition": "The strict biological constraint bounding unchunked active mental representations to 4 ± 1 items within the human central executive network."
+    },
+    {
+      "name": "Prefrontal Adenosine Accumulation",
+      "aliases": [
+        "Executive Fatigue Mechanism",
+        "Neurochemical Ego Depletion"
+      ],
+      "domain": "Neurobiology",
+      "definition": "The localized build-up of extracellular adenosine in the dorsolateral prefrontal cortex during sustained cognitive control that produces perceived executive exhaustion."
+    },
+    {
+      "name": "Executive Overload Typology",
+      "aliases": [
+        "Attentional Failure Triad"
+      ],
+      "domain": "Cognitive Psychology",
+      "definition": "The three-tier diagnostic classification of executive failure modes consisting of Attentional Hyper-Focus, Cognitive Fragmentation, and Executive Paralysis."
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_node_id": "CON-001",
+      "target_node_id": "CON-002",
+      "relation_type": "mechanistically_linked",
+      "description": "Prefrontal capacity exhaustion accelerates local extracellular adenosine accumulation under sustained control demands."
+    }
+  ],
+  "coverage_warnings": [],
+  "recall_cards": [
+    {
+      "card_id": "CARD-SRC-RP-2026-001-001",
+      "question": "What is the physical capacity limit of unchunked working memory according to empirical fMRI evidence?",
+      "answer": "Working memory is strictly bounded to 4 ± 1 discrete unchunked semantic units; exceeding this discrete threshold causes catastrophic degradation rather than continuous graceful deceleration.",
+      "source_id": "SRC-RP-2026-001",
+      "locator": "sec: The Prefrontal Capacity Ceiling # para-2",
+      "dimension": "Foundational Causal Model"
+    },
+    {
+      "card_id": "CARD-SRC-RP-2026-001-002",
+      "question": "What neurochemical mechanism drives perceived 'ego depletion' during sustained cognitive control?",
+      "answer": "Perceived cognitive fatigue is driven by localized extracellular adenosine accumulation in the dorsolateral prefrontal cortex, which lowers the signal-to-noise ratio of task representations, rather than systemic glucose exhaustion.",
+      "source_id": "SRC-RP-2026-001",
+      "locator": "sec: Neurochemical Modulation & Ego Depletion # para-1",
+      "dimension": "Causal Mechanism"
+    },
+    {
+      "card_id": "CARD-SRC-RP-2026-001-003",
+      "question": "What are the three diagnostic failure states of executive overload and their neurological mechanisms?",
+      "answer": "1. Attentional Hyper-Focus (excessive striatal dopamine, impaired gating). 2. Cognitive Fragmentation (insufficient prefrontal SNR). 3. Executive Paralysis (high ACC conflict signal with low reward expectation).",
+      "source_id": "SRC-RP-2026-001",
+      "locator": "sec: Diagnostic Typology of Executive Overload # table-1",
+      "dimension": "Diagnostic Typology"
+    }
+  ]
+}

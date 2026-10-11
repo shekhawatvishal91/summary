@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T11:13:26.553Z",
+  "built_at": "2026-10-11T13:08:53.543Z",
   "metrics": {
-    "total_sources": 4,
-    "total_concepts": 13,
-    "total_claims": 22,
-    "total_edges": 7,
+    "total_sources": 5,
+    "total_concepts": 17,
+    "total_claims": 28,
+    "total_edges": 8,
     "total_docs": 18
   },
   "sources": [
@@ -43,7 +43,7 @@
       "coverage_status": "complete",
       "decoding_status": "NATIVE_AGENT_DECODED",
       "created_at": "2026-10-11T05:07:42.165Z",
-      "updated_at": "2026-10-11T11:13:26.540Z",
+      "updated_at": "2026-10-11T11:02:27.527Z",
       "is_test_fixture": true,
       "source_role": "synthetic_benchmark_fixture"
     },
@@ -84,6 +84,26 @@
       "source_role": "real_user_source",
       "created_at": "2026-10-11T10:21:29.857Z",
       "updated_at": "2026-10-11T11:03:32.953Z"
+    },
+    {
+      "source_id": "SRC-YT-2026-003",
+      "video_id": "6eGdOk3IiOg",
+      "title": "How To Lose The Person you Love in 49 seconds",
+      "author": "The Cool Therapist",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "7357d8df3c49c2173652613239301c84076fc766dc3ef3ed41e8e9039a73037e",
+      "raw_path": "sources/raw/SRC-YT-2026-003_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-003.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-003/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T12:15:03.981Z",
+      "updated_at": "2026-10-11T12:16:49.828Z"
     }
   ],
   "concepts": [
@@ -140,7 +160,7 @@
         "SRC-RP-2026-002"
       ],
       "created_at": "2026-10-11T05:07:42.201Z",
-      "updated_at": "2026-10-11T11:13:26.538Z"
+      "updated_at": "2026-10-11T11:02:27.524Z"
     },
     {
       "node_id": "CON-009",
@@ -356,6 +376,92 @@
       ],
       "created_at": "2026-10-11T10:24:49.959Z",
       "updated_at": "2026-10-11T11:03:32.950Z"
+    },
+    {
+      "node_id": "CON-045",
+      "node_type": "concept",
+      "canonical_name": "Self-Directed Loathing as Root Relational Saboteur",
+      "aliases": [
+        "self-loathing relationship sabotage",
+        "root self-hatred in attachment",
+        "self-directed loathing"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The psychological phenomenon where deep-seated self-loathing acts as the prime causal engine for relationship sabotage. The individual's internalized sense of defectiveness drives compulsive jealousy, distrust, enmeshment, and drama to unconsciously orchestrate the abandonment they believe they deserve.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-045-001",
+        "CLM-CON-045-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-003"
+      ],
+      "created_at": "2026-10-11T12:16:49.803Z",
+      "updated_at": "2026-10-11T12:16:49.803Z"
+    },
+    {
+      "node_id": "CON-049",
+      "node_type": "concept",
+      "canonical_name": "Pathological Enmeshment & Autonomous Neglect",
+      "aliases": [
+        "pathological enmeshment",
+        "relational hyper-fixation",
+        "autonomous life neglect"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The dysfunctional relational pattern where an individual abandons their personal life, health, career, and boundaries to focus exclusively on their partner, while simultaneously violating the partner's need for autonomy through demands for perpetual availability.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-049-001",
+        "CLM-CON-049-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-003"
+      ],
+      "created_at": "2026-10-11T12:16:49.812Z",
+      "updated_at": "2026-10-11T12:16:49.812Z"
+    },
+    {
+      "node_id": "CON-053",
+      "node_type": "concept",
+      "canonical_name": "Anxious Hyper-Surveillance & Distrust",
+      "aliases": [
+        "anxious hyper-surveillance",
+        "absence distrust",
+        "relational vigilance"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The inability to maintain emotional security and trust when a partner is physically absent or engaged in independent activities, leading to hyper-vigilance, accusations, and controlling behaviors.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-053-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-003"
+      ],
+      "created_at": "2026-10-11T12:16:49.816Z",
+      "updated_at": "2026-10-11T12:16:49.816Z"
+    },
+    {
+      "node_id": "CON-057",
+      "node_type": "concept",
+      "canonical_name": "Inverse Sarcastic Prescriptive Framework",
+      "aliases": [
+        "inverse prescriptive framing",
+        "reverse psychological relationship diagnostic",
+        "inversion diagnostic method"
+      ],
+      "domain": "Cognitive Behavioral Diagnostics",
+      "definition": "A therapeutic or communicative diagnostic technique that enumerates destructive behaviors in the form of direct, sarcastic prescriptive advice ('how to lose someone'), triggering psychological reactance and immediate clarity regarding self-destructive tendencies.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-057-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-003"
+      ],
+      "created_at": "2026-10-11T12:16:49.820Z",
+      "updated_at": "2026-10-11T12:16:49.820Z"
     }
   ],
   "claims": [
@@ -776,6 +882,120 @@
         "CON-041"
       ],
       "created_at": "2026-10-11T10:24:49.959Z"
+    },
+    {
+      "node_id": "CLM-CON-045-001",
+      "node_type": "claim",
+      "statement": "Self-hatred is the core foundational driver that autonomously generates all subsequent manifestations of relationship sabotage.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-003",
+          "locator_type": "paragraph",
+          "locator": "Cue 17 (00:00:39.528 --> 00:00:42.969)",
+          "verbatim_quote": "point: hate yourself. If you are going"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-045"
+      ],
+      "created_at": "2026-10-11T12:16:49.804Z"
+    },
+    {
+      "node_id": "CLM-CON-045-002",
+      "node_type": "claim",
+      "statement": "When an individual internalizes core self-hatred, all complementary relationship-destroying behaviors manifest automatically without conscious effort.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-003",
+          "locator_type": "paragraph",
+          "locator": "Cue 20 (00:00:45.530 --> 00:00:48.360)",
+          "verbatim_quote": "advice will come automatically to you."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-045"
+      ],
+      "created_at": "2026-10-11T12:16:49.805Z"
+    },
+    {
+      "node_id": "CLM-CON-049-001",
+      "node_type": "claim",
+      "statement": "Neglecting personal real-world life problems and somatic self-care in favor of obsessive relational focus accelerates partnership failure.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-003",
+          "locator_type": "paragraph",
+          "locator": "Cue 8 (00:00:17.369 --> 00:00:20.599)",
+          "verbatim_quote": "they are doing is absolutely wrong."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-049"
+      ],
+      "created_at": "2026-10-11T12:16:49.812Z"
+    },
+    {
+      "node_id": "CLM-CON-049-002",
+      "node_type": "claim",
+      "statement": "Sacrificing healthy boundaries by demanding perpetual availability and failing to value a partner's autonomous time erodes intimacy.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-003",
+          "locator_type": "paragraph",
+          "locator": "Cue 13 (00:00:29.172 --> 00:00:32.720)",
+          "verbatim_quote": "themselves. Be available all the time."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-049"
+      ],
+      "created_at": "2026-10-11T12:16:49.813Z"
+    },
+    {
+      "node_id": "CLM-CON-053-001",
+      "node_type": "claim",
+      "statement": "Absence distrust—refusing to trust an intimate partner when they are physically away—is an active behavioral precursor to relational dissolution.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-003",
+          "locator_type": "paragraph",
+          "locator": "Cue 3 (00:00:05.216 --> 00:00:08.339)",
+          "verbatim_quote": "to not trust them when they are away."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-053"
+      ],
+      "created_at": "2026-10-11T12:16:49.817Z"
+    },
+    {
+      "node_id": "CLM-CON-057-001",
+      "node_type": "claim",
+      "statement": "When an individual internalizes core self-hatred, all complementary relationship-destroying behaviors manifest automatically without conscious effort.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-003",
+          "locator_type": "paragraph",
+          "locator": "Cue 20 (00:00:45.530 --> 00:00:48.360)",
+          "verbatim_quote": "advice will come automatically to you."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-057"
+      ],
+      "created_at": "2026-10-11T12:16:49.820Z"
     }
   ],
   "edges": [
@@ -853,6 +1073,18 @@
       "locator": null,
       "epistemic_classification": null,
       "created_at": "2026-10-11T10:24:49.987Z"
+    },
+    {
+      "edge_id": "EDG-009",
+      "source_node_id": "CON-009",
+      "target_node_id": "CON-012",
+      "relation_type": "reinforces",
+      "description": "Identity attachment bias compounds sunk cost inertia across personal and career spheres.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-11T12:16:49.827Z"
     }
   ],
   "documentation": [

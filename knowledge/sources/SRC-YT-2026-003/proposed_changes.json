@@ -1,0 +1,103 @@
+{
+  "source_id": "SRC-YT-2026-003",
+  "generated_at": "2026-10-11T12:16:49.799Z",
+  "model": "antigravity-native-agent",
+  "proposed_concepts": [
+    {
+      "name": "Self-Directed Loathing as Root Relational Saboteur",
+      "aliases": [
+        "self-loathing relationship sabotage",
+        "root self-hatred in attachment",
+        "self-directed loathing"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The psychological phenomenon where deep-seated self-loathing acts as the prime causal engine for relationship sabotage. The individual's internalized sense of defectiveness drives compulsive jealousy, distrust, enmeshment, and drama to unconsciously orchestrate the abandonment they believe they deserve."
+    },
+    {
+      "name": "Pathological Enmeshment & Autonomous Neglect",
+      "aliases": [
+        "pathological enmeshment",
+        "relational hyper-fixation",
+        "autonomous life neglect"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The dysfunctional relational pattern where an individual abandons their personal life, health, career, and boundaries to focus exclusively on their partner, while simultaneously violating the partner's need for autonomy through demands for perpetual availability."
+    },
+    {
+      "name": "Anxious Hyper-Surveillance & Distrust",
+      "aliases": [
+        "anxious hyper-surveillance",
+        "absence distrust",
+        "relational vigilance"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The inability to maintain emotional security and trust when a partner is physically absent or engaged in independent activities, leading to hyper-vigilance, accusations, and controlling behaviors."
+    },
+    {
+      "name": "Inverse Sarcastic Prescriptive Framework",
+      "aliases": [
+        "inverse prescriptive framing",
+        "reverse psychological relationship diagnostic",
+        "inversion diagnostic method"
+      ],
+      "domain": "Cognitive Behavioral Diagnostics",
+      "definition": "A therapeutic or communicative diagnostic technique that enumerates destructive behaviors in the form of direct, sarcastic prescriptive advice ('how to lose someone'), triggering psychological reactance and immediate clarity regarding self-destructive tendencies."
+    }
+  ],
+  "extracted_claims": [
+    {
+      "statement": "Absence distrust—refusing to trust an intimate partner when they are physically away—is an active behavioral precursor to relational dissolution.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 3 (00:00:05.216 --> 00:00:08.339)",
+      "verbatim_quote": "to not trust them when they are away.",
+      "associated_concepts": [
+        "Anxious Hyper-Surveillance & Distrust"
+      ]
+    },
+    {
+      "statement": "Neglecting personal real-world life problems and somatic self-care in favor of obsessive relational focus accelerates partnership failure.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 8 (00:00:17.369 --> 00:00:20.599)",
+      "verbatim_quote": "they are doing is absolutely wrong.",
+      "associated_concepts": [
+        "Pathological Enmeshment & Autonomous Neglect"
+      ]
+    },
+    {
+      "statement": "Sacrificing healthy boundaries by demanding perpetual availability and failing to value a partner's autonomous time erodes intimacy.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 13 (00:00:29.172 --> 00:00:32.720)",
+      "verbatim_quote": "themselves. Be available all the time.",
+      "associated_concepts": [
+        "Pathological Enmeshment & Autonomous Neglect"
+      ]
+    },
+    {
+      "statement": "Self-hatred is the core foundational driver that autonomously generates all subsequent manifestations of relationship sabotage.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 17 (00:00:39.528 --> 00:00:42.969)",
+      "verbatim_quote": "point: hate yourself. If you are going",
+      "associated_concepts": [
+        "Self-Directed Loathing as Root Relational Saboteur"
+      ]
+    },
+    {
+      "statement": "When an individual internalizes core self-hatred, all complementary relationship-destroying behaviors manifest automatically without conscious effort.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 20 (00:00:45.530 --> 00:00:48.360)",
+      "verbatim_quote": "advice will come automatically to you.",
+      "associated_concepts": [
+        "Self-Directed Loathing as Root Relational Saboteur",
+        "Inverse Sarcastic Prescriptive Framework"
+      ]
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_node_id": "CON-009",
+      "target_node_id": "CON-012",
+      "relation_type": "reinforces",
+      "description": "Identity attachment bias compounds sunk cost inertia across personal and career spheres."
+    }
+  ]
+}

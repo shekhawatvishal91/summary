@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-053",
+  "node_type": "concept",
+  "canonical_name": "Anxious Hyper-Surveillance & Distrust",
+  "aliases": [
+    "anxious hyper-surveillance",
+    "absence distrust",
+    "relational vigilance"
+  ],
+  "domain": "Relational Psychology & Attachment",
+  "definition": "The inability to maintain emotional security and trust when a partner is physically absent or engaged in independent activities, leading to hyper-vigilance, accusations, and controlling behaviors.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-053-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-003"
+  ],
+  "created_at": "2026-10-11T12:16:49.816Z",
+  "updated_at": "2026-10-11T12:16:49.816Z"
+}

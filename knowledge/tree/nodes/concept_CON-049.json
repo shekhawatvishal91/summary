@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-049",
+  "node_type": "concept",
+  "canonical_name": "Pathological Enmeshment & Autonomous Neglect",
+  "aliases": [
+    "pathological enmeshment",
+    "relational hyper-fixation",
+    "autonomous life neglect"
+  ],
+  "domain": "Relational Psychology & Attachment",
+  "definition": "The dysfunctional relational pattern where an individual abandons their personal life, health, career, and boundaries to focus exclusively on their partner, while simultaneously violating the partner's need for autonomy through demands for perpetual availability.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-049-001",
+    "CLM-CON-049-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-003"
+  ],
+  "created_at": "2026-10-11T12:16:49.812Z",
+  "updated_at": "2026-10-11T12:16:49.812Z"
+}

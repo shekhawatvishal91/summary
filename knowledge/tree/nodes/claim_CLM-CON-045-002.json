@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-045-002",
+  "node_type": "claim",
+  "statement": "When an individual internalizes core self-hatred, all complementary relationship-destroying behaviors manifest automatically without conscious effort.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-003",
+      "locator_type": "paragraph",
+      "locator": "Cue 20 (00:00:45.530 --> 00:00:48.360)",
+      "verbatim_quote": "advice will come automatically to you."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-045"
+  ],
+  "created_at": "2026-10-11T12:16:49.805Z"
+}

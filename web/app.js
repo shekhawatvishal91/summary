@@ -432,6 +432,34 @@ function viewCodex(sourceId) {
     return;
   }
 
+  if (sourceId === 'MASTER-RELATIONSHIP-DYNAMICS') {
+    currentActiveCodexId = sourceId;
+    switchTab('codex-reader');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.getElementById('codex-title').textContent = 'Relationship Dynamics & Attachment Psychology: The Anatomy of Self-Sabotage';
+    document.getElementById('codex-meta').innerHTML = `
+      <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">CROSS-SOURCE TOPIC HUB</span>
+      <strong>Topic:</strong> Romantic Attachment &amp; Inversion Behavioral Diagnostics &bull;
+      <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull;
+      <strong>Status:</strong> VERIFIED MASTER CODEX
+    `;
+
+    document.querySelectorAll('.note-switcher .switcher-btn').forEach(btn => btn.classList.remove('active'));
+    const activeSwitcherBtn = document.getElementById(`btn-switch-${sourceId}`);
+    if (activeSwitcherBtn) activeSwitcherBtn.classList.add('active');
+
+    const masterUrl = `../knowledge/master/relationship_dynamics_and_attachment_psychology.md`;
+    fetch(masterUrl)
+      .then(r => r.text())
+      .then(txt => {
+        document.getElementById('codex-content').innerHTML = renderMarkdown(txt);
+      })
+      .catch(err => {
+        document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch topic synthesis at ${masterUrl}: ${err.message}</p>`;
+      });
+    return;
+  }
+
   if (!manifestData || !manifestData.sources) return;
   const source = manifestData.sources.find(s => s.source_id === sourceId);
   if (!source) return;

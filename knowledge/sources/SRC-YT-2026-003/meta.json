@@ -1,0 +1,30 @@
+{
+  "source_id": "SRC-YT-2026-003",
+  "video_id": "6eGdOk3IiOg",
+  "title": "How To Lose The Person you Love in 49 seconds",
+  "author": "The Cool Therapist",
+  "year": 2026,
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "sha256": "7357d8df3c49c2173652613239301c84076fc766dc3ef3ed41e8e9039a73037e",
+  "char_count": 1926,
+  "word_count": 278,
+  "cue_count": 21,
+  "time_span_sec": 49.5,
+  "capture_method": "BROWSER_CDP_PLAYER_INTERCEPT",
+  "total_segments": 1,
+  "segments": [
+    {
+      "segment_index": 1,
+      "title": "Captured At: 2026-10-11T12:15:03.971Z",
+      "line_start": 7,
+      "line_end": 49
+    }
+  ],
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "created_at": "2026-10-11T12:15:03.978Z",
+  "decoded_at": "2026-10-11T12:16:49.800Z",
+  "decoding_model": "antigravity-native-agent",
+  "prompt_version": "native-agent-v1",
+  "claims_count": 5
+}

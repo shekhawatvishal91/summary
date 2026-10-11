@@ -1,0 +1,222 @@
+{
+  "source_id": "SRC-YT-2026-003",
+  "agent_identifier": "antigravity-native-agent",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "dimensions": {
+    "dim_1_core_thesis": {
+      "premise": "Relationship self-sabotage is rarely an accidental failure of communication or compatibility; it is an organized behavioral cascade driven by an underlying core of self-hatred that generates pervasive hyper-vigilance, enmeshment, autonomy violation, and emotional exhaustion.",
+      "paradigm_shift": "Pop psychology often frames toxic relationship habits (jealousy, micromanagement, constant drama) as passionate attachment or lack of dating boundaries. In reality, these are symptoms of deep internal self-loathing: when you despise yourself, you cannot accept genuine love or trust your partner, so you systematically manufacture relationship destruction to match your internal state of unworthiness."
+    },
+    "dim_2_causal_model": {
+      "mechanism": "The Causal Cascade of Relational Self-Sabotage: Self-Loathing -> Internal Unworthiness & Insecurity -> Projective Distrust (Absence Vigilance) -> Enmeshment & Life Neglect (Abandoning personal growth to obsess over the partner) -> Behavioral Dissociation (Declaring verbal love while enacting punitive drama) -> Autonomy Encroachment (Suffocating the partner's space and demands for 24/7 availability) -> Inevitable Partner Burnout and Abandonment.",
+      "ratios_in_prose": "In the 49-second diagnostic exposition, 10 distinct dysfunctional behaviors are identified, with self-hatred explicitly isolated as the primary single governing variable (1:10 leverage ratio) that autonomously generates all subsequent dysfunctional manifestations."
+    },
+    "dim_3_master_analogy": {
+      "analogy": "The Leaking Fuel Tank in a Jet Engine: Attempting to sustain a romantic relationship without resolving core self-hatred is like pumping high-octane fuel into an aircraft engine that has a ruptured combustion chamber. No matter how much fuel (declarations of love, constant availability, dramatic intensity) you feed the engine, the structural fracture ensures catastrophic flameout."
+    },
+    "dim_4_diagnostics": {
+      "classifications": [
+        {
+          "state": "Absence Distrust & Vigilance",
+          "symptom": "Inability to maintain object constancy or psychological safety when the partner is physically away.",
+          "etiology": "Projection of internalized worthlessness: believing that as soon as you are out of sight, you are inherently replaceable."
+        },
+        {
+          "state": "Compulsive Enmeshment & Self-Neglect",
+          "symptom": "Abandoning real-world career, health, somatic care, and personal problems to obsessively monitor the relationship status.",
+          "etiology": "Externalization of self-worth: using the romantic dynamic as a surrogate identity buffer."
+        },
+        {
+          "state": "Verbal-Behavioral Incongruence",
+          "symptom": "Declaring intense verbal love while simultaneously acting with hostility, constant criticism, and emotional drama.",
+          "etiology": "Ambivalent attachment split: desperately needing attachment while punishing the partner for triggering vulnerability."
+        },
+        {
+          "state": "Autonomy Asphyxiation",
+          "symptom": "Disregarding the partner's need for solitude, requiring perpetual availability, and crying/guilting during normal boundary assertions.",
+          "etiology": "Terror of abandonment driving controlling micromanagement."
+        }
+      ],
+      "failure_modes": [
+        "Treating relational anxiety by micromanaging the partner instead of confronting underlying self-loathing.",
+        "Mistaking chronic emotional crying and dramatic confrontation for deep emotional intimacy or romantic passion.",
+        "Demanding 100% time availability from a partner, suffocating their autonomous nervous system and precipitating the exact abandonment feared."
+      ]
+    },
+    "dim_5_field_protocols": {
+      "algorithm": [
+        "1. Identify the Core Driver: Whenever an urge to create drama, micromanage, or text anxiously arises, pause and interrogate: 'Is this about what they are doing, or is this my core self-doubt projecting outward?'",
+        "2. Preserve the Autonomous Life Pillar: Mandate daily non-negotiable devotion to personal health, career, and somatic wellbeing independent of relationship status.",
+        "3. Protect Partner Space: Actively encourage and celebrate the partner's time alone and separate friendships without surveillance.",
+        "4. Align Words with Conduct: Eliminate empty verbal declarations of affection that are coupled with punitive actions; practice calm, non-accusatory appreciation."
+      ],
+      "verbatim_scripts": [
+        {
+          "label": "Opening Inversion Thesis",
+          "locator": "00:00:00.419 --> 00:00:03.779",
+          "verbatim_text": "This is how to lose someone you love."
+        },
+        {
+          "label": "Absence Distrust Diagnostic",
+          "locator": "00:00:05.216 --> 00:00:08.339",
+          "verbatim_text": "to not trust them when they are away."
+        },
+        {
+          "label": "Hypercritical Invalidation",
+          "locator": "00:00:17.369 --> 00:00:20.599",
+          "verbatim_text": "they are doing is absolutely wrong."
+        },
+        {
+          "label": "Smothering & Total Availability",
+          "locator": "00:00:29.172 --> 00:00:32.720",
+          "verbatim_text": "themselves. Be available all the time."
+        },
+        {
+          "label": "Core Root Driver: Self-Hatred",
+          "locator": "00:00:39.528 --> 00:00:42.969",
+          "verbatim_text": "point: hate yourself. If you are going"
+        },
+        {
+          "label": "Automatic Cascade Law",
+          "locator": "00:00:45.530 --> 00:00:48.360",
+          "verbatim_text": "the advice will come automatically to you."
+        }
+      ],
+      "verbatim_fragments": [
+        {
+          "label": "Closing Rhetorical Punctuation",
+          "locator": "00:00:47.700 --> 00:00:49.939",
+          "verbatim_text": "Now you know.",
+          "note": "Final rhetorical confirmation of inverse prescriptive delivery."
+        }
+      ],
+      "ai_generated_practical_applications": [
+        "Audit relationship habits against the 10 inverse prescriptions: check whether absence triggers surveillance, whether you neglect somatic health, and whether you demand perpetual availability.",
+        "Target the primary etiology: replace self-punitive internal monologue with structured self-esteem rebuilding and psychological autonomy."
+      ]
+    },
+    "dim_6_skeptic_box": {
+      "pop_culture_distortion": "Social media relationship content frequently frames intense jealousy, hyper-vigilance, and demand for 24/7 availability as signs of 'true love', 'intense devotion', or 'protective bonding'.",
+      "clinical_empirical_reality": "In clinical attachment theory and relationship psychology, chronic distrust, enmeshment, and dramatic emotional volatility are cardinal indicators of insecure-anxious attachment and unresolved self-esteem deficits that reliably degrade relationship longevity."
+    }
+  },
+  "extracted_claims": [
+    {
+      "statement": "Absence distrust—refusing to trust an intimate partner when they are physically away—is an active behavioral precursor to relational dissolution.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 3 (00:00:05.216 --> 00:00:08.339)",
+      "verbatim_quote": "to not trust them when they are away.",
+      "associated_concepts": [
+        "Anxious Hyper-Surveillance & Distrust"
+      ]
+    },
+    {
+      "statement": "Neglecting personal real-world life problems and somatic self-care in favor of obsessive relational focus accelerates partnership failure.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 8 (00:00:17.369 --> 00:00:20.599)",
+      "verbatim_quote": "they are doing is absolutely wrong.",
+      "associated_concepts": [
+        "Pathological Enmeshment & Autonomous Neglect"
+      ]
+    },
+    {
+      "statement": "Sacrificing healthy boundaries by demanding perpetual availability and failing to value a partner's autonomous time erodes intimacy.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 13 (00:00:29.172 --> 00:00:32.720)",
+      "verbatim_quote": "themselves. Be available all the time.",
+      "associated_concepts": [
+        "Pathological Enmeshment & Autonomous Neglect"
+      ]
+    },
+    {
+      "statement": "Self-hatred is the core foundational driver that autonomously generates all subsequent manifestations of relationship sabotage.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 17 (00:00:39.528 --> 00:00:42.969)",
+      "verbatim_quote": "point: hate yourself. If you are going",
+      "associated_concepts": [
+        "Self-Directed Loathing as Root Relational Saboteur"
+      ]
+    },
+    {
+      "statement": "When an individual internalizes core self-hatred, all complementary relationship-destroying behaviors manifest automatically without conscious effort.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 20 (00:00:45.530 --> 00:00:48.360)",
+      "verbatim_quote": "advice will come automatically to you.",
+      "associated_concepts": [
+        "Self-Directed Loathing as Root Relational Saboteur",
+        "Inverse Sarcastic Prescriptive Framework"
+      ]
+    }
+  ],
+  "proposed_concepts": [
+    {
+      "name": "Self-Directed Loathing as Root Relational Saboteur",
+      "aliases": [
+        "self-loathing relationship sabotage",
+        "root self-hatred in attachment",
+        "self-directed loathing"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The psychological phenomenon where deep-seated self-loathing acts as the prime causal engine for relationship sabotage. The individual's internalized sense of defectiveness drives compulsive jealousy, distrust, enmeshment, and drama to unconsciously orchestrate the abandonment they believe they deserve."
+    },
+    {
+      "name": "Pathological Enmeshment & Autonomous Neglect",
+      "aliases": [
+        "pathological enmeshment",
+        "relational hyper-fixation",
+        "autonomous life neglect"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The dysfunctional relational pattern where an individual abandons their personal life, health, career, and boundaries to focus exclusively on their partner, while simultaneously violating the partner's need for autonomy through demands for perpetual availability."
+    },
+    {
+      "name": "Anxious Hyper-Surveillance & Distrust",
+      "aliases": [
+        "anxious hyper-surveillance",
+        "absence distrust",
+        "relational vigilance"
+      ],
+      "domain": "Relational Psychology & Attachment",
+      "definition": "The inability to maintain emotional security and trust when a partner is physically absent or engaged in independent activities, leading to hyper-vigilance, accusations, and controlling behaviors."
+    },
+    {
+      "name": "Inverse Sarcastic Prescriptive Framework",
+      "aliases": [
+        "inverse prescriptive framing",
+        "reverse psychological relationship diagnostic",
+        "inversion diagnostic method"
+      ],
+      "domain": "Cognitive Behavioral Diagnostics",
+      "definition": "A therapeutic or communicative diagnostic technique that enumerates destructive behaviors in the form of direct, sarcastic prescriptive advice ('how to lose someone'), triggering psychological reactance and immediate clarity regarding self-destructive tendencies."
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_node_id": "CON-009",
+      "target_node_id": "CON-012",
+      "relation_type": "reinforces",
+      "description": "Identity attachment bias compounds sunk cost inertia across personal and career spheres."
+    }
+  ],
+  "coverage_warnings": [],
+  "recall_cards": [
+    {
+      "question": "According to the causal model of relationship sabotage, what is the single root variable that autonomously drives all other destructive behaviors?",
+      "answer": "Self-hatred / core self-loathing. When an individual harbors internal unworthiness, destructive behaviors like distrust, enmeshment, drama, and smothering manifest automatically.",
+      "locator": "Cue 17 (00:00:39.528 --> 00:00:42.969)",
+      "epistemic_class": "SOURCE_STATEMENT"
+    },
+    {
+      "question": "What is the primary danger of practicing 'absence distrust' (refusing to trust an intimate partner when they are away)?",
+      "answer": "It suffocates the partner's autonomy, projects personal insecurity as partner guilt, and systematically triggers relationship breakdown.",
+      "locator": "Cue 3 (00:00:05.216 --> 00:00:08.339)",
+      "epistemic_class": "SOURCE_STATEMENT"
+    },
+    {
+      "question": "How does 'Inverse Sarcastic Prescriptive Framing' function as a diagnostic tool?",
+      "answer": "By presenting self-sabotaging relationship behaviors as explicit 'step-by-step instructions' on how to lose someone, it forces the listener to confront their own self-destructive patterns through acute cognitive contrast.",
+      "locator": "Cue 1 & 20",
+      "epistemic_class": "SOURCE_INFERENCE"
+    }
+  ]
+}

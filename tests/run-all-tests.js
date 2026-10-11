@@ -86,8 +86,22 @@ try {
   process.exit(1);
 }
 
-// Test Suite 6: Repository Layout & Directory Baseline
-console.log('[SUITE 6/6] Verifying Target Architecture Directory Baseline...');
+// Test Suite 6: YouTube Transcript Acquisition & Fallback Pipeline
+console.log('[SUITE 6/7] Running YouTube Transcript Acquisition Regression Suite...');
+try {
+  const output = execSync(`node "${path.join(REPO_ROOT, 'tests', 'test-youtube-transcript-acquisition.js')}"`, {
+    cwd: REPO_ROOT,
+    encoding: 'utf-8'
+  });
+  console.log(output);
+  console.log('Suite 6: PASSED.\n');
+} catch (err) {
+  console.error('Suite 6 Failed:', err.stdout || err.message);
+  process.exit(1);
+}
+
+// Test Suite 7: Repository Layout & Directory Baseline
+console.log('[SUITE 7/7] Verifying Target Architecture Directory Baseline...');
 const targetDirs = [
   'docs',
   'sources/raw',
@@ -107,9 +121,9 @@ targetDirs.forEach(dir => {
   assert.ok(fs.existsSync(p), `Directory ${dir} must exist`);
   assert.ok(fs.statSync(p).isDirectory(), `${dir} must be a directory`);
 });
-console.log('Suite 6: PASSED (All core directories verified).\n');
+console.log('Suite 7: PASSED (All core directories verified).\n');
 
 console.log('====================================================');
-console.log('ALL 6 REGRESSION SUITES PASSED (100% SUCCESS)');
+console.log('ALL 7 REGRESSION SUITES PASSED (100% SUCCESS)');
 console.log('====================================================');
 process.exit(0);

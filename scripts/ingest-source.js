@@ -24,6 +24,8 @@ const NODES_DIR = path.join(REPO_ROOT, 'knowledge', 'tree', 'nodes');
 const EDGES_PATH = path.join(REPO_ROOT, 'knowledge', 'tree', 'edges', 'edges.jsonl');
 const ALIASES_PATH = path.join(REPO_ROOT, 'knowledge', 'tree', 'aliases.json');
 
+const { acquireYouTubeTranscript, extractVideoId } = require('./youtube-transcript');
+
 // Medium Code Mapping
 const MEDIUM_CODES = {
   book: 'BK',
@@ -496,15 +498,210 @@ function addRelationship(edge) {
   return { status: 'EDGE_CREATED', edge_id: edgeId };
 }
 
+/**
+ * Ingests a YouTube video URL using the robust multi-method transcript acquisition subsystem
+ */
+async function ingestYouTubeUrl(videoUrl, options = {}) {
+  const videoId = extractVideoId(videoUrl);
+  if (!videoId) {
+    throw new Error(`Invalid YouTube URL or Video ID: "${videoUrl}"`);
+  }
+
+  const registry = loadRegistry();
+
+  // Check if a source already exists for this video URL or raw artifact
+  const existingByUrl = registry.sources.find(s => s.video_id === videoId || (s.raw_path && s.raw_path.includes(videoId)));
+  if (existingByUrl) {
+    return {
+      status: 'IDEMPOTENT_SKIPPED',
+      source: existingByUrl,
+      message: `YouTube video ${videoId} already registered as ${existingByUrl.source_id}. Unchanged.`
+    };
+  }
+
+  const year = options.year || new Date().getFullYear();
+  const sourceId = generateSourceID('youtube', year, registry);
+
+  console.log(`[YouTube Ingestion] Acquiring transcript for ${videoId} (${sourceId})...`);
+  const captureResult = await acquireYouTubeTranscript(videoId, {
+    sourceId,
+    title: options.title,
+    author: options.author,
+    preferredLanguage: options.language || 'en'
+  });
+
+  if (!captureResult.success) {
+    throw new Error(`YouTube transcript acquisition failed: ${captureResult.error}`);
+  }
+
+  // Check SHA-256 duplicate detection on raw VTT content
+  const vttSha256 = captureResult.vttSha256;
+  const existingByHash = registry.sources.find(s => s.sha256 === vttSha256);
+  if (existingByHash) {
+    return {
+      status: 'IDEMPOTENT_SKIPPED',
+      source: existingByHash,
+      message: `YouTube caption content already registered as ${existingByHash.source_id} (SHA-256 match). Unchanged.`
+    };
+  }
+
+  // 1. Write immutable raw VTT artifact
+  const rawFileName = `${sourceId}_captions.vtt`;
+  const preservedRawPath = path.join(RAW_DIR, rawFileName);
+  fs.writeFileSync(preservedRawPath, captureResult.vttContent, 'utf-8');
+
+  // 2. Write normalized readable text transcript
+  const extractedTextPath = path.join(TEXT_DIR, `${sourceId}.txt`);
+  fs.writeFileSync(extractedTextPath, captureResult.textContent, 'utf-8');
+
+  // 3. Structural segment parsing
+  const segments = parseStructuralSegments(captureResult.textContent);
+
+  // 4. Product A: Scaffold Codex
+  const title = captureResult.metadata.title;
+  const author = captureResult.metadata.author;
+  const epistemicTier = options.tier || 'tier_3';
+  const sourceKnowledgeDir = path.join(KNOWLEDGE_SOURCES_DIR, sourceId);
+  fs.mkdirSync(sourceKnowledgeDir, { recursive: true });
+
+  const codexContent = `# ${title}: Analytical Master Codex
+**Author:** ${author} | **Year:** ${year} | **Source ID:** ${sourceId}
+**Epistemic Tier:** ${epistemicTier} | **Locator Format:** Millisecond Video Timestamp / Cue Anchor
+**Decoding Status:** SCAFFOLDED_WITHOUT_LLM
+
+> [!NOTE]
+> This analytical codex was captured via verified browser DevTools caption intercept (\`${captureResult.method}\`).
+> Raw captions verified: ${captureResult.cueCount} cues covering ${captureResult.timeSpanSec} seconds.
+
+---
+
+## Dimension 1: The Core Thesis & Paradigm Shift
+* **Plain-Language Premise:** [Pending Deep LLM Pass]
+* **The "What Everyone Gets Wrong" Paradigm Shift:** [Pending Deep LLM Pass]
+
+---
+
+## Dimension 2: Foundational Causal & Theoretical Models
+* **Mechanism Over Motivation:** [Pending Deep LLM Pass]
+* **Quantitative Relationships & Ratios:** [Pending Deep LLM Pass]
+
+---
+
+## Dimension 3: The Concrete Master Analogy
+* [Pending Deep LLM Pass]
+
+---
+
+## Dimension 4: Diagnostic Nuances, Typologies & Edge Cases
+* **Classification Tables:** [Pending Deep LLM Pass]
+* **The Shadow & Failure Modes:** [Pending Deep LLM Pass]
+
+---
+
+## Dimension 5: Field Protocols & Verbatim Behavioral Scripts
+* **The "What to Do Tomorrow" Playbook:** [Pending Deep LLM Pass]
+* **Verbatim Scripts:** [Pending Deep LLM Pass]
+
+---
+
+## Dimension 6: Skeptic Auditor's Demarcation Box
+* **Pop-Culture Distortion:** [Pending Deep LLM Pass]
+* **Clinical / Empirical Reality:** [Pending Deep LLM Pass]
+`;
+
+  fs.writeFileSync(path.join(sourceKnowledgeDir, 'codex.md'), codexContent, 'utf-8');
+
+  // 5. Metadata Record
+  const meta = {
+    source_id: sourceId,
+    video_id: videoId,
+    title,
+    author,
+    year,
+    medium: 'youtube',
+    epistemic_tier: epistemicTier,
+    sha256: vttSha256,
+    char_count: captureResult.textContent.length,
+    word_count: captureResult.textContent.trim().split(/\s+/).length,
+    cue_count: captureResult.cueCount,
+    time_span_sec: captureResult.timeSpanSec,
+    capture_method: captureResult.method,
+    total_segments: segments.length,
+    segments: segments.map((s, i) => ({
+      segment_index: i + 1,
+      title: s.title,
+      line_start: s.line_start,
+      line_end: s.line_end
+    })),
+    decoding_status: 'SCAFFOLDED_WITHOUT_LLM',
+    created_at: new Date().toISOString()
+  };
+  fs.writeFileSync(path.join(sourceKnowledgeDir, 'meta.json'), JSON.stringify(meta, null, 2), 'utf-8');
+
+  // 6. Active Recall Cards
+  const cards = [
+    {
+      card_id: `CARD-${sourceId}-001`,
+      question: `What is the central premise articulated in ${title}?`,
+      answer: `[Pending active recall extraction from ${sourceId}]`,
+      source_id: sourceId,
+      locator: 'Cue 1',
+      dimension: 'Core Thesis'
+    }
+  ];
+  fs.writeFileSync(path.join(sourceKnowledgeDir, 'cards.json'), JSON.stringify(cards, null, 2), 'utf-8');
+
+  // 7. Register in sources/registry.json
+  const sourceRecord = {
+    source_id: sourceId,
+    video_id: videoId,
+    title,
+    author,
+    published_year: year,
+    medium: 'youtube',
+    epistemic_tier: epistemicTier,
+    sha256: vttSha256,
+    raw_path: path.relative(REPO_ROOT, preservedRawPath).replace(/\\/g, '/'),
+    extracted_path: path.relative(REPO_ROOT, extractedTextPath).replace(/\\/g, '/'),
+    codex_path: path.relative(REPO_ROOT, path.join(sourceKnowledgeDir, 'codex.md')).replace(/\\/g, '/'),
+    locator_type: 'timestamp',
+    coverage_status: 'complete',
+    decoding_status: 'SCAFFOLDED_WITHOUT_LLM',
+    is_test_fixture: false,
+    source_role: 'real_user_source',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  };
+
+  registry.sources.push(sourceRecord);
+  saveRegistry(registry);
+
+  return {
+    status: 'INGESTED',
+    source_id: sourceId,
+    video_id: videoId,
+    title,
+    cue_count: captureResult.cueCount,
+    time_span_sec: captureResult.timeSpanSec,
+    sha256: vttSha256,
+    paths: {
+      raw: preservedRawPath,
+      text: extractedTextPath,
+      codex: path.join(sourceKnowledgeDir, 'codex.md'),
+      meta: path.join(sourceKnowledgeDir, 'meta.json')
+    }
+  };
+}
+
 // CLI Execution Handler
 if (require.main === module) {
   const args = process.argv.slice(2);
   if (args.length === 0) {
-    console.log('Usage: node scripts/ingest-source.js <filepath> [--title "Title"] [--author "Author"] [--year YYYY] [--medium book|notes|article] [--tier tier_1|tier_2]');
+    console.log('Usage: node scripts/ingest-source.js <filepath|youtube_url> [--title "Title"] [--author "Author"] [--year YYYY] [--medium book|notes|article] [--tier tier_1|tier_2|tier_3]');
     process.exit(1);
   }
 
-  const filePath = args[0];
+  const target = args[0];
   const options = {};
   for (let i = 1; i < args.length; i += 2) {
     const key = args[i].replace(/^--/, '');
@@ -512,18 +709,26 @@ if (require.main === module) {
     if (val) options[key] = val;
   }
 
-  try {
-    const result = ingestSource(filePath, options);
-    console.log('[INGESTION RESULT]:', JSON.stringify(result, null, 2));
-    process.exit(0);
-  } catch (err) {
-    console.error('[INGESTION ERROR]:', err.message);
-    process.exit(1);
-  }
+  (async () => {
+    try {
+      if (target.includes('youtube.com') || target.includes('youtu.be') || /^[a-zA-Z0-9_-]{11}$/.test(target)) {
+        const result = await ingestYouTubeUrl(target, options);
+        console.log('[INGESTION RESULT]:', JSON.stringify(result, null, 2));
+      } else {
+        const result = ingestSource(target, options);
+        console.log('[INGESTION RESULT]:', JSON.stringify(result, null, 2));
+      }
+      process.exit(0);
+    } catch (err) {
+      console.error('[INGESTION ERROR]:', err.message);
+      process.exit(1);
+    }
+  })();
 }
 
 module.exports = {
   ingestSource,
+  ingestYouTubeUrl,
   integrateKnowledgeNode,
   addRelationship,
   computeSHA256,

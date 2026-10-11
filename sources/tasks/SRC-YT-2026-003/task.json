@@ -1,0 +1,30 @@
+{
+  "task_id": "TASK-SRC-YT-2026-003",
+  "source_id": "SRC-YT-2026-003",
+  "title": "How To Lose The Person you Love in 49 seconds",
+  "author": "The Cool Therapist",
+  "year": 2026,
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "state": "INTEGRATED",
+  "created_at": "2026-10-11T12:15:20.113Z",
+  "updated_at": "2026-10-11T12:16:49.847Z",
+  "text_path": "sources/text/SRC-YT-2026-003.txt",
+  "segments": [
+    {
+      "segment_index": 1,
+      "title": "Captured At: 2026-10-11T12:15:03.971Z",
+      "line_start": 7,
+      "line_end": 49
+    }
+  ],
+  "staged_output_path": "knowledge/sources/SRC-YT-2026-003/staged_decoding.json",
+  "validation_results": {
+    "valid": true,
+    "errors": [],
+    "warnings": [],
+    "claims_count": 5,
+    "concepts_count": 4,
+    "validated_at": "2026-10-11T12:16:45.448Z"
+  }
+}

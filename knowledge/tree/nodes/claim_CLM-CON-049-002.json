@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-049-002",
+  "node_type": "claim",
+  "statement": "Sacrificing healthy boundaries by demanding perpetual availability and failing to value a partner's autonomous time erodes intimacy.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-003",
+      "locator_type": "paragraph",
+      "locator": "Cue 13 (00:00:29.172 --> 00:00:32.720)",
+      "verbatim_quote": "themselves. Be available all the time."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-049"
+  ],
+  "created_at": "2026-10-11T12:16:49.813Z"
+}

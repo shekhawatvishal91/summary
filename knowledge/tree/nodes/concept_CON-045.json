@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-045",
+  "node_type": "concept",
+  "canonical_name": "Self-Directed Loathing as Root Relational Saboteur",
+  "aliases": [
+    "self-loathing relationship sabotage",
+    "root self-hatred in attachment",
+    "self-directed loathing"
+  ],
+  "domain": "Relational Psychology & Attachment",
+  "definition": "The psychological phenomenon where deep-seated self-loathing acts as the prime causal engine for relationship sabotage. The individual's internalized sense of defectiveness drives compulsive jealousy, distrust, enmeshment, and drama to unconsciously orchestrate the abandonment they believe they deserve.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-045-001",
+    "CLM-CON-045-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-003"
+  ],
+  "created_at": "2026-10-11T12:16:49.803Z",
+  "updated_at": "2026-10-11T12:16:49.803Z"
+}

@@ -1,0 +1,38 @@
+{
+  "source_id": "SRC-RP-2026-002",
+  "generated_at": "2026-10-11T07:39:32.189Z",
+  "model": "antigravity-native-agent",
+  "proposed_concepts": [
+    {
+      "name": "Cascade Hallucination Threshold",
+      "aliases": [
+        "Multi-Agent Consensus Collapse",
+        "Epistemic Cascade Limit"
+      ],
+      "domain": "Computer Science",
+      "definition": "The mathematical error threshold (14.8%) beyond which distributed autonomous reasoning networks irreversibly substitute synthetic consensus for empirical truth."
+    },
+    {
+      "name": "Secondary Test Anchor",
+      "aliases": [
+        "Secondary Anchor"
+      ],
+      "domain": "Computer Science",
+      "definition": "A secondary concept node used to test multi-concept claim distribution."
+    }
+  ],
+  "extracted_claims": [
+    {
+      "statement": "Upstream agent uncalibrated error rates exceeding 14.8% trigger catastrophic consensus collapse across multi-agent reasoning graphs.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "empirical_finding",
+      "locator": "sec: The Cascade Hallucination Threshold # para-1",
+      "verbatim_quote": "upstream agent exceeds 14.8%, downstream agent networks enter an irreversible cascade hallucination phase",
+      "associated_concepts": [
+        "Cascade Hallucination Threshold",
+        "Secondary Test Anchor"
+      ]
+    }
+  ],
+  "proposed_relationships": []
+}

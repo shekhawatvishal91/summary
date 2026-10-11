@@ -1,0 +1,23 @@
+{
+  "node_id": "CON-009",
+  "node_type": "concept",
+  "canonical_name": "Sunk Cost Fallacy in Career Inertia",
+  "aliases": [
+    "Competitive Exam Preparation Trap",
+    "Sunk Cost Career Bias"
+  ],
+  "domain": "Behavioral Decision Theory",
+  "definition": "The psychological bias where an individual continues investing time, effort, and capital into an unyielding career path simply because of historical unrecoverable investments.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-009-001",
+    "CLM-CON-009-002",
+    "CLM-CON-009-003",
+    "CLM-CON-009-006"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-001"
+  ],
+  "created_at": "2026-10-11T06:51:22.762Z",
+  "updated_at": "2026-10-11T07:00:21.788Z"
+}

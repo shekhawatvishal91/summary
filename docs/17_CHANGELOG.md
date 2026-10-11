@@ -8,6 +8,13 @@
 
 ## 1. System Version History
 
+### [1.0.0-rc4] — 2026-10-11: Native Agent AI Engine & Auditable Task Protocol
+- **Re-architected:** Transitioned from requiring external LLM API keys (`GEMINI_API_KEY`, `OPENAI_API_KEY`, etc.) to utilizing Antigravity's native AI agent as the primary semantic reasoning engine.
+- **Implemented:** Dual-layer architecture:
+  - **Layer A (Native AI Agent):** Conducts source reading, nuanced interpretation, 6-Dimensional Matrix codex drafting, concept/claim extraction, and reviewable staged outputs.
+  - **Layer B (Deterministic Local Subsystem):** `scripts/agent-protocol.js` provides deterministic lifecycle management (`prepare` -> `validate-staged` -> `integrate-staged`), verifying exact locators, verbatim quotes against raw source text, and schema compliance.
+- **Added:** Formal acceptance test suite `tests/test-native-agent-protocol.js` verifying task state machines, rejection of empty dimensions, quote mismatch prevention, and non-destructive graph integration.
+
 ### [1.0.0-rc3] — 2026-10-11: Semantic Decoding Engine & Gold-Standard QA
 - **Implemented:** Pluggable LLM adapter in `scripts/llm-adapter.js` supporting Gemini, OpenAI, Anthropic, and deterministic Mock providers.
 - **Engineered:** Real semantic decoding engine in `scripts/semantic-decoder.js` enforcing 6-Dimensional Matrix extraction, epistemic class demarcation, and transactional rollback.
@@ -67,3 +74,11 @@
 - **Context:** AI decoding runs that immediately mutate canonical concept nodes risk corrupting peer-reviewed or human-validated knowledge.
 - **Decision:** Decoded knowledge structures are written to `knowledge/sources/{id}/proposed_changes.json` as staged candidate proposals with physical locators before graph integration.
 - **Consequences:** All graph mutations are auditable, verifiable, and reversible. Zero silent overwrites.
+
+---
+
+### ADR-006: Native Agent Reasoning Engine & Deterministic Protocol
+- **Status:** ACCEPTED
+- **Context:** Requiring external LLM API keys (`GEMINI_API_KEY`, etc.) blocks users who interact directly with the agent through Antigravity and have no external paid API credentials.
+- **Decision:** Establish Antigravity's own native AI agent (Layer A) as the semantic decoding engine. Implement Layer B deterministic scripts (`scripts/agent-protocol.js`) to prepare task manifests, validate claims/quotes against immutable source bytes, and integrate verified staged results into the Knowledge Tree and static web search index.
+- **Consequences:** Zero external API prerequisites, full mathematical provenance and quotation fidelity, complete offline reproducibility for verification scripts.

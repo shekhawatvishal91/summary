@@ -283,6 +283,8 @@ ${seg.paragraphs.length > 300 ? seg.paragraphs.substring(0, 300) + '...' : seg.p
     locator_type: 'paragraph',
     coverage_status: 'complete',
     decoding_status: 'SCAFFOLDED_WITHOUT_LLM',
+    is_test_fixture: Boolean(options.is_test_fixture || (options.source_role === 'synthetic_benchmark_fixture')),
+    source_role: options.source_role || (options.is_test_fixture ? 'synthetic_benchmark_fixture' : 'real_user_source'),
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString()
   };
@@ -448,8 +450,35 @@ function addRelationship(edge) {
     return { status: 'DUPLICATE_EDGE_SKIPPED', edge_id: duplicate.edge_id };
   }
 
-  const edgeCount = existingLines.filter(e => e.edge_id).length + 1;
-  const edgeId = `EDG-${String(edgeCount).padStart(3, '0')}`;
+  // Determine maximum existing edge ID across active edges and archived/retired records
+  const allKnownIds = new Set(existingLines.map(e => e.edge_id).filter(Boolean));
+  const archiveDir = path.join(REPO_ROOT, 'knowledge', 'tree', 'archive');
+  if (fs.existsSync(archiveDir)) {
+    const scanDir = (dir) => {
+      fs.readdirSync(dir).forEach(file => {
+        const full = path.join(dir, file);
+        if (fs.statSync(full).isDirectory()) {
+          scanDir(full);
+        } else if (file.includes('edge') || file.endsWith('.jsonl') || file.endsWith('.bak')) {
+          try {
+            fs.readFileSync(full, 'utf-8').split('\n').forEach(l => {
+              try {
+                const parsed = JSON.parse(l);
+                if (parsed.edge_id) allKnownIds.add(parsed.edge_id);
+              } catch (e) {}
+            });
+          } catch (e) {}
+        }
+      });
+    };
+    scanDir(archiveDir);
+  }
+
+  const existingNums = Array.from(allKnownIds)
+    .map(id => parseInt(id.replace(/^EDG-/, ''), 10))
+    .filter(n => !isNaN(n));
+  const nextNum = existingNums.length > 0 ? Math.max(...existingNums) + 1 : 1;
+  const edgeId = `EDG-${String(nextNum).padStart(3, '0')}`;
   const newEdge = {
     edge_id: edgeId,
     source_node_id: edge.source_node_id,
@@ -457,6 +486,9 @@ function addRelationship(edge) {
     relation_type: edge.relation_type,
     description: edge.description || '',
     dispute_details: edge.dispute_details || null,
+    source_id: edge.source_id || null,
+    locator: edge.locator || null,
+    epistemic_classification: edge.epistemic_classification || null,
     created_at: new Date().toISOString()
   };
 
@@ -496,5 +528,7 @@ module.exports = {
   addRelationship,
   computeSHA256,
   loadRegistry,
-  loadAliases
+  saveRegistry,
+  loadAliases,
+  saveAliases
 };

@@ -1,0 +1,37 @@
+{
+  "source_id": "SRC-YT-2026-001",
+  "title": "Competitive Exam Preparation Is Trapping You (Sunk Cost Fallacy)",
+  "author": "ABrainOConscious",
+  "year": "2026",
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "sha256": "5486c436437b907ce72368edcd3a45638d54312176694bff2955fe0c42f9ea2b",
+  "char_count": 14688,
+  "word_count": 2603,
+  "total_segments": 86,
+  "segments": [
+    {
+      "segment_index": 1,
+      "title": "Preamble",
+      "line_start": 1,
+      "line_end": 354
+    }
+  ],
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "created_at": "2026-10-11T06:17:08.900Z",
+  "raw_artifact": {
+    "path": "sources/raw/SRC-YT-2026-001_captions.vtt",
+    "sha256": "5486c436437b907ce72368edcd3a45638d54312176694bff2955fe0c42f9ea2b",
+    "bytes": 30569
+  },
+  "normalized_text_artifact": {
+    "path": "sources/text/SRC-YT-2026-001.txt",
+    "sha256": "6d9ffdab6ce633b0d07776883fd9b0b695234624d3848099e89d5c03090f28db",
+    "bytes": 31494
+  },
+  "updated_at": "2026-10-11T06:40:38.908Z",
+  "decoded_at": "2026-10-11T06:51:22.760Z",
+  "decoding_model": "antigravity-native-agent",
+  "prompt_version": "native-agent-v1",
+  "claims_count": 7
+}

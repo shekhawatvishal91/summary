@@ -58,12 +58,27 @@ try {
   process.exit(1);
 }
 
-// Test Suite 4: Repository Layout & Directory Baseline
-console.log('[SUITE 4/4] Verifying Target Architecture Directory Baseline...');
+// Test Suite 4: Native Agent Auditable Task Protocol Suite
+console.log('[SUITE 4/5] Running Native Agent Task Protocol Acceptance Suite...');
+try {
+  const output = execSync(`node "${path.join(REPO_ROOT, 'tests', 'test-native-agent-protocol.js')}"`, {
+    cwd: REPO_ROOT,
+    encoding: 'utf-8'
+  });
+  console.log(output);
+  console.log('Suite 4: PASSED.\n');
+} catch (err) {
+  console.error('Suite 4 Failed:', err.stdout || err.message);
+  process.exit(1);
+}
+
+// Test Suite 5: Repository Layout & Directory Baseline
+console.log('[SUITE 5/5] Verifying Target Architecture Directory Baseline...');
 const targetDirs = [
   'docs',
   'sources/raw',
   'sources/text',
+  'sources/tasks',
   'knowledge/sources',
   'knowledge/tree/nodes',
   'knowledge/tree/edges',
@@ -78,9 +93,9 @@ targetDirs.forEach(dir => {
   assert.ok(fs.existsSync(p), `Directory ${dir} must exist`);
   assert.ok(fs.statSync(p).isDirectory(), `${dir} must be a directory`);
 });
-console.log('Suite 4: PASSED (All core directories verified).\n');
+console.log('Suite 5: PASSED (All core directories verified).\n');
 
 console.log('====================================================');
-console.log('ALL 4 REGRESSION SUITES PASSED (100% SUCCESS)');
+console.log('ALL 5 REGRESSION SUITES PASSED (100% SUCCESS)');
 console.log('====================================================');
 process.exit(0);

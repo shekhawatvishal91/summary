@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-009-004",
+  "node_type": "claim",
+  "statement": "The speaker challenges aspirants to consider whether they would immediately jump to an alternative career with a better or equal success rate if one were offered.",
+  "claim_type": "decision_heuristic",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-001",
+      "locator_type": "paragraph",
+      "locator": "time: 04:44 - 04:58 (Cue 42)",
+      "verbatim_quote": "तेरे को एक बनाया करियर आईडिया मैं दे देता हूं जिसमें सक्सेस रेट अच्छा है। इससे तो अच्छा ही है जिसकी तू प्रिपरेशन कर रहा है।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-009"
+  ],
+  "created_at": "2026-10-11T06:51:22.767Z"
+}

@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T04:39:55.506Z",
+  "built_at": "2026-10-11T07:39:32.214Z",
   "metrics": {
-    "total_sources": 1,
-    "total_concepts": 2,
-    "total_claims": 2,
-    "total_edges": 1,
+    "total_sources": 3,
+    "total_concepts": 7,
+    "total_claims": 13,
+    "total_edges": 4,
     "total_docs": 18
   },
   "sources": [
@@ -24,7 +24,47 @@
       "coverage_status": "complete",
       "decoding_status": "SCAFFOLDED_WITHOUT_LLM",
       "created_at": "2026-10-11T04:00:13.113Z",
-      "updated_at": "2026-10-11T04:00:13.113Z"
+      "updated_at": "2026-10-11T04:00:13.113Z",
+      "is_test_fixture": true,
+      "source_role": "synthetic_benchmark_fixture"
+    },
+    {
+      "source_id": "SRC-RP-2026-002",
+      "title": "Epistemic Calibration in Multi-Agent Systems",
+      "author": "Dr. Aris Thorne",
+      "published_year": 2026,
+      "medium": "paper",
+      "epistemic_tier": "tier_1",
+      "sha256": "42ddb2b80a9eb809d1d7606e16c8d7229d208a1a92cc3c390890c73e6ad6c508",
+      "raw_path": "sources/raw/SRC-RP-2026-002_sample-multi-agent-calibration.md",
+      "extracted_path": "sources/text/SRC-RP-2026-002.txt",
+      "codex_path": "knowledge/sources/SRC-RP-2026-002/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "created_at": "2026-10-11T05:07:42.165Z",
+      "updated_at": "2026-10-11T07:39:32.195Z",
+      "is_test_fixture": true,
+      "source_role": "synthetic_benchmark_fixture"
+    },
+    {
+      "source_id": "SRC-YT-2026-001",
+      "title": "Competitive Exam Preparation Is Trapping You (Sunk Cost Fallacy)",
+      "author": "ABrainOConscious",
+      "published_year": "2026",
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "5486c436437b907ce72368edcd3a45638d54312176694bff2955fe0c42f9ea2b",
+      "raw_path": "sources/raw/SRC-YT-2026-001_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-001.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-001/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "created_at": "2026-10-11T06:17:08.908Z",
+      "updated_at": "2026-10-11T06:51:22.858Z",
+      "is_test_fixture": false,
+      "source_role": "real_user_source"
     }
   ],
   "concepts": [
@@ -62,6 +102,112 @@
       "sources_contributing": [],
       "created_at": "2026-10-11T04:00:13.141Z",
       "updated_at": "2026-10-11T04:39:55.494Z"
+    },
+    {
+      "node_id": "CON-006",
+      "node_type": "concept",
+      "canonical_name": "Cascade Hallucination Threshold",
+      "aliases": [
+        "Multi-Agent Consensus Collapse",
+        "Epistemic Cascade Limit"
+      ],
+      "domain": "Computer Science",
+      "definition": "The mathematical error threshold (14.8%) beyond which distributed autonomous reasoning networks irreversibly substitute synthetic consensus for empirical truth.",
+      "epistemic_tier": "tier_1",
+      "associated_claims": [
+        "CLM-CON-006-001"
+      ],
+      "sources_contributing": [
+        "SRC-RP-2026-002"
+      ],
+      "created_at": "2026-10-11T05:07:42.201Z",
+      "updated_at": "2026-10-11T07:39:32.192Z"
+    },
+    {
+      "node_id": "CON-009",
+      "node_type": "concept",
+      "canonical_name": "Sunk Cost Fallacy in Career Inertia",
+      "aliases": [
+        "Competitive Exam Preparation Trap",
+        "Sunk Cost Career Bias"
+      ],
+      "domain": "Behavioral Decision Theory",
+      "definition": "The psychological bias where an individual continues investing time, effort, and capital into an unyielding career path simply because of historical unrecoverable investments.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-009-001",
+        "CLM-CON-009-002",
+        "CLM-CON-009-003",
+        "CLM-CON-009-006"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-001"
+      ],
+      "created_at": "2026-10-11T06:51:22.762Z",
+      "updated_at": "2026-10-11T07:00:21.788Z"
+    },
+    {
+      "node_id": "CON-012",
+      "node_type": "concept",
+      "canonical_name": "Identity Attachment Bias",
+      "aliases": [
+        "Astitva Chipkaav",
+        "Role Premature Fusion"
+      ],
+      "domain": "Cognitive Psychology",
+      "definition": "The premature cognitive fusion of an individual's identity with an unachieved future status (e.g., self-identifying as a doctor during exam preparation), making abandonment feel like ego annihilation.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-012-003",
+        "CLM-CON-012-005",
+        "CLM-CON-012-007"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-001"
+      ],
+      "created_at": "2026-10-11T06:51:22.775Z",
+      "updated_at": "2026-10-11T07:00:21.791Z"
+    },
+    {
+      "node_id": "CON-015",
+      "node_type": "concept",
+      "canonical_name": "Root Reward Deconstruction",
+      "aliases": [
+        "Base Reward Analysis",
+        "Proxy vs Root Reward"
+      ],
+      "domain": "Practical Rationality",
+      "definition": "The analytical process of separating the instrumental proxy vehicle (e.g. passing UPSC/NEET) from the fundamental underlying human desires (social respect, financial security, creative autonomy).",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-015-005",
+        "CLM-CON-015-007"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-001"
+      ],
+      "created_at": "2026-10-11T06:51:22.829Z",
+      "updated_at": "2026-10-11T07:00:21.792Z"
+    },
+    {
+      "node_id": "CON-018",
+      "node_type": "concept",
+      "canonical_name": "Zero-Based Career Alternative Test",
+      "aliases": [
+        "The Fresh Ground Test",
+        "New Land Decision Gate"
+      ],
+      "domain": "Decision Strategy",
+      "definition": "A heuristic decision rule asking whether an individual would choose their current path if given an immediate fresh alternative with equal payoffs, isolating genuine commitment from sunk cost inertia.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-018-004"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-001"
+      ],
+      "created_at": "2026-10-11T06:51:22.843Z",
+      "updated_at": "2026-10-11T07:00:21.793Z"
     }
   ],
   "claims": [
@@ -102,6 +248,215 @@
         "CON-001"
       ],
       "created_at": "2026-10-11T04:00:13.135Z"
+    },
+    {
+      "node_id": "CLM-CON-006-001",
+      "node_type": "claim",
+      "statement": "Upstream agent uncalibrated error rates exceeding 14.8% trigger catastrophic consensus collapse across multi-agent reasoning graphs.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_1",
+      "evidence": [
+        {
+          "source_id": "SRC-RP-2026-002",
+          "locator_type": "paragraph",
+          "locator": "sec: The Cascade Hallucination Threshold # para-1",
+          "verbatim_quote": "upstream agent exceeds 14.8%, downstream agent networks enter an irreversible cascade hallucination phase"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-006"
+      ],
+      "created_at": "2026-10-11T05:07:42.202Z"
+    },
+    {
+      "node_id": "CLM-CON-009-001",
+      "node_type": "claim",
+      "statement": "Prolonged competitive exam preparation traps students through the psychological bias known as the Sunk Cost Fallacy.",
+      "claim_type": "psychological_framework",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 00:28 - 00:32 (Cue 5)",
+          "verbatim_quote": "देखो बेसिकली साइकोलॉजी में कांसेप्ट है। उसको कहते हैं संख कॉस्ट फैलेसी।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-009"
+      ],
+      "created_at": "2026-10-11T06:51:22.762Z"
+    },
+    {
+      "node_id": "CLM-CON-009-002",
+      "node_type": "claim",
+      "statement": "The speaker explicitly presents a story that denies and contradicts the popular parable of the gold miner who gave up 1-2 feet before striking gold.",
+      "claim_type": "narrative_counter_analogy",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 01:20 - 01:24 (Cue 12)",
+          "verbatim_quote": "सुनाने वाला हूं यह बिल्कुल इससे अलग है। यह बिल्कुल इसको डिनाई करती है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-009"
+      ],
+      "created_at": "2026-10-11T06:51:22.763Z"
+    },
+    {
+      "node_id": "CLM-CON-009-003",
+      "node_type": "claim",
+      "statement": "Aspirants remain trapped because of past investments in money and time, combined with reward expectations and identity attachment.",
+      "claim_type": "psychological_mechanism",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 03:30 - 03:36 (Cue 30)",
+          "verbatim_quote": "अच्छा खासा समय वहां पर इन्वेस्ट किया है। और सबसे इंपॉर्टेंट हमने जो रिवॉर्ड एक्सपेक्ट किया था, उस रिवॉर्ड की एक्सपेक्टेशन"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-009"
+      ],
+      "created_at": "2026-10-11T06:51:22.766Z"
+    },
+    {
+      "node_id": "CLM-CON-009-006",
+      "node_type": "claim",
+      "statement": "Continuing an unproductive path creates a compounding loss effect that erodes confidence and reduces effort over time.",
+      "claim_type": "causal_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 06:34 - 06:40 (Cue 59)",
+          "verbatim_quote": "कंपाउंड इंटरेस्ट बढ़ाने का मतलब है एक तरीके का कंपाउंडिंग इफेक्ट। लॉस बढ़ता चला जाएगा।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-009"
+      ],
+      "created_at": "2026-10-11T06:51:22.771Z"
+    },
+    {
+      "node_id": "CLM-CON-012-003",
+      "node_type": "claim",
+      "statement": "Aspirants remain trapped because of past investments in money and time, combined with reward expectations and identity attachment.",
+      "claim_type": "psychological_mechanism",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 03:30 - 03:36 (Cue 30)",
+          "verbatim_quote": "अच्छा खासा समय वहां पर इन्वेस्ट किया है। और सबसे इंपॉर्टेंट हमने जो रिवॉर्ड एक्सपेक्ट किया था, उस रिवॉर्ड की एक्सपेक्टेशन"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-012"
+      ],
+      "created_at": "2026-10-11T06:51:22.778Z"
+    },
+    {
+      "node_id": "CLM-CON-012-005",
+      "node_type": "claim",
+      "statement": "Aspirants often confuse their true reward with the professional title: the desired outcome is typically the social respect and financial compensation associated with the role.",
+      "claim_type": "motivational_analysis",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 05:42 - 05:48 (Cue 50)",
+          "verbatim_quote": "आपका रिवॉर्ड है डॉक्टर वाली जो रिस्पेक्ट है वह प्राप्त करना। आपका रिवॉर्ड है जो पैसा डॉक्टर को मिलता है वह पैसा प्राप्त करना।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-012"
+      ],
+      "created_at": "2026-10-11T06:51:22.782Z"
+    },
+    {
+      "node_id": "CLM-CON-012-007",
+      "node_type": "claim",
+      "statement": "The speaker asserts that approximately 90% of people pursue goals borrowed from societal conditioning rather than authentic aptitude.",
+      "claim_type": "speaker_heuristic_assertion",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 07:34 - 07:42 (Cue 69)",
+          "verbatim_quote": "मेरी ऐसी कौन सी स्किल्स हैं? देखो हम में से लगभग 90% लोग तो ऐसे लक्ष्य के पीछे भाग रहे होते हैं जो हम लोगों ने समाज से उधार लिया है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-012"
+      ],
+      "created_at": "2026-10-11T06:51:22.819Z"
+    },
+    {
+      "node_id": "CLM-CON-015-005",
+      "node_type": "claim",
+      "statement": "Aspirants often confuse their true reward with the professional title: the desired outcome is typically the social respect and financial compensation associated with the role.",
+      "claim_type": "motivational_analysis",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 05:42 - 05:48 (Cue 50)",
+          "verbatim_quote": "आपका रिवॉर्ड है डॉक्टर वाली जो रिस्पेक्ट है वह प्राप्त करना। आपका रिवॉर्ड है जो पैसा डॉक्टर को मिलता है वह पैसा प्राप्त करना।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-015"
+      ],
+      "created_at": "2026-10-11T06:51:22.837Z"
+    },
+    {
+      "node_id": "CLM-CON-015-007",
+      "node_type": "claim",
+      "statement": "The speaker asserts that approximately 90% of people pursue goals borrowed from societal conditioning rather than authentic aptitude.",
+      "claim_type": "speaker_heuristic_assertion",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 07:34 - 07:42 (Cue 69)",
+          "verbatim_quote": "मेरी ऐसी कौन सी स्किल्स हैं? देखो हम में से लगभग 90% लोग तो ऐसे लक्ष्य के पीछे भाग रहे होते हैं जो हम लोगों ने समाज से उधार लिया है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-015"
+      ],
+      "created_at": "2026-10-11T06:51:22.841Z"
+    },
+    {
+      "node_id": "CLM-CON-018-004",
+      "node_type": "claim",
+      "statement": "The speaker challenges aspirants to consider whether they would immediately jump to an alternative career with a better or equal success rate if one were offered.",
+      "claim_type": "decision_heuristic",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-001",
+          "locator_type": "paragraph",
+          "locator": "time: 04:44 - 04:58 (Cue 42)",
+          "verbatim_quote": "तेरे को एक बनाया करियर आईडिया मैं दे देता हूं जिसमें सक्सेस रेट अच्छा है। इससे तो अच्छा ही है जिसकी तू प्रिपरेशन कर रहा है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-018"
+      ],
+      "created_at": "2026-10-11T06:51:22.847Z"
     }
   ],
   "edges": [
@@ -113,6 +468,42 @@
       "description": "Biological substrate for cognitive exertion limits.",
       "dispute_details": null,
       "created_at": "2026-10-11T04:00:13.143Z"
+    },
+    {
+      "edge_id": "EDG-003",
+      "source_node_id": "CON-012",
+      "target_node_id": "CON-009",
+      "relation_type": "reinforces",
+      "description": "The speaker connects past investment and anticipated rewards with attachment to the expected future identity, explaining how identity fusion traps aspirants in the sunk cost cycle.",
+      "dispute_details": null,
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 30-34 (approx 03:22 - 03:40)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument",
+      "created_at": "2026-10-11T07:15:00.000Z"
+    },
+    {
+      "edge_id": "EDG-004",
+      "source_node_id": "CON-018",
+      "target_node_id": "CON-009",
+      "relation_type": "mitigates",
+      "description": "The alternative-career counterfactual test is presented as a cognitive de-biasing tool to break sunk cost inertia and reconsider continuing an unproductive preparation.",
+      "dispute_details": null,
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 42-46 (approx 04:44 - 05:12)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument",
+      "created_at": "2026-10-11T07:15:00.000Z"
+    },
+    {
+      "edge_id": "EDG-005",
+      "source_node_id": "CON-015",
+      "target_node_id": "CON-018",
+      "relation_type": "informs",
+      "description": "Distinguishing the underlying desired reward (respect, income) from the specific career vehicle provides the diagnostic basis for evaluating fresh alternative pathways.",
+      "dispute_details": null,
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 49-54 (approx 05:22 - 05:48)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument",
+      "created_at": "2026-10-11T07:15:00.000Z"
     }
   ],
   "documentation": [

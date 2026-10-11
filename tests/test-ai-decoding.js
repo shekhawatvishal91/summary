@@ -20,6 +20,18 @@ const { loadRegistry } = require('../scripts/ingest-source');
 const REPO_ROOT = path.resolve(__dirname, '..');
 const TEST_SOURCE_ID = 'SRC-RP-2026-001';
 
+// Isolated In-Memory Snapshots to guarantee 100% non-destructive test execution
+const SNAPSHOT_FILES = [
+  path.join(REPO_ROOT, 'knowledge', 'sources', TEST_SOURCE_ID, 'meta.json'),
+  path.join(REPO_ROOT, 'knowledge', 'sources', TEST_SOURCE_ID, 'proposed_changes.json'),
+  path.join(REPO_ROOT, 'knowledge', 'sources', TEST_SOURCE_ID, 'codex.md'),
+  path.join(REPO_ROOT, 'knowledge', 'sources', TEST_SOURCE_ID, 'coverage_warnings.json')
+];
+const fileSnapshots = new Map();
+SNAPSHOT_FILES.forEach(p => {
+  if (fs.existsSync(p)) fileSnapshots.set(p, fs.readFileSync(p));
+});
+
 console.log('====================================================');
 console.log('GOLD-STANDARD ACCEPTANCE TESTS: AI DECODING ENGINE');
 console.log('====================================================\n');
@@ -217,6 +229,15 @@ async function runAsyncTest(name, fn) {
     assert.strictEqual(result.status, 'SKIPPED_NO_PROVIDER');
     assert.ok(result.message.includes('No authorized LLM provider configured'));
   });
+
+  // Teardown: In-memory snapshot restoration guarantees tests are strictly non-destructive
+  for (const [filePath, content] of fileSnapshots.entries()) {
+    fs.writeFileSync(filePath, content);
+  }
+  const covPath = path.join(REPO_ROOT, 'knowledge', 'sources', TEST_SOURCE_ID, 'coverage_warnings.json');
+  if (!fileSnapshots.has(covPath) && fs.existsSync(covPath)) {
+    fs.unlinkSync(covPath);
+  }
 
   console.log(`\n====================================================`);
   console.log(`ALL ${passedCount} GOLD-STANDARD ACCEPTANCE TESTS PASSED (100%).`);

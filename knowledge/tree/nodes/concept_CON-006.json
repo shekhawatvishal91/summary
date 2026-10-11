@@ -1,0 +1,20 @@
+{
+  "node_id": "CON-006",
+  "node_type": "concept",
+  "canonical_name": "Cascade Hallucination Threshold",
+  "aliases": [
+    "Multi-Agent Consensus Collapse",
+    "Epistemic Cascade Limit"
+  ],
+  "domain": "Computer Science",
+  "definition": "The mathematical error threshold (14.8%) beyond which distributed autonomous reasoning networks irreversibly substitute synthetic consensus for empirical truth.",
+  "epistemic_tier": "tier_1",
+  "associated_claims": [
+    "CLM-CON-006-001"
+  ],
+  "sources_contributing": [
+    "SRC-RP-2026-002"
+  ],
+  "created_at": "2026-10-11T05:07:42.201Z",
+  "updated_at": "2026-10-11T07:39:32.192Z"
+}

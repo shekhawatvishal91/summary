@@ -102,3 +102,14 @@ Every book codex must output 3-5 deep causal active recall flashcards stored in 
   }
 ]
 ```
+
+---
+
+## 6. Native Agent Decoding Workflow
+
+To eliminate external API dependencies, book decoding is executed via the Native Agent Auditable Task Protocol:
+
+1. **Task Initialization:** Run `node scripts/agent-protocol.js prepare <source_id>` to generate `sources/tasks/<source_id>/task.json` with structural segments.
+2. **Layer A Semantic Pass:** The Antigravity native AI agent reads the source segments in conversational context, drafts the 6-Dimensional Matrix and extracted claims with page locators, and saves `knowledge/sources/<source_id>/staged_decoding.json`.
+3. **Layer B Deterministic Audit:** Run `node scripts/agent-protocol.js validate-staged <source_id>` to verify all locators, verbatim quotes against raw text, and epistemic classifications.
+4. **Integration:** Run `node scripts/agent-protocol.js integrate-staged <source_id>` to compile `codex.md`, update `cards.json`, merge concept nodes into `knowledge/tree/`, and refresh `web/manifest.json`.

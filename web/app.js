@@ -36,8 +36,7 @@ function initApp() {
 
 function renderMetrics() {
   if (!manifestData || !manifestData.metrics) return;
-  const m = manifestData.metrics;
-  const fixtureCount = manifestData.sources.filter(s => s.raw_path && (s.raw_path.includes('test') || s.raw_path.includes('fixture')) || s.source_id === 'SRC-RP-2026-001').length;
+  const fixtureCount = manifestData.sources.filter(s => s.is_test_fixture === true || s.source_role === 'synthetic_benchmark_fixture' || (s.raw_path && (s.raw_path.includes('test') || s.raw_path.includes('fixture')))).length;
   const realCount = Math.max(0, (m.total_sources || 0) - fixtureCount);
 
   document.getElementById('metric-sources').textContent = `${realCount} (Benchmark: ${fixtureCount})`;
@@ -63,7 +62,7 @@ function renderSources(filter = '') {
     return;
   }
 
-  const isFixture = s => s.raw_path && (s.raw_path.includes('test') || s.raw_path.includes('fixture')) || s.source_id === 'SRC-RP-2026-001';
+  const isFixture = s => s.is_test_fixture === true || s.source_role === 'synthetic_benchmark_fixture' || (s.raw_path && (s.raw_path.includes('test') || s.raw_path.includes('fixture')));
 
   container.innerHTML = sources.map(s => `
     <div class="item-card" style="${isFixture(s) ? 'border-left: 4px solid #8b949e;' : ''}">
@@ -75,11 +74,11 @@ function renderSources(filter = '') {
         </div>
       </div>
       <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.5rem;">
-        <strong>ID:</strong> <code>${s.source_id}</code> | <strong>Author:</strong> ${escapeHtml(s.author)} (${s.published_year}) | <strong>Medium:</strong> ${s.medium}
+        <strong>ID:</strong> <code>${s.source_id}</code> | <strong>Author:</strong> ${escapeHtml(s.author)} (${s.published_year}) | <strong>Medium:</strong> ${s.medium === 'youtube' ? 'YouTube Video' : escapeHtml(s.medium)}
       </p>
       ${isFixture(s) ? `
         <p style="font-size:0.8rem; color:#8b949e; margin-bottom:0.5rem; font-style:italic;">
-          Note: This entry is an automated regression test fixture used to verify pipeline integrity, not a live user book.
+          Note: This entry is an automated regression test fixture used to verify pipeline integrity, not a live user source.
         </p>
       ` : ''}
       <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">

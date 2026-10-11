@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-018-006",
+  "node_type": "claim",
+  "statement": "Continuing an unproductive path creates a compounding loss effect that erodes confidence and reduces effort over time.",
+  "claim_type": "causal_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-001",
+      "locator_type": "paragraph",
+      "locator": "time: 06:34 - 06:40 (Cue 59)",
+      "verbatim_quote": "कंपाउंड इंटरेस्ट बढ़ाने का मतलब है एक तरीके का कंपाउंडिंग इफेक्ट। लॉस बढ़ता चला जाएगा।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-018"
+  ],
+  "created_at": "2026-10-11T06:51:22.852Z"
+}

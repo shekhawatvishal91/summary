@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-012-003",
+  "node_type": "claim",
+  "statement": "Aspirants remain trapped because of past investments in money and time, combined with reward expectations and identity attachment.",
+  "claim_type": "psychological_mechanism",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-001",
+      "locator_type": "paragraph",
+      "locator": "time: 03:30 - 03:36 (Cue 30)",
+      "verbatim_quote": "अच्छा खासा समय वहां पर इन्वेस्ट किया है। और सबसे इंपॉर्टेंट हमने जो रिवॉर्ड एक्सपेक्ट किया था, उस रिवॉर्ड की एक्सपेक्टेशन"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-012"
+  ],
+  "created_at": "2026-10-11T06:51:22.778Z"
+}

@@ -75,36 +75,46 @@ summary/
          ├─ Assign Source ID (e.g., SRC-2026-001)
          ├─ Compute SHA-256 Checksum
          ├─ Extract Raw Text + Locators (pages/timestamps)
-         └─ Register entry in sources/registry.json
+         ├─ Register entry in sources/registry.json
+         └─ Prepare auditable task: node scripts/agent-protocol.js prepare <id>
          │
          ▼
-[ Stage 2: Product A Generation (Codex Engine) ]
-         ├─ Apply 6-Dimensional Distillation Matrix
-         ├─ Conduct Golden Test of Total Replacement
-         ├─ Generate Active Recall Flashcards
-         └─ Write knowledge/sources/{source-id}/codex.md
+[ Stage 2: Layer A Semantic Decoding (Antigravity Native Agent) ]
+         ├─ Native AI Agent ingests task segments in conversational context
+         ├─ Applies 6-Dimensional Distillation Matrix (Golden Test of Total Replacement)
+         ├─ Extracts claims with exact locators and verbatim quotes
+         ├─ Generates active recall flashcards and proposed concept/edge deltas
+         └─ Writes knowledge/sources/{source-id}/staged_decoding.json
          │
          ▼
-[ Stage 3: Product B Knowledge Extraction ]
-         ├─ Extract Canonical Concepts, Claims, Principles
-         ├─ Match against tree/aliases.json
-         ├─ Detect Contradictions & Complementary Evidence
-         └─ Write nodes to tree/nodes/ and edges to tree/edges/edges.jsonl
+[ Stage 3: Layer B Deterministic Validation ] (node scripts/agent-protocol.js validate-staged <id>)
+         ├─ Audits mandatory 6-dimensional objects and non-empty premises
+         ├─ Verifies claim epistemic classes (DIRECT_QUOTE, SOURCE_STATEMENT, etc.)
+         ├─ Cryptographically checks verbatim quotes against immutable raw source text
+         └─ Updates task status: VALIDATED (or NEEDS_REVIEW if discrepancies found)
          │
          ▼
-[ Stage 4: Synthesis & Indexing ] (scripts/build-search-index.js)
+[ Stage 4: Product A & B Integration ] (node scripts/agent-protocol.js integrate-staged <id>)
+         ├─ Compiles verified Product A codex.md, meta.json, and cards.json
+         ├─ Integrates Product B canonical concept/claim nodes into knowledge/tree/nodes/
+         ├─ Updates concept aliases in knowledge/tree/aliases.json
+         └─ Appends deduplicated relationship edges to knowledge/tree/edges/edges.jsonl
+         │
+         ▼
+[ Stage 5: Synthesis & Indexing ] (scripts/build-search-index.js)
          ├─ Update Cross-Source Master Notes in knowledge/master/
          ├─ Compile full-text search index into web/manifest.json
          └─ Validate internal links and anchor integrity
          │
          ▼
-[ Stage 5: Quality Assurance & Gate Check ] (scripts/validate-integrity.js)
+[ Stage 6: Quality Assurance & Gate Check ] (scripts/validate-integrity.js & tests/run-all-tests.js)
          ├─ Article I-VI Constitutional Checks
+         ├─ 5 Automated Regression Test Suites Passed (100%)
          ├─ Zero Broken Links
          └─ Zero Secret / Token Exposure
          │
          ▼
-[ Stage 6: Controlled Publication ] (Git Commit -> Direct User Auth -> Push)
+[ Stage 7: Controlled Publication ] (Git Commit -> Direct User Auth -> Push)
          └─ Deploys to GitHub Pages (https://shekhawatvishal91.github.io/summary/)
 ```
 

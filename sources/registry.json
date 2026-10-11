@@ -17,7 +17,47 @@
       "coverage_status": "complete",
       "decoding_status": "SCAFFOLDED_WITHOUT_LLM",
       "created_at": "2026-10-11T04:00:13.113Z",
-      "updated_at": "2026-10-11T04:00:13.113Z"
+      "updated_at": "2026-10-11T04:00:13.113Z",
+      "is_test_fixture": true,
+      "source_role": "synthetic_benchmark_fixture"
+    },
+    {
+      "source_id": "SRC-RP-2026-002",
+      "title": "Epistemic Calibration in Multi-Agent Systems",
+      "author": "Dr. Aris Thorne",
+      "published_year": 2026,
+      "medium": "paper",
+      "epistemic_tier": "tier_1",
+      "sha256": "42ddb2b80a9eb809d1d7606e16c8d7229d208a1a92cc3c390890c73e6ad6c508",
+      "raw_path": "sources/raw/SRC-RP-2026-002_sample-multi-agent-calibration.md",
+      "extracted_path": "sources/text/SRC-RP-2026-002.txt",
+      "codex_path": "knowledge/sources/SRC-RP-2026-002/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "created_at": "2026-10-11T05:07:42.165Z",
+      "updated_at": "2026-10-11T07:39:32.195Z",
+      "is_test_fixture": true,
+      "source_role": "synthetic_benchmark_fixture"
+    },
+    {
+      "source_id": "SRC-YT-2026-001",
+      "title": "Competitive Exam Preparation Is Trapping You (Sunk Cost Fallacy)",
+      "author": "ABrainOConscious",
+      "published_year": "2026",
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "5486c436437b907ce72368edcd3a45638d54312176694bff2955fe0c42f9ea2b",
+      "raw_path": "sources/raw/SRC-YT-2026-001_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-001.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-001/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "created_at": "2026-10-11T06:17:08.908Z",
+      "updated_at": "2026-10-11T06:51:22.858Z",
+      "is_test_fixture": false,
+      "source_role": "real_user_source"
     }
   ]
 }

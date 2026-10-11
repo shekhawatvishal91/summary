@@ -1,0 +1,333 @@
+{
+  "source_id": "SRC-YT-2026-001",
+  "agent_identifier": "antigravity-native-agent",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "retrieval_metadata": {
+    "channel": "ABrainOConscious",
+    "video_title": "Competitive Exam Preparation Is Trapping You",
+    "url": "https://www.youtube.com/watch?v=UGW27Z_Q0SY",
+    "duration_seconds": 571,
+    "duration_timestamp": "09:31",
+    "capture_method": "Live visible Chrome browser session with active video playback and continuous DOM mutation observation of rendered player captions (not a direct subtitle stream download)",
+    "audio_language": "Colloquial Hindi (with English loanwords)",
+    "subtitles_type": "YouTube auto-generated Hindi caption track observed via DOM",
+    "raw_artifact": {
+      "path": "sources/raw/SRC-YT-2026-001_captions.vtt",
+      "format": "WebVTT (derived from DOM caption cue events)",
+      "sha256": "5486c436437b907ce72368edcd3a45638d54312176694bff2955fe0c42f9ea2b",
+      "bytes": 30569
+    },
+    "normalized_text_artifact": {
+      "path": "sources/text/SRC-YT-2026-001.txt",
+      "format": "Time-indexed dialogue transcript text",
+      "sha256": "6d9ffdab6ce633b0d07776883fd9b0b695234624d3848099e89d5c03090f28db",
+      "bytes": 31494
+    },
+    "segment_inventory_artifact": {
+      "path": "knowledge/sources/SRC-YT-2026-001/segment_inventory.json",
+      "total_cues": 86
+    },
+    "coverage_assessment": {
+      "temporal_span": "00:00:02.000 to 00:09:31.000 (569s out of 571s video)",
+      "cue_count": 86,
+      "inter_cue_gaps_gt_0s": 0,
+      "coverage_limitations": "Captions were captured via DOM observation of YouTube auto-generated captions during player playback. While all 86 sequential cue blocks exhibit strict chronological continuity with zero temporal gaps between cues, speech coverage is strictly bounded by the fidelity and completeness of YouTube auto-generated captions. Any words omitted or misrecognized by YouTube speech-to-text are inherited by this capture."
+    }
+  },
+  "content_classification": {
+    "explicitly_stated": [
+      "Many students repeatedly ask whether to continue preparing for competitive exams or pivot to another career [00:02-00:20].",
+      "The underlying psychological concept is termed the Sunk Cost Fallacy ('संख कॉस्ट फैलेसी') [00:24-00:28].",
+      "Common folklore describes a miner who gives up digging for gold just 1-2 feet before striking it; the speaker's story contradicts and denies this premise [00:32-01:24].",
+      "A farmer digs endlessly for water on dry land, refusing to relocate to new land because he already invested unrecoverable months of labor [01:24-02:48].",
+      "People remain stuck in careers, relationships, or preparations because of money invested, time invested, expected reward, and identity attachment ('आइडेंटिटी का काफी बड़ा पार्ट उससे चिपक चुका होता है') [03:02-03:44].",
+      "In NEET prep, students envision the future title and self-identify as a future doctor ('खुद को एक फ्यूचर डॉक्टर ही मानने लग गए') [03:48-04:10].",
+      "If offered a ready-made career alternative with a better or equal success rate and profit, an aspirant who would immediately jump should reconsider their current path [04:44-05:12].",
+      "The root reward is often not becoming a doctor or civil servant, but the respect and financial return associated with the profession [05:22-05:54].",
+      "Persisting in an unproductive path compounds losses ('कंपाउंडिंग इफेक्ट... लॉस बढ़ता चला जाएगा'), which lowers confidence, reduces effort, and widens the distance to the goal [06:26-07:14].",
+      "The speaker asserts that approximately 90% of people chase goals borrowed from society and educational marketing [07:34-07:54].",
+      "Staying in a boring movie solely because a ticket was purchased is an everyday manifestation of the fallacy [07:54-08:18].",
+      "Individuals should identify their authentic qualities (like a natural athlete on a sports ground vs forced into exam competition) to achieve their honest reward [08:44-09:30]."
+    ],
+    "speaker_implications": [
+      "The traditional motivational advice to 'never give up' can cause catastrophic wasted youth when applied to zero-water boreholes.",
+      "Societal institutions and educational coaching industries cultivate borrowed goals for their own institutional benefit ('अपने फायदे के लिए').",
+      "Identity attachment makes quitting feel like an existential loss rather than an objective strategic pivot."
+    ],
+    "ai_inferences": [
+      "The speaker's model maps to prospective marginal utility vs retrospective sunk cost accounting in behavioral economics.",
+      "The 'Farmer' parable serves as a cognitive de-biasing heuristic (Zero-Based Opportunity Cost analysis)."
+    ],
+    "ai_practical_applications": [
+      "Structured self-inquiry audit: Separate the status/money reward from the professional vehicle.",
+      "Boundary protocol: Establish a predefined stop-loss criterion on exam attempts before starting multi-year preparation."
+    ]
+  },
+  "dimensions": {
+    "dim_1_core_thesis": {
+      "premise": "Aspirants in multi-year competitive exam cycles (NEET, JEE, UPSC, SSC) often remain trapped in unproductive preparation not by rational current utility, but due to the Sunk Cost Fallacy and psychological identity fusion with an anticipated future role.",
+      "paradigm_shift": "Demolishes the cultural dogma of perseverance ('just dig 1-2 more feet to strike gold') by demonstrating that continued investment in a dry path compounds psychological loss and keeps students chasing borrowed societal goals."
+    },
+    "dim_2_causal_model": {
+      "mechanism": "The cognitive trap operates via three speaker-identified dynamics: (1) past investment accounting of unrecoverable time and money; (2) Identity Attachment ('आइडेंटिटी का चिपकाव') where the ego assumes the future title before achievement; and (3) Compounding Loss Effect where ongoing failure erodes self-efficacy, reducing study effort and moving the aspirant further from success.",
+      "ratios_in_prose": "The speaker estimates that approximately 90 percent of people pursue competitive aspirations borrowed from societal conditioning rather than authentic aptitude. Evaluation is framed around a Zero-Based Opportunity heuristic: determining whether one would initiate this specific pursuit today if provided an equal fresh alternative."
+    },
+    "dim_3_master_analogy": {
+      "analogy": "The Dry Well vs. The Gold Mine: The speaker explicitly rejects the common parable where a miner quits 1-2 feet before gold, presenting instead the farmer digging endlessly for water in barren soil who refuses to dig elsewhere because of his already expended labor and lack of alternative land."
+    },
+    "dim_4_diagnostics": {
+      "classifications": [
+        {
+          "state": "Identity Attachment (Astitva Chipkaav)",
+          "symptom": "Treating the anticipated career as current self-worth (e.g. self-identifying as a future doctor during NEET prep) [03:48-04:10]",
+          "etiology": "Psychological over-investment in future prestige rather than daily operational reality"
+        },
+        {
+          "state": "The Compounding Loss Cycle",
+          "symptom": "Escalating demotivation, lower effort, and widening distance from the target score [06:26-07:14]",
+          "etiology": "Erosion of confidence resulting from repeated failure under sunk cost inertia"
+        },
+        {
+          "state": "Borrowed Goal Entrapment",
+          "symptom": "Compulsive study driven by external societal pressure rather than intrinsic alignment [07:34-07:54]",
+          "etiology": "Internalizing targets manufactured by societal expectations (speaker's informal estimate: ~90% of aspirants)"
+        }
+      ],
+      "failure_modes": [
+        "The Movie Ticket Rationalization: Refusing to leave a boring film because the ticket price was already paid, enduring additional distress to justify past expenditure [07:54-08:18].",
+        "Aptitude Distortion: Forcing a natural athlete or creative into academic competition where they lose their natural confidence and 'winner attitude' [08:44-09:30]."
+      ]
+    },
+    "dim_5_field_protocols": {
+      "algorithm": [
+        "Step 1 (The Zero-Based Alternative Test): When feeling stuck, evaluate: 'If offered a viable alternative career path today with equal or better success rate and profit, would I jump?' If yes, recognize that sunk cost inertia is the primary reason for staying [04:44-05:12].",
+        "Step 2 (Root Reward Deconstruction): Separate the vehicle (e.g., doctor/civil servant) from the core desired rewards (respect, income, security). Inquire whether other career pathways can deliver those honest rewards [05:22-06:26].",
+        "Step 3 (Energy Reallocation): Cease wasting time, money, and energy on pursuits that continuously elevate stress and pressure without yielding results despite repeated strategy adjustments [08:24-08:44]."
+      ],
+      "verbatim_scripts": [
+        {
+          "label": "Farmer Metaphor Pivot Inquiry (Complete contiguous question across Cues 18-19)",
+          "locator": "time: 00:02:06 - 00:02:20 (Cues 18-19)",
+          "type": "complete_utterance",
+          "verbatim_text": "तू कहीं और क्यों नहीं ट्राई करता है? किसी और जमीन पर, किसी और एरिया पर।"
+        },
+        {
+          "label": "Alternative Land Counterfactual Prompt (Complete question in Cue 24)",
+          "locator": "time: 00:02:48 - 00:02:54 (Cue 24)",
+          "type": "complete_utterance",
+          "verbatim_text": "क्या तू उस जमीन पर गड्ढा खोदेगा? बिल्कुल एक नई जमीन उसी मोमेंट।"
+        },
+        {
+          "label": "Zero-Based Career Alternative Test (Complete contiguous question pair across Cues 43-44)",
+          "locator": "time: 00:04:58 - 00:05:08 (Cues 43-44)",
+          "type": "complete_utterance",
+          "verbatim_text": "तो क्या आप उस करियर में जंप करोगे? या फिर क्या आप उस स्टार्टअप को कंसीडर करोगे इस पाथवे को छोड़ के?"
+        }
+      ],
+      "verbatim_fragments": [
+        {
+          "label": "Farmer Metaphor Initial Inquiry Fragment (Truncated by cue boundary in Cue 18)",
+          "locator": "time: 00:02:06 - 00:02:12 (Cue 18)",
+          "type": "fragment",
+          "verbatim_text": "तू इसको गड्ढे को क्यों नहीं छोड़ना चाह रहा? तू कहीं",
+          "note": "Spoken sentence abruptly splits at cue boundary before continuing in Cue 19."
+        }
+      ],
+      "ai_generated_practical_applications": [
+        "Diagnostic Self-Audit: Ask 'If I was granted admission or funding today for an alternate high-probability venture, would I accept immediately?'",
+        "Vehicle vs Reward Decoupling Exercise: List all attributes desired from the target profession (respect, income, peer status). Identify three parallel careers providing identical core attributes with lower structural failure rates.",
+        "Objective Stop-Loss Protocol: Establish a hard temporal threshold (e.g., maximum 2 full-time exam attempts) prior to initiating multi-year preparation."
+      ]
+    },
+    "dim_6_skeptic_box": {
+      "pop_culture_distortion": "Motivational parables insist that perseverance is always virtuous and quitting is always failure, celebrating blind persistence in barren endeavors.",
+      "clinical_empirical_reality": "In behavioral decision theory, sunk costs are unrecoverable. Rational decision-making evaluates future marginal costs against future expected returns; persisting in zero-probability pursuits compounds psychological and economic loss."
+    }
+  },
+  "extracted_claims": [
+    {
+      "statement": "Prolonged competitive exam preparation traps students through the psychological bias known as the Sunk Cost Fallacy.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "psychological_framework",
+      "locator": "time: 00:28 - 00:32 (Cue 5)",
+      "verbatim_quote": "देखो बेसिकली साइकोलॉजी में कांसेप्ट है। उसको कहते हैं संख कॉस्ट फैलेसी।",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia"
+      ]
+    },
+    {
+      "statement": "The speaker explicitly presents a story that denies and contradicts the popular parable of the gold miner who gave up 1-2 feet before striking gold.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "narrative_counter_analogy",
+      "locator": "time: 01:20 - 01:24 (Cue 12)",
+      "verbatim_quote": "सुनाने वाला हूं यह बिल्कुल इससे अलग है। यह बिल्कुल इसको डिनाई करती है।",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia"
+      ]
+    },
+    {
+      "statement": "Aspirants remain trapped because of past investments in money and time, combined with reward expectations and identity attachment.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "psychological_mechanism",
+      "locator": "time: 03:30 - 03:36 (Cue 30)",
+      "verbatim_quote": "अच्छा खासा समय वहां पर इन्वेस्ट किया है। और सबसे इंपॉर्टेंट हमने जो रिवॉर्ड एक्सपेक्ट किया था, उस रिवॉर्ड की एक्सपेक्टेशन",
+      "quotation_status": "verbatim_fragment_truncated_at_cue_boundary",
+      "note": "Ends on cue boundary [Cue 30]; completed in Cue 31 as 'प्लस हमारी आइडेंटिटी'.",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia",
+        "Identity Attachment Bias"
+      ]
+    },
+    {
+      "statement": "The speaker challenges aspirants to consider whether they would immediately jump to an alternative career with a better or equal success rate if one were offered.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "decision_heuristic",
+      "locator": "time: 04:44 - 04:58 (Cue 42)",
+      "verbatim_quote": "तेरे को एक बनाया करियर आईडिया मैं दे देता हूं जिसमें सक्सेस रेट अच्छा है। इससे तो अच्छा ही है जिसकी तू प्रिपरेशन कर रहा है।",
+      "associated_concepts": [
+        "Zero-Based Career Alternative Test"
+      ]
+    },
+    {
+      "statement": "Aspirants often confuse their true reward with the professional title: the desired outcome is typically the social respect and financial compensation associated with the role.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "motivational_analysis",
+      "locator": "time: 05:42 - 05:48 (Cue 50)",
+      "verbatim_quote": "आपका रिवॉर्ड है डॉक्टर वाली जो रिस्पेक्ट है वह प्राप्त करना। आपका रिवॉर्ड है जो पैसा डॉक्टर को मिलता है वह पैसा प्राप्त करना।",
+      "associated_concepts": [
+        "Identity Attachment Bias",
+        "Root Reward Deconstruction"
+      ]
+    },
+    {
+      "statement": "Continuing an unproductive path creates a compounding loss effect that erodes confidence and reduces effort over time.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "causal_model",
+      "locator": "time: 06:34 - 06:40 (Cue 59)",
+      "verbatim_quote": "कंपाउंड इंटरेस्ट बढ़ाने का मतलब है एक तरीके का कंपाउंडिंग इफेक्ट। लॉस बढ़ता चला जाएगा।",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia"
+      ]
+    },
+    {
+      "statement": "The speaker asserts that approximately 90% of people pursue goals borrowed from societal conditioning rather than authentic aptitude.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "speaker_heuristic_assertion",
+      "locator": "time: 07:34 - 07:42 (Cue 69)",
+      "verbatim_quote": "मेरी ऐसी कौन सी स्किल्स हैं? देखो हम में से लगभग 90% लोग तो ऐसे लक्ष्य के पीछे भाग रहे होते हैं जो हम लोगों ने समाज से उधार लिया है।",
+      "associated_concepts": [
+        "Identity Attachment Bias",
+        "Root Reward Deconstruction"
+      ]
+    }
+  ],
+  "proposed_concepts": [
+    {
+      "name": "Sunk Cost Fallacy in Career Inertia",
+      "aliases": [
+        "Competitive Exam Preparation Trap",
+        "Sunk Cost Career Bias"
+      ],
+      "domain": "Behavioral Decision Theory",
+      "definition": "The psychological bias where an individual continues investing time, effort, and capital into an unyielding career path simply because of historical unrecoverable investments."
+    },
+    {
+      "name": "Identity Attachment Bias",
+      "aliases": [
+        "Astitva Chipkaav",
+        "Role Premature Fusion"
+      ],
+      "domain": "Cognitive Psychology",
+      "definition": "The premature cognitive fusion of an individual's identity with an unachieved future status (e.g., self-identifying as a doctor during exam preparation), making abandonment feel like ego annihilation."
+    },
+    {
+      "name": "Root Reward Deconstruction",
+      "aliases": [
+        "Base Reward Analysis",
+        "Proxy vs Root Reward"
+      ],
+      "domain": "Practical Rationality",
+      "definition": "The analytical process of separating the instrumental proxy vehicle (e.g. passing UPSC/NEET) from the fundamental underlying human desires (social respect, financial security, creative autonomy)."
+    },
+    {
+      "name": "Zero-Based Career Alternative Test",
+      "aliases": [
+        "The Fresh Ground Test",
+        "New Land Decision Gate"
+      ],
+      "domain": "Decision Strategy",
+      "definition": "A heuristic decision rule asking whether an individual would choose their current path if given an immediate fresh alternative with equal payoffs, isolating genuine commitment from sunk cost inertia."
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "edge_id": "EDG-003",
+      "source_node_id": "CON-012",
+      "target_node_id": "CON-009",
+      "relation_type": "reinforces",
+      "description": "The speaker connects past investment and anticipated rewards with attachment to the expected future identity, explaining how identity fusion traps aspirants in the sunk cost cycle.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 30-34 (approx 03:22 - 03:40)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument"
+    },
+    {
+      "edge_id": "EDG-004",
+      "source_node_id": "CON-018",
+      "target_node_id": "CON-009",
+      "relation_type": "mitigates",
+      "description": "The alternative-career counterfactual test is presented as a cognitive de-biasing tool to break sunk cost inertia and reconsider continuing an unproductive preparation.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 42-46 (approx 04:44 - 05:12)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument"
+    },
+    {
+      "edge_id": "EDG-005",
+      "source_node_id": "CON-015",
+      "target_node_id": "CON-018",
+      "relation_type": "informs",
+      "description": "Distinguishing the underlying desired reward (respect, income) from the specific career vehicle provides the diagnostic basis for evaluating fresh alternative pathways.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 49-54 (approx 05:22 - 05:48)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument"
+    }
+  ],
+  "coverage_warnings": [],
+  "recall_cards": [
+    {
+      "card_id": "CARD-SRC-YT-2026-001-001",
+      "question": "How does the Sunk Cost Fallacy trap competitive exam aspirants into multi-year cycles according to ABrainOConscious?",
+      "answer": "Aspirants focus retrospectively on past unrecoverable investments (years spent, money, emotional energy) and identity attachment ('आइडेंटिटी का चिपकाव') rather than prospective utility, fearing that quitting makes past efforts wasteful.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "time: 00:24 - 03:40",
+      "dimension": "Foundational Causal Model"
+    },
+    {
+      "card_id": "CARD-SRC-YT-2026-001-002",
+      "question": "What is the 'Root Reward' deconstruction test and how does it resolve career inertia?",
+      "answer": "It separates the instrumental vehicle (e.g., clearing UPSC or NEET) from the root human desires driving it (respect, financial freedom, security). Once an aspirant realizes the vehicle is merely one path among many, they can rationally evaluate alternative pathways.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "time: 05:28 - 06:26",
+      "dimension": "Diagnostic Nuance"
+    },
+    {
+      "card_id": "CARD-SRC-YT-2026-001-003",
+      "question": "What is the 'Zero-Based Alternative Test' for deciding whether to pivot from a competitive exam?",
+      "answer": "Ask: 'If I were offered an alternative venture today with an equal or better success rate and payoff, would I take it?' If yes, the current preparation is being maintained primarily by sunk cost bias rather than authentic preference.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "time: 04:44 - 05:12",
+      "dimension": "Field Protocol"
+    }
+  ],
+  "relationship_audit": {
+    "excluded_relationships": [
+      {
+        "edge_id": "EDG-002",
+        "status": "retired_and_excluded",
+        "source_node_id": "CON-001",
+        "target_node_id": "CON-005",
+        "relation_type": "psychological_interaction",
+        "exclusion_reason": "The relationship was an AI-inferred theoretical cross-domain hypothesis connecting Working Memory Constraints (CON-001) to Ego Depletion (CON-005). The speaker never mentioned prefrontal cortex bounds, adenosine, or executive limits; the relationship is not supported by SRC-YT-2026-001 transcript. The identifier EDG-002 is permanently retired and will never be reused in the canonical graph."
+      }
+    ]
+  }
+}

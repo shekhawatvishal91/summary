@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-012",
+  "node_type": "concept",
+  "canonical_name": "Identity Attachment Bias",
+  "aliases": [
+    "Astitva Chipkaav",
+    "Role Premature Fusion"
+  ],
+  "domain": "Cognitive Psychology",
+  "definition": "The premature cognitive fusion of an individual's identity with an unachieved future status (e.g., self-identifying as a doctor during exam preparation), making abandonment feel like ego annihilation.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-012-003",
+    "CLM-CON-012-005",
+    "CLM-CON-012-007"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-001"
+  ],
+  "created_at": "2026-10-11T06:51:22.775Z",
+  "updated_at": "2026-10-11T07:00:21.791Z"
+}

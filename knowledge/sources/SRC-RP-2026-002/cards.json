@@ -1,0 +1,10 @@
+[
+  {
+    "card_id": "CARD-SRC-RP-2026-002-001",
+    "question": "What is the critical error rate threshold that triggers catastrophic multi-agent consensus collapse?",
+    "answer": "An upstream uncalibrated error rate of 14.8% causes multi-agent reasoning networks to enter an irreversible cascade hallucination phase.",
+    "source_id": "SRC-RP-2026-002",
+    "locator": "sec: The Cascade Hallucination Threshold # para-1",
+    "dimension": "Foundational Causal Model"
+  }
+]

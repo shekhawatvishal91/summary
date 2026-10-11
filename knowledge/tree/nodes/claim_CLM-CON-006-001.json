@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-006-001",
+  "node_type": "claim",
+  "statement": "Upstream agent uncalibrated error rates exceeding 14.8% trigger catastrophic consensus collapse across multi-agent reasoning graphs.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_1",
+  "evidence": [
+    {
+      "source_id": "SRC-RP-2026-002",
+      "locator_type": "paragraph",
+      "locator": "sec: The Cascade Hallucination Threshold # para-1",
+      "verbatim_quote": "upstream agent exceeds 14.8%, downstream agent networks enter an irreversible cascade hallucination phase"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-006"
+  ],
+  "created_at": "2026-10-11T05:07:42.202Z"
+}

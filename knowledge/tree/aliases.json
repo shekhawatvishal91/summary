@@ -6,6 +6,21 @@
     "central executive bottleneck": "CON-001",
     "chunk capacity limit": "CON-001",
     "frontal buffer limit": "CON-001",
-    "ego depletion": "CON-005"
+    "ego depletion": "CON-005",
+    "cascade hallucination threshold": "CON-006",
+    "multi-agent consensus collapse": "CON-006",
+    "epistemic cascade limit": "CON-006",
+    "sunk cost fallacy in career inertia": "CON-009",
+    "competitive exam preparation trap": "CON-009",
+    "sunk cost career bias": "CON-009",
+    "identity attachment bias": "CON-012",
+    "astitva chipkaav": "CON-012",
+    "role premature fusion": "CON-012",
+    "root reward deconstruction": "CON-015",
+    "base reward analysis": "CON-015",
+    "proxy vs root reward": "CON-015",
+    "zero-based career alternative test": "CON-018",
+    "the fresh ground test": "CON-018",
+    "new land decision gate": "CON-018"
   }
 }

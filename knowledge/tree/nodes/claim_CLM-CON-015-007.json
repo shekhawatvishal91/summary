@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-015-007",
+  "node_type": "claim",
+  "statement": "The speaker asserts that approximately 90% of people pursue goals borrowed from societal conditioning rather than authentic aptitude.",
+  "claim_type": "speaker_heuristic_assertion",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-001",
+      "locator_type": "paragraph",
+      "locator": "time: 07:34 - 07:42 (Cue 69)",
+      "verbatim_quote": "मेरी ऐसी कौन सी स्किल्स हैं? देखो हम में से लगभग 90% लोग तो ऐसे लक्ष्य के पीछे भाग रहे होते हैं जो हम लोगों ने समाज से उधार लिया है।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-015"
+  ],
+  "created_at": "2026-10-11T06:51:22.841Z"
+}

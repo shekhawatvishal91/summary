@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-009-001",
+  "node_type": "claim",
+  "statement": "Prolonged competitive exam preparation traps students through the psychological bias known as the Sunk Cost Fallacy.",
+  "claim_type": "psychological_framework",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-001",
+      "locator_type": "paragraph",
+      "locator": "time: 00:28 - 00:32 (Cue 5)",
+      "verbatim_quote": "देखो बेसिकली साइकोलॉजी में कांसेप्ट है। उसको कहते हैं संख कॉस्ट फैलेसी।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-009"
+  ],
+  "created_at": "2026-10-11T06:51:22.762Z"
+}

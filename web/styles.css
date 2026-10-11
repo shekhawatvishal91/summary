@@ -593,6 +593,33 @@ footer a:hover {
   font-weight: bold;
 }
 
+.master-card-desc {
+  font-size: 0.925rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 0.85rem;
+}
+
+.master-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.775rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: -0.01em;
+}
+
 .btn-read {
   background: var(--accent-color);
   color: #FFFFFF;

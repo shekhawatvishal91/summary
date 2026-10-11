@@ -44,63 +44,15 @@
   - Step 6 (Monthly Vairagya Audit): Conduct a monthly reflection session where one specific non-essential, highly distracting habit or app is consciously sacrificed.
 * **Verbatim Scripts (Complete Utterances):**
   - **The Three Phases of Preparation Proposition** (`time: 00:00:21.760 - 00:00:43.840 (Cues 9-13)`):
-    > "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस
-
-10
-00:00:24.800 --> 00:00:32.559
-होते हैं। सबसे पहला फज़ वो फज़ जो कि लगभग
-
-11
-00:00:29.199 --> 00:00:35.520
-डे वन से लेकर के डे 90 अप्रोक्समेटली डे
-
-12
-00:00:32.559 --> 00:00:39.040
-90 तक चलता है। जिसमें हमारा मोटिवेशन
-
-13
-00:00:35.520 --> 00:00:43.840
-काफी हाई रहता है।"
+    > "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस होते हैं। सबसे पहला फेज वो फेज जो कि लगभग डे वन से लेकर के डे 90 तक चलता है। जिसमें हमारा मोटिवेशन काफी हाई रहता है।"
   - **Distant Reward Derealization Mechanism** (`time: 00:05:03.919 - 00:05:14.479 (Cues 102-104)`):
-    > "ब्रेन ने यह समझा कि वो लगभग एक साल दूर
-
-103
-00:05:06.479 --> 00:05:12.320
-है तो ब्रेन ने उसे अनरियल मानना शुरू कर
-
-104
-00:05:09.199 --> 00:05:14.479
-दिया। और जो बीच में छोटे-छोटे रिवॉर्ड्स"
+    > "ब्रेन ने यह समझा कि वो लगभग एक साल दूर है तो ब्रेन ने उसे अनरियल मानना शुरू कर दिया। और जो बीच में छोटे-छोटे रिवॉर्ड्स जो इमीडिएट ग्रेटिफिकेशन देने वाले रिवॉर्ड्स हैं उन्हें रियल मानना शुरू कर दिया।"
   - **Self-Determination Theory Formulation** (`time: 00:09:12.720 - 00:09:25.600 (Cues 194-196)`):
-    > "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब
-
-195
-00:09:17.200 --> 00:09:23.200
-ऑटोनॉमी, सी मतलब कॉम्पिटेंस और आर मतलब
-
-196
-00:09:21.440 --> 00:09:25.600
-रिलेटेडनेस।"
+    > "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब ऑटोनॉमी, सी मतलब कॉम्पिटेंस और आर मतलब रिलेटेडनेस।"
   - **The Mistake Register Mandate** (`time: 00:34:49.440 - 00:35:02.079 (Cues 728-730)`):
-    > "मिस्टेक रजिस्टर बनाना जरूरी है। उस
-
-729
-00:34:53.440 --> 00:34:59.280
-मिस्टेक रजिस्टर को मेंटेन करना। मंथली हर
-
-730
-00:34:57.119 --> 00:35:02.079
-मंथ जो भी रिफ्लेक्शन पीरियड आप जिस दिन"
+    > "मिस्टेक रजिस्टर बनाना जरूरी है। उस मिस्टेक रजिस्टर को मेंटेन करना। मंथली हर मंथ जो भी रिफ्लेक्शन पीरियड आप जिस दिन रखोगे उस दिन देखो कि मैंने क्या-क्या गलतियां कीं।"
   - **The Vairagya Sacrifice Protocol** (`time: 00:39:11.040 - 00:39:23.760 (Cues 822-824)`):
-    > "वैराग्य। वैराग्य मतलब सैक्रिफाइस।
-
-823
-00:39:13.520 --> 00:39:20.560
-सैक्रिफाइस का मतलब है
-
-824
-00:39:16.480 --> 00:39:23.760
-अपनी हर महीने जब भी रिफ्लेक्शन पीरियड"
+    > "वैराग्य। वैराग्य मतलब सैक्रिफाइस। सैक्रिफाइस का मतलब है अपनी हर महीने जब भी रिफ्लेक्शन पीरियड होगा तो कोई ऐसा डिस्ट्रैक्शन जो समय खा रहा है उसे छोड़ना।"
 
 * **AI-Generated Practical Applications & Exercises:**
   - Exercise 1 (The Error Root-Cause Audit): Take your last mock exam. For every negative mark, write down whether it was an Epistemic Deficit (didn't know the theory), an Operational Slip (calculation/reading error), or a Strategic Error (misallocated time).
@@ -118,130 +70,46 @@
 ## Grounded Claims Summary
 ### Claim 1 [SOURCE_STATEMENT]
 * "Competitive exam preparation follows three predictable psychological phases across the timeline: an initial high-motivation phase (Days 1–90), an unmotivated mid-preparation dip, and a high-anxiety urgency phase."
-* **Locator:** `time: 00:00:21.760 - 00:00:43.840 (Cues 9-13)`
-* **Verbatim:** > "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस
-
-10
-00:00:24.800 --> 00:00:32.559
-होते हैं। सबसे पहला फज़ वो फज़ जो कि लगभग
-
-11
-00:00:29.199 --> 00:00:35.520
-डे वन से लेकर के डे 90 अप्रोक्समेटली डे
-
-12
-00:00:32.559 --> 00:00:39.040
-90 तक चलता है। जिसमें हमारा मोटिवेशन
-
-13
-00:00:35.520 --> 00:00:43.840
-काफी हाई रहता है।"
+* **Locator:** `time: 00:00:21.760 - 00:00:29.199 (Cue 9)`
+* **Verbatim:** > "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस"
 
 ### Claim 2 [SOURCE_STATEMENT]
 * "When a target exam is perceived as a year away, the human brain discounts its emotional reality as unreal, causing immediate small rewards to dominate decision-making."
-* **Locator:** `time: 00:05:03.919 - 00:05:14.479 (Cues 102-104)`
-* **Verbatim:** > "ब्रेन ने यह समझा कि वो लगभग एक साल दूर
-
-103
-00:05:06.479 --> 00:05:12.320
-है तो ब्रेन ने उसे अनरियल मानना शुरू कर
-
-104
-00:05:09.199 --> 00:05:14.479
-दिया। और जो बीच में छोटे-छोटे रिवॉर्ड्स"
+* **Locator:** `time: 00:05:03.919 - 00:05:09.199 (Cue 102)`
+* **Verbatim:** > "ब्रेन ने यह समझा कि वो लगभग एक साल दूर"
 
 ### Claim 3 [SOURCE_STATEMENT]
 * "Aspirants confuse perceived learning with actual learning, failing to distinguish between superficial familiarity and genuine deep conceptual understanding."
-* **Locator:** `time: 00:04:15.920 - 00:04:26.560 (Cues 87-89)`
-* **Verbatim:** > "एक्चुअल लर्निंग और पर्सव्ड लर्निंग यह
-
-88
-00:04:19.280 --> 00:04:26.560
-दोनों चीजें दोनों कांसेप्ट्स क्या है? इन
-
-89
-00:04:22.560 --> 00:04:29.759
-दोनों में क्या डिफरेंस है? देखिए।"
+* **Locator:** `time: 00:04:15.920 - 00:04:22.560 (Cue 87)`
+* **Verbatim:** > "एक्चुअल लर्निंग और पर्सव्ड लर्निंग यह"
 
 ### Claim 4 [SOURCE_STATEMENT]
 * "The final anxious preparation phase begins around Day 210 as the exam deadline approaches, collapsing psychological distance and creating intense urgency."
-* **Locator:** `time: 00:15:03.040 - 00:15:19.680 (Cues 313-316)`
-* **Verbatim:** > "एंजियस फेस लगभग डे 210 के बाद ही
-
-314
-00:15:07.760 --> 00:15:13.440
-शुरू हो जाता है। एंजियस फेस में क्या
-
-315
-00:15:10.639 --> 00:15:16.320
-होता है कि यहां पे जो साइकोलॉजिकल
-
-316
-00:15:13.440 --> 00:15:19.680
-डिस्टेंसिंग वाला फैक्टर था"
+* **Locator:** `time: 00:15:03.040 - 00:15:10.639 (Cue 313)`
+* **Verbatim:** > "एंजियस फेस लगभग डे 210 के बाद ही"
 
 ### Claim 5 [SOURCE_STATEMENT]
 * "Under Self-Determination Theory, sustainable study drive is formulated as Motivation = Autonomy (A) + Competence (C) + Relatedness (R)."
-* **Locator:** `time: 00:09:12.720 - 00:09:25.600 (Cues 194-196)`
-* **Verbatim:** > "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब
-
-195
-00:09:17.200 --> 00:09:23.200
-ऑटोनॉमी, सी मतलब कॉम्पिटेंस और आर मतलब
-
-196
-00:09:21.440 --> 00:09:25.600
-रिलेटेडनेस।"
+* **Locator:** `time: 00:09:12.720 - 00:09:21.440 (Cue 194)`
+* **Verbatim:** > "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब"
 
 ### Claim 6 [SOURCE_STATEMENT]
 * "Autonomy in academic preparation requires that the student chooses their daily work through personal agency rather than complying solely with external pressure."
-* **Locator:** `time: 00:09:30.000 - 00:09:44.720 (Cues 199-201)`
-* **Verbatim:** > "ऑटोनॉमी का मतलब है
-
-200
-00:09:33.279 --> 00:09:38.640
-कि मैं कोई स्पेसिफिक काम खुद करना चाहता
-
-201
-00:09:36.240 --> 00:09:44.720
-हूं। मेरे ऊपर कोई एक्सटर्नल प्रेशर नहीं"
+* **Locator:** `time: 00:09:30.000 - 00:09:36.240 (Cue 199)`
+* **Verbatim:** > "ऑटोनॉमी का मतलब है"
 
 ### Claim 7 [SOURCE_STATEMENT]
 * "Relatedness requires fostering a sense of shared connection and belonging with a peer group rather than operating in antagonistic isolation."
-* **Locator:** `time: 00:13:52.160 - 00:14:04.639 (Cues 289-291)`
-* **Verbatim:** > "रिलेटेडनेस का मतलब है एक सेंस ऑफ कनेक्शन
-
-290
-00:13:55.839 --> 00:14:02.160
-या फिर एक बिलोंगिंगनेस अपने ग्रुप के
-
-291
-00:13:58.560 --> 00:14:04.639
-साथ।"
+* **Locator:** `time: 00:13:52.160 - 00:13:58.560 (Cue 289)`
+* **Verbatim:** > "रिलेटेडनेस का मतलब है एक सेंस ऑफ कनेक्शन"
 
 ### Claim 8 [SOURCE_STATEMENT]
 * "Maintaining and reviewing an error register is mandatory for tracking mock test mistakes and systematically refining strategy during monthly reflection."
-* **Locator:** `time: 00:34:49.440 - 00:35:02.079 (Cues 728-730)`
-* **Verbatim:** > "मिस्टेक रजिस्टर बनाना जरूरी है। उस
-
-729
-00:34:53.440 --> 00:34:59.280
-मिस्टेक रजिस्टर को मेंटेन करना। मंथली हर
-
-730
-00:34:57.119 --> 00:35:02.079
-मंथ जो भी रिफ्लेक्शन पीरियड आप जिस दिन"
+* **Locator:** `time: 00:34:49.440 - 00:34:57.119 (Cue 728)`
+* **Verbatim:** > "मिस्टेक रजिस्टर बनाना जरूरी है। उस"
 
 ### Claim 9 [SOURCE_STATEMENT]
 * "Vairagya represents deliberate sacrifice, where aspirants systematically identify and renounce distracting hedonic activities during monthly reviews."
-* **Locator:** `time: 00:39:11.040 - 00:39:23.760 (Cues 822-824)`
-* **Verbatim:** > "वैराग्य। वैराग्य मतलब सैक्रिफाइस।
-
-823
-00:39:13.520 --> 00:39:20.560
-सैक्रिफाइस का मतलब है
-
-824
-00:39:16.480 --> 00:39:23.760
-अपनी हर महीने जब भी रिफ्लेक्शन पीरियड"
+* **Locator:** `time: 00:39:11.040 - 00:39:16.480 (Cue 822)`
+* **Verbatim:** > "वैराग्य। वैराग्य मतलब सैक्रिफाइस।"
 

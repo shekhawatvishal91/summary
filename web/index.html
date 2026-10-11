@@ -77,6 +77,10 @@
     <section id="sources-view" class="view-section">
       <h2 style="margin-bottom: 1rem;">Registered Sources Library</h2>
       <input type="text" id="source-search" class="search-bar" placeholder="Search by title, author, or source ID...">
+      <div style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+        <input type="checkbox" id="hide-fixture-sources" style="cursor:pointer;">
+        <label for="hide-fixture-sources" style="font-size:0.85rem; color:var(--text-secondary); cursor:pointer;">Hide Benchmark Test Fixtures</label>
+      </div>
       <div id="sources-list" class="card-list"></div>
     </section>
 
@@ -84,6 +88,10 @@
     <section id="concepts-view" class="view-section">
       <h2 style="margin-bottom: 1rem;">Ontological Concept & Claim Graph</h2>
       <input type="text" id="concept-search" class="search-bar" placeholder="Search canonical concepts, aliases, or definitions...">
+      <div style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+        <input type="checkbox" id="hide-fixture-concepts" style="cursor:pointer;">
+        <label for="hide-fixture-concepts" style="font-size:0.85rem; color:var(--text-secondary); cursor:pointer;">Hide Benchmark Test Concepts</label>
+      </div>
       <div id="concepts-list" class="card-list"></div>
     </section>
 

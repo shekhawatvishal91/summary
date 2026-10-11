@@ -33,36 +33,9 @@
         </p>
       </div>
 
-      <!-- Master Notes Shelf -->
+      <!-- Master Notes Shelf (Individual Source Notes Only) -->
       <div class="master-note-shelf">
-        <!-- Unified Thematic Master Note (Cross-Source Synthesis) -->
-        <div class="master-card" style="border-left: 4px solid #1f883d; background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(31, 136, 61, 0.04) 100%);">
-          <div class="master-card-header">
-            <div>
-              <span class="badge badge-accent" style="background:#1f883d; color:#ffffff;">✨ CROSS-SOURCE UNIFIED MASTER CODEX</span>
-              <h2 class="master-card-title">Competitive Exam Aspirant Psychology &amp; Decision Architecture</h2>
-            </div>
-            <button class="btn-read" style="background:#1f883d;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">Read Unified Synthesis &rarr;</button>
-          </div>
-          <div class="master-card-meta">
-            <span><strong>Topic:</strong> Aspirant Psychology &amp; Behavioral Decision Theory</span> &bull;
-            <span><strong>Sources Unified:</strong> 2 Sources (60m 57s total lecture)</span> &bull;
-            <span><strong>Status:</strong> Deduplicated &amp; Grounded</span>
-          </div>
-          <p class="master-card-desc">
-            A comprehensive, deduplicated cross-source synthesis integrating both lectures. Unifies the 3-phase preparation curve (Honeymoon, Dip, Panic), Self-Determination Theory, Sunk Cost entrapment in multi-attempt drops, Identity Attachment bias, and a consolidated 5-step Master Action Playbook.
-          </p>
-          <div class="master-card-tags">
-            <span class="tag">Unified Playbook</span>
-            <span class="tag">Sunk Cost Fallacy</span>
-            <span class="tag">Self-Determination Triad</span>
-            <span class="tag">3-Phase Curve</span>
-            <span class="tag">Zero-Based Alternative Test</span>
-            <span class="tag">Mistake Register</span>
-          </div>
-        </div>
-
-        <!-- Master Note 1 (Latest 51m Video) -->
+        <!-- Separate Note 1 (51m Video) -->
         <div class="master-card">
           <div class="master-card-header">
             <div>
@@ -202,16 +175,23 @@
           &larr; Back to Library
         </button>
         <div class="note-switcher">
-          <span style="font-size:0.85rem; color:var(--text-secondary); font-weight:600; margin-right:0.25rem;">Switch Note:</span>
-          <button id="btn-switch-MASTER-ASPIRANT-DECISION" class="switcher-btn active" style="font-weight:600;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
-            ✨ Unified Master Note
-          </button>
-          <button id="btn-switch-SRC-YT-2026-002" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-002')">
-            📖 Aspirant Psychology (51m)
-          </button>
-          <button id="btn-switch-SRC-YT-2026-001" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-001')">
-            📖 Sunk Cost Trap (9m)
-          </button>
+          <!-- Category Unified Syntheses -->
+          <div style="display:inline-flex; align-items:center; gap:0.4rem; padding-right:0.6rem; border-right:1px solid var(--border-color);">
+            <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-secondary); font-weight:700;">Topic Syntheses:</span>
+            <button id="btn-switch-MASTER-ASPIRANT-DECISION" class="switcher-btn active" style="font-weight:600; border-color:#1f883d;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
+              ✨ Aspirant Psychology &amp; Decision Matrix
+            </button>
+          </div>
+          <!-- Individual Source Notes -->
+          <div style="display:inline-flex; align-items:center; gap:0.4rem; padding-left:0.2rem;">
+            <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-secondary); font-weight:700;">Individual Sources:</span>
+            <button id="btn-switch-SRC-YT-2026-002" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-002')">
+              📖 Aspirant Psychology (51m)
+            </button>
+            <button id="btn-switch-SRC-YT-2026-001" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-001')">
+              📖 Sunk Cost Trap (9m)
+            </button>
+          </div>
         </div>
       </div>
       <div class="codex-header-card" style="margin-bottom:1.5rem; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; box-shadow:var(--shadow-subtle);">

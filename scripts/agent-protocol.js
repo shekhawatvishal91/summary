@@ -441,8 +441,14 @@ ${staged.proposed_concepts.map(c => `* **${c.name}:** ${c.definition}`).join('\n
     saveRegistry(registry);
   }
 
-  // 7. Rebuild Web Search Manifest
-  buildSearchIndex();
+  // 7. Automated Cross-Source Topic Synthesis & Web Search Manifest Rebuild
+  try {
+    const { synthesizeTopics } = require('./synthesize-topics');
+    synthesizeTopics();
+  } catch (synthErr) {
+    console.warn(`[WARN] Automated topic synthesis fallback: ${synthErr.message}`);
+    buildSearchIndex();
+  }
 
   // 8. Update Task Descriptor
   const taskFilePath = path.join(TASKS_DIR, sourceId, 'task.json');

@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "description": "Registry of thematic topic categories for automated cross-source master synthesis",
+  "topics": [
+    {
+      "topic_id": "TOPIC-RELATIONSHIPS",
+      "codex_id": "MASTER-RELATIONSHIP-DYNAMICS",
+      "slug": "relationship_dynamics_and_attachment_psychology",
+      "title": "Love Without Losing Yourself",
+      "subtitle": "Understanding emotional triggers, breaking unhealthy relationship patterns, and learning to recognize genuine love",
+      "badge": "💕 MASTER TREATISE",
+      "category_label": "Relationships & Emotional Autonomy",
+      "master_path": "knowledge/master/relationship_dynamics_and_attachment_psychology.md",
+      "accent_color": "#bf3989",
+      "keywords": [
+        "relationship",
+        "dating",
+        "attachment",
+        "insecurity",
+        "narcissist",
+        "partner",
+        "love",
+        "couple",
+        "jealousy",
+        "codependency",
+        "boundaries",
+        "miss you",
+        "attraction"
+      ],
+      "sources": [
+        "SRC-YT-2026-003",
+        "SRC-YT-2026-004",
+        "SRC-YT-2026-005",
+        "SRC-YT-2026-006",
+        "SRC-YT-2026-007"
+      ]
+    },
+    {
+      "topic_id": "TOPIC-ASPIRANTS",
+      "codex_id": "MASTER-ASPIRANT-DECISION",
+      "slug": "aspirant_psychology_and_decision_architecture",
+      "title": "Competitive Exam Aspirant Psychology & Decision Architecture",
+      "subtitle": "Unified mega-synthesis on behavioral decision theory, identity detachment, and cognitive resilience in high-stakes competitive examinations",
+      "badge": "✨ MEGA-SYNTHESIS",
+      "category_label": "Aspirant Psychology & Decision Architecture",
+      "master_path": "knowledge/master/aspirant_psychology_and_decision_architecture.md",
+      "accent_color": "#1f883d",
+      "keywords": [
+        "exam",
+        "aspirant",
+        "competitive",
+        "sunk cost",
+        "upsc",
+        "preparation",
+        "career",
+        "study",
+        "motivation"
+      ],
+      "sources": [
+        "SRC-YT-2026-001",
+        "SRC-YT-2026-002"
+      ]
+    }
+  ]
+}

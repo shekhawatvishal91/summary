@@ -37,7 +37,10 @@ function initApp() {
 function renderMetrics() {
   if (!manifestData || !manifestData.metrics) return;
   const m = manifestData.metrics;
-  document.getElementById('metric-sources').textContent = m.total_sources || 0;
+  const fixtureCount = manifestData.sources.filter(s => s.raw_path && (s.raw_path.includes('test') || s.raw_path.includes('fixture')) || s.source_id === 'SRC-RP-2026-001').length;
+  const realCount = Math.max(0, (m.total_sources || 0) - fixtureCount);
+
+  document.getElementById('metric-sources').textContent = `${realCount} (Benchmark: ${fixtureCount})`;
   document.getElementById('metric-concepts').textContent = m.total_concepts || 0;
   document.getElementById('metric-claims').textContent = m.total_claims || 0;
   document.getElementById('metric-edges').textContent = m.total_edges || 0;
@@ -60,17 +63,27 @@ function renderSources(filter = '') {
     return;
   }
 
+  const isFixture = s => s.raw_path && (s.raw_path.includes('test') || s.raw_path.includes('fixture')) || s.source_id === 'SRC-RP-2026-001';
+
   container.innerHTML = sources.map(s => `
-    <div class="item-card">
+    <div class="item-card" style="${isFixture(s) ? 'border-left: 4px solid #8b949e;' : ''}">
       <div class="item-header">
         <span class="item-title">${escapeHtml(s.title)}</span>
-        <span class="badge ${s.epistemic_tier === 'tier_1' ? 'badge-tier1' : 'badge-tier2'}">${s.epistemic_tier}</span>
+        <div>
+          ${isFixture(s) ? '<span class="badge" style="background:#484f58; color:#e6edf3; margin-right:0.35rem;">TEST FIXTURE BENCHMARK</span>' : ''}
+          <span class="badge ${s.epistemic_tier === 'tier_1' ? 'badge-tier1' : 'badge-tier2'}">${s.epistemic_tier}</span>
+        </div>
       </div>
       <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.5rem;">
         <strong>ID:</strong> <code>${s.source_id}</code> | <strong>Author:</strong> ${escapeHtml(s.author)} (${s.published_year}) | <strong>Medium:</strong> ${s.medium}
       </p>
+      ${isFixture(s) ? `
+        <p style="font-size:0.8rem; color:#8b949e; margin-bottom:0.5rem; font-style:italic;">
+          Note: This entry is an automated regression test fixture used to verify pipeline integrity, not a live user book.
+        </p>
+      ` : ''}
       <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">
-        <strong>Status:</strong> <span class="badge badge-scaffolded">${s.decoding_status}</span>
+        <strong>Decoding Status:</strong> <span class="badge badge-scaffolded">${s.decoding_status}</span>
       </p>
       <div style="display:flex; gap:0.5rem;">
         <button onclick="viewCodex('${s.source_id}')" style="background:var(--accent-color); border:none; color:#0f141c; padding:0.4rem 0.8rem; border-radius:4px; font-weight:600; cursor:pointer;">

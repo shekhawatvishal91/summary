@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T04:24:14.653Z",
+  "built_at": "2026-10-11T04:39:55.506Z",
   "metrics": {
     "total_sources": 1,
     "total_concepts": 2,
@@ -48,7 +48,7 @@
         "SRC-RP-2026-001"
       ],
       "created_at": "2026-10-11T04:00:13.125Z",
-      "updated_at": "2026-10-11T04:24:14.633Z"
+      "updated_at": "2026-10-11T04:39:55.491Z"
     },
     {
       "node_id": "CON-005",
@@ -61,7 +61,7 @@
       "associated_claims": [],
       "sources_contributing": [],
       "created_at": "2026-10-11T04:00:13.141Z",
-      "updated_at": "2026-10-11T04:24:14.637Z"
+      "updated_at": "2026-10-11T04:39:55.494Z"
     }
   ],
   "claims": [

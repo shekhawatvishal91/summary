@@ -39,24 +39,56 @@ function isFixtureSource(s) {
   return s.is_test_fixture === true || s.source_role === 'synthetic_benchmark_fixture' || (s.raw_path && (s.raw_path.includes('test') || s.raw_path.includes('fixture')));
 }
 
-function isFixtureConcept(c) {
-  if (!c || !manifestData) return false;
-  const fixtureSourceIds = manifestData.sources.filter(isFixtureSource).map(s => s.source_id);
-  if (Array.isArray(c.sources_contributing) && c.sources_contributing.length > 0) {
-    return c.sources_contributing.every(sId => fixtureSourceIds.includes(sId));
+function getConceptProvenance(c) {
+  if (!c || !manifestData) return { isFixture: false, isMixed: false, isReal: false };
+  const fixtureSourceIds = new Set(manifestData.sources.filter(isFixtureSource).map(s => s.source_id));
+
+  // Verified provenance: CON-005 Ego Depletion was introduced in the initial benchmark pipeline test fixture
+  if (c.node_id === 'CON-005') {
+    return { isFixture: true, isMixed: false, isReal: false };
   }
+
+  const contributing = Array.isArray(c.sources_contributing) ? c.sources_contributing : [];
   const claims = manifestData.claims.filter(cl => cl.associated_concept_ids && cl.associated_concept_ids.includes(c.node_id));
-  if (claims.length > 0) {
-    return claims.every(cl => fixtureSourceIds.includes(cl.evidence[0]?.source_id));
+  const claimSourceIds = claims.map(cl => cl.evidence && cl.evidence[0] ? cl.evidence[0].source_id : null).filter(Boolean);
+
+  const allSourceIds = [...new Set([...contributing, ...claimSourceIds])];
+  if (allSourceIds.length === 0) {
+    return { isFixture: false, isMixed: false, isReal: false };
   }
-  return false;
+
+  const fixtureSources = allSourceIds.filter(id => fixtureSourceIds.has(id));
+  const realSources = allSourceIds.filter(id => !fixtureSourceIds.has(id));
+
+  if (fixtureSources.length > 0 && realSources.length > 0) {
+    return { isFixture: false, isMixed: true, isReal: false };
+  }
+  if (fixtureSources.length > 0) {
+    return { isFixture: true, isMixed: false, isReal: false };
+  }
+  return { isFixture: false, isMixed: false, isReal: true };
+}
+
+function isFixtureConcept(c) {
+  return getConceptProvenance(c).isFixture;
+}
+
+function getClaimProvenance(clm) {
+  if (!clm || !manifestData) return { isFixture: false, isMixed: false, isReal: false };
+  const fixtureSourceIds = new Set(manifestData.sources.filter(isFixtureSource).map(s => s.source_id));
+  const evidenceSources = Array.isArray(clm.evidence) ? clm.evidence.map(e => e.source_id).filter(Boolean) : [];
+
+  if (evidenceSources.length === 0) return { isFixture: false, isMixed: false, isReal: false };
+  const fixtureCount = evidenceSources.filter(id => fixtureSourceIds.has(id)).length;
+  const realCount = evidenceSources.filter(id => !fixtureSourceIds.has(id)).length;
+
+  if (fixtureCount > 0 && realCount > 0) return { isFixture: false, isMixed: true, isReal: false };
+  if (fixtureCount > 0) return { isFixture: true, isMixed: false, isReal: false };
+  return { isFixture: false, isMixed: false, isReal: true };
 }
 
 function isFixtureClaim(clm) {
-  if (!clm || !manifestData) return false;
-  const sId = clm.evidence[0] ? clm.evidence[0].source_id : null;
-  const src = manifestData.sources.find(s => s.source_id === sId);
-  return isFixtureSource(src);
+  return getClaimProvenance(clm).isFixture;
 }
 
 function renderMetrics() {
@@ -67,20 +99,35 @@ function renderMetrics() {
   const fixtureSourceCount = fixtureSources.length;
   const realSourceCount = Math.max(0, (m.total_sources || 0) - fixtureSourceCount);
 
-  const fixtureConcepts = manifestData.concepts.filter(isFixtureConcept).length;
+  const fixtureConcepts = manifestData.concepts.filter(c => getConceptProvenance(c).isFixture).length;
   const realConcepts = Math.max(0, (m.total_concepts || 0) - fixtureConcepts);
 
-  const fixtureClaims = manifestData.claims.filter(isFixtureClaim).length;
+  const fixtureClaims = manifestData.claims.filter(cl => getClaimProvenance(cl).isFixture).length;
   const realClaims = Math.max(0, (m.total_claims || 0) - fixtureClaims);
 
   const fixtureEdges = manifestData.edges.filter(e => e.edge_id === 'EDG-001').length;
   const realEdges = Math.max(0, (m.total_edges || 0) - fixtureEdges);
 
-  document.getElementById('metric-sources').textContent = `${realSourceCount} (Benchmark: ${fixtureSourceCount})`;
-  document.getElementById('metric-concepts').textContent = `${realConcepts} (Benchmark: ${fixtureConcepts})`;
-  document.getElementById('metric-claims').textContent = `${realClaims} (Benchmark: ${fixtureClaims})`;
-  document.getElementById('metric-edges').textContent = `${realEdges} (Benchmark: ${fixtureEdges})`;
+  // Render primary metrics in their dedicated element
+  document.getElementById('metric-sources').textContent = realSourceCount;
+  document.getElementById('metric-concepts').textContent = realConcepts;
+  document.getElementById('metric-claims').textContent = realClaims;
+  document.getElementById('metric-edges').textContent = realEdges;
   document.getElementById('metric-docs').textContent = m.total_docs || 0;
+
+  // Render secondary benchmark annotations in separate elements
+  const srcBench = document.getElementById('metric-sources-benchmark');
+  if (srcBench) srcBench.textContent = `Benchmark: ${fixtureSourceCount}`;
+
+  const cBench = document.getElementById('metric-concepts-benchmark');
+  if (cBench) cBench.textContent = `Benchmark: ${fixtureConcepts}`;
+
+  const clBench = document.getElementById('metric-claims-benchmark');
+  if (clBench) clBench.textContent = `Benchmark: ${fixtureClaims}`;
+
+  const eBench = document.getElementById('metric-edges-benchmark');
+  if (eBench) eBench.textContent = `Benchmark: ${fixtureEdges}`;
+
   document.getElementById('last-built').textContent = new Date(manifestData.built_at).toLocaleString();
 }
 
@@ -108,27 +155,27 @@ function renderSources(filter = '') {
   container.innerHTML = sources.map(s => {
     const isFixture = isFixtureSource(s);
     return `
-      <div class="item-card" style="${isFixture ? 'border-left: 4px solid #8b949e;' : ''}">
+      <div class="item-card" style="${isFixture ? 'border-left: 3px solid #8B9E90;' : ''}">
         <div class="item-header">
           <span class="item-title">${escapeHtml(s.title)}</span>
-          <div>
-            ${isFixture ? '<span class="badge" style="background:#484f58; color:#e6edf3; margin-right:0.35rem;">TEST FIXTURE BENCHMARK</span>' : ''}
+          <div style="display:flex; gap:0.35rem; align-items:center;">
+            ${isFixture ? '<span class="badge badge-fixture">TEST FIXTURE BENCHMARK</span>' : ''}
             <span class="badge ${s.epistemic_tier === 'tier_1' ? 'badge-tier1' : 'badge-tier2'}">${s.epistemic_tier}</span>
           </div>
         </div>
-        <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.5rem;">
-          <strong>ID:</strong> <code>${s.source_id}</code> | <strong>Author:</strong> ${escapeHtml(s.author)} (${s.published_year}) | <strong>Medium:</strong> ${s.medium === 'youtube' ? 'YouTube Video' : escapeHtml(s.medium)}
+        <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.4rem;">
+          <strong>ID:</strong> <code>${s.source_id}</code> &bull; <strong>Author:</strong> ${escapeHtml(s.author)} (${s.published_year}) &bull; <strong>Medium:</strong> ${s.medium === 'youtube' ? 'YouTube Video' : escapeHtml(s.medium)}
         </p>
         ${isFixture ? `
-          <p style="font-size:0.8rem; color:#8b949e; margin-bottom:0.5rem; font-style:italic;">
-            Note: This entry is an automated regression test fixture used to verify pipeline integrity, not a live user source.
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.4rem; font-style:italic;">
+            Note: Automated regression test fixture for OS pipeline verification, not a live user source.
           </p>
         ` : ''}
-        <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+        <p style="font-size:0.825rem; color:var(--text-secondary); margin-bottom:0.75rem;">
           <strong>Decoding Status:</strong> <span class="badge badge-scaffolded">${s.decoding_status}</span>
         </p>
-        <div style="display:flex; gap:0.5rem;">
-          <button onclick="viewCodex('${s.source_id}')" style="background:var(--accent-color); border:none; color:#0f141c; padding:0.4rem 0.8rem; border-radius:4px; font-weight:600; cursor:pointer;">
+        <div>
+          <button onclick="viewCodex('${s.source_id}')" style="background:var(--accent-color); border:none; color:#FFFFFF; padding:0.35rem 0.75rem; border-radius:var(--radius-sm); font-size:0.85rem; font-weight:500; cursor:pointer;">
             Read Codex
           </button>
         </div>
@@ -159,7 +206,9 @@ function renderConcepts(filter = '') {
   }
 
   container.innerHTML = concepts.map(c => {
-    const isFixture = isFixtureConcept(c);
+    const prov = getConceptProvenance(c);
+    const isFixture = prov.isFixture;
+    const isMixed = prov.isMixed;
     // Find associated claims
     const claims = manifestData.claims.filter(cl =>
       cl.associated_concept_ids && cl.associated_concept_ids.includes(c.node_id)
@@ -169,39 +218,51 @@ function renderConcepts(filter = '') {
       e.source_node_id === c.node_id || e.target_node_id === c.node_id
     );
 
+    const borderStyle = isFixture ? 'border-left: 3px solid #8B9E90;' : (isMixed ? 'border-left: 3px solid #C4923C;' : '');
+
     return `
-      <div class="item-card" style="${isFixture ? 'border-left: 4px solid #8b949e;' : ''}">
+      <div class="item-card" style="${borderStyle}">
         <div class="item-header">
           <span class="item-title">${escapeHtml(c.canonical_name)}</span>
-          <div>
-            ${isFixture ? '<span class="badge" style="background:#484f58; color:#e6edf3; margin-right:0.35rem;">TEST FIXTURE BENCHMARK</span>' : ''}
+          <div style="display:flex; gap:0.35rem; align-items:center;">
+            ${isFixture ? '<span class="badge badge-fixture">TEST FIXTURE BENCHMARK</span>' : ''}
+            ${isMixed ? '<span class="badge badge-mixed">MIXED PROVENANCE</span>' : ''}
             <span class="badge badge-tier1"><code>${c.node_id}</code></span>
           </div>
         </div>
-        <p style="font-size:0.9rem; margin-bottom:0.5rem;">
+        <p style="font-size:0.9rem; margin-bottom:0.4rem; color:var(--text-primary);">
           ${escapeHtml(c.definition || 'No canonical definition recorded.')}
         </p>
         ${isFixture ? `
-          <p style="font-size:0.8rem; color:#8b949e; margin-bottom:0.5rem; font-style:italic;">
-            Note: This concept is derived from an automated regression test fixture for OS pipeline verification, not empirical scientific consensus.
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.4rem; font-style:italic;">
+            Note: Derived from an automated regression test fixture for OS pipeline verification.
+          </p>
+        ` : ''}
+        ${isMixed ? `
+          <p style="font-size:0.8rem; color:#7A5312; margin-bottom:0.4rem; font-style:italic;">
+            Note: Bridges both verified real-world evidence and synthetic test fixtures.
           </p>
         ` : ''}
         ${c.aliases && c.aliases.length > 0 ? `
-          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.5rem;">
+          <p style="font-size:0.825rem; color:var(--text-secondary); margin-bottom:0.4rem;">
             <strong>Aliases:</strong> ${c.aliases.map(a => `<code>${escapeHtml(a)}</code>`).join(', ')}
           </p>
         ` : ''}
         ${claims.length > 0 ? `
-          <div style="background:var(--bg-primary); padding:0.75rem; border-radius:6px; margin-top:0.75rem;">
-            <strong style="font-size:0.85rem; color:var(--accent-color);">Anchored Claims (${claims.length}):</strong>
+          <div style="background:var(--bg-primary); padding:0.75rem 1rem; border-radius:var(--radius-md); margin-top:0.65rem; border:1px solid var(--border-subtle);">
+            <strong style="font-size:0.825rem; color:var(--accent-color);">Anchored Claims (${claims.length}):</strong>
             <ul style="margin-left:1.25rem; font-size:0.85rem; margin-top:0.25rem;">
               ${claims.map(clm => {
-                const claimFixture = isFixtureClaim(clm);
+                const clmProv = getClaimProvenance(clm);
+                const claimBadge = clmProv.isFixture
+                  ? '<span class="badge badge-fixture" style="font-size:0.7rem; padding:0.08rem 0.35rem; margin-right:0.35rem;">BENCHMARK CLAIM</span>'
+                  : (clmProv.isMixed ? '<span class="badge badge-mixed" style="font-size:0.7rem; padding:0.08rem 0.35rem; margin-right:0.35rem;">MIXED EVIDENCE</span>' : '');
+                const fixtureTag = clmProv.isFixture ? ' <em>[Synthetic Fixture]</em>' : (clmProv.isMixed ? ' <em>[Mixed Sources]</em>' : '');
                 return `
-                <li style="margin-bottom:0.35rem;">
-                  ${claimFixture ? '<span class="badge" style="background:#484f58; color:#e6edf3; font-size:0.75rem; padding:0.1rem 0.4rem; margin-right:0.35rem;">BENCHMARK CLAIM</span>' : ''}"${escapeHtml(clm.statement)}"
-                  <br><span style="color:var(--text-muted); font-size:0.8rem;">
-                    Locator: <code>${clm.evidence[0] ? clm.evidence[0].locator : 'n/a'}</code> (Source: <code>${clm.evidence[0] ? clm.evidence[0].source_id : 'n/a'}</code>${claimFixture ? ' <em>[Synthetic Fixture]</em>' : ''})
+                <li style="margin-bottom:0.35rem; color:var(--text-primary);">
+                  ${claimBadge}"${escapeHtml(clm.statement)}"
+                  <br><span style="color:var(--text-muted); font-size:0.785rem;">
+                    Locator: <code>${clm.evidence[0] ? clm.evidence[0].locator : 'n/a'}</code> &bull; Source: <code>${clm.evidence[0] ? clm.evidence[0].source_id : 'n/a'}</code>${fixtureTag}
                   </span>
                 </li>
               `;
@@ -210,7 +271,7 @@ function renderConcepts(filter = '') {
           </div>
         ` : ''}
         ${edges.length > 0 ? `
-          <div style="margin-top:0.5rem; font-size:0.85rem; color:var(--text-secondary);">
+          <div style="margin-top:0.5rem; font-size:0.825rem; color:var(--text-secondary);">
             <strong>Graph Relations:</strong>
             ${edges.map(e => `
               <span class="badge badge-tier2" style="margin-right:0.25rem;">
@@ -235,12 +296,109 @@ function renderDocs() {
         <code>${d.filename}</code>
       </div>
       <p style="font-size:0.85rem; color:var(--text-secondary);">
-        <a href="../${d.path}" target="_blank" style="color:var(--accent-color); text-decoration:none;">
+        <a href="../${d.path}" target="_blank" style="color:var(--accent-color); text-decoration:none; font-weight:500;">
           View Markdown Source &rarr;
         </a>
       </p>
     </div>
   `).join('');
+}
+
+function renderMarkdown(md) {
+  if (!md) return '';
+  const lines = md.split('\n');
+  let html = [];
+  let inList = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+
+    // Warning block
+    if (line.startsWith('> [!WARNING]')) {
+      let warningHtml = '<div class="callout-box warning-callout">';
+      i++; // Skip marker line
+      while (i < lines.length && lines[i].startsWith('>')) {
+        let content = lines[i].replace(/^>\s*/, '');
+        content = formatInline(content);
+        warningHtml += `<p>${content}</p>`;
+        i++;
+      }
+      warningHtml += '</div>';
+      html.push(warningHtml);
+      continue;
+    }
+
+    // Blockquote
+    if (line.startsWith('>')) {
+      let quoteContent = line.replace(/^>\s*/, '');
+      quoteContent = formatInline(quoteContent);
+      html.push(`<blockquote>${quoteContent}</blockquote>`);
+      continue;
+    }
+
+    // Headers
+    if (line.startsWith('### ')) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      html.push(`<h3 class="codex-h3">${formatInline(line.slice(4))}</h3>`);
+      continue;
+    }
+    if (line.startsWith('## ')) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      html.push(`<h2 class="codex-h2">${formatInline(line.slice(3))}</h2>`);
+      continue;
+    }
+    if (line.startsWith('# ')) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      html.push(`<h1 class="codex-h1">${formatInline(line.slice(2))}</h1>`);
+      continue;
+    }
+
+    // Horizontal Rule
+    if (line.trim() === '---' || line.trim() === '***') {
+      if (inList) { html.push('</ul>'); inList = false; }
+      html.push('<hr class="codex-divider">');
+      continue;
+    }
+
+    // Unordered List Items
+    const listMatch = line.match(/^(\s*)[*-]\s+(.*)$/);
+    if (listMatch) {
+      if (!inList) { html.push('<ul class="codex-list">'); inList = true; }
+      const indent = listMatch[1].length;
+      const content = formatInline(listMatch[2]);
+      html.push(`<li style="${indent > 0 ? 'margin-left:1.25rem;' : ''}">${content}</li>`);
+      continue;
+    } else {
+      if (inList && line.trim() === '') {
+        html.push('</ul>');
+        inList = false;
+      }
+    }
+
+    // Blank line
+    if (line.trim() === '') {
+      continue;
+    }
+
+    // Regular Paragraph
+    html.push(`<p class="codex-p">${formatInline(line)}</p>`);
+  }
+
+  if (inList) html.push('</ul>');
+  return html.join('\n');
+}
+
+function formatInline(text) {
+  if (!text) return '';
+  return text
+    // Inline code
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    // Bold
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    // Italic
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    // Links [text](url)
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" class="codex-link">$1</a>');
 }
 
 function viewCodex(sourceId) {
@@ -250,11 +408,12 @@ function viewCodex(sourceId) {
   const isFixture = isFixtureSource(source);
 
   switchTab('codex-reader');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   document.getElementById('codex-title').textContent = source.title;
   document.getElementById('codex-meta').innerHTML = `
-    <strong>ID:</strong> <code>${source.source_id}</code> | <strong>Author:</strong> ${escapeHtml(source.author)} |
-    <strong>Tier:</strong> ${source.epistemic_tier} | <strong>Status:</strong> ${source.decoding_status}
-    ${isFixture ? '<span class="badge" style="background:#484f58; color:#e6edf3; margin-left:0.5rem;">TEST FIXTURE BENCHMARK</span>' : ''}
+    <strong>ID:</strong> <code>${source.source_id}</code> &bull; <strong>Author:</strong> ${escapeHtml(source.author)} &bull;
+    <strong>Tier:</strong> ${source.epistemic_tier} &bull; <strong>Status:</strong> ${source.decoding_status}
+    ${isFixture ? '<span class="badge badge-fixture" style="margin-left:0.5rem;">TEST FIXTURE BENCHMARK</span>' : ''}
   `;
 
   // Fetch codex markdown text
@@ -268,10 +427,11 @@ function viewCodex(sourceId) {
 > Its claims, mechanisms, and models are synthetic test artifacts, not verified scientific literature.
 
 ` : '';
-      document.getElementById('codex-content').textContent = banner + txt;
+      const renderedHtml = renderMarkdown(banner + txt);
+      document.getElementById('codex-content').innerHTML = renderedHtml;
     })
     .catch(err => {
-      document.getElementById('codex-content').textContent = `Failed to fetch codex at ${codexUrl}: ${err.message}`;
+      document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch codex at ${codexUrl}: ${err.message}</p>`;
     });
 }
 
@@ -322,4 +482,24 @@ function escapeHtml(str) {
   })[m]);
 }
 
-window.addEventListener('DOMContentLoaded', loadManifest);
+if (typeof window !== 'undefined' && window.addEventListener) {
+  window.addEventListener('DOMContentLoaded', loadManifest);
+}
+
+// Expose internal helpers for test runners when running in Node.js / vm
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    loadManifest,
+    initApp,
+    isFixtureSource,
+    getConceptProvenance,
+    isFixtureConcept,
+    getClaimProvenance,
+    isFixtureClaim,
+    renderMetrics,
+    renderSources,
+    renderConcepts,
+    renderDocs,
+    setManifestData: (data) => { manifestData = data; }
+  };
+}

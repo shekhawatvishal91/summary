@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Knowledge Brain OS — Reader & Explorer</title>
+  <title>Knowledge Brain OS — Research & Notes Workspace</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
     <div class="logo-area">
-      <span class="logo-icon">🧠</span>
-      <div>
-        <div class="logo-title">AI Knowledge Brain OS</div>
-      </div>
+      <span class="logo-icon">🌿</span>
+      <div class="logo-title">Knowledge Brain OS</div>
       <span class="logo-badge">v1.0.0</span>
     </div>
     <nav>
       <button class="active" data-view="dashboard-view">Dashboard</button>
       <button data-view="sources-view">Sources Library</button>
-      <button data-view="concepts-view">Knowledge Explorer</button>
-      <button data-view="docs-view">Documentation</button>
-      <button data-view="codex-reader" style="display:none;" id="codex-tab">Codex Reader</button>
+      <button data-view="concepts-view">Idea & Concept Graph</button>
+      <button data-view="docs-view">System Architecture</button>
+      <button data-view="codex-reader" style="display:none;" id="codex-tab">Master Notes Reader</button>
     </nav>
   </header>
 
@@ -30,92 +28,141 @@
 
     <!-- VIEW 1: DASHBOARD -->
     <section id="dashboard-view" class="view-section active">
-      <div style="margin-bottom: 2rem;">
-        <h1 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem;">System Knowledge Reservoir</h1>
-        <p style="color: var(--text-secondary);">
-          A source-faithful, mathematically traceable AI operating system. Preserves full monograph depth (Product A) and cross-source concept graphs (Product B).
+      <div class="page-intro">
+        <h1 class="page-title">Knowledge Workspace</h1>
+        <p class="page-subtitle">
+          Distilled master notes and interconnected concepts from real videos, books, and papers—grounded in verbatim evidence without summaries that lose depth.
         </p>
       </div>
 
       <div class="metrics-grid">
         <div class="metric-card">
-          <div class="metric-label">Real User Sources</div>
-          <div class="metric-value" id="metric-sources">0</div>
+          <div class="metric-label">Processed Sources</div>
+          <div class="metric-value-row">
+            <span class="metric-value" id="metric-sources">0</span>
+            <span class="metric-benchmark" id="metric-sources-benchmark">Benchmark: 0</span>
+          </div>
         </div>
         <div class="metric-card">
-          <div class="metric-label">Canonical Concepts</div>
-          <div class="metric-value" id="metric-concepts">0</div>
+          <div class="metric-label">Key Concepts</div>
+          <div class="metric-value-row">
+            <span class="metric-value" id="metric-concepts">0</span>
+            <span class="metric-benchmark" id="metric-concepts-benchmark">Benchmark: 0</span>
+          </div>
         </div>
         <div class="metric-card">
           <div class="metric-label">Anchored Claims</div>
-          <div class="metric-value" id="metric-claims">0</div>
+          <div class="metric-value-row">
+            <span class="metric-value" id="metric-claims">0</span>
+            <span class="metric-benchmark" id="metric-claims-benchmark">Benchmark: 0</span>
+          </div>
         </div>
         <div class="metric-card">
-          <div class="metric-label">Graph Relationships</div>
-          <div class="metric-value" id="metric-edges">0</div>
+          <div class="metric-label">Idea Connections</div>
+          <div class="metric-value-row">
+            <span class="metric-value" id="metric-edges">0</span>
+            <span class="metric-benchmark" id="metric-edges-benchmark">Benchmark: 0</span>
+          </div>
         </div>
         <div class="metric-card">
-          <div class="metric-label">Constitution Volumes</div>
-          <div class="metric-value" id="metric-docs">18</div>
+          <div class="metric-label">System Manuals</div>
+          <div class="metric-value-row">
+            <span class="metric-value" id="metric-docs">18</span>
+            <span class="metric-benchmark">Authoritative</span>
+          </div>
         </div>
       </div>
 
-      <div class="item-card">
+      <!-- Quick Jump to Latest Note -->
+      <div class="item-card" style="margin-bottom:1.25rem; border-left: 3px solid var(--accent-color);">
         <div class="item-header">
-          <span class="item-title">System Status & Invariants</span>
-          <span class="badge badge-tier1">VERIFIED</span>
+          <div>
+            <span class="badge" style="background:var(--bg-subtle); color:var(--accent-color); margin-bottom:0.25rem;">FEATURED MASTER NOTE</span>
+            <h2 style="font-size:1.15rem; font-weight:600; color:var(--text-primary); margin-top:0.2rem;">
+              Competitive Exam Preparation Is Trapping You (Sunk Cost Fallacy)
+            </h2>
+          </div>
+          <button onclick="viewCodex('SRC-YT-2026-001')" style="background:var(--accent-color); border:none; color:#FFFFFF; padding:0.45rem 0.95rem; border-radius:var(--radius-sm); font-size:0.875rem; font-weight:500; cursor:pointer;">
+            Open Master Note &rarr;
+          </button>
         </div>
-        <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-secondary);">
-          <li><strong>Zero Hallucination Standard:</strong> 100% of claims are anchored to physical locators.</li>
-          <li><strong>Dual-Product Separation:</strong> Product A codices and Product B graph nodes are preserved in parallel.</li>
-          <li><strong>Local Manifest Last Compiled:</strong> <span id="last-built">Never</span></li>
+        <p style="font-size:0.875rem; color:var(--text-secondary); margin-bottom:0.4rem;">
+          <strong>Author:</strong> ABrainOConscious &bull; <strong>Format:</strong> YouTube Video &bull; <strong>Deconstructed into:</strong> 6 Dimensions, 7 Verbatim Claims, and 4 Connected Concepts.
+        </p>
+        <p style="font-size:0.825rem; color:var(--text-muted);">
+          Key insights: Why perseverance parables fail in multi-year exam cycles, Identity Attachment (<em>Astitva Chipkaav</em>), Compounding Loss, and the Zero-Based Opportunity Test.
+        </p>
+      </div>
+
+      <div class="status-card">
+        <div class="item-header">
+          <span class="item-title">System Health & Standards</span>
+          <span class="badge badge-tier1" id="system-status-badge">CHECKS PASSED</span>
+        </div>
+        <ul>
+          <li><strong>Zero Hallucination Anchoring:</strong> 100% of claims are tied to verbatim timestamps or physical line locators.</li>
+          <li><strong>Dual Knowledge Storage:</strong> Exhaustive standalone notes and connected idea graphs are kept in sync.</li>
+          <li><strong>Catalog Index Last Updated:</strong> <span id="last-built">Never</span></li>
         </ul>
       </div>
     </section>
 
     <!-- VIEW 2: SOURCES LIBRARY -->
     <section id="sources-view" class="view-section">
-      <h2 style="margin-bottom: 1rem;">Registered Sources Library</h2>
-      <input type="text" id="source-search" class="search-bar" placeholder="Search by title, author, or source ID...">
-      <div style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
-        <input type="checkbox" id="hide-fixture-sources" style="cursor:pointer;">
-        <label for="hide-fixture-sources" style="font-size:0.85rem; color:var(--text-secondary); cursor:pointer;">Hide Benchmark Test Fixtures</label>
+      <div class="page-intro">
+        <h1 class="page-title">Sources & Media Library</h1>
+        <p class="page-subtitle">Every ingested video, book, or paper with full analytical master notes and timestamped transcripts.</p>
+      </div>
+      <input type="text" id="source-search" class="search-bar" placeholder="Filter sources by title, author, or ID...">
+      <div class="filter-bar">
+        <input type="checkbox" id="hide-fixture-sources" style="cursor:pointer; accent-color:var(--accent-color);">
+        <label for="hide-fixture-sources" class="filter-label">Hide benchmark test fixtures</label>
       </div>
       <div id="sources-list" class="card-list"></div>
     </section>
 
     <!-- VIEW 3: KNOWLEDGE EXPLORER -->
     <section id="concepts-view" class="view-section">
-      <h2 style="margin-bottom: 1rem;">Ontological Concept & Claim Graph</h2>
-      <input type="text" id="concept-search" class="search-bar" placeholder="Search canonical concepts, aliases, or definitions...">
-      <div style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
-        <input type="checkbox" id="hide-fixture-concepts" style="cursor:pointer;">
-        <label for="hide-fixture-concepts" style="font-size:0.85rem; color:var(--text-secondary); cursor:pointer;">Hide Benchmark Test Concepts</label>
+      <div class="page-intro">
+        <h1 class="page-title">Idea & Concept Graph</h1>
+        <p class="page-subtitle">Core mental models and cognitive biases connected across multiple sources.</p>
+      </div>
+      <input type="text" id="concept-search" class="search-bar" placeholder="Search concepts, aliases, or definitions...">
+      <div class="filter-bar">
+        <input type="checkbox" id="hide-fixture-concepts" style="cursor:pointer; accent-color:var(--accent-color);">
+        <label for="hide-fixture-concepts" class="filter-label">Hide benchmark test concepts</label>
       </div>
       <div id="concepts-list" class="card-list"></div>
     </section>
 
     <!-- VIEW 4: DOCUMENTATION HUB -->
     <section id="docs-view" class="view-section">
-      <h2 style="margin-bottom: 1rem;">Constitutional & Architecture Manuals</h2>
+      <div class="page-intro">
+        <h1 class="page-title">Architecture & Governance Manuals</h1>
+        <p class="page-subtitle">Authoritative operating instructions, schema definitions, and ingestion protocols governing this system.</p>
+      </div>
       <div id="docs-list" class="card-list"></div>
     </section>
 
     <!-- VIEW 5: CODEX READER -->
     <section id="codex-reader" class="view-section">
-      <button onclick="switchTab('sources-view')" style="background:var(--bg-tertiary); border:1px solid var(--border-color); color:var(--text-primary); padding:0.4rem 0.8rem; border-radius:4px; cursor:pointer; margin-bottom:1rem;">
-        &larr; Back to Sources
-      </button>
-      <h2 id="codex-title" style="margin-bottom: 0.5rem;">Source Title</h2>
-      <p id="codex-meta" style="color:var(--text-secondary); margin-bottom:1.5rem;"></p>
+      <div style="margin-bottom:1.25rem;">
+        <button onclick="switchTab('sources-view')" style="background:var(--bg-surface); border:1px solid var(--border-color); color:var(--text-secondary); padding:0.4rem 0.85rem; border-radius:var(--radius-sm); cursor:pointer; font-size:0.875rem; font-weight:500;">
+          &larr; Back to Sources
+        </button>
+      </div>
+      <div class="codex-header-card" style="margin-bottom:1.5rem; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; box-shadow:var(--shadow-subtle);">
+        <h1 id="codex-title" class="page-title" style="margin-bottom:0.35rem;">Source Title</h1>
+        <p id="codex-meta" style="color:var(--text-secondary); font-size:0.875rem; margin-bottom:0;"></p>
+      </div>
       <div class="codex-viewer">
-        <pre id="codex-content" style="white-space:pre-wrap;">Loading codex text...</pre>
+        <div id="codex-content">Loading note...</div>
       </div>
     </section>
   </main>
 
   <footer>
-    AI Knowledge Brain Operating System &bull; <a href="https://github.com/shekhawatvishal91/summary" target="_blank" style="color:var(--accent-color);">GitHub Repository</a> &bull; Zero Hallucination Certified
+    Knowledge Brain OS &bull; <a href="https://github.com/shekhawatvishal91/summary" target="_blank">GitHub Repository</a> &bull; System Integrity Validated
   </footer>
 
   <script src="app.js"></script>

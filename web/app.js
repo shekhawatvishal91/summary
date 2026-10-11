@@ -459,12 +459,12 @@ function viewCodex(sourceId) {
     currentActiveCodexId = sourceId;
     switchTab('codex-reader');
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById('codex-title').textContent = 'Relationship Dynamics & Attachment Psychology: The Anatomy of Self-Sabotage';
+    document.getElementById('codex-title').textContent = '10 Relationship Habits That Slowly Push a Partner Away';
     document.getElementById('codex-meta').innerHTML = `
-      <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">CROSS-SOURCE TOPIC HUB</span>
-      <strong>Topic:</strong> Romantic Attachment &amp; Inversion Behavioral Diagnostics &bull;
-      <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull;
-      <strong>Status:</strong> VERIFIED MASTER CODEX
+      <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">TOPIC MASTER ESSAY</span>
+      <strong>Theme:</strong> Insecurity, Dependence &amp; Self-Neglect &bull;
+      <strong>Patterns:</strong> 10 Core Dynamics &bull;
+      <strong>Status:</strong> COMPLETE MASTER ESSAY
     `;
 
     document.querySelectorAll('.note-switcher .switcher-btn').forEach(btn => btn.classList.remove('active'));

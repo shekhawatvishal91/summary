@@ -403,24 +403,28 @@ function renderMarkdown(md) {
     }
 
     // Practical steps block (for toggling between Essay and Field Guide modes)
-    if (line.startsWith('**Practical steps')) {
+    if (line.startsWith('**Practical steps') || line.startsWith('### Practical steps')) {
       if (inList) { html.push('</ul>'); inList = false; }
-      let stepHtml = `<div class="practical-steps-block"><p>${formatInline(line)}</p><ul class="codex-list">`;
+      const headerTitle = line.startsWith('### ') ? line.slice(4) : line;
+      let stepHtml = `<div class="practical-steps-block"><h4 class="codex-h3" style="margin-top:0; border-bottom:none; font-size:1rem; color:var(--accent-color);">${formatInline(headerTitle)}</h4><ul class="codex-list">`;
       i++;
       while (i < lines.length) {
         let stepLine = lines[i];
-        if (stepLine.startsWith('### ') || stepLine.startsWith('## ') || stepLine.trim() === '---') {
+        if ((stepLine.startsWith('### ') && !stepLine.startsWith('### Practical steps')) || stepLine.startsWith('## ') || stepLine.startsWith('# ') || stepLine.trim() === '---') {
           i--;
           break;
         }
         const bulletMatch = stepLine.match(/^(\s*)[*-]\s+(.*)$/);
+        const numMatch = stepLine.match(/^(\s*)\d+\.\s+(.*)$/);
         if (bulletMatch) {
           stepHtml += `<li>${formatInline(bulletMatch[2])}</li>`;
+        } else if (numMatch) {
+          stepHtml += `<li>${formatInline(numMatch[2])}</li>`;
         } else if (stepLine.startsWith('*') && stepLine.endsWith('*')) {
           stepHtml += `</ul><p style="margin-top:0.6rem; font-style:italic; color:var(--text-secondary);">${formatInline(stepLine)}</p>`;
           break;
         } else if (stepLine.trim().length > 0) {
-          stepHtml += `<p>${formatInline(stepLine)}</p>`;
+          stepHtml += `<p class="codex-p">${formatInline(stepLine)}</p>`;
         }
         i++;
       }
@@ -431,17 +435,19 @@ function renderMarkdown(md) {
     }
 
     // Daily practice block (for toggling between Essay and Field Guide modes)
-    if (line.startsWith('## A Simple Daily Practice')) {
+    if (line.startsWith('## A Simple Daily Practice') || line.startsWith('## The Emotional Reset') || line.startsWith('## A Sustainable Seven-Day Practice')) {
       if (inList) { html.push('</ul>'); inList = false; }
       let practiceHtml = `<div class="daily-practice-block"><h2 class="codex-h2" style="margin-top:0; border-bottom:none;">${formatInline(line.slice(3))}</h2>`;
       i++;
       while (i < lines.length) {
         let pLine = lines[i];
-        if (pLine.startsWith('## ') || pLine.trim() === '---') {
+        if ((pLine.startsWith('## ') && !pLine.startsWith('## The Emotional Reset') && !pLine.startsWith('## A Sustainable')) || pLine.startsWith('# ') || pLine.trim() === '---') {
           i--;
           break;
         }
-        if (pLine.match(/^\d+\.\s+(.*)$/)) {
+        if (pLine.match(/^(\s*)[*-]\s+(.*)$/)) {
+          practiceHtml += `<p style="margin-left:1rem; margin-bottom:0.4rem;">&bull; ${formatInline(pLine.replace(/^(\s*)[*-]\s+/, ''))}</p>`;
+        } else if (pLine.match(/^\d+\.\s+(.*)$/)) {
           practiceHtml += `<p style="margin-left:1rem; margin-bottom:0.4rem;">${formatInline(pLine)}</p>`;
         } else if (pLine.trim().length > 0) {
           practiceHtml += `<p class="codex-p">${formatInline(pLine)}</p>`;
@@ -575,12 +581,12 @@ function viewCodex(sourceId) {
     currentActiveCodexId = sourceId;
     switchTab('codex-reader');
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById('codex-title').textContent = '10 Relationship Habits That Slowly Push a Partner Away';
+    document.getElementById('codex-title').textContent = 'Emotional Independence and Healthy Relationships';
     document.getElementById('codex-meta').innerHTML = `
-      <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">TOPIC MASTER ESSAY</span>
-      <strong>Theme:</strong> Insecurity, Dependence &amp; Self-Neglect &bull;
-      <strong>Patterns:</strong> 10 Core Dynamics &bull;
-      <strong>Status:</strong> COMPLETE MASTER ESSAY
+      <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">CROSS-SOURCE MASTER TREATISE</span>
+      <strong>Topic:</strong> Emotional Independence &amp; Attachment Dynamics &bull;
+      <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull; <code>SRC-YT-2026-004</code> &bull;
+      <strong>Status:</strong> MASTER TOPIC TREATISE (5 PARTS)
     `;
 
     document.querySelectorAll('.note-switcher .switcher-btn').forEach(btn => btn.classList.remove('active'));

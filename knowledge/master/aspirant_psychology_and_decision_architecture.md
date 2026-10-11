@@ -1,14 +1,5 @@
 # Competitive Exam Aspirant Psychology & Decision Architecture: Unified Master Synthesis
 
-> **Thematic Topic:** Competitive Examination Psychology, Cognitive Biases & Student Decision Architecture  
-> **Contributing Sources:**
-> - `SRC-YT-2026-002`: *Competitive Exam Aspirant Psychology & Self-Determination* (ABrainoConscious, 51m 45s)
-> - `SRC-YT-2026-001`: *Competitive Exam Preparation Is Trapping You (Sunk Cost Fallacy)* (ABrainoConscious, 9m 12s)  
-> **Last Synthesized:** 2026-10-11 | **Status:** VERIFIED & DEDUPLICATED MASTER CODEX  
-> **Epistemic Class:** Behavioral Psychology, Decision Theory & Self-Determination (Ryan, Deci, Kahneman, Tversky)
-
----
-
 ## 1. Ontological Consensus & Core Breakthroughs
 
 Both investigations deconstruct the psychological traps of multi-year competitive exam preparation (JEE, NEET, UPSC, SSC). When synthesized, they demolish the traditional motivational narrative—proving that aspirant failure is driven not by lack of willpower, but by predictable cognitive biases and broken motivational architecture:

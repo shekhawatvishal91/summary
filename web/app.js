@@ -313,6 +313,19 @@ function renderMarkdown(md) {
   for (let i = 0; i < lines.length; i++) {
     let line = lines[i];
 
+    // Suppress repetitive metadata blockquotes at the top of notes
+    if (line.match(/^>\s*\*\*(Thematic Topic|Contributing Sources|Last Synthesized|Epistemic Class|Author|Source ID|Epistemic Tier|Decoding Status|Decoding Engine):\*\*/i)) {
+      while (i < lines.length && (lines[i].startsWith('>') || lines[i].trim() === '---' || lines[i].trim() === '')) {
+        if (lines[i].startsWith('#') && !lines[i].startsWith('>')) break;
+        i++;
+      }
+      if (i < lines.length) {
+        line = lines[i];
+      } else {
+        break;
+      }
+    }
+
     // Warning block
     if (line.startsWith('> [!WARNING]')) {
       let warningHtml = '<div class="callout-box warning-callout">';
@@ -328,11 +341,21 @@ function renderMarkdown(md) {
       continue;
     }
 
-    // Blockquote
+    // Grouped Blockquote (never create repeating individual boxes per line)
     if (line.startsWith('>')) {
-      let quoteContent = line.replace(/^>\s*/, '');
-      quoteContent = formatInline(quoteContent);
-      html.push(`<blockquote>${quoteContent}</blockquote>`);
+      if (inList) { html.push('</ul>'); inList = false; }
+      let quoteLines = [];
+      while (i < lines.length && lines[i].startsWith('>')) {
+        let qLine = lines[i].replace(/^>\s*/, '').trim();
+        if (qLine.length > 0) {
+          quoteLines.push(formatInline(qLine));
+        }
+        i++;
+      }
+      i--; // Rewind one position for loop increment
+      if (quoteLines.length > 0) {
+        html.push(`<blockquote>${quoteLines.join('<br>')}</blockquote>`);
+      }
       continue;
     }
 

@@ -1,13 +1,5 @@
 # Relationship Dynamics & Attachment Psychology: The Anatomy of Self-Sabotage
 
-> **Thematic Topic:** Romantic Psychology, Insecure-Anxious Attachment & Relational Self-Sabotage  
-> **Contributing Sources:**  
-> - `SRC-YT-2026-003`: *How To Lose The Person you Love in 49 seconds* (The Cool Therapist, 49.5s)  
-> **Last Synthesized:** 2026-10-11 | **Status:** VERIFIED MASTER CODEX  
-> **Epistemic Class:** Attachment Theory, Relational Psychotherapy & Inversion Behavioral Diagnostics (Bowlby, Ainsworth, Beck)
-
----
-
 ## 1. Ontological Foundation: The Sarcastic Inversion Diagnostic
 
 In clinical relationship psychotherapy, patients frequently rationalize toxic behavioral patterns under the guise of passion, intense romantic commitment, or protective vigilance. To pierce through these pervasive rationalizations, this master compendium employs the **Inverse Sarcastic Prescriptive Framework**—deliberately outlining the exact steps required to destroy an intimate relationship.

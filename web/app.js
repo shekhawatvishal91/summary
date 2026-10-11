@@ -459,6 +459,32 @@ function renderMarkdown(md) {
       continue;
     }
 
+    // Markdown Table handling
+    if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      let tableRows = [];
+      let isHeader = true;
+      while (i < lines.length && lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|')) {
+        let tLine = lines[i].trim();
+        if (tLine.match(/^\|(\s*:?-+:?\s*\|)+$/)) {
+          isHeader = false;
+          i++;
+          continue;
+        }
+        const cells = tLine.slice(1, -1).split('|').map(c => c.trim());
+        if (isHeader) {
+          tableRows.push(`<tr>${cells.map(c => `<th>${formatInline(c)}</th>`).join('')}</tr>`);
+          isHeader = false;
+        } else {
+          tableRows.push(`<tr>${cells.map(c => `<td>${formatInline(c)}</td>`).join('')}</tr>`);
+        }
+        i++;
+      }
+      i--;
+      html.push(`<div class="table-container"><table class="codex-table">${tableRows.join('')}</table></div>`);
+      continue;
+    }
+
     // Headers
     if (line.startsWith('### ')) {
       if (inList) { html.push('</ul>'); inList = false; }
@@ -581,12 +607,12 @@ function viewCodex(sourceId) {
     currentActiveCodexId = sourceId;
     switchTab('codex-reader');
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById('codex-title').textContent = 'Emotional Independence and Healthy Relationships';
+    document.getElementById('codex-title').textContent = 'Love Without Losing Yourself';
     document.getElementById('codex-meta').innerHTML = `
       <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">CROSS-SOURCE MASTER TREATISE</span>
-      <strong>Topic:</strong> Emotional Independence &amp; Attachment Dynamics &bull;
-      <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull; <code>SRC-YT-2026-004</code> &bull;
-      <strong>Status:</strong> MASTER TOPIC TREATISE (5 PARTS)
+      <strong>Theme:</strong> Emotional Triggers, Relationship Patterns &amp; Genuine Love &bull;
+      <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull; <code>SRC-YT-2026-004</code> &bull; <code>SRC-YT-2026-005</code> &bull;
+      <strong>Status:</strong> MASTER TOPIC TREATISE (4 PARTS &bull; 13 DYNAMICS)
     `;
 
     document.querySelectorAll('.note-switcher .switcher-btn').forEach(btn => btn.classList.remove('active'));

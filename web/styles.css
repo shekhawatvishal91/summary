@@ -969,6 +969,46 @@ footer a:hover {
   color: var(--text-primary);
 }
 
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-subtle);
+}
+
+.codex-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-surface);
+  font-size: 0.885rem;
+  text-align: left;
+}
+
+.codex-table th {
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.codex-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+  line-height: 1.55;
+}
+
+.codex-table tr:last-child td {
+  border-bottom: none;
+}
+
+.codex-table tr:hover {
+  background: var(--bg-primary);
+}
+
 /* Responsive Breakpoints (1024px tablet, 640px/390px mobile) */
 @media (max-width: 1024px) {
   header {

@@ -611,8 +611,8 @@ function viewCodex(sourceId) {
     document.getElementById('codex-meta').innerHTML = `
       <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">CROSS-SOURCE MASTER TREATISE</span>
       <strong>Theme:</strong> Emotional Triggers, Relationship Patterns &amp; Genuine Love &bull;
-      <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull; <code>SRC-YT-2026-004</code> &bull; <code>SRC-YT-2026-005</code> &bull;
-      <strong>Status:</strong> MASTER TOPIC TREATISE (4 PARTS &bull; 13 DYNAMICS)
+      <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull; <code>SRC-YT-2026-004</code> &bull; <code>SRC-YT-2026-005</code> &bull; <code>SRC-YT-2026-006</code> &bull;
+      <strong>Status:</strong> MASTER TOPIC TREATISE (4 PARTS &bull; 17 DYNAMICS &bull; 3 CAUSAL LOOPS)
     `;
 
     document.querySelectorAll('.note-switcher .switcher-btn').forEach(btn => btn.classList.remove('active'));

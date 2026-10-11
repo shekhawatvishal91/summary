@@ -1,0 +1,30 @@
+{
+  "task_id": "TASK-SRC-YT-2026-005",
+  "source_id": "SRC-YT-2026-005",
+  "title": "Untitled Video",
+  "author": "YouTube Creator",
+  "year": 2026,
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "state": "INTEGRATED",
+  "created_at": "2026-10-11T14:19:57.265Z",
+  "updated_at": "2026-10-11T14:21:40.939Z",
+  "text_path": "sources/text/SRC-YT-2026-005.txt",
+  "segments": [
+    {
+      "segment_index": 1,
+      "title": "Captured At: 2026-10-11T14:19:25.975Z",
+      "line_start": 7,
+      "line_end": 135
+    }
+  ],
+  "staged_output_path": "knowledge/sources/SRC-YT-2026-005/staged_decoding.json",
+  "validation_results": {
+    "valid": true,
+    "errors": [],
+    "warnings": [],
+    "claims_count": 5,
+    "concepts_count": 3,
+    "validated_at": "2026-10-11T14:21:34.009Z"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "node_id": "CON-081",
+  "node_type": "concept",
+  "canonical_name": "Trauma Bond Conditioning",
+  "aliases": [
+    "trauma bond conditioning",
+    "addictive attachment bond",
+    "biochemical relational entrapment",
+    "intermittent trauma bonding"
+  ],
+  "domain": "Attachment Science & Neurobiology",
+  "definition": "A maladaptive, addictive attachment bond formed between an abuser and a victim as a consequence of cyclical intermittent reinforcement, severe emotional threat, and sporadic relief, resulting in intense perceived loyalty that mimics love but is biochemically conditioned entrapment.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-081-001",
+    "CLM-CON-081-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-005"
+  ],
+  "created_at": "2026-10-11T14:21:40.890Z",
+  "updated_at": "2026-10-11T14:21:40.890Z"
+}

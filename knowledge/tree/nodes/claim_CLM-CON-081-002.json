@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-081-002",
+  "node_type": "claim",
+  "statement": "Attachment sustained by unpredictable cycles of cruelty and sudden affection is not authentic romantic love, but conditioned psychological dependency (trauma bonding).",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-005",
+      "locator_type": "paragraph",
+      "locator": "Cue 61 (00:02:26.020 --> 00:02:29.674)",
+      "verbatim_quote": "this because it's not love. It's"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-081"
+  ],
+  "created_at": "2026-10-11T14:21:40.892Z"
+}

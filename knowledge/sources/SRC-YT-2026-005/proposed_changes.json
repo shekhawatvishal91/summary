@@ -1,0 +1,96 @@
+{
+  "source_id": "SRC-YT-2026-005",
+  "generated_at": "2026-10-11T14:21:40.874Z",
+  "model": "antigravity-native-agent",
+  "proposed_concepts": [
+    {
+      "name": "Intermittent Relational Reinforcement",
+      "aliases": [
+        "intermittent relational reinforcement",
+        "love-cruelty switching",
+        "narcissistic whiplash",
+        "hoovering cycle"
+      ],
+      "domain": "Psychopathology & Relational Dynamics",
+      "definition": "The manipulative relational pattern wherein a toxic or narcissistic individual alternates unpredictably between hostility/cruelty and sudden affection/repentance (hoovering), specifically deployed when the victim attempts to detach, generating powerful psychological entrapment."
+    },
+    {
+      "name": "Relational Baseline Deprivation",
+      "aliases": [
+        "relational baseline deprivation",
+        "destruction of the bare minimum",
+        "breadcrumb gratitude syndrome",
+        "degraded relational standard"
+      ],
+      "domain": "Cognitive Behavioral Psychology & Abuse Recovery",
+      "definition": "The psychological erosion caused by persistent emotional neglect or cruelty, wherein an individual's expectations of basic decency and emotional safety are degraded to the extent that minimal, common-courtesy gestures are celebrated as profound proof of love."
+    },
+    {
+      "name": "Trauma Bond Conditioning",
+      "aliases": [
+        "trauma bond conditioning",
+        "addictive attachment bond",
+        "biochemical relational entrapment",
+        "intermittent trauma bonding"
+      ],
+      "domain": "Attachment Science & Neurobiology",
+      "definition": "A maladaptive, addictive attachment bond formed between an abuser and a victim as a consequence of cyclical intermittent reinforcement, severe emotional threat, and sporadic relief, resulting in intense perceived loyalty that mimics love but is biochemically conditioned entrapment."
+    }
+  ],
+  "extracted_claims": [
+    {
+      "statement": "The most effective psychological weapon a narcissistic individual uses to prevent a partner from leaving is unpredictable switching between love and cruelty.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 9 (00:00:19.602 --> 00:00:22.633)",
+      "verbatim_quote": "switching between love and cruelty mean",
+      "associated_concepts": [
+        "Intermittent Relational Reinforcement"
+      ]
+    },
+    {
+      "statement": "When a partner prepares to leave an abusive environment, the narcissist temporarily resurrects the exact charming, sweet persona that initiated the courtship to manipulate the partner into staying.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 17 (00:00:36.718 --> 00:00:39.510)",
+      "verbatim_quote": "switch to the same personality you fell",
+      "associated_concepts": [
+        "Intermittent Relational Reinforcement"
+      ]
+    },
+    {
+      "statement": "Theatrical apologies, tears, and promises of personal transformation deployed during hoovering are manipulative pretenses designed solely to preserve relational control, not genuine change.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 37 (00:01:23.624 --> 00:01:27.653)",
+      "verbatim_quote": "going to change.",
+      "associated_concepts": [
+        "Intermittent Relational Reinforcement",
+        "Trauma Bond Conditioning"
+      ]
+    },
+    {
+      "statement": "Chronic exposure to relational cruelty systematically degrades the victim's baseline expectations of safety, causing trivial crumbs of ordinary effort to be perceived as extraordinary affection.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 46 (00:01:47.279 --> 00:01:49.965)",
+      "verbatim_quote": "definition of the bare minimum has been",
+      "associated_concepts": [
+        "Relational Baseline Deprivation"
+      ]
+    },
+    {
+      "statement": "Attachment sustained by unpredictable cycles of cruelty and sudden affection is not authentic romantic love, but conditioned psychological dependency (trauma bonding).",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 61 (00:02:26.020 --> 00:02:29.674)",
+      "verbatim_quote": "this because it's not love. It's",
+      "associated_concepts": [
+        "Trauma Bond Conditioning"
+      ]
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_node_id": "CON-049",
+      "target_node_id": "CON-045",
+      "relation_type": "compounds",
+      "description": "Pathological enmeshment compounds self-directed loathing, making the individual exceptionally vulnerable to relational baseline deprivation."
+    }
+  ]
+}

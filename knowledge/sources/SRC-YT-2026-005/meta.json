@@ -1,0 +1,30 @@
+{
+  "source_id": "SRC-YT-2026-005",
+  "video_id": "xYLYavaY_Jk",
+  "title": "The Narcissist's Secret Weapon: Switching Between Love and Cruelty",
+  "author": "The Cool Therapist",
+  "year": 2026,
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "sha256": "bd5e63f6d6ffbcf50f25ae2a82775166be105bae583fca17efa4e4f57be0600e",
+  "char_count": 5362,
+  "word_count": 777,
+  "cue_count": 64,
+  "time_span_sec": 154.4,
+  "capture_method": "BROWSER_CDP_PLAYER_INTERCEPT",
+  "total_segments": 1,
+  "segments": [
+    {
+      "segment_index": 1,
+      "title": "Captured At: 2026-10-11T14:19:25.975Z",
+      "line_start": 7,
+      "line_end": 135
+    }
+  ],
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "created_at": "2026-10-11T14:19:25.985Z",
+  "decoded_at": "2026-10-11T14:21:40.875Z",
+  "decoding_model": "antigravity-native-agent",
+  "prompt_version": "native-agent-v1",
+  "claims_count": 5
+}

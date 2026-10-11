@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-073-002",
+  "node_type": "claim",
+  "statement": "When a partner prepares to leave an abusive environment, the narcissist temporarily resurrects the exact charming, sweet persona that initiated the courtship to manipulate the partner into staying.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-005",
+      "locator_type": "paragraph",
+      "locator": "Cue 17 (00:00:36.718 --> 00:00:39.510)",
+      "verbatim_quote": "switch to the same personality you fell"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-073"
+  ],
+  "created_at": "2026-10-11T14:21:40.879Z"
+}

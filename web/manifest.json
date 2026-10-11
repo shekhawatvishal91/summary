@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T14:07:23.430Z",
+  "built_at": "2026-10-11T14:23:37.349Z",
   "metrics": {
-    "total_sources": 6,
-    "total_concepts": 20,
-    "total_claims": 33,
-    "total_edges": 9,
+    "total_sources": 7,
+    "total_concepts": 23,
+    "total_claims": 39,
+    "total_edges": 10,
     "total_docs": 18
   },
   "sources": [
@@ -124,6 +124,26 @@
       "source_role": "real_user_source",
       "created_at": "2026-10-11T13:53:56.897Z",
       "updated_at": "2026-10-11T13:56:04.926Z"
+    },
+    {
+      "source_id": "SRC-YT-2026-005",
+      "video_id": "xYLYavaY_Jk",
+      "title": "The Narcissist's Secret Weapon: Switching Between Love and Cruelty",
+      "author": "The Cool Therapist",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "bd5e63f6d6ffbcf50f25ae2a82775166be105bae583fca17efa4e4f57be0600e",
+      "raw_path": "sources/raw/SRC-YT-2026-005_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-005.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-005/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T14:19:25.992Z",
+      "updated_at": "2026-10-11T14:21:40.905Z"
     }
   ],
   "concepts": [
@@ -550,6 +570,75 @@
       ],
       "created_at": "2026-10-11T13:56:04.918Z",
       "updated_at": "2026-10-11T13:56:04.918Z"
+    },
+    {
+      "node_id": "CON-073",
+      "node_type": "concept",
+      "canonical_name": "Intermittent Relational Reinforcement",
+      "aliases": [
+        "intermittent relational reinforcement",
+        "love-cruelty switching",
+        "narcissistic whiplash",
+        "hoovering cycle"
+      ],
+      "domain": "Psychopathology & Relational Dynamics",
+      "definition": "The manipulative relational pattern wherein a toxic or narcissistic individual alternates unpredictably between hostility/cruelty and sudden affection/repentance (hoovering), specifically deployed when the victim attempts to detach, generating powerful psychological entrapment.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-073-001",
+        "CLM-CON-073-002",
+        "CLM-CON-073-003"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-005"
+      ],
+      "created_at": "2026-10-11T14:21:40.877Z",
+      "updated_at": "2026-10-11T14:21:40.877Z"
+    },
+    {
+      "node_id": "CON-077",
+      "node_type": "concept",
+      "canonical_name": "Relational Baseline Deprivation",
+      "aliases": [
+        "relational baseline deprivation",
+        "destruction of the bare minimum",
+        "breadcrumb gratitude syndrome",
+        "degraded relational standard"
+      ],
+      "domain": "Cognitive Behavioral Psychology & Abuse Recovery",
+      "definition": "The psychological erosion caused by persistent emotional neglect or cruelty, wherein an individual's expectations of basic decency and emotional safety are degraded to the extent that minimal, common-courtesy gestures are celebrated as profound proof of love.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-077-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-005"
+      ],
+      "created_at": "2026-10-11T14:21:40.885Z",
+      "updated_at": "2026-10-11T14:21:40.885Z"
+    },
+    {
+      "node_id": "CON-081",
+      "node_type": "concept",
+      "canonical_name": "Trauma Bond Conditioning",
+      "aliases": [
+        "trauma bond conditioning",
+        "addictive attachment bond",
+        "biochemical relational entrapment",
+        "intermittent trauma bonding"
+      ],
+      "domain": "Attachment Science & Neurobiology",
+      "definition": "A maladaptive, addictive attachment bond formed between an abuser and a victim as a consequence of cyclical intermittent reinforcement, severe emotional threat, and sporadic relief, resulting in intense perceived loyalty that mimics love but is biochemically conditioned entrapment.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-081-001",
+        "CLM-CON-081-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-005"
+      ],
+      "created_at": "2026-10-11T14:21:40.890Z",
+      "updated_at": "2026-10-11T14:21:40.890Z"
     }
   ],
   "claims": [
@@ -1179,6 +1268,120 @@
         "CON-069"
       ],
       "created_at": "2026-10-11T13:56:04.918Z"
+    },
+    {
+      "node_id": "CLM-CON-073-001",
+      "node_type": "claim",
+      "statement": "The most effective psychological weapon a narcissistic individual uses to prevent a partner from leaving is unpredictable switching between love and cruelty.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-005",
+          "locator_type": "paragraph",
+          "locator": "Cue 9 (00:00:19.602 --> 00:00:22.633)",
+          "verbatim_quote": "switching between love and cruelty mean"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-073"
+      ],
+      "created_at": "2026-10-11T14:21:40.878Z"
+    },
+    {
+      "node_id": "CLM-CON-073-002",
+      "node_type": "claim",
+      "statement": "When a partner prepares to leave an abusive environment, the narcissist temporarily resurrects the exact charming, sweet persona that initiated the courtship to manipulate the partner into staying.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-005",
+          "locator_type": "paragraph",
+          "locator": "Cue 17 (00:00:36.718 --> 00:00:39.510)",
+          "verbatim_quote": "switch to the same personality you fell"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-073"
+      ],
+      "created_at": "2026-10-11T14:21:40.879Z"
+    },
+    {
+      "node_id": "CLM-CON-073-003",
+      "node_type": "claim",
+      "statement": "Theatrical apologies, tears, and promises of personal transformation deployed during hoovering are manipulative pretenses designed solely to preserve relational control, not genuine change.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-005",
+          "locator_type": "paragraph",
+          "locator": "Cue 37 (00:01:23.624 --> 00:01:27.653)",
+          "verbatim_quote": "going to change."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-073"
+      ],
+      "created_at": "2026-10-11T14:21:40.880Z"
+    },
+    {
+      "node_id": "CLM-CON-077-001",
+      "node_type": "claim",
+      "statement": "Chronic exposure to relational cruelty systematically degrades the victim's baseline expectations of safety, causing trivial crumbs of ordinary effort to be perceived as extraordinary affection.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-005",
+          "locator_type": "paragraph",
+          "locator": "Cue 46 (00:01:47.279 --> 00:01:49.965)",
+          "verbatim_quote": "definition of the bare minimum has been"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-077"
+      ],
+      "created_at": "2026-10-11T14:21:40.886Z"
+    },
+    {
+      "node_id": "CLM-CON-081-001",
+      "node_type": "claim",
+      "statement": "Theatrical apologies, tears, and promises of personal transformation deployed during hoovering are manipulative pretenses designed solely to preserve relational control, not genuine change.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-005",
+          "locator_type": "paragraph",
+          "locator": "Cue 37 (00:01:23.624 --> 00:01:27.653)",
+          "verbatim_quote": "going to change."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-081"
+      ],
+      "created_at": "2026-10-11T14:21:40.890Z"
+    },
+    {
+      "node_id": "CLM-CON-081-002",
+      "node_type": "claim",
+      "statement": "Attachment sustained by unpredictable cycles of cruelty and sudden affection is not authentic romantic love, but conditioned psychological dependency (trauma bonding).",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-005",
+          "locator_type": "paragraph",
+          "locator": "Cue 61 (00:02:26.020 --> 00:02:29.674)",
+          "verbatim_quote": "this because it's not love. It's"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-081"
+      ],
+      "created_at": "2026-10-11T14:21:40.892Z"
     }
   ],
   "edges": [
@@ -1280,6 +1483,18 @@
       "locator": null,
       "epistemic_classification": null,
       "created_at": "2026-10-11T13:56:04.925Z"
+    },
+    {
+      "edge_id": "EDG-011",
+      "source_node_id": "CON-049",
+      "target_node_id": "CON-045",
+      "relation_type": "compounds",
+      "description": "Pathological enmeshment compounds self-directed loathing, making the individual exceptionally vulnerable to relational baseline deprivation.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-11T14:21:40.904Z"
     }
   ],
   "documentation": [

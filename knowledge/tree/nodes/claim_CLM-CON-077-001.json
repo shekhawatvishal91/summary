@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-077-001",
+  "node_type": "claim",
+  "statement": "Chronic exposure to relational cruelty systematically degrades the victim's baseline expectations of safety, causing trivial crumbs of ordinary effort to be perceived as extraordinary affection.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-005",
+      "locator_type": "paragraph",
+      "locator": "Cue 46 (00:01:47.279 --> 00:01:49.965)",
+      "verbatim_quote": "definition of the bare minimum has been"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-077"
+  ],
+  "created_at": "2026-10-11T14:21:40.886Z"
+}

@@ -1,0 +1,24 @@
+{
+  "node_id": "CON-073",
+  "node_type": "concept",
+  "canonical_name": "Intermittent Relational Reinforcement",
+  "aliases": [
+    "intermittent relational reinforcement",
+    "love-cruelty switching",
+    "narcissistic whiplash",
+    "hoovering cycle"
+  ],
+  "domain": "Psychopathology & Relational Dynamics",
+  "definition": "The manipulative relational pattern wherein a toxic or narcissistic individual alternates unpredictably between hostility/cruelty and sudden affection/repentance (hoovering), specifically deployed when the victim attempts to detach, generating powerful psychological entrapment.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-073-001",
+    "CLM-CON-073-002",
+    "CLM-CON-073-003"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-005"
+  ],
+  "created_at": "2026-10-11T14:21:40.877Z",
+  "updated_at": "2026-10-11T14:21:40.877Z"
+}

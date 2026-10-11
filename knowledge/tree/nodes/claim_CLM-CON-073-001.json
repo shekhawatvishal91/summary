@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-073-001",
+  "node_type": "claim",
+  "statement": "The most effective psychological weapon a narcissistic individual uses to prevent a partner from leaving is unpredictable switching between love and cruelty.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-005",
+      "locator_type": "paragraph",
+      "locator": "Cue 9 (00:00:19.602 --> 00:00:22.633)",
+      "verbatim_quote": "switching between love and cruelty mean"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-073"
+  ],
+  "created_at": "2026-10-11T14:21:40.878Z"
+}

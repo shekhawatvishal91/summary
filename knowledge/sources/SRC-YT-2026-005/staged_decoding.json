@@ -1,0 +1,203 @@
+{
+  "source_id": "SRC-YT-2026-005",
+  "agent_identifier": "antigravity-native-agent",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "dimensions": {
+    "dim_1_core_thesis": {
+      "premise": "The most potent and entrapping weapon in a narcissist's behavioral repertoire is neither overt manipulation nor cheating, but the unpredictable switching between cruelty and romantic adoration—a dynamic that exploits an empathic partner's forgiveness to systematically destroy their standard of basic respect.",
+      "paradigm_shift": "Victims frequently believe they are staying in an abusive dynamic out of unconditional love, empathy, or hope that their partner will permanently change. In reality, this is not authentic love but acute psychological conditioning (trauma bonding) engineered by intermittent reinforcement, where desperate apologies are purely theatrical devices deployed only when the victim attempts to leave."
+    },
+    "dim_2_causal_model": {
+      "mechanism": "The Cycle of Intermittent Entrapment: Chronic Toxicity & Cruelty -> Victim Reaches Breaking Point ('I can't take this anymore, I have to go') -> Narcissist Senses Imminent Abandonment -> Rapid Personality Mask Switch (Reverting to the sweet, charming persona that initiated the courtship) -> Theatrical Remorse Protocol (Crying, pleading, falling at feet, promising transformation) -> Empathic Capitulation ('This time is different, let me forgive them') -> Baseline Standards Degradation (Destruction of the bare minimum) -> Return to Cruelty.",
+      "ratios_in_prose": "The model demonstrates that periodic micro-efforts (breadcrumbs) hold a 10:1 psychological leverage over chronic toxicity once the victim's baseline expectations have been eroded, resetting the victim's entrapment clock and extending abusive relationships by years."
+    },
+    "dim_3_master_analogy": {
+      "analogy": "The Starvation Breadcrumb Mechanism: If an individual is fed a balanced daily meal, a dry breadcrumb holds zero value. But if that individual is systematically starved in a desert for weeks, a stale breadcrumb feels like a Michelin-star feast. The narcissist starves the partner of emotional safety so that normal human decency feels like extraordinary devotion."
+    },
+    "dim_4_diagnostics": {
+      "classifications": [
+        {
+          "state": "Theatrical Hoovering Remorse",
+          "symptom": "Extreme displays of grief, crying, pleading, and grandiose promises of reform that appear exclusively when the partner makes an active move to depart.",
+          "etiology": "Panic over loss of narcissistic supply and control, completely independent of genuine moral accountability or behavioral change."
+        },
+        {
+          "state": "Bare Minimum Degradation",
+          "symptom": "Feeling overwhelming gratitude or relief when a partner performs the most basic, trivial acts of non-hostility or common courtesy.",
+          "etiology": "Chronic exposure to cruelty systematically lowers the nervous system's expectations of relational safety."
+        },
+        {
+          "state": "Trauma-Bonded Cognitive Dissociation",
+          "symptom": "Believing that an intense, agonizing relationship characterized by high highs and brutal lows represents 'deep, soulmate-level love'.",
+          "etiology": "Biochemical addiction to the dopamine relief surge that follows severe relational distress."
+        }
+      ],
+      "failure_modes": [
+        "Confusing Empathy with Complicity: Believing that showing patience and endless forgiveness will inspire a disordered partner to heal.",
+        "The 'This Time is Different' Delusion: Trusting verbal declarations of remorse in the absence of sustained, verifiable behavioral change over time.",
+        "Blindness to Intermittent Reinforcement: Failing to recognize that unpredictable kindness is an integral component of the abuse cycle, not an exception to it."
+      ]
+    },
+    "dim_5_field_protocols": {
+      "algorithm": [
+        "1. Recognize the Threshold Pattern: Notice if extreme tenderness and emotional pleading only emerge precisely when you disengage or threaten to leave.",
+        "2. Audit the Baseline Standard: Ask yourself: 'Am I celebrating this person simply because they aren't screaming at me, lying to me, or being cruel today?'",
+        "3. Decouple Remorse from Reconstruction: Treat tears, pleading, and verbal promises as zero-evidence data points; measure safety strictly through long-term conduct.",
+        "4. Enforce the Exit Boundary: When cruelty is recurring and predictable, refuse the hoovering performance and execute a clean, decisive departure."
+      ],
+      "verbatim_scripts": [
+        {
+          "label": "The Secret Weapon Thesis",
+          "locator": "Cue 9 (00:00:19.602 --> 00:00:22.633)",
+          "verbatim_text": "switching between love and cruelty mean"
+        },
+        {
+          "label": "The Persona Reversion Shift",
+          "locator": "Cue 17 (00:00:36.718 --> 00:00:39.510)",
+          "verbatim_text": "switch to the same personality you fell"
+        },
+        {
+          "label": "Theatrical Pleading Utterance",
+          "locator": "Cue 27 (00:01:00.913 --> 00:01:04.646)",
+          "verbatim_text": "Please, please, please don't"
+        },
+        {
+          "label": "The Immutable Rule of Non-Change",
+          "locator": "Cue 37 (00:01:23.624 --> 00:01:27.653)",
+          "verbatim_text": "going to change."
+        },
+        {
+          "label": "The Baseline Destruction Diagnostic",
+          "locator": "Cue 46 (00:01:47.279 --> 00:01:49.965)",
+          "verbatim_text": "definition of the bare minimum has been"
+        },
+        {
+          "label": "Conditioning vs Love Principle",
+          "locator": "Cue 61 (00:02:26.020 --> 00:02:29.674)",
+          "verbatim_text": "this because it's not love. It's"
+        }
+      ],
+      "verbatim_fragments": [],
+      "ai_generated_practical_applications": [
+        "The 'Bare Minimum' Reality Check: Write down what a healthy, secure relationship looks like on an ordinary Tuesday (respect, consistency, safety). Compare this against your partner's actual baseline.",
+        "The Exit Log: Document instances where a breakup attempt triggered sudden romantic love-bombing, and note how long that affectionate phase lasted before cruelty returned."
+      ]
+    },
+    "dim_6_skeptic_box": {
+      "pop_culture_distortion": "Pop romantic narratives often romanticize intense volatility, grand apologies in the rain, and dramatic reconciliations as hallmarks of 'passionate, epic romance' that overcomes all odds.",
+      "clinical_empirical_reality": "In clinical psychopathology and attachment science, alternating cycles of cruelty and excessive love-bombing are recognized as the core mechanism of traumatic bonding and intermittent reinforcement, which structurally mimics chemical addiction in the brain and leads to severe psychological depletion."
+    }
+  },
+  "extracted_claims": [
+    {
+      "statement": "The most effective psychological weapon a narcissistic individual uses to prevent a partner from leaving is unpredictable switching between love and cruelty.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 9 (00:00:19.602 --> 00:00:22.633)",
+      "verbatim_quote": "switching between love and cruelty mean",
+      "associated_concepts": [
+        "Intermittent Relational Reinforcement"
+      ]
+    },
+    {
+      "statement": "When a partner prepares to leave an abusive environment, the narcissist temporarily resurrects the exact charming, sweet persona that initiated the courtship to manipulate the partner into staying.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 17 (00:00:36.718 --> 00:00:39.510)",
+      "verbatim_quote": "switch to the same personality you fell",
+      "associated_concepts": [
+        "Intermittent Relational Reinforcement"
+      ]
+    },
+    {
+      "statement": "Theatrical apologies, tears, and promises of personal transformation deployed during hoovering are manipulative pretenses designed solely to preserve relational control, not genuine change.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 37 (00:01:23.624 --> 00:01:27.653)",
+      "verbatim_quote": "going to change.",
+      "associated_concepts": [
+        "Intermittent Relational Reinforcement",
+        "Trauma Bond Conditioning"
+      ]
+    },
+    {
+      "statement": "Chronic exposure to relational cruelty systematically degrades the victim's baseline expectations of safety, causing trivial crumbs of ordinary effort to be perceived as extraordinary affection.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 46 (00:01:47.279 --> 00:01:49.965)",
+      "verbatim_quote": "definition of the bare minimum has been",
+      "associated_concepts": [
+        "Relational Baseline Deprivation"
+      ]
+    },
+    {
+      "statement": "Attachment sustained by unpredictable cycles of cruelty and sudden affection is not authentic romantic love, but conditioned psychological dependency (trauma bonding).",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 61 (00:02:26.020 --> 00:02:29.674)",
+      "verbatim_quote": "this because it's not love. It's",
+      "associated_concepts": [
+        "Trauma Bond Conditioning"
+      ]
+    }
+  ],
+  "proposed_concepts": [
+    {
+      "name": "Intermittent Relational Reinforcement",
+      "aliases": [
+        "intermittent relational reinforcement",
+        "love-cruelty switching",
+        "narcissistic whiplash",
+        "hoovering cycle"
+      ],
+      "domain": "Psychopathology & Relational Dynamics",
+      "definition": "The manipulative relational pattern wherein a toxic or narcissistic individual alternates unpredictably between hostility/cruelty and sudden affection/repentance (hoovering), specifically deployed when the victim attempts to detach, generating powerful psychological entrapment."
+    },
+    {
+      "name": "Relational Baseline Deprivation",
+      "aliases": [
+        "relational baseline deprivation",
+        "destruction of the bare minimum",
+        "breadcrumb gratitude syndrome",
+        "degraded relational standard"
+      ],
+      "domain": "Cognitive Behavioral Psychology & Abuse Recovery",
+      "definition": "The psychological erosion caused by persistent emotional neglect or cruelty, wherein an individual's expectations of basic decency and emotional safety are degraded to the extent that minimal, common-courtesy gestures are celebrated as profound proof of love."
+    },
+    {
+      "name": "Trauma Bond Conditioning",
+      "aliases": [
+        "trauma bond conditioning",
+        "addictive attachment bond",
+        "biochemical relational entrapment",
+        "intermittent trauma bonding"
+      ],
+      "domain": "Attachment Science & Neurobiology",
+      "definition": "A maladaptive, addictive attachment bond formed between an abuser and a victim as a consequence of cyclical intermittent reinforcement, severe emotional threat, and sporadic relief, resulting in intense perceived loyalty that mimics love but is biochemically conditioned entrapment."
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_node_id": "CON-049",
+      "target_node_id": "CON-045",
+      "relation_type": "compounds",
+      "description": "Pathological enmeshment compounds self-directed loathing, making the individual exceptionally vulnerable to relational baseline deprivation."
+    }
+  ],
+  "coverage_warnings": [],
+  "recall_cards": [
+    {
+      "question": "What is identified as the narcissist's most effective secret weapon for trapping a partner in a toxic relationship?",
+      "answer": "Switching between love and cruelty (intermittent reinforcement), specifically reviving the sweet persona and pleading for forgiveness whenever the partner prepares to leave.",
+      "locator": "Cue 9 (00:00:19.602 --> 00:00:22.633)",
+      "epistemic_class": "SOURCE_STATEMENT"
+    },
+    {
+      "question": "What happens to a victim's psychological standards after enduring prolonged relational toxicity?",
+      "answer": "Their 'definition of the bare minimum' is destroyed; basic non-hostility or minuscule efforts are celebrated as extraordinary gestures of love.",
+      "locator": "Cue 46 (00:01:47.279 --> 00:01:49.965)",
+      "epistemic_class": "SOURCE_STATEMENT"
+    },
+    {
+      "question": "Why is an intense attachment to an alternating partner defined as 'conditioning' rather than 'love'?",
+      "answer": "Because it is driven by intermittent reinforcement, dopamine relief loops, and biochemical trauma bonding rather than mutual safety, respect, and stable care.",
+      "locator": "Cue 61 (00:02:26.020 --> 00:02:29.674)",
+      "epistemic_class": "SOURCE_STATEMENT"
+    }
+  ]
+}

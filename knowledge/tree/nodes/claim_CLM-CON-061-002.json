@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-061-002",
+  "node_type": "claim",
+  "statement": "According to Carl Jung, whatever triggers an individual emotionally points directly to their own unresolved insecurities or unexamined behavioral patterns.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-004",
+      "locator_type": "paragraph",
+      "locator": "Cue 42 (00:01:45.572 --> 00:01:49.599)",
+      "verbatim_quote": "triggers you is pointing to your"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-061"
+  ],
+  "created_at": "2026-10-11T13:56:04.908Z"
+}

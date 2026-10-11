@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-065-001",
+  "node_type": "claim",
+  "statement": "Allowing external interpersonal interactions or unreturned communications to dictate one's mood represents surrendering the remote control of one's emotions to other people.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-004",
+      "locator_type": "paragraph",
+      "locator": "Cue 8 (00:00:17.734 --> 00:00:20.250)",
+      "verbatim_quote": "have the remote control of your"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-065"
+  ],
+  "created_at": "2026-10-11T13:56:04.914Z"
+}

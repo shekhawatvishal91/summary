@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-065-002",
+  "node_type": "claim",
+  "statement": "The negative cognitive narrative and catastrophic meaning assigned to an external situation intensifies the emotional distress far beyond the objective fact itself.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-004",
+      "locator_type": "paragraph",
+      "locator": "Cue 23 (00:00:56.652 --> 00:00:59.855)",
+      "verbatim_quote": "situation intensified the emotions of"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-065"
+  ],
+  "created_at": "2026-10-11T13:56:04.915Z"
+}

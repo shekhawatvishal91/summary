@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-069-001",
+  "node_type": "claim",
+  "statement": "Replacing outward victimized blame ('Why did this person do this to me?') with inward self-inquiry ('Why did I react this way?') breaks the reactivity loop and reclaims emotional sovereignty.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-004",
+      "locator_type": "paragraph",
+      "locator": "Cue 53 (00:02:16.225 --> 00:02:19.351)",
+      "verbatim_quote": "Why did I react"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-069"
+  ],
+  "created_at": "2026-10-11T13:56:04.918Z"
+}

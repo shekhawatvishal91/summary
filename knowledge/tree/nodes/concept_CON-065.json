@@ -1,0 +1,23 @@
+{
+  "node_id": "CON-065",
+  "node_type": "concept",
+  "canonical_name": "Cognitive Appraisal Separation",
+  "aliases": [
+    "emotional remote control fallacy",
+    "cognitive appraisal separation",
+    "internal narrative intensification",
+    "meaning-assignment distortion"
+  ],
+  "domain": "Cognitive Psychology & Emotional Regulation",
+  "definition": "The psychological distinction between an objective external reality and the internal cognitive meaning assigned to it. When an individual unconsciously projects their internal insecurity onto a neutral or ambiguous event, the resulting negative narrative intensifies distress, effectively surrendering emotional control to external actors.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-065-001",
+    "CLM-CON-065-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-004"
+  ],
+  "created_at": "2026-10-11T13:56:04.914Z",
+  "updated_at": "2026-10-11T13:56:04.914Z"
+}

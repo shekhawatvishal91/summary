@@ -1,0 +1,20 @@
+[
+  {
+    "question": "What does Carl Jung identify as the true source when someone or something triggers you?",
+    "answer": "According to Carl Jung, whatever triggers you points directly to your own unresolved insecurities, past wounds, or unexamined shadow patterns—not the external event itself.",
+    "locator": "Cue 42 (00:01:45.572 --> 00:01:49.599)",
+    "epistemic_class": "SOURCE_STATEMENT"
+  },
+  {
+    "question": "What is the core cognitive mechanism that intensifies an emotional reaction to a neutral situation (such as not being invited to a party)?",
+    "answer": "The internal story and catastrophic meaning assigned to the situation (e.g., 'They always pick others; I am unworthy') intensifies the emotional distress far beyond the objective fact itself.",
+    "locator": "Cue 23 (00:00:56.652 --> 00:00:59.855)",
+    "epistemic_class": "SOURCE_STATEMENT"
+  },
+  {
+    "question": "What single question shift transforms emotional reactivity into psychological sovereignty?",
+    "answer": "Shifting from the victimized inquiry 'Why did this person do this to me?' to the diagnostic self-inquiry 'Why did I react this way?'.",
+    "locator": "Cue 53 (00:02:16.225 --> 00:02:19.351)",
+    "epistemic_class": "SOURCE_STATEMENT"
+  }
+]

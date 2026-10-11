@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T13:51:57.348Z",
+  "built_at": "2026-10-11T13:57:57.800Z",
   "metrics": {
-    "total_sources": 5,
-    "total_concepts": 17,
-    "total_claims": 28,
-    "total_edges": 8,
+    "total_sources": 6,
+    "total_concepts": 20,
+    "total_claims": 33,
+    "total_edges": 9,
     "total_docs": 18
   },
   "sources": [
@@ -104,6 +104,26 @@
       "source_role": "real_user_source",
       "created_at": "2026-10-11T12:15:03.981Z",
       "updated_at": "2026-10-11T12:16:49.828Z"
+    },
+    {
+      "source_id": "SRC-YT-2026-004",
+      "video_id": "AFWiUq91ryE",
+      "title": "Nobody & Nothing will Affect you again -Carl Jung",
+      "author": "The Cool Therapist",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "214d5f5281c55492778d5ea48c8989fed1eed39c65744d7b4aa6ec4716115a33",
+      "raw_path": "sources/raw/SRC-YT-2026-004_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-004.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-004/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T13:53:56.897Z",
+      "updated_at": "2026-10-11T13:56:04.926Z"
     }
   ],
   "concepts": [
@@ -462,6 +482,74 @@
       ],
       "created_at": "2026-10-11T12:16:49.820Z",
       "updated_at": "2026-10-11T12:16:49.820Z"
+    },
+    {
+      "node_id": "CON-061",
+      "node_type": "concept",
+      "canonical_name": "Jungian Trigger Diagnostic",
+      "aliases": [
+        "jungian trigger diagnostic",
+        "trigger-insecurity projection",
+        "unresolved pattern diagnostic",
+        "carl jung trigger principle"
+      ],
+      "domain": "Psychodynamics & Cognitive Behavioral Psychology",
+      "definition": "The psychodynamic diagnostic principle (rooted in Carl Jung's shadow psychology) asserting that an acute emotional reaction to an external provocation is not caused by the external event itself, but functions as an unconscious diagnostic signal pointing directly to an individual's unhealed internal insecurities, rejection trauma, and latent behavioral patterns.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-061-001",
+        "CLM-CON-061-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-004"
+      ],
+      "created_at": "2026-10-11T13:56:04.907Z",
+      "updated_at": "2026-10-11T13:56:04.907Z"
+    },
+    {
+      "node_id": "CON-065",
+      "node_type": "concept",
+      "canonical_name": "Cognitive Appraisal Separation",
+      "aliases": [
+        "emotional remote control fallacy",
+        "cognitive appraisal separation",
+        "internal narrative intensification",
+        "meaning-assignment distortion"
+      ],
+      "domain": "Cognitive Psychology & Emotional Regulation",
+      "definition": "The psychological distinction between an objective external reality and the internal cognitive meaning assigned to it. When an individual unconsciously projects their internal insecurity onto a neutral or ambiguous event, the resulting negative narrative intensifies distress, effectively surrendering emotional control to external actors.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-065-001",
+        "CLM-CON-065-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-004"
+      ],
+      "created_at": "2026-10-11T13:56:04.914Z",
+      "updated_at": "2026-10-11T13:56:04.914Z"
+    },
+    {
+      "node_id": "CON-069",
+      "node_type": "concept",
+      "canonical_name": "Inward Attribution Shift",
+      "aliases": [
+        "inward attribution shift",
+        "internal inquiry reflex",
+        "why did i react shift",
+        "non-reactive self-inquiry protocol"
+      ],
+      "domain": "Metacognition & Behavioral Self-Regulation",
+      "definition": "The cognitive reframing intervention that deliberately converts outward victimized accusation ('Why did they do this to me?') into inward analytical curiosity ('Why did I react this way?'). This shift breaks emotional contagion, restores agency, and permits the experiencing of affect without emotional dysregulation or loss of self.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-069-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-004"
+      ],
+      "created_at": "2026-10-11T13:56:04.918Z",
+      "updated_at": "2026-10-11T13:56:04.918Z"
     }
   ],
   "claims": [
@@ -996,6 +1084,101 @@
         "CON-057"
       ],
       "created_at": "2026-10-11T12:16:49.820Z"
+    },
+    {
+      "node_id": "CLM-CON-061-001",
+      "node_type": "claim",
+      "statement": "Present-day automatic emotional reactions and triggers are direct reflections of past conditioning and unresolved experiences of feeling ignored or unworthy.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-004",
+          "locator_type": "paragraph",
+          "locator": "Cue 35 (00:01:24.270 --> 00:01:28.111)",
+          "verbatim_quote": "reactions are a reflection of your past"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-061"
+      ],
+      "created_at": "2026-10-11T13:56:04.907Z"
+    },
+    {
+      "node_id": "CLM-CON-061-002",
+      "node_type": "claim",
+      "statement": "According to Carl Jung, whatever triggers an individual emotionally points directly to their own unresolved insecurities or unexamined behavioral patterns.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-004",
+          "locator_type": "paragraph",
+          "locator": "Cue 42 (00:01:45.572 --> 00:01:49.599)",
+          "verbatim_quote": "triggers you is pointing to your"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-061"
+      ],
+      "created_at": "2026-10-11T13:56:04.908Z"
+    },
+    {
+      "node_id": "CLM-CON-065-001",
+      "node_type": "claim",
+      "statement": "Allowing external interpersonal interactions or unreturned communications to dictate one's mood represents surrendering the remote control of one's emotions to other people.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-004",
+          "locator_type": "paragraph",
+          "locator": "Cue 8 (00:00:17.734 --> 00:00:20.250)",
+          "verbatim_quote": "have the remote control of your"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-065"
+      ],
+      "created_at": "2026-10-11T13:56:04.914Z"
+    },
+    {
+      "node_id": "CLM-CON-065-002",
+      "node_type": "claim",
+      "statement": "The negative cognitive narrative and catastrophic meaning assigned to an external situation intensifies the emotional distress far beyond the objective fact itself.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-004",
+          "locator_type": "paragraph",
+          "locator": "Cue 23 (00:00:56.652 --> 00:00:59.855)",
+          "verbatim_quote": "situation intensified the emotions of"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-065"
+      ],
+      "created_at": "2026-10-11T13:56:04.915Z"
+    },
+    {
+      "node_id": "CLM-CON-069-001",
+      "node_type": "claim",
+      "statement": "Replacing outward victimized blame ('Why did this person do this to me?') with inward self-inquiry ('Why did I react this way?') breaks the reactivity loop and reclaims emotional sovereignty.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-004",
+          "locator_type": "paragraph",
+          "locator": "Cue 53 (00:02:16.225 --> 00:02:19.351)",
+          "verbatim_quote": "Why did I react"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-069"
+      ],
+      "created_at": "2026-10-11T13:56:04.918Z"
     }
   ],
   "edges": [
@@ -1085,6 +1268,18 @@
       "locator": null,
       "epistemic_classification": null,
       "created_at": "2026-10-11T12:16:49.827Z"
+    },
+    {
+      "edge_id": "EDG-010",
+      "source_node_id": "CON-045",
+      "target_node_id": "CON-009",
+      "relation_type": "reinforces",
+      "description": "Unresolved self-directed loathing reinforces cognitive vulnerability to external triggers.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-11T13:56:04.925Z"
     }
   ],
   "documentation": [

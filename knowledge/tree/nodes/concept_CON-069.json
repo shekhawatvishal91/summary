@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-069",
+  "node_type": "concept",
+  "canonical_name": "Inward Attribution Shift",
+  "aliases": [
+    "inward attribution shift",
+    "internal inquiry reflex",
+    "why did i react shift",
+    "non-reactive self-inquiry protocol"
+  ],
+  "domain": "Metacognition & Behavioral Self-Regulation",
+  "definition": "The cognitive reframing intervention that deliberately converts outward victimized accusation ('Why did they do this to me?') into inward analytical curiosity ('Why did I react this way?'). This shift breaks emotional contagion, restores agency, and permits the experiencing of affect without emotional dysregulation or loss of self.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-069-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-004"
+  ],
+  "created_at": "2026-10-11T13:56:04.918Z",
+  "updated_at": "2026-10-11T13:56:04.918Z"
+}

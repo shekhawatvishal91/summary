@@ -1,0 +1,23 @@
+{
+  "node_id": "CON-061",
+  "node_type": "concept",
+  "canonical_name": "Jungian Trigger Diagnostic",
+  "aliases": [
+    "jungian trigger diagnostic",
+    "trigger-insecurity projection",
+    "unresolved pattern diagnostic",
+    "carl jung trigger principle"
+  ],
+  "domain": "Psychodynamics & Cognitive Behavioral Psychology",
+  "definition": "The psychodynamic diagnostic principle (rooted in Carl Jung's shadow psychology) asserting that an acute emotional reaction to an external provocation is not caused by the external event itself, but functions as an unconscious diagnostic signal pointing directly to an individual's unhealed internal insecurities, rejection trauma, and latent behavioral patterns.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-061-001",
+    "CLM-CON-061-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-004"
+  ],
+  "created_at": "2026-10-11T13:56:04.907Z",
+  "updated_at": "2026-10-11T13:56:04.907Z"
+}

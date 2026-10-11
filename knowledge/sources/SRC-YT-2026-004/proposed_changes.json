@@ -1,0 +1,95 @@
+{
+  "source_id": "SRC-YT-2026-004",
+  "generated_at": "2026-10-11T13:56:04.903Z",
+  "model": "antigravity-native-agent",
+  "proposed_concepts": [
+    {
+      "name": "Jungian Trigger Diagnostic",
+      "aliases": [
+        "jungian trigger diagnostic",
+        "trigger-insecurity projection",
+        "unresolved pattern diagnostic",
+        "carl jung trigger principle"
+      ],
+      "domain": "Psychodynamics & Cognitive Behavioral Psychology",
+      "definition": "The psychodynamic diagnostic principle (rooted in Carl Jung's shadow psychology) asserting that an acute emotional reaction to an external provocation is not caused by the external event itself, but functions as an unconscious diagnostic signal pointing directly to an individual's unhealed internal insecurities, rejection trauma, and latent behavioral patterns."
+    },
+    {
+      "name": "Cognitive Appraisal Separation",
+      "aliases": [
+        "emotional remote control fallacy",
+        "cognitive appraisal separation",
+        "internal narrative intensification",
+        "meaning-assignment distortion"
+      ],
+      "domain": "Cognitive Psychology & Emotional Regulation",
+      "definition": "The psychological distinction between an objective external reality and the internal cognitive meaning assigned to it. When an individual unconsciously projects their internal insecurity onto a neutral or ambiguous event, the resulting negative narrative intensifies distress, effectively surrendering emotional control to external actors."
+    },
+    {
+      "name": "Inward Attribution Shift",
+      "aliases": [
+        "inward attribution shift",
+        "internal inquiry reflex",
+        "why did i react shift",
+        "non-reactive self-inquiry protocol"
+      ],
+      "domain": "Metacognition & Behavioral Self-Regulation",
+      "definition": "The cognitive reframing intervention that deliberately converts outward victimized accusation ('Why did they do this to me?') into inward analytical curiosity ('Why did I react this way?'). This shift breaks emotional contagion, restores agency, and permits the experiencing of affect without emotional dysregulation or loss of self."
+    }
+  ],
+  "extracted_claims": [
+    {
+      "statement": "Allowing external interpersonal interactions or unreturned communications to dictate one's mood represents surrendering the remote control of one's emotions to other people.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 8 (00:00:17.734 --> 00:00:20.250)",
+      "verbatim_quote": "have the remote control of your",
+      "associated_concepts": [
+        "Cognitive Appraisal Separation"
+      ]
+    },
+    {
+      "statement": "The negative cognitive narrative and catastrophic meaning assigned to an external situation intensifies the emotional distress far beyond the objective fact itself.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 23 (00:00:56.652 --> 00:00:59.855)",
+      "verbatim_quote": "situation intensified the emotions of",
+      "associated_concepts": [
+        "Cognitive Appraisal Separation"
+      ]
+    },
+    {
+      "statement": "Present-day automatic emotional reactions and triggers are direct reflections of past conditioning and unresolved experiences of feeling ignored or unworthy.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 35 (00:01:24.270 --> 00:01:28.111)",
+      "verbatim_quote": "reactions are a reflection of your past",
+      "associated_concepts": [
+        "Jungian Trigger Diagnostic"
+      ]
+    },
+    {
+      "statement": "According to Carl Jung, whatever triggers an individual emotionally points directly to their own unresolved insecurities or unexamined behavioral patterns.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 42 (00:01:45.572 --> 00:01:49.599)",
+      "verbatim_quote": "triggers you is pointing to your",
+      "associated_concepts": [
+        "Jungian Trigger Diagnostic"
+      ]
+    },
+    {
+      "statement": "Replacing outward victimized blame ('Why did this person do this to me?') with inward self-inquiry ('Why did I react this way?') breaks the reactivity loop and reclaims emotional sovereignty.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 53 (00:02:16.225 --> 00:02:19.351)",
+      "verbatim_quote": "Why did I react",
+      "associated_concepts": [
+        "Inward Attribution Shift"
+      ]
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_node_id": "CON-045",
+      "target_node_id": "CON-009",
+      "relation_type": "reinforces",
+      "description": "Unresolved self-directed loathing reinforces cognitive vulnerability to external triggers."
+    }
+  ]
+}

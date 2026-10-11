@@ -213,26 +213,9 @@ Low self-esteem does not inevitably cause these behaviours, and struggling with 
 
 ## The Pattern Behind It All
 
-Many of these habits can form a self-reinforcing cycle:
+Many of these habits form a self-reinforcing cycle:
 
-```
-Unresolved Insecurity
-       │
-       ▼
-Fear of Losing the Relationship
-       │
-       ▼
-Excessive Reassurance-Seeking, Criticism, or Control
-       │
-       ▼
-Emotional Exhaustion and Conflict
-       │
-       ▼
-Greater Distance or Reduced Trust
-       │
-       ▼
-Even More Insecurity
-```
+**Unresolved Insecurity** → **Fear of Loss** → **Control & Criticism** → **Emotional Exhaustion** → **Distance & Distrust** ↺ *(loops back to deeper insecurity)*
 
 The behaviour intended to prevent abandonment may gradually damage the closeness it was meant to protect.
 

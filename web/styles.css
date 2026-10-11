@@ -849,6 +849,99 @@ footer a:hover {
   font-weight: 600;
 }
 
+/* Compact Cycle Flow Component (Horizontal Loop Diagram) */
+.cycle-flow-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 3.5px solid var(--accent-color);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  box-shadow: var(--shadow-subtle);
+}
+
+.cycle-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(39, 51, 43, 0.03);
+}
+
+.cycle-step strong {
+  font-weight: 600;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--bg-muted);
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 0.2rem;
+}
+
+.cycle-arrow {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.cycle-arrow.loop-arrow {
+  color: var(--badge-red-text);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cycle-loop-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--badge-red-text);
+  background: var(--badge-red-bg);
+  border: 1px solid var(--badge-red-border);
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.loop-icon {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.codex-code-block {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
 /* Responsive Breakpoints (1024px tablet, 640px/390px mobile) */
 @media (max-width: 1024px) {
   header {

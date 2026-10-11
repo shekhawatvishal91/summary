@@ -326,6 +326,49 @@ function renderMarkdown(md) {
       }
     }
 
+    // Fenced Code Block handling
+    if (line.startsWith('```')) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      let codeLines = [];
+      i++;
+      while (i < lines.length && !lines[i].startsWith('```')) {
+        codeLines.push(escapeHtml(lines[i]));
+        i++;
+      }
+      html.push(`<pre class="codex-code-block"><code>${codeLines.join('\n')}</code></pre>`);
+      continue;
+    }
+
+    // Compact Cycle Flow Card (Horizontal Loop Diagram)
+    if (line.includes('→') && (line.includes('**') || line.includes('↺') || line.includes('('))) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      const rawParts = line.split('→').map(p => p.trim());
+      let stepsHtml = [];
+      rawParts.forEach((part, idx) => {
+        const isLast = (idx === rawParts.length - 1);
+        if (isLast && (part.includes('↺') || part.includes('('))) {
+          const splitIdx = part.search(/↺|\(/);
+          const stepRaw = part.slice(0, splitIdx).trim();
+          const loopRaw = part.slice(splitIdx).replace(/[↺()]/g, '').trim();
+          if (stepRaw) {
+            stepsHtml.push(`<span class="cycle-step"><span class="step-num">${idx + 1}</span> ${formatInline(stepRaw)}</span>`);
+          }
+          if (loopRaw) {
+            stepsHtml.push(`<span class="cycle-arrow loop-arrow">&#x21ba;</span>`);
+            const loopClean = loopRaw.replace(/^\*+|\*+$/g, '').trim();
+            stepsHtml.push(`<span class="cycle-loop-tag"><span class="loop-icon">&#x21ba;</span> ${escapeHtml(loopClean)}</span>`);
+          }
+        } else {
+          stepsHtml.push(`<span class="cycle-step"><span class="step-num">${idx + 1}</span> ${formatInline(part)}</span>`);
+          if (!isLast) {
+            stepsHtml.push(`<span class="cycle-arrow">&rarr;</span>`);
+          }
+        }
+      });
+      html.push(`<div class="cycle-flow-card">${stepsHtml.join('')}</div>`);
+      continue;
+    }
+
     // Warning block
     if (line.startsWith('> [!WARNING]')) {
       let warningHtml = '<div class="callout-box warning-callout">';

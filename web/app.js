@@ -404,6 +404,34 @@ function formatInline(text) {
 let currentActiveCodexId = null;
 
 function viewCodex(sourceId) {
+  if (sourceId === 'MASTER-ASPIRANT-DECISION') {
+    currentActiveCodexId = sourceId;
+    switchTab('codex-reader');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.getElementById('codex-title').textContent = 'Competitive Exam Aspirant Psychology & Decision Architecture: Unified Master Synthesis';
+    document.getElementById('codex-meta').innerHTML = `
+      <span class="badge badge-accent" style="margin-right:0.4rem;">CROSS-SOURCE MASTER SYNTHESIS</span>
+      <strong>Topic:</strong> Aspirant Psychology &amp; Behavioral Decision Theory &bull;
+      <strong>Sources Unified:</strong> <code>SRC-YT-2026-002</code> &bull; <code>SRC-YT-2026-001</code> &bull;
+      <strong>Status:</strong> DEDUPLICATED &amp; VERIFIED
+    `;
+
+    document.querySelectorAll('.note-switcher .switcher-btn').forEach(btn => btn.classList.remove('active'));
+    const activeSwitcherBtn = document.getElementById(`btn-switch-${sourceId}`);
+    if (activeSwitcherBtn) activeSwitcherBtn.classList.add('active');
+
+    const masterUrl = `../knowledge/master/aspirant_psychology_and_decision_architecture.md`;
+    fetch(masterUrl)
+      .then(r => r.text())
+      .then(txt => {
+        document.getElementById('codex-content').innerHTML = renderMarkdown(txt);
+      })
+      .catch(err => {
+        document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch master synthesis at ${masterUrl}: ${err.message}</p>`;
+      });
+    return;
+  }
+
   if (!manifestData || !manifestData.sources) return;
   const source = manifestData.sources.find(s => s.source_id === sourceId);
   if (!source) return;
@@ -483,9 +511,9 @@ function switchTab(viewId) {
     sec.classList.toggle('active', sec.id === viewId);
   });
 
-  // If opening Reader Mode directly and no codex has been selected yet, default to latest Master Note
+  // If opening Reader Mode directly and no codex has been selected yet, default to Unified Master Note
   if (viewId === 'codex-reader' && !currentActiveCodexId) {
-    viewCodex('SRC-YT-2026-002');
+    viewCodex('MASTER-ASPIRANT-DECISION');
   }
 }
 

@@ -35,14 +35,41 @@
 
       <!-- Master Notes Shelf -->
       <div class="master-note-shelf">
+        <!-- Unified Thematic Master Note (Cross-Source Synthesis) -->
+        <div class="master-card" style="border-left: 4px solid #1f883d; background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(31, 136, 61, 0.04) 100%);">
+          <div class="master-card-header">
+            <div>
+              <span class="badge badge-accent" style="background:#1f883d; color:#ffffff;">✨ CROSS-SOURCE UNIFIED MASTER CODEX</span>
+              <h2 class="master-card-title">Competitive Exam Aspirant Psychology &amp; Decision Architecture</h2>
+            </div>
+            <button class="btn-read" style="background:#1f883d;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">Read Unified Synthesis &rarr;</button>
+          </div>
+          <div class="master-card-meta">
+            <span><strong>Topic:</strong> Aspirant Psychology &amp; Behavioral Decision Theory</span> &bull;
+            <span><strong>Sources Unified:</strong> 2 Sources (60m 57s total lecture)</span> &bull;
+            <span><strong>Status:</strong> Deduplicated &amp; Grounded</span>
+          </div>
+          <p class="master-card-desc">
+            A comprehensive, deduplicated cross-source synthesis integrating both lectures. Unifies the 3-phase preparation curve (Honeymoon, Dip, Panic), Self-Determination Theory, Sunk Cost entrapment in multi-attempt drops, Identity Attachment bias, and a consolidated 5-step Master Action Playbook.
+          </p>
+          <div class="master-card-tags">
+            <span class="tag">Unified Playbook</span>
+            <span class="tag">Sunk Cost Fallacy</span>
+            <span class="tag">Self-Determination Triad</span>
+            <span class="tag">3-Phase Curve</span>
+            <span class="tag">Zero-Based Alternative Test</span>
+            <span class="tag">Mistake Register</span>
+          </div>
+        </div>
+
         <!-- Master Note 1 (Latest 51m Video) -->
         <div class="master-card">
           <div class="master-card-header">
             <div>
-              <span class="badge badge-accent">MASTER NOTE CODEX</span>
+              <span class="badge badge-accent">INDIVIDUAL SOURCE CODEX</span>
               <h2 class="master-card-title">Competitive Exam Aspirant Psychology &amp; Self-Determination</h2>
             </div>
-            <button class="btn-read" onclick="viewCodex('SRC-YT-2026-002')">Read Master Note &rarr;</button>
+            <button class="btn-read" onclick="viewCodex('SRC-YT-2026-002')">Read Source Codex &rarr;</button>
           </div>
           <div class="master-card-meta">
             <span><strong>Channel:</strong> ABrainoConscious</span> &bull;
@@ -65,23 +92,23 @@
         <div class="master-card">
           <div class="master-card-header">
             <div>
-              <span class="badge badge-accent">MASTER NOTE CODEX</span>
-              <h2 class="master-card-title">The Psychology of the Sunk Cost Trap: Why We Cling to Bad Investments</h2>
+              <span class="badge badge-accent">INDIVIDUAL SOURCE CODEX</span>
+              <h2 class="master-card-title">Competitive Exam Preparation Is Trapping You (Sunk Cost Fallacy)</h2>
             </div>
-            <button class="btn-read" onclick="viewCodex('SRC-YT-2026-001')">Read Master Note &rarr;</button>
+            <button class="btn-read" onclick="viewCodex('SRC-YT-2026-001')">Read Source Codex &rarr;</button>
           </div>
           <div class="master-card-meta">
-            <span><strong>Channel:</strong> Veritasium</span> &bull;
+            <span><strong>Channel:</strong> ABrainOConscious</span> &bull;
             <span><strong>Format:</strong> 9m 12s Analytical Video</span> &bull;
             <span><strong>ID:</strong> <code>SRC-YT-2026-001</code></span>
           </div>
           <p class="master-card-desc">
-            Explores why human decision-makers persist in failing endeavors after investing time, capital, or identity. Grounded analysis of prospect theory, loss aversion, emotional ego defense, and actionable boundary rules for project termination.
+            Explores why aspirants in multi-year exam cycles persist in unproductive preparation after investing unrecoverable time, fees, and identity. Grounded analysis of sunk cost accounting, ego defense, and the Zero-Based Alternative heuristic.
           </p>
           <div class="master-card-tags">
             <span class="tag">Sunk Cost Fallacy</span>
-            <span class="tag">Loss Aversion</span>
-            <span class="tag">Prospect Theory</span>
+            <span class="tag">Identity Attachment</span>
+            <span class="tag">Root Reward Deconstruction</span>
             <span class="tag">Decision Frameworks</span>
           </div>
         </div>
@@ -176,7 +203,10 @@
         </button>
         <div class="note-switcher">
           <span style="font-size:0.85rem; color:var(--text-secondary); font-weight:600; margin-right:0.25rem;">Switch Note:</span>
-          <button id="btn-switch-SRC-YT-2026-002" class="switcher-btn active" onclick="viewCodex('SRC-YT-2026-002')">
+          <button id="btn-switch-MASTER-ASPIRANT-DECISION" class="switcher-btn active" style="font-weight:600;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
+            ✨ Unified Master Note
+          </button>
+          <button id="btn-switch-SRC-YT-2026-002" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-002')">
             📖 Aspirant Psychology (51m)
           </button>
           <button id="btn-switch-SRC-YT-2026-001" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-001')">

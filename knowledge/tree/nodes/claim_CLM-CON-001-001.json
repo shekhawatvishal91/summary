@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-001-001",
+  "node_type": "claim",
+  "statement": "Unchunked working memory capacity is strictly bounded to 4 plus or minus 1 discrete mental representations under active cognitive load.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_1",
+  "evidence": [
+    {
+      "source_id": "SRC-RP-2026-001",
+      "locator_type": "paragraph",
+      "locator": "sec: The Prefrontal Capacity Ceiling # para-2",
+      "verbatim_quote": "unchunked active memory representations degrade catastrophically beyond 4 plus or minus 1 discrete semantic units."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-001"
+  ],
+  "created_at": "2026-10-11T04:00:13.126Z"
+}

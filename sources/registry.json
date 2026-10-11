@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "description": "Master registry of all ingested sources",
+  "sources": [
+    {
+      "source_id": "SRC-RP-2026-001",
+      "title": "Working Memory Constraints in Cognitive Control",
+      "author": "Dr. Elena Vance",
+      "published_year": 2026,
+      "medium": "paper",
+      "epistemic_tier": "tier_1",
+      "sha256": "4e622de354a651a89f97d12fd3963b63a12ee1059d981d0401a2a63fcffef8d1",
+      "raw_path": "sources/raw/SRC-RP-2026-001_test-cognitive-control.md",
+      "extracted_path": "sources/text/SRC-RP-2026-001.txt",
+      "codex_path": "knowledge/sources/SRC-RP-2026-001/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "SCAFFOLDED_WITHOUT_LLM",
+      "created_at": "2026-10-11T04:00:13.113Z",
+      "updated_at": "2026-10-11T04:00:13.113Z"
+    }
+  ]
+}

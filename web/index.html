@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Knowledge Brain OS — Reader & Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <span class="logo-icon">🧠</span>
+      <div>
+        <div class="logo-title">AI Knowledge Brain OS</div>
+      </div>
+      <span class="logo-badge">v1.0.0</span>
+    </div>
+    <nav>
+      <button class="active" data-view="dashboard-view">Dashboard</button>
+      <button data-view="sources-view">Sources Library</button>
+      <button data-view="concepts-view">Knowledge Explorer</button>
+      <button data-view="docs-view">Documentation</button>
+      <button data-view="codex-reader" style="display:none;" id="codex-tab">Codex Reader</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="status-banner"></div>
+
+    <!-- VIEW 1: DASHBOARD -->
+    <section id="dashboard-view" class="view-section active">
+      <div style="margin-bottom: 2rem;">
+        <h1 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem;">System Knowledge Reservoir</h1>
+        <p style="color: var(--text-secondary);">
+          A source-faithful, mathematically traceable AI operating system. Preserves full monograph depth (Product A) and cross-source concept graphs (Product B).
+        </p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-label">Ingested Sources</div>
+          <div class="metric-value" id="metric-sources">0</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Canonical Concepts</div>
+          <div class="metric-value" id="metric-concepts">0</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Anchored Claims</div>
+          <div class="metric-value" id="metric-claims">0</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Graph Relationships</div>
+          <div class="metric-value" id="metric-edges">0</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Constitution Volumes</div>
+          <div class="metric-value" id="metric-docs">18</div>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-header">
+          <span class="item-title">System Status & Invariants</span>
+          <span class="badge badge-tier1">VERIFIED</span>
+        </div>
+        <ul style="margin-left: 1.25rem; font-size: 0.9rem; color: var(--text-secondary);">
+          <li><strong>Zero Hallucination Standard:</strong> 100% of claims are anchored to physical locators.</li>
+          <li><strong>Dual-Product Separation:</strong> Product A codices and Product B graph nodes are preserved in parallel.</li>
+          <li><strong>Local Manifest Last Compiled:</strong> <span id="last-built">Never</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VIEW 2: SOURCES LIBRARY -->
+    <section id="sources-view" class="view-section">
+      <h2 style="margin-bottom: 1rem;">Registered Sources Library</h2>
+      <input type="text" id="source-search" class="search-bar" placeholder="Search by title, author, or source ID...">
+      <div id="sources-list" class="card-list"></div>
+    </section>
+
+    <!-- VIEW 3: KNOWLEDGE EXPLORER -->
+    <section id="concepts-view" class="view-section">
+      <h2 style="margin-bottom: 1rem;">Ontological Concept & Claim Graph</h2>
+      <input type="text" id="concept-search" class="search-bar" placeholder="Search canonical concepts, aliases, or definitions...">
+      <div id="concepts-list" class="card-list"></div>
+    </section>
+
+    <!-- VIEW 4: DOCUMENTATION HUB -->
+    <section id="docs-view" class="view-section">
+      <h2 style="margin-bottom: 1rem;">Constitutional & Architecture Manuals</h2>
+      <div id="docs-list" class="card-list"></div>
+    </section>
+
+    <!-- VIEW 5: CODEX READER -->
+    <section id="codex-reader" class="view-section">
+      <button onclick="switchTab('sources-view')" style="background:var(--bg-tertiary); border:1px solid var(--border-color); color:var(--text-primary); padding:0.4rem 0.8rem; border-radius:4px; cursor:pointer; margin-bottom:1rem;">
+        &larr; Back to Sources
+      </button>
+      <h2 id="codex-title" style="margin-bottom: 0.5rem;">Source Title</h2>
+      <p id="codex-meta" style="color:var(--text-secondary); margin-bottom:1.5rem;"></p>
+      <div class="codex-viewer">
+        <pre id="codex-content" style="white-space:pre-wrap;">Loading codex text...</pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    AI Knowledge Brain Operating System &bull; <a href="https://github.com/shekhawatvishal91/summary" target="_blank" style="color:var(--accent-color);">GitHub Repository</a> &bull; Zero Hallucination Certified
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

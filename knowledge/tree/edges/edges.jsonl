@@ -1,0 +1,2 @@
+{"_meta": "Knowledge Tree directed relationship stream v1.0.0"}
+{"edge_id":"EDG-001","source_node_id":"CON-001","target_node_id":"CON-005","relation_type":"extends","description":"Biological substrate for cognitive exertion limits.","dispute_details":null,"created_at":"2026-10-11T04:00:13.143Z"}

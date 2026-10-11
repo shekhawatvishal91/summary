@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-001",
+  "node_type": "concept",
+  "canonical_name": "Working Memory Capacity Ceiling",
+  "aliases": [
+    "Central Executive Bottleneck",
+    "Chunk Capacity Limit",
+    "Frontal Buffer Limit"
+  ],
+  "domain": "Cognitive Neuroscience",
+  "definition": "The strict biological constraint bounding unchunked active mental representations to 4 ± 1 items.",
+  "epistemic_tier": "tier_1",
+  "associated_claims": [
+    "CLM-CON-001-001",
+    "CLM-CON-001-002"
+  ],
+  "sources_contributing": [
+    "SRC-RP-2026-001"
+  ],
+  "created_at": "2026-10-11T04:00:13.125Z",
+  "updated_at": "2026-10-11T04:00:21.192Z"
+}

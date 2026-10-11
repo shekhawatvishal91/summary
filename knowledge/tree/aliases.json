@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "description": "Concept aliases mapping",
+  "mappings": {
+    "working memory capacity ceiling": "CON-001",
+    "central executive bottleneck": "CON-001",
+    "chunk capacity limit": "CON-001",
+    "frontal buffer limit": "CON-001",
+    "ego depletion": "CON-005"
+  }
+}

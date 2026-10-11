@@ -1,0 +1,13 @@
+{
+  "node_id": "CON-005",
+  "node_type": "concept",
+  "canonical_name": "Ego Depletion",
+  "aliases": [],
+  "domain": "Behavioral Psychology",
+  "definition": "Diminution of cognitive control and volition following sustained exertion.",
+  "epistemic_tier": "tier_2",
+  "associated_claims": [],
+  "sources_contributing": [],
+  "created_at": "2026-10-11T04:00:13.141Z",
+  "updated_at": "2026-10-11T04:00:21.197Z"
+}

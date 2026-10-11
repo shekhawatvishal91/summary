@@ -12,39 +12,51 @@ const { execSync } = require('child_process');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 
-console.log('--- STARTING QA REGRESSION TEST SUITE ---');
+console.log('====================================================');
+console.log('AI KNOWLEDGE BRAIN OS: FULL REGRESSION TEST SUITE');
+console.log('====================================================\n');
 
-// Test 1: Run Integrity Validator
-console.log('Test 1: Running scripts/validate-integrity.js...');
+// Test Suite 1: Documentation & Link Integrity Validator
+console.log('[SUITE 1/3] Running Documentation & Link Integrity Validator...');
 try {
   const output = execSync(`node "${path.join(REPO_ROOT, 'scripts', 'validate-integrity.js')}"`, {
     cwd: REPO_ROOT,
     encoding: 'utf-8'
   });
   console.log(output);
-  console.log('Test 1 Passed: Integrity validation succeeded.');
+  console.log('Suite 1: PASSED.\n');
 } catch (err) {
-  console.error('Test 1 Failed:', err.stdout || err.message);
+  console.error('Suite 1 Failed:', err.stdout || err.message);
   process.exit(1);
 }
 
-// Test 2: Verify Git Repository and Cleanliness
-console.log('\nTest 2: Verifying Git Configuration...');
+// Test Suite 2: Pipeline & Knowledge Integration Acceptance Suite
+console.log('[SUITE 2/3] Running Ingestion & Knowledge Graph Acceptance Suite...');
 try {
-  const gitStatus = execSync('git status --porcelain', { cwd: REPO_ROOT, encoding: 'utf-8' });
-  console.log('Git working tree inspected.');
-  console.log('Test 2 Passed: Git repository active.');
+  const output = execSync(`node "${path.join(REPO_ROOT, 'tests', 'test-pipeline.js')}"`, {
+    cwd: REPO_ROOT,
+    encoding: 'utf-8'
+  });
+  console.log(output);
+  console.log('Suite 2: PASSED.\n');
 } catch (err) {
-  console.error('Test 2 Failed: Git repository not configured properly.', err.message);
+  console.error('Suite 2 Failed:', err.stdout || err.message);
   process.exit(1);
 }
 
-// Test 3: Verify Core Directory Structure
-console.log('\nTest 3: Verifying Target Architecture Directory Baseline...');
+// Test Suite 3: Repository Layout & Git Health
+console.log('[SUITE 3/3] Verifying Target Architecture Directory Baseline...');
 const targetDirs = [
   'docs',
+  'sources/raw',
+  'sources/text',
+  'knowledge/sources',
+  'knowledge/tree/nodes',
+  'knowledge/tree/edges',
+  'knowledge/master',
+  'web',
   'scripts',
-  'tests'
+  'tests/fixtures'
 ];
 
 targetDirs.forEach(dir => {
@@ -52,7 +64,9 @@ targetDirs.forEach(dir => {
   assert.ok(fs.existsSync(p), `Directory ${dir} must exist`);
   assert.ok(fs.statSync(p).isDirectory(), `${dir} must be a directory`);
 });
-console.log('Test 3 Passed: Core directories exist.');
+console.log('Suite 3: PASSED (All core directories verified).\n');
 
-console.log('\n--- ALL REGRESSION TESTS PASSED (100% SUCCESS) ---');
+console.log('====================================================');
+console.log('ALL REGRESSION SUITES PASSED (100% SUCCESS)');
+console.log('====================================================');
 process.exit(0);

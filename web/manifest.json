@@ -1,0 +1,210 @@
+{
+  "version": "1.0.0",
+  "built_at": "2026-10-11T04:00:21.212Z",
+  "metrics": {
+    "total_sources": 1,
+    "total_concepts": 2,
+    "total_claims": 2,
+    "total_edges": 1,
+    "total_docs": 18
+  },
+  "sources": [
+    {
+      "source_id": "SRC-RP-2026-001",
+      "title": "Working Memory Constraints in Cognitive Control",
+      "author": "Dr. Elena Vance",
+      "published_year": 2026,
+      "medium": "paper",
+      "epistemic_tier": "tier_1",
+      "sha256": "4e622de354a651a89f97d12fd3963b63a12ee1059d981d0401a2a63fcffef8d1",
+      "raw_path": "sources/raw/SRC-RP-2026-001_test-cognitive-control.md",
+      "extracted_path": "sources/text/SRC-RP-2026-001.txt",
+      "codex_path": "knowledge/sources/SRC-RP-2026-001/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "SCAFFOLDED_WITHOUT_LLM",
+      "created_at": "2026-10-11T04:00:13.113Z",
+      "updated_at": "2026-10-11T04:00:13.113Z"
+    }
+  ],
+  "concepts": [
+    {
+      "node_id": "CON-001",
+      "node_type": "concept",
+      "canonical_name": "Working Memory Capacity Ceiling",
+      "aliases": [
+        "Central Executive Bottleneck",
+        "Chunk Capacity Limit",
+        "Frontal Buffer Limit"
+      ],
+      "domain": "Cognitive Neuroscience",
+      "definition": "The strict biological constraint bounding unchunked active mental representations to 4 ± 1 items.",
+      "epistemic_tier": "tier_1",
+      "associated_claims": [
+        "CLM-CON-001-001",
+        "CLM-CON-001-002"
+      ],
+      "sources_contributing": [
+        "SRC-RP-2026-001"
+      ],
+      "created_at": "2026-10-11T04:00:13.125Z",
+      "updated_at": "2026-10-11T04:00:21.192Z"
+    },
+    {
+      "node_id": "CON-005",
+      "node_type": "concept",
+      "canonical_name": "Ego Depletion",
+      "aliases": [],
+      "domain": "Behavioral Psychology",
+      "definition": "Diminution of cognitive control and volition following sustained exertion.",
+      "epistemic_tier": "tier_2",
+      "associated_claims": [],
+      "sources_contributing": [],
+      "created_at": "2026-10-11T04:00:13.141Z",
+      "updated_at": "2026-10-11T04:00:21.197Z"
+    }
+  ],
+  "claims": [
+    {
+      "node_id": "CLM-CON-001-001",
+      "node_type": "claim",
+      "statement": "Unchunked working memory capacity is strictly bounded to 4 plus or minus 1 discrete mental representations under active cognitive load.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_1",
+      "evidence": [
+        {
+          "source_id": "SRC-RP-2026-001",
+          "locator_type": "paragraph",
+          "locator": "sec: The Prefrontal Capacity Ceiling # para-2",
+          "verbatim_quote": "unchunked active memory representations degrade catastrophically beyond 4 plus or minus 1 discrete semantic units."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-001"
+      ],
+      "created_at": "2026-10-11T04:00:13.126Z"
+    },
+    {
+      "node_id": "CLM-CON-001-002",
+      "node_type": "claim",
+      "statement": "Prefrontal adenosine accumulation mediates perceived cognitive fatigue.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_1",
+      "evidence": [
+        {
+          "source_id": "SRC-RP-2026-001",
+          "locator_type": "paragraph",
+          "locator": "sec: Neurochemical Modulation & Ego Depletion # para-1",
+          "verbatim_quote": null
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-001"
+      ],
+      "created_at": "2026-10-11T04:00:13.135Z"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "EDG-001",
+      "source_node_id": "CON-001",
+      "target_node_id": "CON-005",
+      "relation_type": "extends",
+      "description": "Biological substrate for cognitive exertion limits.",
+      "dispute_details": null,
+      "created_at": "2026-10-11T04:00:13.143Z"
+    }
+  ],
+  "documentation": [
+    {
+      "filename": "00_MASTER_DIRECTIVE.md",
+      "title": "00 MASTER DIRECTIVE: AI KNOWLEDGE BRAIN OPERATING SYSTEM",
+      "path": "docs/00_MASTER_DIRECTIVE.md"
+    },
+    {
+      "filename": "01_SYSTEM_VISION.md",
+      "title": "01 SYSTEM VISION & ACCEPTANCE CRITERIA",
+      "path": "docs/01_SYSTEM_VISION.md"
+    },
+    {
+      "filename": "02_AGENT_CONSTITUTION.md",
+      "title": "02 AGENT CONSTITUTION: NON-NEGOTIABLE OPERATING LAWS",
+      "path": "docs/02_AGENT_CONSTITUTION.md"
+    },
+    {
+      "filename": "03_REPOSITORY_AUDIT.md",
+      "title": "03 REPOSITORY AUDIT: VERIFIED CURRENT-STATE ASSESSMENT",
+      "path": "docs/03_REPOSITORY_AUDIT.md"
+    },
+    {
+      "filename": "04_TARGET_ARCHITECTURE.md",
+      "title": "04 TARGET ARCHITECTURE: SYSTEM COMPONENTS & DATA PIPELINES",
+      "path": "docs/04_TARGET_ARCHITECTURE.md"
+    },
+    {
+      "filename": "05_SOURCE_INGESTION.md",
+      "title": "05 SOURCE INGESTION: REGISTRATION, EXTRACTION & METADATA PROTOCOL",
+      "path": "docs/05_SOURCE_INGESTION.md"
+    },
+    {
+      "filename": "06_BOOK_DECODING.md",
+      "title": "06 BOOK DECODING PROTOCOL: 6-DIMENSIONAL CODEX ENGINE",
+      "path": "docs/06_BOOK_DECODING.md"
+    },
+    {
+      "filename": "07_YOUTUBE_DECODING.md",
+      "title": "07 YOUTUBE DECODING PROTOCOL: TRANSCRIPT, TIMESTAMPS & VISUAL CONTENT",
+      "path": "docs/07_YOUTUBE_DECODING.md"
+    },
+    {
+      "filename": "08_KNOWLEDGE_MODEL.md",
+      "title": "08 KNOWLEDGE MODEL: NODES, CLAIMS, EVIDENCE & GRAPH SCHEMAS",
+      "path": "docs/08_KNOWLEDGE_MODEL.md"
+    },
+    {
+      "filename": "09_PROVENANCE_AND_CITATIONS.md",
+      "title": "09 PROVENANCE & CITATIONS: SOURCE TRACEABILITY REQUIREMENTS",
+      "path": "docs/09_PROVENANCE_AND_CITATIONS.md"
+    },
+    {
+      "filename": "10_KNOWLEDGE_TREE_GOVERNANCE.md",
+      "title": "10 KNOWLEDGE TREE GOVERNANCE: CANONICALIZATION, CONFLICT & REVIEW",
+      "path": "docs/10_KNOWLEDGE_TREE_GOVERNANCE.md"
+    },
+    {
+      "filename": "11_SYNTHESIS_AND_RETRIEVAL.md",
+      "title": "11 SYNTHESIS & RETRIEVAL: MASTER NOTES & GROUNDED QA",
+      "path": "docs/11_SYNTHESIS_AND_RETRIEVAL.md"
+    },
+    {
+      "filename": "12_GITHUB_PUBLISHING.md",
+      "title": "12 GITHUB PUBLISHING PROTOCOL: ARTIFACT VALIDATION, GIT & WEBPAGE DEPLOY",
+      "path": "docs/12_GITHUB_PUBLISHING.md"
+    },
+    {
+      "filename": "13_TESTING_AND_QUALITY_ASSURANCE.md",
+      "title": "13 TESTING & QUALITY ASSURANCE: COVERAGE, FIDELITY & REGRESSION",
+      "path": "docs/13_TESTING_AND_QUALITY_ASSURANCE.md"
+    },
+    {
+      "filename": "14_SKILLS_AND_TOOLING.md",
+      "title": "14 SKILLS & TOOLING: CAPABILITIES, INTEGRATION DECISIONS & AUDIT",
+      "path": "docs/14_SKILLS_AND_TOOLING.md"
+    },
+    {
+      "filename": "15_FAILURE_RECOVERY_AND_MAINTENANCE.md",
+      "title": "15 FAILURE RECOVERY & MAINTENANCE: RESUMABILITY, BACKUPS & INTEGRITY",
+      "path": "docs/15_FAILURE_RECOVERY_AND_MAINTENANCE.md"
+    },
+    {
+      "filename": "16_IMPLEMENTATION_ROADMAP.md",
+      "title": "16 IMPLEMENTATION ROADMAP: PHASED EXECUTION & GATES",
+      "path": "docs/16_IMPLEMENTATION_ROADMAP.md"
+    },
+    {
+      "filename": "17_CHANGELOG.md",
+      "title": "17 CHANGELOG & ARCHITECTURE DECISION RECORDS (ADR)",
+      "path": "docs/17_CHANGELOG.md"
+    }
+  ]
+}

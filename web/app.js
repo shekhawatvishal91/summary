@@ -401,10 +401,14 @@ function formatInline(text) {
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" class="codex-link">$1</a>');
 }
 
+let currentActiveCodexId = null;
+
 function viewCodex(sourceId) {
+  if (!manifestData || !manifestData.sources) return;
   const source = manifestData.sources.find(s => s.source_id === sourceId);
   if (!source) return;
 
+  currentActiveCodexId = sourceId;
   const isFixture = isFixtureSource(source);
 
   switchTab('codex-reader');
@@ -415,6 +419,15 @@ function viewCodex(sourceId) {
     <strong>Tier:</strong> ${source.epistemic_tier} &bull; <strong>Status:</strong> ${source.decoding_status}
     ${isFixture ? '<span class="badge badge-fixture" style="margin-left:0.5rem;">TEST FIXTURE BENCHMARK</span>' : ''}
   `;
+
+  // Update switcher button active state
+  document.querySelectorAll('.note-switcher .switcher-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  const activeSwitcherBtn = document.getElementById(`btn-switch-${sourceId}`);
+  if (activeSwitcherBtn) {
+    activeSwitcherBtn.classList.add('active');
+  }
 
   // Fetch codex markdown text
   const codexUrl = `../knowledge/sources/${sourceId}/codex.md`;
@@ -469,6 +482,11 @@ function switchTab(viewId) {
   document.querySelectorAll('.view-section').forEach(sec => {
     sec.classList.toggle('active', sec.id === viewId);
   });
+
+  // If opening Reader Mode directly and no codex has been selected yet, default to latest Master Note
+  if (viewId === 'codex-reader' && !currentActiveCodexId) {
+    viewCodex('SRC-YT-2026-002');
+  }
 }
 
 function escapeHtml(str) {

@@ -125,11 +125,15 @@ runTest('Provenance rules classify CON-005, CON-001, CON-006 as fixtures and YT 
 
   // Check metrics calculation
   context.renderMetrics();
-  assert.strictEqual(domElements.get('metric-sources').textContent, 1, 'Real sources must be 1');
+  const expectedRealSources = manifest.sources.filter(s => !context.isFixtureSource(s)).length;
+  const expectedRealConcepts = manifest.concepts.filter(c => !context.isFixtureConcept(c)).length;
+  const expectedRealClaims = manifest.claims.filter(cl => !context.isFixtureClaim(cl)).length;
+
+  assert.strictEqual(domElements.get('metric-sources').textContent, expectedRealSources, 'Real sources must match non-fixture count');
   assert.strictEqual(domElements.get('metric-sources-benchmark').textContent, 'Benchmark: 2');
-  assert.strictEqual(domElements.get('metric-concepts').textContent, 4, 'Real concepts must be 4');
+  assert.strictEqual(domElements.get('metric-concepts').textContent, expectedRealConcepts, 'Real concepts must match non-fixture count');
   assert.strictEqual(domElements.get('metric-concepts-benchmark').textContent, 'Benchmark: 3');
-  assert.strictEqual(domElements.get('metric-claims').textContent, 10, 'Real claims must be 10');
+  assert.strictEqual(domElements.get('metric-claims').textContent, expectedRealClaims, 'Real claims must match non-fixture count');
   assert.strictEqual(domElements.get('metric-claims-benchmark').textContent, 'Benchmark: 3');
 });
 

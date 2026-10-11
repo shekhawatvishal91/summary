@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-041",
+  "node_type": "concept",
+  "canonical_name": "Strategic Dopamine Renunciation (Vairagya Protocol)",
+  "aliases": [
+    "vairagya protocol",
+    "strategic sacrifice protocol",
+    "deliberate dopamine renunciation"
+  ],
+  "domain": "General",
+  "definition": "A deliberate, monthly behavioral protocol wherein an aspirant consciously identifies and sacrifices high-dopamine, passive distraction activities (short-form videos, excessive social browsing) to protect executive cognitive bandwidth and restore baseline attention.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-041-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-002"
+  ],
+  "created_at": "2026-10-11T10:24:49.959Z",
+  "updated_at": "2026-10-11T10:24:49.959Z"
+}

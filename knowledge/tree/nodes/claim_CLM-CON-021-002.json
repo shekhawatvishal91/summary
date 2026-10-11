@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-021-002",
+  "node_type": "claim",
+  "statement": "The final anxious preparation phase begins around Day 210 as the exam deadline approaches, collapsing psychological distance and creating intense urgency.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:15:03.040 - 00:15:19.680 (Cues 313-316)",
+      "verbatim_quote": "एंजियस फेस लगभग डे 210 के बाद ही\n\n314\n00:15:07.760 --> 00:15:13.440\nशुरू हो जाता है। एंजियस फेस में क्या\n\n315\n00:15:10.639 --> 00:15:16.320\nहोता है कि यहां पे जो साइकोलॉजिकल\n\n316\n00:15:13.440 --> 00:15:19.680\nडिस्टेंसिंग वाला फैक्टर था"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-021"
+  ],
+  "created_at": "2026-10-11T10:24:49.925Z"
+}

@@ -1,0 +1,299 @@
+{
+  "source_id": "SRC-YT-2026-002",
+  "agent_identifier": "antigravity-native-agent",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "dimensions": {
+    "dim_1_core_thesis": {
+      "premise": "Competitive exam preparation (JEE, NEET, UPSC) follows an inevitable three-phase psychological trajectory—Honeymoon (Days 1–90), Psychological Distance Dip (Days 90–210), and Panic Urgency (Day 210+)—which leads to failure not through lack of intelligence, but through the breakdown of perceived learning, temporal discounting of distant rewards, and the collapse of Self-Determination components (Autonomy, Competence, Relatedness).",
+      "paradigm_shift": "Demolishes the standard motivational paradigm that consistency is a matter of pure willpower or continuous hype. Proves scientifically that long-term study endurance is a function of cognitive choice architecture, systematic error analytics (the Mistake Register), and deliberate renunciation (Vairagya) to balance baseline dopamine against abstract future goals."
+    },
+    "dim_2_causal_model": {
+      "mechanism": "Long-term preparation failure is driven by two primary cognitive failures: (1) Temporal Construal & Reward De-realization, wherein an exam 12 months away is treated by the brain as abstract and unreal, allowing immediate gratification to dominate; and (2) The Perceived vs. Actual Learning Paradox, wherein early superficial reading creates an illusion of high competence, while subsequent deep conceptual struggle creates an illusion of incompetence, triggering avoidance behavior and backlog paralysis.",
+      "ratios_in_prose": "The preparation timeline exhibits three distinct phases: Phase 1 (Days 1 to approximately 90) with peak honeymoon motivation; Phase 2 (Days 90 to 210) where psychological distance induces acute motivation drop and backlog accumulation; and Phase 3 (Day 210 onwards) where impending exam proximity forces a sudden surge in cortisol and urgency. Sustaining drive requires balancing the Self-Determination formula: Motivation = Autonomy + Competence + Relatedness."
+    },
+    "dim_3_master_analogy": {
+      "analogy": "The Mirage Oasis vs. The Deep Well: Early preparation feels like driving across flat land where rapid perceived progress creates the illusion of mastery (the mirage). When the aspirant hits complex, multi-variable conceptual terrain, progress feels non-existent and the mind panics, seeking instant dopamine oases (social media, short-form video) because the distant destination seems unreachable. Only systematic surveying (the Mistake Register) reveals that genuine ground is being cleared beneath the surface."
+    },
+    "dim_4_diagnostics": {
+      "classifications": [
+        {
+          "state": "Honeymoon Motivation Phase (Days 1–90)",
+          "symptom": "Extreme uncalibrated optimism, high initial study hours, purchasing multiple test series and textbooks simultaneously without prioritization.",
+          "etiology": "Novelty-induced dopamine surge and abstract idealization of the future professional outcome."
+        },
+        {
+          "state": "Psychological Distance Dip & Backlog Paralysis (Days 90–210)",
+          "symptom": "Study avoidance, rapid accumulation of untouched lectures/modules, compulsive checking of short-form feeds, persistent guilt.",
+          "etiology": "The brain classifies the distant exam as unreal, while immediate hedonic stimuli provide instantaneous gratification; compounded by the illusion of incompetence during hard problem sets."
+        },
+        {
+          "state": "The Panic Urgency Phase (Day 210 onwards)",
+          "symptom": "Acute sleep disruption, erratic all-night cramming, severe test anxiety, emotional volatility, despair over historical backlogs.",
+          "etiology": "Collapse of temporal distance forcing acute deadline saliency without the underlying conceptual foundation having been systematically consolidated."
+        }
+      ],
+      "failure_modes": [
+        "Backlog Denial Spiral: Attempting to clear 3 months of accumulated backlog in a single week, which burns out executive function and destroys ongoing daily class preparation.",
+        "Passive Highlighting Illusion: Reading through textbook notes repeatedly to feel a sense of ease, confusing passive recognition with true retrieval competence.",
+        "Isolation Breakdown: Treating all batchmates as threatening competitors, severing the Relatedness pillar of Self-Determination and compounding depressive fatigue."
+      ]
+    },
+    "dim_5_field_protocols": {
+      "algorithm": [
+        "Step 1 (Temporal Micro-Chunking): Break the distant 1-year exam horizon into visible 3-week operational milestones with tangible daily completion satisfaction to counter distant reward derealization.",
+        "Step 2 (The Dedicated Backlog Buffer): Allocate a fixed, non-negotiable 30 to 45 minutes daily exclusively for historical backlog liquidation, strictly protecting the remaining day for current syllabus.",
+        "Step 3 (The Systematic Mistake Register): Maintain a bound journal recording every mock test error categorized by root cause: (a) conceptual blindspot, (b) calculation blunder, or (c) time pressure misjudgment.",
+        "Step 4 (Friction Architecture): Increase physical activation energy for high-dopamine distractions—place the smartphone in an elevated location requiring a ladder or separate room, and silence notifications.",
+        "Step 5 (Urge Surfing for Distraction): When the somatic impulse to browse arises, refrain from reflexive action; observe the bodily craving for 60 to 90 seconds until the neurochemical wave dissipates.",
+        "Step 6 (Monthly Vairagya Audit): Conduct a monthly reflection session where one specific non-essential, highly distracting habit or app is consciously sacrificed."
+      ],
+      "verbatim_scripts": [
+        {
+          "label": "The Three Phases of Preparation Proposition",
+          "locator": "time: 00:00:21.760 - 00:00:43.840 (Cues 9-13)",
+          "verbatim_text": "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस\n\n10\n00:00:24.800 --> 00:00:32.559\nहोते हैं। सबसे पहला फज़ वो फज़ जो कि लगभग\n\n11\n00:00:29.199 --> 00:00:35.520\nडे वन से लेकर के डे 90 अप्रोक्समेटली डे\n\n12\n00:00:32.559 --> 00:00:39.040\n90 तक चलता है। जिसमें हमारा मोटिवेशन\n\n13\n00:00:35.520 --> 00:00:43.840\nकाफी हाई रहता है।"
+        },
+        {
+          "label": "Distant Reward Derealization Mechanism",
+          "locator": "time: 00:05:03.919 - 00:05:14.479 (Cues 102-104)",
+          "verbatim_text": "ब्रेन ने यह समझा कि वो लगभग एक साल दूर\n\n103\n00:05:06.479 --> 00:05:12.320\nहै तो ब्रेन ने उसे अनरियल मानना शुरू कर\n\n104\n00:05:09.199 --> 00:05:14.479\nदिया। और जो बीच में छोटे-छोटे रिवॉर्ड्स"
+        },
+        {
+          "label": "Self-Determination Theory Formulation",
+          "locator": "time: 00:09:12.720 - 00:09:25.600 (Cues 194-196)",
+          "verbatim_text": "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब\n\n195\n00:09:17.200 --> 00:09:23.200\nऑटोनॉमी, सी मतलब कॉम्पिटेंस और आर मतलब\n\n196\n00:09:21.440 --> 00:09:25.600\nरिलेटेडनेस।"
+        },
+        {
+          "label": "The Mistake Register Mandate",
+          "locator": "time: 00:34:49.440 - 00:35:02.079 (Cues 728-730)",
+          "verbatim_text": "मिस्टेक रजिस्टर बनाना जरूरी है। उस\n\n729\n00:34:53.440 --> 00:34:59.280\nमिस्टेक रजिस्टर को मेंटेन करना। मंथली हर\n\n730\n00:34:57.119 --> 00:35:02.079\nमंथ जो भी रिफ्लेक्शन पीरियड आप जिस दिन"
+        },
+        {
+          "label": "The Vairagya Sacrifice Protocol",
+          "locator": "time: 00:39:11.040 - 00:39:23.760 (Cues 822-824)",
+          "verbatim_text": "वैराग्य। वैराग्य मतलब सैक्रिफाइस।\n\n823\n00:39:13.520 --> 00:39:20.560\nसैक्रिफाइस का मतलब है\n\n824\n00:39:16.480 --> 00:39:23.760\nअपनी हर महीने जब भी रिफ्लेक्शन पीरियड"
+        }
+      ],
+      "ai_generated_practical_applications": [
+        "Exercise 1 (The Error Root-Cause Audit): Take your last mock exam. For every negative mark, write down whether it was an Epistemic Deficit (didn't know the theory), an Operational Slip (calculation/reading error), or a Strategic Error (misallocated time).",
+        "Exercise 2 (The 40-Minute Backlog Quarantine): Schedule an alarm at 4:00 PM every afternoon dedicated solely to your oldest pending topic. Stop exactly at 4:40 PM regardless of progress, keeping it cordoned off from current syllabus.",
+        "Exercise 3 (Friction Inversion): Put your distraction triggers behind physical obstacles (phone in another room) and place your active workbook open on your desk with pen ready before going to bed."
+      ]
+    },
+    "dim_6_skeptic_box": {
+      "pop_culture_distortion": "Pop coaching and motivational media treat competitive exam persistence as a test of raw character or 'passion', prescribing hype speeches, 16-hour study slogans, and toxic shame when energy inevitably flags.",
+      "clinical_empirical_reality": "Long-term academic stamina is governed by neurobiology: construal distance devalues distant rewards, cognitive friction dictates default behaviors, and true motivation requires satisfying psychological needs for autonomy, competence, and relatedness as formalized in Self-Determination Theory (Ryan & Deci)."
+    }
+  },
+  "extracted_claims": [
+    {
+      "statement": "Competitive exam preparation follows three predictable psychological phases across the timeline: an initial high-motivation phase (Days 1–90), an unmotivated mid-preparation dip, and a high-anxiety urgency phase.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:00:21.760 - 00:00:43.840 (Cues 9-13)",
+      "verbatim_quote": "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस\n\n10\n00:00:24.800 --> 00:00:32.559\nहोते हैं। सबसे पहला फज़ वो फज़ जो कि लगभग\n\n11\n00:00:29.199 --> 00:00:35.520\nडे वन से लेकर के डे 90 अप्रोक्समेटली डे\n\n12\n00:00:32.559 --> 00:00:39.040\n90 तक चलता है। जिसमें हमारा मोटिवेशन\n\n13\n00:00:35.520 --> 00:00:43.840\nकाफी हाई रहता है।",
+      "associated_concepts": [
+        "Three-Phase Aspirant Motivation Cycle"
+      ]
+    },
+    {
+      "statement": "When a target exam is perceived as a year away, the human brain discounts its emotional reality as unreal, causing immediate small rewards to dominate decision-making.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:05:03.919 - 00:05:14.479 (Cues 102-104)",
+      "verbatim_quote": "ब्रेन ने यह समझा कि वो लगभग एक साल दूर\n\n103\n00:05:06.479 --> 00:05:12.320\nहै तो ब्रेन ने उसे अनरियल मानना शुरू कर\n\n104\n00:05:09.199 --> 00:05:14.479\nदिया। और जो बीच में छोटे-छोटे रिवॉर्ड्स",
+      "associated_concepts": [
+        "Construal Distance & Reward De-realization"
+      ]
+    },
+    {
+      "statement": "Aspirants confuse perceived learning with actual learning, failing to distinguish between superficial familiarity and genuine deep conceptual understanding.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:04:15.920 - 00:04:26.560 (Cues 87-89)",
+      "verbatim_quote": "एक्चुअल लर्निंग और पर्सव्ड लर्निंग यह\n\n88\n00:04:19.280 --> 00:04:26.560\nदोनों चीजें दोनों कांसेप्ट्स क्या है? इन\n\n89\n00:04:22.560 --> 00:04:29.759\nदोनों में क्या डिफरेंस है? देखिए।",
+      "associated_concepts": [
+        "Perceived vs. Actual Learning Paradox"
+      ]
+    },
+    {
+      "statement": "The final anxious preparation phase begins around Day 210 as the exam deadline approaches, collapsing psychological distance and creating intense urgency.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:15:03.040 - 00:15:19.680 (Cues 313-316)",
+      "verbatim_quote": "एंजियस फेस लगभग डे 210 के बाद ही\n\n314\n00:15:07.760 --> 00:15:13.440\nशुरू हो जाता है। एंजियस फेस में क्या\n\n315\n00:15:10.639 --> 00:15:16.320\nहोता है कि यहां पे जो साइकोलॉजिकल\n\n316\n00:15:13.440 --> 00:15:19.680\nडिस्टेंसिंग वाला फैक्टर था",
+      "associated_concepts": [
+        "Three-Phase Aspirant Motivation Cycle"
+      ]
+    },
+    {
+      "statement": "Under Self-Determination Theory, sustainable study drive is formulated as Motivation = Autonomy (A) + Competence (C) + Relatedness (R).",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:09:12.720 - 00:09:25.600 (Cues 194-196)",
+      "verbatim_quote": "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब\n\n195\n00:09:17.200 --> 00:09:23.200\nऑटोनॉमी, सी मतलब कॉम्पिटेंस और आर मतलब\n\n196\n00:09:21.440 --> 00:09:25.600\nरिलेटेडनेस।",
+      "associated_concepts": [
+        "Academic Self-Determination Triad"
+      ]
+    },
+    {
+      "statement": "Autonomy in academic preparation requires that the student chooses their daily work through personal agency rather than complying solely with external pressure.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:09:30.000 - 00:09:44.720 (Cues 199-201)",
+      "verbatim_quote": "ऑटोनॉमी का मतलब है\n\n200\n00:09:33.279 --> 00:09:38.640\nकि मैं कोई स्पेसिफिक काम खुद करना चाहता\n\n201\n00:09:36.240 --> 00:09:44.720\nहूं। मेरे ऊपर कोई एक्सटर्नल प्रेशर नहीं",
+      "associated_concepts": [
+        "Academic Self-Determination Triad"
+      ]
+    },
+    {
+      "statement": "Relatedness requires fostering a sense of shared connection and belonging with a peer group rather than operating in antagonistic isolation.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:13:52.160 - 00:14:04.639 (Cues 289-291)",
+      "verbatim_quote": "रिलेटेडनेस का मतलब है एक सेंस ऑफ कनेक्शन\n\n290\n00:13:55.839 --> 00:14:02.160\nया फिर एक बिलोंगिंगनेस अपने ग्रुप के\n\n291\n00:13:58.560 --> 00:14:04.639\nसाथ।",
+      "associated_concepts": [
+        "Academic Self-Determination Triad"
+      ]
+    },
+    {
+      "statement": "Maintaining and reviewing an error register is mandatory for tracking mock test mistakes and systematically refining strategy during monthly reflection.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:34:49.440 - 00:35:02.079 (Cues 728-730)",
+      "verbatim_quote": "मिस्टेक रजिस्टर बनाना जरूरी है। उस\n\n729\n00:34:53.440 --> 00:34:59.280\nमिस्टेक रजिस्टर को मेंटेन करना। मंथली हर\n\n730\n00:34:57.119 --> 00:35:02.079\nमंथ जो भी रिफ्लेक्शन पीरियड आप जिस दिन",
+      "associated_concepts": [
+        "Systematic Error Analytics & Mistake Registry"
+      ]
+    },
+    {
+      "statement": "Vairagya represents deliberate sacrifice, where aspirants systematically identify and renounce distracting hedonic activities during monthly reviews.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "time: 00:39:11.040 - 00:39:23.760 (Cues 822-824)",
+      "verbatim_quote": "वैराग्य। वैराग्य मतलब सैक्रिफाइस।\n\n823\n00:39:13.520 --> 00:39:20.560\nसैक्रिफाइस का मतलब है\n\n824\n00:39:16.480 --> 00:39:23.760\nअपनी हर महीने जब भी रिफ्लेक्शन पीरियड",
+      "associated_concepts": [
+        "Strategic Dopamine Renunciation (Vairagya Protocol)"
+      ]
+    }
+  ],
+  "proposed_concepts": [
+    {
+      "name": "Three-Phase Aspirant Motivation Cycle",
+      "definition": "A temporal trajectory of motivation in multi-year competitive exam preparation characterized by an initial high-motivation honeymoon phase (Days 1–90), an unmotivated psychological distance dip with high backlog accumulation (Days 90–210), and an acute anxious panic phase leading up to the examination deadline (Day 210 onwards).",
+      "mental_model": "The Aspirant Saliency Curve",
+      "aliases": [
+        "aspirant motivation cycle",
+        "three phases of competitive prep",
+        "honeymoon dip panic curve"
+      ]
+    },
+    {
+      "name": "Construal Distance & Reward De-realization",
+      "definition": "A cognitive discounting mechanism wherein distant goals (e.g., an examination 12 months away) are perceived as abstract and unreal, causing the brain to devalue their future payoff while over-valuing immediate, low-effort sensory rewards (instant gratification) that possess concrete temporal proximity.",
+      "mental_model": "Distant Reward Derealization",
+      "aliases": [
+        "temporal construal discounting",
+        "distant goal derealization",
+        "psychological distance in long-term prep"
+      ]
+    },
+    {
+      "name": "Perceived vs. Actual Learning Paradox",
+      "definition": "A cognitive dissonance phenomenon where students equate high mental struggle on difficult conceptual schemas with zero progress or intellectual failure ('illusion of incompetence'), mistakenly assuming that effortless recognition during early preparation represented true learning.",
+      "mental_model": "The Illusion of Incompetence in Deep Study",
+      "aliases": [
+        "perceived learning paradox",
+        "actual vs perceived learning gap",
+        "illusion of incompetence"
+      ]
+    },
+    {
+      "name": "Academic Self-Determination Triad",
+      "definition": "The structural formula for sustaining study drive over long academic campaigns, formulated as Motivation = Autonomy (self-directed volition) + Competence (self-efficacy through verifiable skill) + Relatedness (belonging and emotional connection to peer cohort and subject matter).",
+      "mental_model": "Student SDT Motivation Architecture",
+      "aliases": [
+        "academic self-determination theory",
+        "sdt in competitive exams",
+        "autonomy competence relatedness triad"
+      ]
+    },
+    {
+      "name": "Systematic Error Analytics & Mistake Registry",
+      "definition": "A diagnostic study method replacing blind, repetitive practice with an exhaustive error logbook that records each mistake from tests, categorizes its root cause (conceptual deficiency, calculation slip, or time pressure), and mandates monthly diagnostic reviews.",
+      "mental_model": "The Error Logbook Architecture",
+      "aliases": [
+        "mistake register methodology",
+        "error analytics log",
+        "diagnostic test review"
+      ]
+    },
+    {
+      "name": "Strategic Dopamine Renunciation (Vairagya Protocol)",
+      "definition": "A deliberate, monthly behavioral protocol wherein an aspirant consciously identifies and sacrifices high-dopamine, passive distraction activities (short-form videos, excessive social browsing) to protect executive cognitive bandwidth and restore baseline attention.",
+      "mental_model": "Vairagya Cognitive Bandwidth Shield",
+      "aliases": [
+        "vairagya protocol",
+        "strategic sacrifice protocol",
+        "deliberate dopamine renunciation"
+      ]
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_concept": "Three-Phase Aspirant Motivation Cycle",
+      "target_concept": "Construal Distance & Reward De-realization",
+      "relation_type": "correlates_with",
+      "description": "Phase 2 motivation collapse is driven by cognitive construal discounting where the distant exam payoff becomes unreal relative to immediate dopamine distractions."
+    },
+    {
+      "source_concept": "Perceived vs. Actual Learning Paradox",
+      "target_concept": "Three-Phase Aspirant Motivation Cycle",
+      "relation_type": "correlates_with",
+      "description": "The mismatch between perceived and actual learning exacerbates the mid-phase dip, leading students to falsely infer total failure when facing high cognitive load."
+    },
+    {
+      "source_concept": "Academic Self-Determination Triad",
+      "target_concept": "Three-Phase Aspirant Motivation Cycle",
+      "relation_type": "regulates",
+      "description": "Restoring autonomy, competence, and relatedness prevents the motivation collapse that typically occurs between Day 90 and Day 210."
+    },
+    {
+      "source_concept": "Systematic Error Analytics & Mistake Registry",
+      "target_concept": "Academic Self-Determination Triad",
+      "relation_type": "builds_upon",
+      "description": "Maintaining an analytical mistake register directly provides empirical evidence of growing skill, rebuilding the competence pillar of self-determination."
+    },
+    {
+      "source_concept": "Strategic Dopamine Renunciation (Vairagya Protocol)",
+      "target_concept": "Construal Distance & Reward De-realization",
+      "relation_type": "regulates",
+      "description": "Sacrificing immediate hyper-palatable dopamine stimuli prevents short-term sensory rewards from out-competing the temporally distant exam objective."
+    },
+    {
+      "source_concept": "Three-Phase Aspirant Motivation Cycle",
+      "target_concept": "sunk cost fallacy in career inertia",
+      "relation_type": "correlates_with",
+      "description": "Accumulated backlogs and prolonged preparation cycles across the three phases frequently trap aspirants into career inertia under sunk cost bias."
+    }
+  ],
+  "coverage_warnings": [],
+  "recall_cards": [
+    {
+      "card_id": "CRD-SRC-YT-2026-002-001",
+      "front": "What are the three distinct temporal phases of the competitive exam preparation cycle?",
+      "back": "Phase 1: High Motivation Honeymoon (Days 1–90); Phase 2: Psychological Distance Dip with backlog accumulation (Days 90–210); Phase 3: Anxious Urgency Spike as the exam approaches (Day 210+)."
+    },
+    {
+      "card_id": "CRD-SRC-YT-2026-002-002",
+      "front": "What is the psychological formula for sustaining student motivation according to Self-Determination Theory?",
+      "back": "Motivation = Autonomy (internal choice/agency) + Competence (self-belief and verifiable skill) + Relatedness (peer connection and belonging)."
+    },
+    {
+      "card_id": "CRD-SRC-YT-2026-002-003",
+      "front": "What is the Perceived vs. Actual Learning Paradox in student psychology?",
+      "back": "Early simple material gives false high perceived progress; later complex conceptual learning feels slow and difficult ('illusion of incompetence'), causing students to mistakenly think they are failing."
+    },
+    {
+      "card_id": "CRD-SRC-YT-2026-002-004",
+      "front": "How should accumulated study backlogs be scheduled to avoid destroying current class preparation?",
+      "back": "Allocate a dedicated, non-negotiable buffer of 30 to 45 minutes daily exclusively for historical backlogs, strictly protecting the rest of the day for current syllabus."
+    },
+    {
+      "card_id": "CRD-SRC-YT-2026-002-005",
+      "front": "What is the Vairagya protocol in competitive exam preparation?",
+      "back": "A monthly reflection protocol where the aspirant identifies and deliberately sacrifices one specific high-dopamine distraction (e.g., short-form video) to protect cognitive bandwidth."
+    }
+  ]
+}

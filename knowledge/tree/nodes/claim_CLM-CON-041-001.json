@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-041-001",
+  "node_type": "claim",
+  "statement": "Vairagya represents deliberate sacrifice, where aspirants systematically identify and renounce distracting hedonic activities during monthly reviews.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:39:11.040 - 00:39:23.760 (Cues 822-824)",
+      "verbatim_quote": "वैराग्य। वैराग्य मतलब सैक्रिफाइस।\n\n823\n00:39:13.520 --> 00:39:20.560\nसैक्रिफाइस का मतलब है\n\n824\n00:39:16.480 --> 00:39:23.760\nअपनी हर महीने जब भी रिफ्लेक्शन पीरियड"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-041"
+  ],
+  "created_at": "2026-10-11T10:24:49.959Z"
+}

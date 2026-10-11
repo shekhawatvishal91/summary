@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-037",
+  "node_type": "concept",
+  "canonical_name": "Systematic Error Analytics & Mistake Registry",
+  "aliases": [
+    "mistake register methodology",
+    "error analytics log",
+    "diagnostic test review"
+  ],
+  "domain": "General",
+  "definition": "A diagnostic study method replacing blind, repetitive practice with an exhaustive error logbook that records each mistake from tests, categorizes its root cause (conceptual deficiency, calculation slip, or time pressure), and mandates monthly diagnostic reviews.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-037-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-002"
+  ],
+  "created_at": "2026-10-11T10:24:49.954Z",
+  "updated_at": "2026-10-11T10:24:49.954Z"
+}

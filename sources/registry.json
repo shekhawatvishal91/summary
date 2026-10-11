@@ -58,6 +58,25 @@
       "updated_at": "2026-10-11T06:51:22.858Z",
       "is_test_fixture": false,
       "source_role": "real_user_source"
+    },
+    {
+      "source_id": "SRC-YT-2026-002",
+      "title": "Competitive Exam Aspirant Psychology & Self-Determination",
+      "author": "ABrainoConscious",
+      "published_year": "2026",
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "bdeaeabb55e08e6f5d3cb29f8fc483ae36f7edde98c7d7ca7e78423ea8ddd038",
+      "raw_path": "sources/raw/SRC-YT-2026-002_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-002.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-002/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T10:21:29.857Z",
+      "updated_at": "2026-10-11T10:24:49.989Z"
     }
   ]
 }

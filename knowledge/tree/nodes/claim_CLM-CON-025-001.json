@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-025-001",
+  "node_type": "claim",
+  "statement": "When a target exam is perceived as a year away, the human brain discounts its emotional reality as unreal, causing immediate small rewards to dominate decision-making.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:05:03.919 - 00:05:14.479 (Cues 102-104)",
+      "verbatim_quote": "ब्रेन ने यह समझा कि वो लगभग एक साल दूर\n\n103\n00:05:06.479 --> 00:05:12.320\nहै तो ब्रेन ने उसे अनरियल मानना शुरू कर\n\n104\n00:05:09.199 --> 00:05:14.479\nदिया। और जो बीच में छोटे-छोटे रिवॉर्ड्स"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-025"
+  ],
+  "created_at": "2026-10-11T10:24:49.931Z"
+}

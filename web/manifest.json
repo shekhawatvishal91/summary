@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T09:00:07.498Z",
+  "built_at": "2026-10-11T10:27:52.327Z",
   "metrics": {
-    "total_sources": 3,
-    "total_concepts": 7,
-    "total_claims": 13,
-    "total_edges": 4,
+    "total_sources": 4,
+    "total_concepts": 13,
+    "total_claims": 22,
+    "total_edges": 7,
     "total_docs": 18
   },
   "sources": [
@@ -65,6 +65,25 @@
       "updated_at": "2026-10-11T06:51:22.858Z",
       "is_test_fixture": false,
       "source_role": "real_user_source"
+    },
+    {
+      "source_id": "SRC-YT-2026-002",
+      "title": "Competitive Exam Aspirant Psychology & Self-Determination",
+      "author": "ABrainoConscious",
+      "published_year": "2026",
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "bdeaeabb55e08e6f5d3cb29f8fc483ae36f7edde98c7d7ca7e78423ea8ddd038",
+      "raw_path": "sources/raw/SRC-YT-2026-002_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-002.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-002/codex.md",
+      "locator_type": "paragraph",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T10:21:29.857Z",
+      "updated_at": "2026-10-11T10:24:49.989Z"
     }
   ],
   "concepts": [
@@ -208,6 +227,135 @@
       ],
       "created_at": "2026-10-11T06:51:22.843Z",
       "updated_at": "2026-10-11T07:00:21.793Z"
+    },
+    {
+      "node_id": "CON-021",
+      "node_type": "concept",
+      "canonical_name": "Three-Phase Aspirant Motivation Cycle",
+      "aliases": [
+        "aspirant motivation cycle",
+        "three phases of competitive prep",
+        "honeymoon dip panic curve"
+      ],
+      "domain": "General",
+      "definition": "A temporal trajectory of motivation in multi-year competitive exam preparation characterized by an initial high-motivation honeymoon phase (Days 1–90), an unmotivated psychological distance dip with high backlog accumulation (Days 90–210), and an acute anxious panic phase leading up to the examination deadline (Day 210 onwards).",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-021-001",
+        "CLM-CON-021-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-002"
+      ],
+      "created_at": "2026-10-11T10:24:49.923Z",
+      "updated_at": "2026-10-11T10:24:49.923Z"
+    },
+    {
+      "node_id": "CON-025",
+      "node_type": "concept",
+      "canonical_name": "Construal Distance & Reward De-realization",
+      "aliases": [
+        "temporal construal discounting",
+        "distant goal derealization",
+        "psychological distance in long-term prep"
+      ],
+      "domain": "General",
+      "definition": "A cognitive discounting mechanism wherein distant goals (e.g., an examination 12 months away) are perceived as abstract and unreal, causing the brain to devalue their future payoff while over-valuing immediate, low-effort sensory rewards (instant gratification) that possess concrete temporal proximity.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-025-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-002"
+      ],
+      "created_at": "2026-10-11T10:24:49.930Z",
+      "updated_at": "2026-10-11T10:24:49.930Z"
+    },
+    {
+      "node_id": "CON-029",
+      "node_type": "concept",
+      "canonical_name": "Perceived vs. Actual Learning Paradox",
+      "aliases": [
+        "perceived learning paradox",
+        "actual vs perceived learning gap",
+        "illusion of incompetence"
+      ],
+      "domain": "General",
+      "definition": "A cognitive dissonance phenomenon where students equate high mental struggle on difficult conceptual schemas with zero progress or intellectual failure ('illusion of incompetence'), mistakenly assuming that effortless recognition during early preparation represented true learning.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-029-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-002"
+      ],
+      "created_at": "2026-10-11T10:24:49.941Z",
+      "updated_at": "2026-10-11T10:24:49.941Z"
+    },
+    {
+      "node_id": "CON-033",
+      "node_type": "concept",
+      "canonical_name": "Academic Self-Determination Triad",
+      "aliases": [
+        "academic self-determination theory",
+        "sdt in competitive exams",
+        "autonomy competence relatedness triad"
+      ],
+      "domain": "General",
+      "definition": "The structural formula for sustaining study drive over long academic campaigns, formulated as Motivation = Autonomy (self-directed volition) + Competence (self-efficacy through verifiable skill) + Relatedness (belonging and emotional connection to peer cohort and subject matter).",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-033-001",
+        "CLM-CON-033-002",
+        "CLM-CON-033-003"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-002"
+      ],
+      "created_at": "2026-10-11T10:24:49.946Z",
+      "updated_at": "2026-10-11T10:24:49.946Z"
+    },
+    {
+      "node_id": "CON-037",
+      "node_type": "concept",
+      "canonical_name": "Systematic Error Analytics & Mistake Registry",
+      "aliases": [
+        "mistake register methodology",
+        "error analytics log",
+        "diagnostic test review"
+      ],
+      "domain": "General",
+      "definition": "A diagnostic study method replacing blind, repetitive practice with an exhaustive error logbook that records each mistake from tests, categorizes its root cause (conceptual deficiency, calculation slip, or time pressure), and mandates monthly diagnostic reviews.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-037-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-002"
+      ],
+      "created_at": "2026-10-11T10:24:49.954Z",
+      "updated_at": "2026-10-11T10:24:49.954Z"
+    },
+    {
+      "node_id": "CON-041",
+      "node_type": "concept",
+      "canonical_name": "Strategic Dopamine Renunciation (Vairagya Protocol)",
+      "aliases": [
+        "vairagya protocol",
+        "strategic sacrifice protocol",
+        "deliberate dopamine renunciation"
+      ],
+      "domain": "General",
+      "definition": "A deliberate, monthly behavioral protocol wherein an aspirant consciously identifies and sacrifices high-dopamine, passive distraction activities (short-form videos, excessive social browsing) to protect executive cognitive bandwidth and restore baseline attention.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-041-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-002"
+      ],
+      "created_at": "2026-10-11T10:24:49.959Z",
+      "updated_at": "2026-10-11T10:24:49.959Z"
     }
   ],
   "claims": [
@@ -457,6 +605,177 @@
         "CON-018"
       ],
       "created_at": "2026-10-11T06:51:22.847Z"
+    },
+    {
+      "node_id": "CLM-CON-021-001",
+      "node_type": "claim",
+      "statement": "Competitive exam preparation follows three predictable psychological phases across the timeline: an initial high-motivation phase (Days 1–90), an unmotivated mid-preparation dip, and a high-anxiety urgency phase.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:00:21.760 - 00:00:43.840 (Cues 9-13)",
+          "verbatim_quote": "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस\n\n10\n00:00:24.800 --> 00:00:32.559\nहोते हैं। सबसे पहला फज़ वो फज़ जो कि लगभग\n\n11\n00:00:29.199 --> 00:00:35.520\nडे वन से लेकर के डे 90 अप्रोक्समेटली डे\n\n12\n00:00:32.559 --> 00:00:39.040\n90 तक चलता है। जिसमें हमारा मोटिवेशन\n\n13\n00:00:35.520 --> 00:00:43.840\nकाफी हाई रहता है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-021"
+      ],
+      "created_at": "2026-10-11T10:24:49.923Z"
+    },
+    {
+      "node_id": "CLM-CON-021-002",
+      "node_type": "claim",
+      "statement": "The final anxious preparation phase begins around Day 210 as the exam deadline approaches, collapsing psychological distance and creating intense urgency.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:15:03.040 - 00:15:19.680 (Cues 313-316)",
+          "verbatim_quote": "एंजियस फेस लगभग डे 210 के बाद ही\n\n314\n00:15:07.760 --> 00:15:13.440\nशुरू हो जाता है। एंजियस फेस में क्या\n\n315\n00:15:10.639 --> 00:15:16.320\nहोता है कि यहां पे जो साइकोलॉजिकल\n\n316\n00:15:13.440 --> 00:15:19.680\nडिस्टेंसिंग वाला फैक्टर था"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-021"
+      ],
+      "created_at": "2026-10-11T10:24:49.925Z"
+    },
+    {
+      "node_id": "CLM-CON-025-001",
+      "node_type": "claim",
+      "statement": "When a target exam is perceived as a year away, the human brain discounts its emotional reality as unreal, causing immediate small rewards to dominate decision-making.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:05:03.919 - 00:05:14.479 (Cues 102-104)",
+          "verbatim_quote": "ब्रेन ने यह समझा कि वो लगभग एक साल दूर\n\n103\n00:05:06.479 --> 00:05:12.320\nहै तो ब्रेन ने उसे अनरियल मानना शुरू कर\n\n104\n00:05:09.199 --> 00:05:14.479\nदिया। और जो बीच में छोटे-छोटे रिवॉर्ड्स"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-025"
+      ],
+      "created_at": "2026-10-11T10:24:49.931Z"
+    },
+    {
+      "node_id": "CLM-CON-029-001",
+      "node_type": "claim",
+      "statement": "Aspirants confuse perceived learning with actual learning, failing to distinguish between superficial familiarity and genuine deep conceptual understanding.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:04:15.920 - 00:04:26.560 (Cues 87-89)",
+          "verbatim_quote": "एक्चुअल लर्निंग और पर्सव्ड लर्निंग यह\n\n88\n00:04:19.280 --> 00:04:26.560\nदोनों चीजें दोनों कांसेप्ट्स क्या है? इन\n\n89\n00:04:22.560 --> 00:04:29.759\nदोनों में क्या डिफरेंस है? देखिए।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-029"
+      ],
+      "created_at": "2026-10-11T10:24:49.941Z"
+    },
+    {
+      "node_id": "CLM-CON-033-001",
+      "node_type": "claim",
+      "statement": "Under Self-Determination Theory, sustainable study drive is formulated as Motivation = Autonomy (A) + Competence (C) + Relatedness (R).",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:09:12.720 - 00:09:25.600 (Cues 194-196)",
+          "verbatim_quote": "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब\n\n195\n00:09:17.200 --> 00:09:23.200\nऑटोनॉमी, सी मतलब कॉम्पिटेंस और आर मतलब\n\n196\n00:09:21.440 --> 00:09:25.600\nरिलेटेडनेस।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-033"
+      ],
+      "created_at": "2026-10-11T10:24:49.946Z"
+    },
+    {
+      "node_id": "CLM-CON-033-002",
+      "node_type": "claim",
+      "statement": "Autonomy in academic preparation requires that the student chooses their daily work through personal agency rather than complying solely with external pressure.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:09:30.000 - 00:09:44.720 (Cues 199-201)",
+          "verbatim_quote": "ऑटोनॉमी का मतलब है\n\n200\n00:09:33.279 --> 00:09:38.640\nकि मैं कोई स्पेसिफिक काम खुद करना चाहता\n\n201\n00:09:36.240 --> 00:09:44.720\nहूं। मेरे ऊपर कोई एक्सटर्नल प्रेशर नहीं"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-033"
+      ],
+      "created_at": "2026-10-11T10:24:49.948Z"
+    },
+    {
+      "node_id": "CLM-CON-033-003",
+      "node_type": "claim",
+      "statement": "Relatedness requires fostering a sense of shared connection and belonging with a peer group rather than operating in antagonistic isolation.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:13:52.160 - 00:14:04.639 (Cues 289-291)",
+          "verbatim_quote": "रिलेटेडनेस का मतलब है एक सेंस ऑफ कनेक्शन\n\n290\n00:13:55.839 --> 00:14:02.160\nया फिर एक बिलोंगिंगनेस अपने ग्रुप के\n\n291\n00:13:58.560 --> 00:14:04.639\nसाथ।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-033"
+      ],
+      "created_at": "2026-10-11T10:24:49.950Z"
+    },
+    {
+      "node_id": "CLM-CON-037-001",
+      "node_type": "claim",
+      "statement": "Maintaining and reviewing an error register is mandatory for tracking mock test mistakes and systematically refining strategy during monthly reflection.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:34:49.440 - 00:35:02.079 (Cues 728-730)",
+          "verbatim_quote": "मिस्टेक रजिस्टर बनाना जरूरी है। उस\n\n729\n00:34:53.440 --> 00:34:59.280\nमिस्टेक रजिस्टर को मेंटेन करना। मंथली हर\n\n730\n00:34:57.119 --> 00:35:02.079\nमंथ जो भी रिफ्लेक्शन पीरियड आप जिस दिन"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-037"
+      ],
+      "created_at": "2026-10-11T10:24:49.954Z"
+    },
+    {
+      "node_id": "CLM-CON-041-001",
+      "node_type": "claim",
+      "statement": "Vairagya represents deliberate sacrifice, where aspirants systematically identify and renounce distracting hedonic activities during monthly reviews.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-002",
+          "locator_type": "paragraph",
+          "locator": "time: 00:39:11.040 - 00:39:23.760 (Cues 822-824)",
+          "verbatim_quote": "वैराग्य। वैराग्य मतलब सैक्रिफाइस।\n\n823\n00:39:13.520 --> 00:39:20.560\nसैक्रिफाइस का मतलब है\n\n824\n00:39:16.480 --> 00:39:23.760\nअपनी हर महीने जब भी रिफ्लेक्शन पीरियड"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-041"
+      ],
+      "created_at": "2026-10-11T10:24:49.959Z"
     }
   ],
   "edges": [
@@ -504,6 +823,36 @@
       "locator": "cues: 49-54 (approx 05:22 - 05:48)",
       "epistemic_classification": "relationship_inferred_from_speaker_argument",
       "created_at": "2026-10-11T07:15:00.000Z"
+    },
+    {
+      "edge_id": "EDG-006",
+      "relation_type": "correlates_with",
+      "description": "Phase 2 motivation collapse is driven by cognitive construal discounting where the distant exam payoff becomes unreal relative to immediate dopamine distractions.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-11T10:24:49.972Z"
+    },
+    {
+      "edge_id": "EDG-007",
+      "relation_type": "regulates",
+      "description": "Restoring autonomy, competence, and relatedness prevents the motivation collapse that typically occurs between Day 90 and Day 210.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-11T10:24:49.980Z"
+    },
+    {
+      "edge_id": "EDG-008",
+      "relation_type": "builds_upon",
+      "description": "Maintaining an analytical mistake register directly provides empirical evidence of growing skill, rebuilding the competence pillar of self-determination.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-11T10:24:49.987Z"
     }
   ],
   "documentation": [

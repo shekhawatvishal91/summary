@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-033-001",
+  "node_type": "claim",
+  "statement": "Under Self-Determination Theory, sustainable study drive is formulated as Motivation = Autonomy (A) + Competence (C) + Relatedness (R).",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:09:12.720 - 00:09:25.600 (Cues 194-196)",
+      "verbatim_quote": "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब\n\n195\n00:09:17.200 --> 00:09:23.200\nऑटोनॉमी, सी मतलब कॉम्पिटेंस और आर मतलब\n\n196\n00:09:21.440 --> 00:09:25.600\nरिलेटेडनेस।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-033"
+  ],
+  "created_at": "2026-10-11T10:24:49.946Z"
+}

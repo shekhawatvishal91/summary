@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-033-003",
+  "node_type": "claim",
+  "statement": "Relatedness requires fostering a sense of shared connection and belonging with a peer group rather than operating in antagonistic isolation.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:13:52.160 - 00:14:04.639 (Cues 289-291)",
+      "verbatim_quote": "रिलेटेडनेस का मतलब है एक सेंस ऑफ कनेक्शन\n\n290\n00:13:55.839 --> 00:14:02.160\nया फिर एक बिलोंगिंगनेस अपने ग्रुप के\n\n291\n00:13:58.560 --> 00:14:04.639\nसाथ।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-033"
+  ],
+  "created_at": "2026-10-11T10:24:49.950Z"
+}

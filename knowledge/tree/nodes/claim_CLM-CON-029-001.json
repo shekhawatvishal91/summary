@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-029-001",
+  "node_type": "claim",
+  "statement": "Aspirants confuse perceived learning with actual learning, failing to distinguish between superficial familiarity and genuine deep conceptual understanding.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:04:15.920 - 00:04:26.560 (Cues 87-89)",
+      "verbatim_quote": "एक्चुअल लर्निंग और पर्सव्ड लर्निंग यह\n\n88\n00:04:19.280 --> 00:04:26.560\nदोनों चीजें दोनों कांसेप्ट्स क्या है? इन\n\n89\n00:04:22.560 --> 00:04:29.759\nदोनों में क्या डिफरेंस है? देखिए।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-029"
+  ],
+  "created_at": "2026-10-11T10:24:49.941Z"
+}

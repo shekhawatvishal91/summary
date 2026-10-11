@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-021-001",
+  "node_type": "claim",
+  "statement": "Competitive exam preparation follows three predictable psychological phases across the timeline: an initial high-motivation phase (Days 1–90), an unmotivated mid-preparation dip, and a high-anxiety urgency phase.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:00:21.760 - 00:00:43.840 (Cues 9-13)",
+      "verbatim_quote": "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस\n\n10\n00:00:24.800 --> 00:00:32.559\nहोते हैं। सबसे पहला फज़ वो फज़ जो कि लगभग\n\n11\n00:00:29.199 --> 00:00:35.520\nडे वन से लेकर के डे 90 अप्रोक्समेटली डे\n\n12\n00:00:32.559 --> 00:00:39.040\n90 तक चलता है। जिसमें हमारा मोटिवेशन\n\n13\n00:00:35.520 --> 00:00:43.840\nकाफी हाई रहता है।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-021"
+  ],
+  "created_at": "2026-10-11T10:24:49.923Z"
+}

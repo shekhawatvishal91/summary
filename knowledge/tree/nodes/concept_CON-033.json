@@ -1,0 +1,23 @@
+{
+  "node_id": "CON-033",
+  "node_type": "concept",
+  "canonical_name": "Academic Self-Determination Triad",
+  "aliases": [
+    "academic self-determination theory",
+    "sdt in competitive exams",
+    "autonomy competence relatedness triad"
+  ],
+  "domain": "General",
+  "definition": "The structural formula for sustaining study drive over long academic campaigns, formulated as Motivation = Autonomy (self-directed volition) + Competence (self-efficacy through verifiable skill) + Relatedness (belonging and emotional connection to peer cohort and subject matter).",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-033-001",
+    "CLM-CON-033-002",
+    "CLM-CON-033-003"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-002"
+  ],
+  "created_at": "2026-10-11T10:24:49.946Z",
+  "updated_at": "2026-10-11T10:24:49.946Z"
+}

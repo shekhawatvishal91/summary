@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-029",
+  "node_type": "concept",
+  "canonical_name": "Perceived vs. Actual Learning Paradox",
+  "aliases": [
+    "perceived learning paradox",
+    "actual vs perceived learning gap",
+    "illusion of incompetence"
+  ],
+  "domain": "General",
+  "definition": "A cognitive dissonance phenomenon where students equate high mental struggle on difficult conceptual schemas with zero progress or intellectual failure ('illusion of incompetence'), mistakenly assuming that effortless recognition during early preparation represented true learning.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-029-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-002"
+  ],
+  "created_at": "2026-10-11T10:24:49.941Z",
+  "updated_at": "2026-10-11T10:24:49.941Z"
+}

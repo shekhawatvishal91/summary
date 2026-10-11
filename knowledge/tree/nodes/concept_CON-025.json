@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-025",
+  "node_type": "concept",
+  "canonical_name": "Construal Distance & Reward De-realization",
+  "aliases": [
+    "temporal construal discounting",
+    "distant goal derealization",
+    "psychological distance in long-term prep"
+  ],
+  "domain": "General",
+  "definition": "A cognitive discounting mechanism wherein distant goals (e.g., an examination 12 months away) are perceived as abstract and unreal, causing the brain to devalue their future payoff while over-valuing immediate, low-effort sensory rewards (instant gratification) that possess concrete temporal proximity.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-025-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-002"
+  ],
+  "created_at": "2026-10-11T10:24:49.930Z",
+  "updated_at": "2026-10-11T10:24:49.930Z"
+}

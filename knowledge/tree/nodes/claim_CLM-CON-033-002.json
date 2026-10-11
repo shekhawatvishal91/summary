@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-033-002",
+  "node_type": "claim",
+  "statement": "Autonomy in academic preparation requires that the student chooses their daily work through personal agency rather than complying solely with external pressure.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:09:30.000 - 00:09:44.720 (Cues 199-201)",
+      "verbatim_quote": "ऑटोनॉमी का मतलब है\n\n200\n00:09:33.279 --> 00:09:38.640\nकि मैं कोई स्पेसिफिक काम खुद करना चाहता\n\n201\n00:09:36.240 --> 00:09:44.720\nहूं। मेरे ऊपर कोई एक्सटर्नल प्रेशर नहीं"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-033"
+  ],
+  "created_at": "2026-10-11T10:24:49.948Z"
+}

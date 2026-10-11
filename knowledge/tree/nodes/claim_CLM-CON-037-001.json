@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-037-001",
+  "node_type": "claim",
+  "statement": "Maintaining and reviewing an error register is mandatory for tracking mock test mistakes and systematically refining strategy during monthly reflection.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-002",
+      "locator_type": "paragraph",
+      "locator": "time: 00:34:49.440 - 00:35:02.079 (Cues 728-730)",
+      "verbatim_quote": "मिस्टेक रजिस्टर बनाना जरूरी है। उस\n\n729\n00:34:53.440 --> 00:34:59.280\nमिस्टेक रजिस्टर को मेंटेन करना। मंथली हर\n\n730\n00:34:57.119 --> 00:35:02.079\nमंथ जो भी रिफ्लेक्शन पीरियड आप जिस दिन"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-037"
+  ],
+  "created_at": "2026-10-11T10:24:49.954Z"
+}

@@ -62,39 +62,8 @@
 
 ---
 
-## Grounded Claims Summary
-### Claim 1 [SOURCE_STATEMENT]
-* "Prolonged competitive exam preparation traps students through the psychological bias known as the Sunk Cost Fallacy."
-* **Locator:** `time: 00:28 - 00:32 (Cue 5)`
-* **Verbatim:** > "देखो बेसिकली साइकोलॉजी में कांसेप्ट है। उसको कहते हैं संख कॉस्ट फैलेसी।"
-
-### Claim 2 [SOURCE_STATEMENT]
-* "The speaker explicitly presents a story that denies and contradicts the popular parable of the gold miner who gave up 1-2 feet before striking gold."
-* **Locator:** `time: 01:20 - 01:24 (Cue 12)`
-* **Verbatim:** > "सुनाने वाला हूं यह बिल्कुल इससे अलग है। यह बिल्कुल इसको डिनाई करती है।"
-
-### Claim 3 [SOURCE_STATEMENT]
-* "Aspirants remain trapped because of past investments in money and time, combined with reward expectations and identity attachment."
-* **Locator:** `time: 03:30 - 03:36 (Cue 30)`
-* **Verbatim:** > "अच्छा खासा समय वहां पर इन्वेस्ट किया है। और सबसे इंपॉर्टेंट हमने जो रिवॉर्ड एक्सपेक्ट किया था, उस रिवॉर्ड की एक्सपेक्टेशन"
-
-### Claim 4 [SOURCE_STATEMENT]
-* "The speaker challenges aspirants to consider whether they would immediately jump to an alternative career with a better or equal success rate if one were offered."
-* **Locator:** `time: 04:44 - 04:58 (Cue 42)`
-* **Verbatim:** > "तेरे को एक बनाया करियर आईडिया मैं दे देता हूं जिसमें सक्सेस रेट अच्छा है। इससे तो अच्छा ही है जिसकी तू प्रिपरेशन कर रहा है।"
-
-### Claim 5 [SOURCE_STATEMENT]
-* "Aspirants often confuse their true reward with the professional title: the desired outcome is typically the social respect and financial compensation associated with the role."
-* **Locator:** `time: 05:42 - 05:48 (Cue 50)`
-* **Verbatim:** > "आपका रिवॉर्ड है डॉक्टर वाली जो रिस्पेक्ट है वह प्राप्त करना। आपका रिवॉर्ड है जो पैसा डॉक्टर को मिलता है वह पैसा प्राप्त करना।"
-
-### Claim 6 [SOURCE_STATEMENT]
-* "Continuing an unproductive path creates a compounding loss effect that erodes confidence and reduces effort over time."
-* **Locator:** `time: 06:34 - 06:40 (Cue 59)`
-* **Verbatim:** > "कंपाउंड इंटरेस्ट बढ़ाने का मतलब है एक तरीके का कंपाउंडिंग इफेक्ट। लॉस बढ़ता चला जाएगा।"
-
-### Claim 7 [SOURCE_STATEMENT]
-* "The speaker asserts that approximately 90% of people pursue goals borrowed from societal conditioning rather than authentic aptitude."
-* **Locator:** `time: 07:34 - 07:42 (Cue 69)`
-* **Verbatim:** > "मेरी ऐसी कौन सी स्किल्स हैं? देखो हम में से लगभग 90% लोग तो ऐसे लक्ष्य के पीछे भाग रहे होते हैं जो हम लोगों ने समाज से उधार लिया है।"
-
+## Key Conceptual Models
+* **Sunk Cost Fallacy in Career Inertia:** The psychological bias where an individual continues investing time, effort, and capital into an unyielding career path simply because of historical unrecoverable investments.
+* **Identity Attachment Bias:** The premature cognitive fusion of an individual's identity with an unachieved future status (e.g., self-identifying as a doctor during exam preparation), making abandonment feel like ego annihilation.
+* **Root Reward Deconstruction:** The analytical process of separating the instrumental proxy vehicle (e.g. passing UPSC/NEET) from the fundamental underlying human desires (social respect, financial security, creative autonomy).
+* **Zero-Based Career Alternative Test:** A heuristic decision rule asking whether an individual would choose their current path if given an immediate fresh alternative with equal payoffs, isolating genuine commitment from sunk cost inertia.

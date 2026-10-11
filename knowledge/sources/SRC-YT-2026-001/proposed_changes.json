@@ -1,6 +1,6 @@
 {
   "source_id": "SRC-YT-2026-001",
-  "generated_at": "2026-10-11T06:51:22.759Z",
+  "generated_at": "2026-10-11T11:03:32.736Z",
   "model": "antigravity-native-agent",
   "proposed_concepts": [
     {
@@ -46,14 +46,20 @@
       "epistemic_class": "SOURCE_STATEMENT",
       "claim_type": "psychological_framework",
       "locator": "time: 00:28 - 00:32 (Cue 5)",
-      "verbatim_quote": "देखो बेसिकली साइकोलॉजी में कांसेप्ट है। उसको कहते हैं संख कॉस्ट फैलेसी।"
+      "verbatim_quote": "देखो बेसिकली साइकोलॉजी में कांसेप्ट है। उसको कहते हैं संख कॉस्ट फैलेसी।",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia"
+      ]
     },
     {
       "statement": "The speaker explicitly presents a story that denies and contradicts the popular parable of the gold miner who gave up 1-2 feet before striking gold.",
       "epistemic_class": "SOURCE_STATEMENT",
       "claim_type": "narrative_counter_analogy",
       "locator": "time: 01:20 - 01:24 (Cue 12)",
-      "verbatim_quote": "सुनाने वाला हूं यह बिल्कुल इससे अलग है। यह बिल्कुल इसको डिनाई करती है।"
+      "verbatim_quote": "सुनाने वाला हूं यह बिल्कुल इससे अलग है। यह बिल्कुल इसको डिनाई करती है।",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia"
+      ]
     },
     {
       "statement": "Aspirants remain trapped because of past investments in money and time, combined with reward expectations and identity attachment.",
@@ -62,43 +68,85 @@
       "locator": "time: 03:30 - 03:36 (Cue 30)",
       "verbatim_quote": "अच्छा खासा समय वहां पर इन्वेस्ट किया है। और सबसे इंपॉर्टेंट हमने जो रिवॉर्ड एक्सपेक्ट किया था, उस रिवॉर्ड की एक्सपेक्टेशन",
       "quotation_status": "verbatim_fragment_truncated_at_cue_boundary",
-      "note": "Ends on cue boundary [Cue 30]; completed in Cue 31 as 'प्लस हमारी आइडेंटिटी'."
+      "note": "Ends on cue boundary [Cue 30]; completed in Cue 31 as 'प्लस हमारी आइडेंटिटी'.",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia",
+        "Identity Attachment Bias"
+      ]
     },
     {
       "statement": "The speaker challenges aspirants to consider whether they would immediately jump to an alternative career with a better or equal success rate if one were offered.",
       "epistemic_class": "SOURCE_STATEMENT",
       "claim_type": "decision_heuristic",
       "locator": "time: 04:44 - 04:58 (Cue 42)",
-      "verbatim_quote": "तेरे को एक बनाया करियर आईडिया मैं दे देता हूं जिसमें सक्सेस रेट अच्छा है। इससे तो अच्छा ही है जिसकी तू प्रिपरेशन कर रहा है।"
+      "verbatim_quote": "तेरे को एक बनाया करियर आईडिया मैं दे देता हूं जिसमें सक्सेस रेट अच्छा है। इससे तो अच्छा ही है जिसकी तू प्रिपरेशन कर रहा है।",
+      "associated_concepts": [
+        "Zero-Based Career Alternative Test"
+      ]
     },
     {
       "statement": "Aspirants often confuse their true reward with the professional title: the desired outcome is typically the social respect and financial compensation associated with the role.",
       "epistemic_class": "SOURCE_STATEMENT",
       "claim_type": "motivational_analysis",
       "locator": "time: 05:42 - 05:48 (Cue 50)",
-      "verbatim_quote": "आपका रिवॉर्ड है डॉक्टर वाली जो रिस्पेक्ट है वह प्राप्त करना। आपका रिवॉर्ड है जो पैसा डॉक्टर को मिलता है वह पैसा प्राप्त करना।"
+      "verbatim_quote": "आपका रिवॉर्ड है डॉक्टर वाली जो रिस्पेक्ट है वह प्राप्त करना। आपका रिवॉर्ड है जो पैसा डॉक्टर को मिलता है वह पैसा प्राप्त करना।",
+      "associated_concepts": [
+        "Identity Attachment Bias",
+        "Root Reward Deconstruction"
+      ]
     },
     {
       "statement": "Continuing an unproductive path creates a compounding loss effect that erodes confidence and reduces effort over time.",
       "epistemic_class": "SOURCE_STATEMENT",
       "claim_type": "causal_model",
       "locator": "time: 06:34 - 06:40 (Cue 59)",
-      "verbatim_quote": "कंपाउंड इंटरेस्ट बढ़ाने का मतलब है एक तरीके का कंपाउंडिंग इफेक्ट। लॉस बढ़ता चला जाएगा।"
+      "verbatim_quote": "कंपाउंड इंटरेस्ट बढ़ाने का मतलब है एक तरीके का कंपाउंडिंग इफेक्ट। लॉस बढ़ता चला जाएगा।",
+      "associated_concepts": [
+        "Sunk Cost Fallacy in Career Inertia"
+      ]
     },
     {
       "statement": "The speaker asserts that approximately 90% of people pursue goals borrowed from societal conditioning rather than authentic aptitude.",
       "epistemic_class": "SOURCE_STATEMENT",
       "claim_type": "speaker_heuristic_assertion",
       "locator": "time: 07:34 - 07:42 (Cue 69)",
-      "verbatim_quote": "मेरी ऐसी कौन सी स्किल्स हैं? देखो हम में से लगभग 90% लोग तो ऐसे लक्ष्य के पीछे भाग रहे होते हैं जो हम लोगों ने समाज से उधार लिया है।"
+      "verbatim_quote": "मेरी ऐसी कौन सी स्किल्स हैं? देखो हम में से लगभग 90% लोग तो ऐसे लक्ष्य के पीछे भाग रहे होते हैं जो हम लोगों ने समाज से उधार लिया है।",
+      "associated_concepts": [
+        "Identity Attachment Bias",
+        "Root Reward Deconstruction"
+      ]
     }
   ],
   "proposed_relationships": [
     {
-      "source_node_id": "CON-001",
-      "target_node_id": "CON-005",
-      "relation_type": "psychological_interaction",
-      "description": "Prolonged cognitive control exertion in competitive exam loops exacerbates ego depletion, reinforcing sunk cost inertia."
+      "edge_id": "EDG-003",
+      "source_node_id": "CON-012",
+      "target_node_id": "CON-009",
+      "relation_type": "reinforces",
+      "description": "The speaker connects past investment and anticipated rewards with attachment to the expected future identity, explaining how identity fusion traps aspirants in the sunk cost cycle.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 30-34 (approx 03:22 - 03:40)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument"
+    },
+    {
+      "edge_id": "EDG-004",
+      "source_node_id": "CON-018",
+      "target_node_id": "CON-009",
+      "relation_type": "mitigates",
+      "description": "The alternative-career counterfactual test is presented as a cognitive de-biasing tool to break sunk cost inertia and reconsider continuing an unproductive preparation.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 42-46 (approx 04:44 - 05:12)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument"
+    },
+    {
+      "edge_id": "EDG-005",
+      "source_node_id": "CON-015",
+      "target_node_id": "CON-018",
+      "relation_type": "informs",
+      "description": "Distinguishing the underlying desired reward (respect, income) from the specific career vehicle provides the diagnostic basis for evaluating fresh alternative pathways.",
+      "source_id": "SRC-YT-2026-001",
+      "locator": "cues: 49-54 (approx 05:22 - 05:48)",
+      "epistemic_classification": "relationship_inferred_from_speaker_argument"
     }
   ]
 }

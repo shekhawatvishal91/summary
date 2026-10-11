@@ -354,15 +354,11 @@ ${Array.isArray(dims.dim_5_field_protocols.ai_generated_practical_applications) 
 ## Dimension 6: Skeptic Auditor's Demarcation Box
 * **Pop-Culture Distortion:** ${dims.dim_6_skeptic_box.pop_culture_distortion}
 * **Clinical / Empirical Reality:** ${dims.dim_6_skeptic_box.clinical_empirical_reality}
-
+${Array.isArray(staged.proposed_concepts) && staged.proposed_concepts.length > 0 ? `
 ---
 
-## Grounded Claims Summary
-${staged.extracted_claims.map((c, i) => `### Claim ${i + 1} [${c.epistemic_class}]
-* "${c.statement}"
-* **Locator:** \`${c.locator}\`
-${c.verbatim_quote ? `* **Verbatim:** > "${c.verbatim_quote}"` : ''}
-`).join('\n')}
+## Key Conceptual Models
+${staged.proposed_concepts.map(c => `* **${c.name}:** ${c.definition}`).join('\n')}` : ''}
 `;
 
   fs.writeFileSync(codexPath, decodedCodex, 'utf-8');

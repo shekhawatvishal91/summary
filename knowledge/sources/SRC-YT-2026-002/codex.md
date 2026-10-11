@@ -67,49 +67,10 @@
 
 ---
 
-## Grounded Claims Summary
-### Claim 1 [SOURCE_STATEMENT]
-* "Competitive exam preparation follows three predictable psychological phases across the timeline: an initial high-motivation phase (Days 1–90), an unmotivated mid-preparation dip, and a high-anxiety urgency phase."
-* **Locator:** `time: 00:00:21.760 - 00:00:29.199 (Cue 9)`
-* **Verbatim:** > "हमारे उस प्रिपरेशन पीरियड में तीन फेसेस"
-
-### Claim 2 [SOURCE_STATEMENT]
-* "When a target exam is perceived as a year away, the human brain discounts its emotional reality as unreal, causing immediate small rewards to dominate decision-making."
-* **Locator:** `time: 00:05:03.919 - 00:05:09.199 (Cue 102)`
-* **Verbatim:** > "ब्रेन ने यह समझा कि वो लगभग एक साल दूर"
-
-### Claim 3 [SOURCE_STATEMENT]
-* "Aspirants confuse perceived learning with actual learning, failing to distinguish between superficial familiarity and genuine deep conceptual understanding."
-* **Locator:** `time: 00:04:15.920 - 00:04:22.560 (Cue 87)`
-* **Verbatim:** > "एक्चुअल लर्निंग और पर्सव्ड लर्निंग यह"
-
-### Claim 4 [SOURCE_STATEMENT]
-* "The final anxious preparation phase begins around Day 210 as the exam deadline approaches, collapsing psychological distance and creating intense urgency."
-* **Locator:** `time: 00:15:03.040 - 00:15:10.639 (Cue 313)`
-* **Verbatim:** > "एंजियस फेस लगभग डे 210 के बाद ही"
-
-### Claim 5 [SOURCE_STATEMENT]
-* "Under Self-Determination Theory, sustainable study drive is formulated as Motivation = Autonomy (A) + Competence (C) + Relatedness (R)."
-* **Locator:** `time: 00:09:12.720 - 00:09:21.440 (Cue 194)`
-* **Verbatim:** > "इसके हिसाब से मोटिवेशन इक्वल्स टू ए मतलब"
-
-### Claim 6 [SOURCE_STATEMENT]
-* "Autonomy in academic preparation requires that the student chooses their daily work through personal agency rather than complying solely with external pressure."
-* **Locator:** `time: 00:09:30.000 - 00:09:36.240 (Cue 199)`
-* **Verbatim:** > "ऑटोनॉमी का मतलब है"
-
-### Claim 7 [SOURCE_STATEMENT]
-* "Relatedness requires fostering a sense of shared connection and belonging with a peer group rather than operating in antagonistic isolation."
-* **Locator:** `time: 00:13:52.160 - 00:13:58.560 (Cue 289)`
-* **Verbatim:** > "रिलेटेडनेस का मतलब है एक सेंस ऑफ कनेक्शन"
-
-### Claim 8 [SOURCE_STATEMENT]
-* "Maintaining and reviewing an error register is mandatory for tracking mock test mistakes and systematically refining strategy during monthly reflection."
-* **Locator:** `time: 00:34:49.440 - 00:34:57.119 (Cue 728)`
-* **Verbatim:** > "मिस्टेक रजिस्टर बनाना जरूरी है। उस"
-
-### Claim 9 [SOURCE_STATEMENT]
-* "Vairagya represents deliberate sacrifice, where aspirants systematically identify and renounce distracting hedonic activities during monthly reviews."
-* **Locator:** `time: 00:39:11.040 - 00:39:16.480 (Cue 822)`
-* **Verbatim:** > "वैराग्य। वैराग्य मतलब सैक्रिफाइस।"
-
+## Key Conceptual Models
+* **Three-Phase Aspirant Motivation Cycle:** A temporal trajectory of motivation in multi-year competitive exam preparation characterized by an initial high-motivation honeymoon phase (Days 1–90), an unmotivated psychological distance dip with high backlog accumulation (Days 90–210), and an acute anxious panic phase leading up to the examination deadline (Day 210 onwards).
+* **Construal Distance & Reward De-realization:** A cognitive discounting mechanism wherein distant goals (e.g., an examination 12 months away) are perceived as abstract and unreal, causing the brain to devalue their future payoff while over-valuing immediate, low-effort sensory rewards (instant gratification) that possess concrete temporal proximity.
+* **Perceived vs. Actual Learning Paradox:** A cognitive dissonance phenomenon where students equate high mental struggle on difficult conceptual schemas with zero progress or intellectual failure ('illusion of incompetence'), mistakenly assuming that effortless recognition during early preparation represented true learning.
+* **Academic Self-Determination Triad:** The structural formula for sustaining study drive over long academic campaigns, formulated as Motivation = Autonomy (self-directed volition) + Competence (self-efficacy through verifiable skill) + Relatedness (belonging and emotional connection to peer cohort and subject matter).
+* **Systematic Error Analytics & Mistake Registry:** A diagnostic study method replacing blind, repetitive practice with an exhaustive error logbook that records each mistake from tests, categorizes its root cause (conceptual deficiency, calculation slip, or time pressure), and mandates monthly diagnostic reviews.
+* **Strategic Dopamine Renunciation (Vairagya Protocol):** A deliberate, monthly behavioral protocol wherein an aspirant consciously identifies and sacrifices high-dopamine, passive distraction activities (short-form videos, excessive social browsing) to protect executive cognitive bandwidth and restore baseline attention.

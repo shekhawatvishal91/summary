@@ -45,12 +45,3 @@
 ## Dimension 6: Skeptic Auditor's Demarcation Box
 * **Pop-Culture Distortion:** Belief that simply chaining more LLM agents together automatically removes hallucinations.
 * **Clinical / Empirical Reality:** Empirical multi-agent network dynamics prove that ungrounded agents exponentially accelerate hallucination cascade without deterministic physical grounding.
-
----
-
-## Grounded Claims Summary
-### Claim 1 [SOURCE_STATEMENT]
-* "Upstream agent uncalibrated error rates exceeding 14.8% trigger catastrophic consensus collapse across multi-agent reasoning graphs."
-* **Locator:** `sec: The Cascade Hallucination Threshold # para-1`
-* **Verbatim:** > "upstream agent exceeds 14.8%, downstream agent networks enter an irreversible cascade hallucination phase"
-

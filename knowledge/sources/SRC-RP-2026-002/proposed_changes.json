@@ -1,6 +1,6 @@
 {
   "source_id": "SRC-RP-2026-002",
-  "generated_at": "2026-10-11T07:39:32.189Z",
+  "generated_at": "2026-10-11T11:02:27.520Z",
   "model": "antigravity-native-agent",
   "proposed_concepts": [
     {
@@ -11,14 +11,6 @@
       ],
       "domain": "Computer Science",
       "definition": "The mathematical error threshold (14.8%) beyond which distributed autonomous reasoning networks irreversibly substitute synthetic consensus for empirical truth."
-    },
-    {
-      "name": "Secondary Test Anchor",
-      "aliases": [
-        "Secondary Anchor"
-      ],
-      "domain": "Computer Science",
-      "definition": "A secondary concept node used to test multi-concept claim distribution."
     }
   ],
   "extracted_claims": [
@@ -29,8 +21,7 @@
       "locator": "sec: The Cascade Hallucination Threshold # para-1",
       "verbatim_quote": "upstream agent exceeds 14.8%, downstream agent networks enter an irreversible cascade hallucination phase",
       "associated_concepts": [
-        "Cascade Hallucination Threshold",
-        "Secondary Test Anchor"
+        "Cascade Hallucination Threshold"
       ]
     }
   ],

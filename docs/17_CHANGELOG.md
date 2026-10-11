@@ -8,6 +8,12 @@
 
 ## 1. System Version History
 
+### [1.0.0-rc3] — 2026-10-11: Semantic Decoding Engine & Gold-Standard QA
+- **Implemented:** Pluggable LLM adapter in `scripts/llm-adapter.js` supporting Gemini, OpenAI, Anthropic, and deterministic Mock providers.
+- **Engineered:** Real semantic decoding engine in `scripts/semantic-decoder.js` enforcing 6-Dimensional Matrix extraction, epistemic class demarcation, and transactional rollback.
+- **Added:** Gold-Standard acceptance test suite `tests/test-ai-decoding.js` verifying citation grounding, hallucination rejection, and failure recovery.
+- **Structured:** Staged knowledge graph proposals in `knowledge/sources/{id}/proposed_changes.json` to prevent silent unreviewed mutations.
+
 ### [1.0.0-rc2] — 2026-10-11: Rigorous Audit Correction & Link Verification Engine
 - **Demarcated:** Audited repository components into five explicit tiers (Executable Code, Prompt Skills, Designed Specs, Missing Items, Blocked Runtimes) in `docs/03_REPOSITORY_AUDIT.md`.
 - **Refined:** Documented prompt vs binary nature of skills in `docs/14_SKILLS_AND_TOOLING.md`.
@@ -53,3 +59,11 @@
 - **Context:** Automated, unmonitored git pushes can leak secrets, overwrite remote history, or publish unverified content prematurely.
 - **Decision:** Pushing to remote GitHub remotes and publishing to the live web requires explicit, direct instruction from the human operator.
 - **Consequences:** Guarantees zero unvetted releases and absolute credential safety.
+
+---
+
+### ADR-005: Staged Knowledge Proposals Over Silent Mutation
+- **Status:** ACCEPTED
+- **Context:** AI decoding runs that immediately mutate canonical concept nodes risk corrupting peer-reviewed or human-validated knowledge.
+- **Decision:** Decoded knowledge structures are written to `knowledge/sources/{id}/proposed_changes.json` as staged candidate proposals with physical locators before graph integration.
+- **Consequences:** All graph mutations are auditable, verifiable, and reversible. Zero silent overwrites.

@@ -1,0 +1,16 @@
+{
+  "source_id": "SRC-RP-2026-001",
+  "generated_at": "2026-10-11T04:24:14.873Z",
+  "model": "mock-partial",
+  "proposed_concepts": [],
+  "extracted_claims": [
+    {
+      "statement": "Legitimate claim",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "claim_type": "empirical_finding",
+      "locator": "sec: The Prefrontal Capacity Ceiling # para-2",
+      "verbatim_quote": null
+    }
+  ],
+  "proposed_relationships": []
+}

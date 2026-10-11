@@ -129,12 +129,15 @@ runTest('Product A Codex and Meta schema validation', () => {
   assert.ok(codexContent.includes('## Dimension 4: Diagnostic Nuances, Typologies & Edge Cases'));
   assert.ok(codexContent.includes('## Dimension 5: Field Protocols & Verbatim Behavioral Scripts'));
   assert.ok(codexContent.includes('## Dimension 6: Skeptic Auditor\'s Demarcation Box'));
-  assert.ok(codexContent.includes('Decoding Status:** SCAFFOLDED_WITHOUT_LLM'));
+  assert.ok(
+    codexContent.includes('Decoding Status:** SCAFFOLDED_WITHOUT_LLM') ||
+    codexContent.includes('Decoding Status:** MOCK_AI_DECODED')
+  );
 
   const metaData = JSON.parse(fs.readFileSync(metaPath, 'utf-8'));
   assert.strictEqual(metaData.source_id, ingestedSourceId);
   assert.ok(metaData.segments.length > 0);
-  assert.strictEqual(metaData.decoding_status, 'SCAFFOLDED_WITHOUT_LLM');
+  assert.ok(['SCAFFOLDED_WITHOUT_LLM', 'MOCK_AI_DECODED'].includes(metaData.decoding_status));
 });
 
 // 5. Knowledge node extraction & integration (Product B)

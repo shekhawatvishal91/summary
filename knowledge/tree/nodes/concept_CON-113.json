@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-113",
+  "node_type": "concept",
+  "canonical_name": "Asymmetric Vulnerability Extraction",
+  "aliases": [
+    "emotional dodging",
+    "unilateral vulnerability probing",
+    "trauma harvesting"
+  ],
+  "domain": "General",
+  "definition": "The manipulative interrogation tactic of aggressively probing for a partner's childhood traumas and deepest insecurities while keeping one's own emotional interior completely shielded or fabricated, creating unilateral power leverage.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-113-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-007"
+  ],
+  "created_at": "2026-10-11T15:47:14.341Z",
+  "updated_at": "2026-10-11T15:47:14.341Z"
+}

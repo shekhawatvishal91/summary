@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-105",
+  "node_type": "concept",
+  "canonical_name": "One-Sided Ex Smear Campaigning",
+  "aliases": [
+    "martyr narrative",
+    "crazy ex syndrome",
+    "ex smear campaign"
+  ],
+  "domain": "General",
+  "definition": "The systemic behavioral pattern of portraying all previous romantic partners as abusive, crazy, or hostile with zero personal accountability, creating a martyr persona to extract sympathy from new partners.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-105-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-007"
+  ],
+  "created_at": "2026-10-11T15:47:14.333Z",
+  "updated_at": "2026-10-11T15:47:14.333Z"
+}

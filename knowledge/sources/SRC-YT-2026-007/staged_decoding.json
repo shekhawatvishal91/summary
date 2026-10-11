@@ -1,0 +1,237 @@
+{
+  "source_id": "SRC-YT-2026-007",
+  "agent_identifier": "antigravity-native-agent",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "dimensions": {
+    "dim_1_core_thesis": {
+      "premise": "Pathological narcissism in romantic partnerships is characterized by a deceptive sequence of pedestal idealization followed by systematic devaluation, smear campaigning of past partners, calculated isolation of the victim from their support system, and asymmetric extraction of vulnerability for emotional leverage.",
+      "paradigm_shift": "Conventional wisdom views romantic relationships that begin with extreme adoration and declarations of 'soulmate' as the gold standard of true love. In reality, hyper-accelerated pedestal placement without developmental time is the introductory phase of narcissistic entrapment, designed to manufacture emotional dependency before the onset of abuse, smear campaigning, and forced social isolation."
+    },
+    "dim_2_causal_model": {
+      "mechanism": "The 4-Stage Narcissistic Entrapment Arc: Pedestal Idealization (Love Bombing & Soulmate Declarations) -> Asymmetric Vulnerability Extraction (Aggressive Probing of Deep Trauma while Dodging Reciprocal Emotion) -> Support System Dismantling (Smear Campaigning Exes & Imposing Ultimatums to Isolate from Friends/Family) -> Abrupt Devaluation & Blame Inversion (Calling the Partner Selfish, Dramatic, and Toxic while Playing the Martyr).",
+      "ratios_in_prose": "The 100/0 ex-accountability ratio: when an individual describes 100% of their past romantic partners as abusive, crazy, or toxic with 0% personal accountability, the probability of future relational distortion approaches 1.0."
+    },
+    "dim_3_master_analogy": {
+      "analogy": "The Narcissus Mirror Trap: Just as Narcissus became fatally enraptured by his own reflection in the pool—unable to love an autonomous other and obsessed only with an idealized image—the narcissistic partner does not love the real person. They fall in love with the reflection of their own superiority in the victim's admiration, discarding the partner the moment the mirror displays independent thoughts or boundaries."
+    },
+    "dim_4_diagnostics": {
+      "classifications": [
+        {
+          "state": "Pedestal Idealization Trap",
+          "symptom": "Declaring the partner to be flawless, a soulmate, and better than anyone ever met, followed by abrupt inversion where the same person is labeled toxic and selfish.",
+          "etiology": "Inability to perceive others as whole, separate human beings; cycling between primitive idealization and total devaluation."
+        },
+        {
+          "state": "Ex-Smear Campaigning (Martyr Complex)",
+          "symptom": "Portraying every previous romantic partner as crazy, abusive, or violent while casting oneself as the blameless victim.",
+          "etiology": "Total defense mechanism against internal shame, projecting all fault outward onto past attachments."
+        },
+        {
+          "state": "Imposed Relational Isolation",
+          "symptom": "Subtly poisoning opinions of friends and family before issuing ultimatums demanding their removal ('them or me').",
+          "etiology": "Strategic elimination of the victim's reality checks and external support systems to secure total dependency."
+        },
+        {
+          "state": "Asymmetric Vulnerability Extraction",
+          "symptom": "Relentlessly extracting the partner's deepest childhood traumas and secrets while keeping their own emotional interiority completely shielded.",
+          "etiology": "Harvesting psychological data for future coercive leverage while avoiding genuine relational vulnerability."
+        }
+      ],
+      "failure_modes": [
+        "Confusing Love-Bombing with Destiny: Believing intense early adoration reflects an extraordinary soulmate bond rather than premature idealization.",
+        "Severing Support Systems for Harmony: Sacrificing long-term friends and family to appease a partner's jealousy, creating catastrophic emotional vulnerability.",
+        "Ignoring Intuitive Gut Warnings: Rationalizing glaring red flags (such as all exes being labeled monsters) out of fear of losing the honeymoon high."
+      ]
+    },
+    "dim_5_field_protocols": {
+      "algorithm": [
+        "1. Recognize the Pedestal Warning: Treat instant declarations of being 'perfect' and a 'soulmate' as red flags requiring emotional pacing, not celebrations.",
+        "2. Audit the Relational History: Listen closely to how past partners are described; if all exes are painted as abusive monsters without personal accountability, expect the same script to be applied to you.",
+        "3. Guard Your Support System: Never agree to ultimatums demanding you cut off trustworthy, long-term friends or family members; maintain an independent social anchor.",
+        "4. Require Emotional Reciprocity: Do not disclose deep childhood vulnerabilities to someone who changes the subject or dodges when asked about their own emotional reality.",
+        "5. Trust Intuitive Reality: When your gut signals discomfort or manipulation, do not override your intuition to maintain the illusion of a fairytale."
+      ],
+      "verbatim_scripts": [
+        {
+          "label": "The Core Clinical Definition",
+          "locator": "Cue 20 (00:00:44.887 --> 00:00:51.342)",
+          "verbatim_text": "has zero empathy towards other people,"
+        },
+        {
+          "label": "The Pedestal Mechanism",
+          "locator": "Cue 30 (00:01:10.967 --> 00:01:13.582)",
+          "verbatim_text": "keep you placed on a"
+        },
+        {
+          "label": "The Abrupt Inversion Shift",
+          "locator": "Cue 43 (00:01:40.996 --> 00:01:43.988)",
+          "verbatim_text": "starts calling you selfish,"
+        },
+        {
+          "label": "The Smear Campaign Pattern",
+          "locator": "Cue 60 (00:01:20.740 --> 00:01:24.111)",
+          "verbatim_text": "past relationships, saying that guy was"
+        },
+        {
+          "label": "The Isolation Ultimatum",
+          "locator": "Cue 80 (00:03:06.710 --> 00:03:09.838)",
+          "verbatim_text": "Otherwise, I won't stay with you.\""
+        },
+        {
+          "label": "The Vulnerability Dodging Deficit",
+          "locator": "Cue 112 (00:04:21.094 --> 00:04:24.057)",
+          "verbatim_text": "about their emotions, they will not"
+        }
+      ],
+      "verbatim_fragments": [],
+      "ai_generated_practical_applications": [
+        "The Ex-Partner History Audit: In early dating, note how past breakups are explained. If there is zero nuance, zero accountability, and 100% blame assigned to 'crazy exes', treat this as an active diagnostic warning.",
+        "The Support System Boundary Rule: Formulate a firm personal rule: 'I will never discard long-term friendships or family relationships based on a partner's demands or jealousy.'",
+        "The Intuition Validation Check: Whenever you feel uneasy about an interaction, write down your uncensored gut feeling before rationalizing it away."
+      ]
+    },
+    "dim_6_skeptic_box": {
+      "pop_culture_distortion": "Pop culture frequently weaponizes 'narcissist' as a casual label for anyone who acts selfishly, cancels a plan, or shows poor communication during an argument.",
+      "clinical_empirical_reality": "In clinical psychopathology, Narcissistic Personality Disorder represents an ingrained, inflexible pattern of grandiosity, lack of empathy, and exploitative behavior. However, for relational safety, a formal clinical diagnosis is unnecessary: if an individual exhibits pedestal idealization, ex-smear campaigning, systematic isolation, and asymmetric vulnerability extraction, the relational hazard is confirmed regardless of clinical labeling."
+    }
+  },
+  "extracted_claims": [
+    {
+      "statement": "Narcissistic personality functioning is fundamentally characterized by an absence of empathy towards others, an inflated sense of entitlement, and chronic self-obsession.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 20 (00:00:44.887 --> 00:00:51.342)",
+      "verbatim_quote": "has zero empathy towards other people,",
+      "associated_concepts": [
+        "Pedestal Idealization & Abrupt Devaluation"
+      ]
+    },
+    {
+      "statement": "Before displaying abusive behavior, a narcissistic partner often engages in intense pedestal idealization, proclaiming the partner to be flawless and their ultimate soulmate.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 30 (00:01:10.967 --> 00:01:13.582)",
+      "verbatim_quote": "keep you placed on a",
+      "associated_concepts": [
+        "Pedestal Idealization & Abrupt Devaluation"
+      ]
+    },
+    {
+      "statement": "Following the idealization phase, the narcissistic individual abruptly inverts the dynamic, labeling the once-perfect partner as selfish, dramatic, and toxic.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 43 (00:01:40.996 --> 00:01:43.988)",
+      "verbatim_quote": "starts calling you selfish,",
+      "associated_concepts": [
+        "Pedestal Idealization & Abrupt Devaluation"
+      ]
+    },
+    {
+      "statement": "A hallmark of narcissistic smear campaigning is recounting past relationships entirely through a one-sided martyr narrative where every former partner was abusive.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 60 (00:01:20.740 --> 00:01:24.111)",
+      "verbatim_quote": "past relationships, saying that guy was",
+      "associated_concepts": [
+        "One-Sided Ex Smear Campaigning"
+      ]
+    },
+    {
+      "statement": "Imposed isolation operates by criticizing the partner's social circle and issuing ultimatums to cut off family and friends, inducing total emotional dependency.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 80 (00:03:06.710 --> 00:03:09.838)",
+      "verbatim_quote": "Otherwise, I won't stay with you.\"",
+      "associated_concepts": [
+        "Imposed Relational Isolation"
+      ]
+    },
+    {
+      "statement": "Narcissistic emotional dodging involves aggressively extracting the partner's deepest traumas and secrets while refusing to reciprocate any genuine emotional vulnerability.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 112 (00:04:21.094 --> 00:04:24.057)",
+      "verbatim_quote": "about their emotions, they will not",
+      "associated_concepts": [
+        "Asymmetric Vulnerability Extraction"
+      ]
+    }
+  ],
+  "proposed_concepts": [
+    {
+      "name": "Pedestal Idealization & Abrupt Devaluation",
+      "definition": "The psychological sequence where a partner is rapidly elevated to an unattainable pedestal of perfection and soulmate status, only to be abruptly devalued, criticized, and labeled toxic once real boundaries or human limitations appear.",
+      "aliases": [
+        "pedestal idealization",
+        "love-bombing pedestal",
+        "idealize and devalue cycle"
+      ]
+    },
+    {
+      "name": "One-Sided Ex Smear Campaigning",
+      "definition": "The systemic behavioral pattern of portraying all previous romantic partners as abusive, crazy, or hostile with zero personal accountability, creating a martyr persona to extract sympathy from new partners.",
+      "aliases": [
+        "martyr narrative",
+        "crazy ex syndrome",
+        "ex smear campaign"
+      ]
+    },
+    {
+      "name": "Imposed Relational Isolation",
+      "definition": "The systematic dismantling of a partner's social support network through criticism of their loved ones and ultimatums, leaving the victim entirely dependent on the disordered individual for emotional reality.",
+      "aliases": [
+        "support system dismantling",
+        "forced relational isolation",
+        "relational quarantine"
+      ]
+    },
+    {
+      "name": "Asymmetric Vulnerability Extraction",
+      "definition": "The manipulative interrogation tactic of aggressively probing for a partner's childhood traumas and deepest insecurities while keeping one's own emotional interior completely shielded or fabricated, creating unilateral power leverage.",
+      "aliases": [
+        "emotional dodging",
+        "unilateral vulnerability probing",
+        "trauma harvesting"
+      ]
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_concept": "Pedestal Idealization & Abrupt Devaluation",
+      "relation": "initiates",
+      "target_concept": "intermittent relational reinforcement",
+      "evidence_snippet": "They set you on a pedestal... And after that, the same person who told you that you are perfect starts calling you selfish, dramatic... and that they are the victim."
+    },
+    {
+      "source_concept": "Imposed Relational Isolation",
+      "relation": "exacerbates",
+      "target_concept": "trauma bond conditioning",
+      "evidence_snippet": "Now you have become so lonely. You are only dependent on one person. Your support system is just that one person... So when you are alone, they take advantage."
+    },
+    {
+      "source_concept": "Asymmetric Vulnerability Extraction",
+      "relation": "enables",
+      "target_concept": "relational baseline deprivation",
+      "evidence_snippet": "What will happen is that your emotional connection with them will become stronger, because you are telling them your deep, dark secrets... But whenever you ask about their emotions, they will not tell you."
+    },
+    {
+      "source_concept": "One-Sided Ex Smear Campaigning",
+      "relation": "signals",
+      "target_concept": "The Walk-Away Relational Threshold",
+      "evidence_snippet": "They will badmouth their past relationships, saying that guy was abusive... They will never tell their side of the story. They will only tell a one-sided story."
+    }
+  ],
+  "coverage_warnings": [],
+  "recall_cards": [
+    {
+      "question": "What is the mythical origin of the concept of narcissism discussed in Greek mythology?",
+      "answer": "Narcissus was a handsome hunter who fell so deeply in love with his own reflection in a forest pool that he was unable to look away or possess it, eventually dying by the water's edge because he could not detach from his own image."
+    },
+    {
+      "question": "What is the Pedestal Idealization Trap in narcissistic dynamics?",
+      "answer": "An early phase where a partner is placed on a pedestal as a flawless 'soulmate' and the most perfect person ever met, creating an intense emotional bond before abruptly switching to devaluing them as selfish, dramatic, and toxic."
+    },
+    {
+      "question": "How can you identify an Ex-Smear Campaign (Martyr Complex) in early dating?",
+      "answer": "The partner describes 100% of their past romantic relationships as abusive, crazy, or toxic, taking zero personal responsibility for any conflict and casting themselves as the perpetual blameless victim."
+    },
+    {
+      "question": "Why is Asymmetric Vulnerability Extraction dangerous in a relationship?",
+      "answer": "The partner aggressively extracts your deepest childhood wounds and secrets under the guise of intimacy, but refuses to share their own authentic emotions, creating an imbalance where they hold unilateral emotional leverage over you."
+    }
+  ]
+}

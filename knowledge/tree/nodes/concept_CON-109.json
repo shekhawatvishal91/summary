@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-109",
+  "node_type": "concept",
+  "canonical_name": "Imposed Relational Isolation",
+  "aliases": [
+    "support system dismantling",
+    "forced relational isolation",
+    "relational quarantine"
+  ],
+  "domain": "General",
+  "definition": "The systematic dismantling of a partner's social support network through criticism of their loved ones and ultimatums, leaving the victim entirely dependent on the disordered individual for emotional reality.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-109-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-007"
+  ],
+  "created_at": "2026-10-11T15:47:14.336Z",
+  "updated_at": "2026-10-11T15:47:14.336Z"
+}

@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-101-001",
+  "node_type": "claim",
+  "statement": "Narcissistic personality functioning is fundamentally characterized by an absence of empathy towards others, an inflated sense of entitlement, and chronic self-obsession.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-007",
+      "locator_type": "paragraph",
+      "locator": "Cue 20 (00:00:44.887 --> 00:00:51.342)",
+      "verbatim_quote": "has zero empathy towards other people,"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-101"
+  ],
+  "created_at": "2026-10-11T15:47:14.326Z"
+}

@@ -157,6 +157,26 @@
       "source_role": "real_user_source",
       "created_at": "2026-10-11T15:17:14.754Z",
       "updated_at": "2026-10-11T15:21:23.933Z"
+    },
+    {
+      "source_id": "SRC-YT-2026-007",
+      "video_id": "wzXEqmbfaqA",
+      "title": " ⚠️ Warning: 4 Signs You’re Dating A Narcissist !! ",
+      "author": "The Cool Therapist",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "3ea8ab122387461d0c9f36d23d2ee18f1c5c80ed8778ea0e9b394455c5e2c487",
+      "raw_path": "sources/raw/SRC-YT-2026-007_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-007.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-007/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-11T15:44:51.543Z",
+      "updated_at": "2026-10-11T15:47:14.345Z"
     }
   ]
 }

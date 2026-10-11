@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-113-001",
+  "node_type": "claim",
+  "statement": "Narcissistic emotional dodging involves aggressively extracting the partner's deepest traumas and secrets while refusing to reciprocate any genuine emotional vulnerability.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-007",
+      "locator_type": "paragraph",
+      "locator": "Cue 112 (00:04:21.094 --> 00:04:24.057)",
+      "verbatim_quote": "about their emotions, they will not"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-113"
+  ],
+  "created_at": "2026-10-11T15:47:14.341Z"
+}

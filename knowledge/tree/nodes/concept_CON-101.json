@@ -1,0 +1,23 @@
+{
+  "node_id": "CON-101",
+  "node_type": "concept",
+  "canonical_name": "Pedestal Idealization & Abrupt Devaluation",
+  "aliases": [
+    "pedestal idealization",
+    "love-bombing pedestal",
+    "idealize and devalue cycle"
+  ],
+  "domain": "General",
+  "definition": "The psychological sequence where a partner is rapidly elevated to an unattainable pedestal of perfection and soulmate status, only to be abruptly devalued, criticized, and labeled toxic once real boundaries or human limitations appear.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-101-001",
+    "CLM-CON-101-002",
+    "CLM-CON-101-003"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-007"
+  ],
+  "created_at": "2026-10-11T15:47:14.326Z",
+  "updated_at": "2026-10-11T15:47:14.326Z"
+}

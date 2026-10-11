@@ -1,0 +1,125 @@
+{
+  "source_id": "SRC-YT-2026-007",
+  "generated_at": "2026-10-11T15:47:14.321Z",
+  "model": "antigravity-native-agent",
+  "proposed_concepts": [
+    {
+      "name": "Pedestal Idealization & Abrupt Devaluation",
+      "definition": "The psychological sequence where a partner is rapidly elevated to an unattainable pedestal of perfection and soulmate status, only to be abruptly devalued, criticized, and labeled toxic once real boundaries or human limitations appear.",
+      "aliases": [
+        "pedestal idealization",
+        "love-bombing pedestal",
+        "idealize and devalue cycle"
+      ]
+    },
+    {
+      "name": "One-Sided Ex Smear Campaigning",
+      "definition": "The systemic behavioral pattern of portraying all previous romantic partners as abusive, crazy, or hostile with zero personal accountability, creating a martyr persona to extract sympathy from new partners.",
+      "aliases": [
+        "martyr narrative",
+        "crazy ex syndrome",
+        "ex smear campaign"
+      ]
+    },
+    {
+      "name": "Imposed Relational Isolation",
+      "definition": "The systematic dismantling of a partner's social support network through criticism of their loved ones and ultimatums, leaving the victim entirely dependent on the disordered individual for emotional reality.",
+      "aliases": [
+        "support system dismantling",
+        "forced relational isolation",
+        "relational quarantine"
+      ]
+    },
+    {
+      "name": "Asymmetric Vulnerability Extraction",
+      "definition": "The manipulative interrogation tactic of aggressively probing for a partner's childhood traumas and deepest insecurities while keeping one's own emotional interior completely shielded or fabricated, creating unilateral power leverage.",
+      "aliases": [
+        "emotional dodging",
+        "unilateral vulnerability probing",
+        "trauma harvesting"
+      ]
+    }
+  ],
+  "extracted_claims": [
+    {
+      "statement": "Narcissistic personality functioning is fundamentally characterized by an absence of empathy towards others, an inflated sense of entitlement, and chronic self-obsession.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 20 (00:00:44.887 --> 00:00:51.342)",
+      "verbatim_quote": "has zero empathy towards other people,",
+      "associated_concepts": [
+        "Pedestal Idealization & Abrupt Devaluation"
+      ]
+    },
+    {
+      "statement": "Before displaying abusive behavior, a narcissistic partner often engages in intense pedestal idealization, proclaiming the partner to be flawless and their ultimate soulmate.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 30 (00:01:10.967 --> 00:01:13.582)",
+      "verbatim_quote": "keep you placed on a",
+      "associated_concepts": [
+        "Pedestal Idealization & Abrupt Devaluation"
+      ]
+    },
+    {
+      "statement": "Following the idealization phase, the narcissistic individual abruptly inverts the dynamic, labeling the once-perfect partner as selfish, dramatic, and toxic.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 43 (00:01:40.996 --> 00:01:43.988)",
+      "verbatim_quote": "starts calling you selfish,",
+      "associated_concepts": [
+        "Pedestal Idealization & Abrupt Devaluation"
+      ]
+    },
+    {
+      "statement": "A hallmark of narcissistic smear campaigning is recounting past relationships entirely through a one-sided martyr narrative where every former partner was abusive.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 60 (00:01:20.740 --> 00:01:24.111)",
+      "verbatim_quote": "past relationships, saying that guy was",
+      "associated_concepts": [
+        "One-Sided Ex Smear Campaigning"
+      ]
+    },
+    {
+      "statement": "Imposed isolation operates by criticizing the partner's social circle and issuing ultimatums to cut off family and friends, inducing total emotional dependency.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 80 (00:03:06.710 --> 00:03:09.838)",
+      "verbatim_quote": "Otherwise, I won't stay with you.\"",
+      "associated_concepts": [
+        "Imposed Relational Isolation"
+      ]
+    },
+    {
+      "statement": "Narcissistic emotional dodging involves aggressively extracting the partner's deepest traumas and secrets while refusing to reciprocate any genuine emotional vulnerability.",
+      "epistemic_class": "SOURCE_STATEMENT",
+      "locator": "Cue 112 (00:04:21.094 --> 00:04:24.057)",
+      "verbatim_quote": "about their emotions, they will not",
+      "associated_concepts": [
+        "Asymmetric Vulnerability Extraction"
+      ]
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_concept": "Pedestal Idealization & Abrupt Devaluation",
+      "relation": "initiates",
+      "target_concept": "intermittent relational reinforcement",
+      "evidence_snippet": "They set you on a pedestal... And after that, the same person who told you that you are perfect starts calling you selfish, dramatic... and that they are the victim."
+    },
+    {
+      "source_concept": "Imposed Relational Isolation",
+      "relation": "exacerbates",
+      "target_concept": "trauma bond conditioning",
+      "evidence_snippet": "Now you have become so lonely. You are only dependent on one person. Your support system is just that one person... So when you are alone, they take advantage."
+    },
+    {
+      "source_concept": "Asymmetric Vulnerability Extraction",
+      "relation": "enables",
+      "target_concept": "relational baseline deprivation",
+      "evidence_snippet": "What will happen is that your emotional connection with them will become stronger, because you are telling them your deep, dark secrets... But whenever you ask about their emotions, they will not tell you."
+    },
+    {
+      "source_concept": "One-Sided Ex Smear Campaigning",
+      "relation": "signals",
+      "target_concept": "The Walk-Away Relational Threshold",
+      "evidence_snippet": "They will badmouth their past relationships, saying that guy was abusive... They will never tell their side of the story. They will only tell a one-sided story."
+    }
+  ]
+}

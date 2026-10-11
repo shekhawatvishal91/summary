@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-101-003",
+  "node_type": "claim",
+  "statement": "Following the idealization phase, the narcissistic individual abruptly inverts the dynamic, labeling the once-perfect partner as selfish, dramatic, and toxic.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-007",
+      "locator_type": "paragraph",
+      "locator": "Cue 43 (00:01:40.996 --> 00:01:43.988)",
+      "verbatim_quote": "starts calling you selfish,"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-101"
+  ],
+  "created_at": "2026-10-11T15:47:14.328Z"
+}

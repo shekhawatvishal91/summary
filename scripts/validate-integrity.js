@@ -84,18 +84,18 @@ function getMarkdownFiles(dir) {
 }
 
 const mdFiles = getMarkdownFiles(REPO_ROOT);
-const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+const linkRegex = /\[([^\]]*)\]\(([^)]+)\)/g;
 
 mdFiles.forEach(file => {
   let content = fs.readFileSync(file, 'utf-8');
-  // Strip code blocks and inline code to prevent false link detection on prose examples
+  // Strip fenced code blocks and backtick-wrapped markdown link syntax examples
   content = content.replace(/```[\s\S]*?```/g, '');
-  content = content.replace(/`[^`\n]+`/g, '');
+  content = content.replace(/`\[[^\]]+\]\([^)]+\)`/g, '');
 
   let match;
   while ((match = linkRegex.exec(content)) !== null) {
     const linkTarget = match[2].trim();
-    // Ignore external URLs, mailto, KaTeX anchors, and internal document hashes
+    // Ignore external URLs, mailto, and internal document hashes
     if (linkTarget.startsWith('http://') || 
         linkTarget.startsWith('https://') || 
         linkTarget.startsWith('mailto:') ||

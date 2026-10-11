@@ -21,16 +21,18 @@ Before proposing any integration, the local execution environment was empiricall
 
 ## 2. Agent Skills Inventory (Audited)
 
-The following skills are installed and verified in the agent configuration:
+The following skills are installed and verified in the agent configuration as cognitive prompt directives (instructional guidance for synthesis and decoding, rather than executable CLI binaries):
 
 ### 2.1 `book-distillation-framework` (`C:\Users\visha\.gemini\config\skills\book-distillation-framework\SKILL.md`)
-- **Status:** `VERIFIED & ADOPTED`
+- **Status:** `VERIFIED & ADOPTED` (Cognitive Prompt Directive)
 - **Problem Solved:** Provides the Golden Test of Total Replacement and the 6-Dimensional Distillation Matrix for book decoding.
+- **Nature:** Instructional protocol loaded into agent reasoning context during extraction tasks.
 - **Decision:** Adopted as the primary decoding standard for Product A (Codex Engine).
 
 ### 2.2 `claude-style-writing` (`C:\Users\visha\.gemini\config\skills\claude-style-writing\SKILL.md`)
-- **Status:** `VERIFIED & ADOPTED`
+- **Status:** `VERIFIED & ADOPTED` (Cognitive Prompt Directive)
 - **Problem Solved:** Enforces high signal-to-noise ratio, intellectual honesty, structural elegance, and zero corporate preamble.
+- **Nature:** Stylistic and editorial heuristic applied during note generation.
 - **Decision:** Adopted as the core editorial tone standard for all documentation and codices.
 
 ---

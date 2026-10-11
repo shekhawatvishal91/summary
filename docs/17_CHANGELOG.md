@@ -8,6 +8,11 @@
 
 ## 1. System Version History
 
+### [1.0.0-rc2] — 2026-10-11: Rigorous Audit Correction & Link Verification Engine
+- **Demarcated:** Audited repository components into five explicit tiers (Executable Code, Prompt Skills, Designed Specs, Missing Items, Blocked Runtimes) in `docs/03_REPOSITORY_AUDIT.md`.
+- **Refined:** Documented prompt vs binary nature of skills in `docs/14_SKILLS_AND_TOOLING.md`.
+- **Upgraded:** Enhanced `scripts/validate-integrity.js` regex parser to comprehensively verify all 55 relative links across `README.md`, `AGENTS.md`, and `docs/`.
+
 ### [1.0.0-rc1] — 2026-10-11: Foundation & Constitutional Baseline
 - **Initialized:** Local Git repository on branch `main` at `c:\Users\visha\OneDrive\Documents\Summary`.
 - **Configured:** Remote origin mapped to `https://github.com/shekhawatvishal91/summary.git`.

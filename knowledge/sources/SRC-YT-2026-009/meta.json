@@ -1,0 +1,30 @@
+{
+  "source_id": "SRC-YT-2026-009",
+  "title": "I FIXED my whole life with this in one Night ! Sunk Cost Fallacy ! Learn in 300 Seconds",
+  "author": "Human Behaviour",
+  "channel": "Human Behaviour",
+  "video_id": "iNbEVAhXLhE",
+  "url": "https://www.youtube.com/watch?v=iNbEVAhXLhE",
+  "duration": "5m 45s",
+  "duration_seconds": 345,
+  "year": "2026",
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "sha256": "0ad3027cbd6ccdad763b76a468cae5f4e237cf52889e25b76ab844e01e1aabcd",
+  "char_count": 5830,
+  "word_count": 1050,
+  "total_cues": 164,
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "created_at": "2026-10-12T13:58:09.651Z",
+  "decoded_at": "2026-10-12T14:00:00.000Z",
+  "raw_artifact": {
+    "path": "sources/raw/SRC-YT-2026-009_captions.vtt",
+    "sha256": "0ad3027cbd6ccdad763b76a468cae5f4e237cf52889e25b76ab844e01e1aabcd",
+    "bytes": 11989
+  },
+  "normalized_text_artifact": {
+    "path": "sources/text/SRC-YT-2026-009.txt",
+    "sha256": "c53834164dd4f0a13139dd987ad60e5e3be2de950c692d46ccc923509ea769e9",
+    "bytes": 13508
+  }
+}

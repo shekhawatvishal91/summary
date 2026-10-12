@@ -620,7 +620,7 @@ function viewCodex(sourceId) {
     document.getElementById('codex-meta').innerHTML = `
       <span class="badge badge-accent" style="margin-right:0.4rem; background:#1f883d; color:#fff;">CROSS-SOURCE MASTER SYNTHESIS</span>
       <strong>Topic:</strong> Aspirant Psychology &amp; Behavioral Decision Theory &bull;
-      <strong>Sources Unified:</strong> <code>SRC-YT-2026-002</code> &bull; <code>SRC-YT-2026-001</code> &bull;
+      <strong>Sources Unified:</strong> <code>SRC-YT-2026-002</code> &bull; <code>SRC-YT-2026-001</code> &bull; <code>SRC-YT-2026-009</code> &bull;
       <strong>Status:</strong> DEDUPLICATED &amp; VERIFIED
     `;
 

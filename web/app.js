@@ -551,27 +551,8 @@ function formatInline(text) {
 }
 
 let currentActiveCodexId = null;
-let currentReadingMode = 'field';
-
-function setReadingMode(mode) {
-  currentReadingMode = mode;
-  applyReadingMode();
-}
-
-function applyReadingMode() {
-  const viewer = document.getElementById('codex-content');
-  const fieldBtn = document.getElementById('btn-mode-field');
-  const essayBtn = document.getElementById('btn-mode-essay');
-  if (currentReadingMode === 'essay') {
-    if (viewer) viewer.classList.add('reading-mode-essay');
-    if (essayBtn) essayBtn.classList.add('active');
-    if (fieldBtn) fieldBtn.classList.remove('active');
-  } else {
-    if (viewer) viewer.classList.remove('reading-mode-essay');
-    if (fieldBtn) fieldBtn.classList.add('active');
-    if (essayBtn) essayBtn.classList.remove('active');
-  }
-}
+function setReadingMode() {}
+function applyReadingMode() {}
 
 function setReaderSection(section) {
   const unifiedTab = document.getElementById('reader-tab-unified');
@@ -670,7 +651,6 @@ function viewCodex(sourceId) {
         // Strip top # Title line so content starts directly with the first section
         const contentTxt = txt.replace(/^#[^\n]+\n+/, '');
         document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
-        applyReadingMode();
       })
       .catch(err => {
         document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch master synthesis at ${masterUrl}: ${err.message}</p>`;
@@ -702,7 +682,6 @@ function viewCodex(sourceId) {
         // Strip top # Title and subtitle so content starts directly with the treatise
         const contentTxt = txt.replace(/^#[^\n]+\n+(?:##[^\n]+\n+)?/, '');
         document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
-        applyReadingMode();
       })
       .catch(err => {
         document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch topic synthesis at ${masterUrl}: ${err.message}</p>`;
@@ -798,7 +777,6 @@ function viewCodex(sourceId) {
 ` : '';
       const renderedHtml = renderMarkdown(banner + contentTxt);
       document.getElementById('codex-content').innerHTML = renderedHtml;
-      applyReadingMode();
     })
     .catch(err => {
       document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch codex at ${codexUrl}: ${err.message}</p>`;

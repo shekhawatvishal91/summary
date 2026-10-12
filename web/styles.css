@@ -834,8 +834,38 @@ footer a:hover {
   font-size: 0.885rem;
   color: var(--text-secondary);
   line-height: 1.55;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.85rem;
   flex: 1;
+}
+
+.topic-source-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.15rem;
+  align-items: center;
+}
+
+.topic-source-pill {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.775rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+}
+
+.topic-source-pill:hover {
+  background: var(--bg-subtle);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .topic-box-footer {

@@ -580,18 +580,25 @@ function filterReaderCategory(cat) {
 
 function handleReaderSearch(query) {
   const q = (query || '').toLowerCase().trim();
-  const cards = document.querySelectorAll('.source-card-compact');
-  cards.forEach(card => {
-    const title = card.querySelector('.source-card-title')?.textContent.toLowerCase() || '';
-    const channel = card.querySelector('.source-card-channel')?.textContent.toLowerCase() || '';
+  const items = document.querySelectorAll('.channel-video-item, .source-card-compact');
+  items.forEach(item => {
+    const title = (item.querySelector('.video-item-title') || item.querySelector('.source-card-title'))?.textContent.toLowerCase() || '';
+    const channelBox = item.closest('.channel-card-box');
+    const channel = (channelBox?.querySelector('.channel-name') || item.querySelector('.source-card-channel'))?.textContent.toLowerCase() || '';
     const matches = !q || title.includes(q) || channel.includes(q);
-    card.style.display = matches ? 'flex' : 'none';
+    item.style.display = matches ? 'flex' : 'none';
   });
 
-  // Check if groups have any visible cards
+  // Check if channel boxes have visible items
+  document.querySelectorAll('.channel-card-box').forEach(box => {
+    const visibleItems = box.querySelectorAll('.channel-video-item:not([style*="display: none"])');
+    box.style.display = visibleItems.length > 0 ? 'block' : 'none';
+  });
+
+  // Check if category groups have visible boxes
   document.querySelectorAll('.reader-category-group').forEach(group => {
-    const visibleCards = group.querySelectorAll('.source-card-compact:not([style*="display: none"])');
-    group.style.display = visibleCards.length > 0 ? 'block' : 'none';
+    const visibleBoxes = group.querySelectorAll('.channel-card-box:not([style*="display: none"]), .source-card-compact:not([style*="display: none"])');
+    group.style.display = visibleBoxes.length > 0 ? 'block' : 'none';
   });
 }
 

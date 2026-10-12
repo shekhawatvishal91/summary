@@ -554,83 +554,15 @@ let currentActiveCodexId = null;
 function setReadingMode() {}
 function applyReadingMode() {}
 
-function setReaderSection(section) {
-  const unifiedTab = document.getElementById('reader-tab-unified');
-  const individualTab = document.getElementById('reader-tab-individual');
-  const unifiedSubnav = document.getElementById('reader-subnav-unified');
-  const individualSubnav = document.getElementById('reader-subnav-individual');
-
-  if (section === 'individual') {
-    if (unifiedTab) {
-      unifiedTab.classList.remove('active');
-      unifiedTab.setAttribute('aria-selected', 'false');
-    }
-    if (individualTab) {
-      individualTab.classList.add('active');
-      individualTab.setAttribute('aria-selected', 'true');
-    }
-    if (unifiedSubnav) unifiedSubnav.style.display = 'none';
-    if (individualSubnav) individualSubnav.style.display = 'block';
-
-    // If currently on a master note, switch to the first individual note
-    if (!currentActiveCodexId || currentActiveCodexId.startsWith('MASTER-')) {
-      viewCodex('SRC-YT-2026-003');
-    }
-  } else {
-    if (unifiedTab) {
-      unifiedTab.classList.add('active');
-      unifiedTab.setAttribute('aria-selected', 'true');
-    }
-    if (individualTab) {
-      individualTab.classList.remove('active');
-      individualTab.setAttribute('aria-selected', 'false');
-    }
-    if (unifiedSubnav) unifiedSubnav.style.display = 'block';
-    if (individualSubnav) individualSubnav.style.display = 'none';
-
-    // If currently on an individual note, switch to the master topic
-    if (!currentActiveCodexId || !currentActiveCodexId.startsWith('MASTER-')) {
-      viewCodex('MASTER-ASPIRANT-DECISION');
-    }
-  }
-}
-
-function syncReaderSectionUI(isUnified) {
-  const unifiedTab = document.getElementById('reader-tab-unified');
-  const individualTab = document.getElementById('reader-tab-individual');
-  const unifiedSubnav = document.getElementById('reader-subnav-unified');
-  const individualSubnav = document.getElementById('reader-subnav-individual');
-
-  if (isUnified) {
-    if (unifiedTab) {
-      unifiedTab.classList.add('active');
-      unifiedTab.setAttribute('aria-selected', 'true');
-    }
-    if (individualTab) {
-      individualTab.classList.remove('active');
-      individualTab.setAttribute('aria-selected', 'false');
-    }
-    if (unifiedSubnav) unifiedSubnav.style.display = 'block';
-    if (individualSubnav) individualSubnav.style.display = 'none';
-  } else {
-    if (unifiedTab) {
-      unifiedTab.classList.remove('active');
-      unifiedTab.setAttribute('aria-selected', 'false');
-    }
-    if (individualTab) {
-      individualTab.classList.add('active');
-      individualTab.setAttribute('aria-selected', 'true');
-    }
-    if (unifiedSubnav) unifiedSubnav.style.display = 'none';
-    if (individualSubnav) individualSubnav.style.display = 'block';
-  }
-}
+function setReaderSection() {}
+function syncReaderSectionUI() {}
 
 function viewCodex(sourceId) {
   if (sourceId === 'MASTER-ASPIRANT-DECISION') {
     currentActiveCodexId = sourceId;
-    syncReaderSectionUI(true);
     switchTab('codex-reader');
+    const subnav = document.getElementById('reader-subnav-individual');
+    if (subnav) subnav.style.display = 'none';
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.getElementById('codex-title').textContent = 'Competitive Exam Aspirant Psychology & Decision Architecture: Unified Master Synthesis';
     document.getElementById('codex-meta').innerHTML = `
@@ -660,8 +592,9 @@ function viewCodex(sourceId) {
 
   if (sourceId === 'MASTER-RELATIONSHIP-DYNAMICS') {
     currentActiveCodexId = sourceId;
-    syncReaderSectionUI(true);
     switchTab('codex-reader');
+    const subnav = document.getElementById('reader-subnav-individual');
+    if (subnav) subnav.style.display = 'none';
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.getElementById('codex-title').textContent = 'Love Without Losing Yourself';
     document.getElementById('codex-meta').innerHTML = `
@@ -694,9 +627,10 @@ function viewCodex(sourceId) {
   if (!source) return;
 
   currentActiveCodexId = sourceId;
-  syncReaderSectionUI(false);
   const isFixture = isFixtureSource(source);
   switchTab('codex-reader');
+  const subnav = document.getElementById('reader-subnav-individual');
+  if (subnav) subnav.style.display = 'block';
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
   // Update switcher button active state
@@ -833,9 +767,9 @@ function switchTab(viewId) {
     sec.classList.toggle('active', sec.id === viewId);
   });
 
-  // If opening Reader Mode directly and no codex has been selected yet, default to Unified Master Note
-  if (viewId === 'codex-reader' && !currentActiveCodexId) {
-    viewCodex('MASTER-ASPIRANT-DECISION');
+  // If opening Reader Mode directly, default to first individual note
+  if (viewId === 'codex-reader' && (!currentActiveCodexId || currentActiveCodexId.startsWith('MASTER-'))) {
+    viewCodex('SRC-YT-2026-003');
   }
 }
 

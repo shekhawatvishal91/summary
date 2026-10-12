@@ -194,17 +194,11 @@
     <section id="codex-reader" class="view-section">
       <!-- Reader Mode Top Header Bar -->
       <div class="reader-mode-header">
-        <div class="reader-mode-tabs" role="tablist">
-          <button id="reader-tab-unified" class="reader-mode-tab active" onclick="setReaderSection('unified')" role="tab" aria-selected="true">
-            <span class="tab-icon">📚</span>
-            <span class="tab-title">Unified Master Treatises</span>
-            <span class="tab-count">2 Treatises</span>
-          </button>
-          <button id="reader-tab-individual" class="reader-mode-tab" onclick="setReaderSection('individual')" role="tab" aria-selected="false">
-            <span class="tab-icon">📑</span>
-            <span class="tab-title">Individual Source Notes</span>
-            <span class="tab-count">8 Codices</span>
-          </button>
+        <div class="reader-mode-title-group" style="display:flex; align-items:center; gap:0.6rem;">
+          <h2 style="font-size:1.1rem; font-weight:700; margin:0; color:var(--text-primary); display:inline-flex; align-items:center; gap:0.4rem;">
+            📑 Individual Source Codices
+          </h2>
+          <span class="tab-count">8 Codices</span>
         </div>
 
         <div class="reader-actions">
@@ -214,21 +208,8 @@
         </div>
       </div>
 
-      <!-- Subnav 1: Unified Master Treatises Selector -->
-      <div id="reader-subnav-unified" class="reader-subnav">
-        <div class="subnav-label">Select Unified Topic Treatise to Read:</div>
-        <div class="subnav-buttons">
-          <button id="btn-switch-MASTER-ASPIRANT-DECISION" class="switcher-btn active unified-btn" style="border-left:3px solid #1f883d;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
-            📖 Mega-Book: Aspirant Psychology &amp; Decision Architecture <span class="btn-time">2 Sources Unified &bull; 5 Ch.</span>
-          </button>
-          <button id="btn-switch-MASTER-RELATIONSHIP-DYNAMICS" class="switcher-btn unified-btn" style="border-left:3px solid #bf3989;" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
-            💕 Master Treatise: Love Without Losing Yourself <span class="btn-time">6 Sources Unified &bull; 25 Dynamics</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Subnav 2: Individual Source Codices Selector (Categorized & Separated) -->
-      <div id="reader-subnav-individual" class="reader-subnav" style="display:none;">
+      <!-- Individual Source Codices Selector (Categorized by Topic) -->
+      <div id="reader-subnav-individual" class="reader-subnav">
         <div class="individual-category-group">
           <div class="category-group-header">
             <span class="category-icon">🎓</span>

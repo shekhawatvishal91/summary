@@ -667,7 +667,9 @@ function viewCodex(sourceId) {
     fetch(masterUrl)
       .then(r => r.text())
       .then(txt => {
-        document.getElementById('codex-content').innerHTML = renderMarkdown(txt);
+        // Strip top # Title line so content starts directly with the first section
+        const contentTxt = txt.replace(/^#[^\n]+\n+/, '');
+        document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
         applyReadingMode();
       })
       .catch(err => {
@@ -697,7 +699,9 @@ function viewCodex(sourceId) {
     fetch(masterUrl)
       .then(r => r.text())
       .then(txt => {
-        document.getElementById('codex-content').innerHTML = renderMarkdown(txt);
+        // Strip top # Title and subtitle so content starts directly with the treatise
+        const contentTxt = txt.replace(/^#[^\n]+\n+(?:##[^\n]+\n+)?/, '');
+        document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
         applyReadingMode();
       })
       .catch(err => {
@@ -715,12 +719,6 @@ function viewCodex(sourceId) {
   const isFixture = isFixtureSource(source);
   switchTab('codex-reader');
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  document.getElementById('codex-title').textContent = source.title;
-  document.getElementById('codex-meta').innerHTML = `
-    <strong>ID:</strong> <code>${source.source_id}</code> &bull; <strong>Author:</strong> ${escapeHtml(source.author)} &bull;
-    <strong>Tier:</strong> ${source.epistemic_tier} &bull; <strong>Status:</strong> ${source.decoding_status}
-    ${isFixture ? '<span class="badge badge-fixture" style="margin-left:0.5rem;">TEST FIXTURE BENCHMARK</span>' : ''}
-  `;
 
   // Update switcher button active state
   document.querySelectorAll('.switcher-btn').forEach(btn => {
@@ -731,18 +729,74 @@ function viewCodex(sourceId) {
     activeSwitcherBtn.classList.add('active');
   }
 
+  // Set initial title and loading state
+  document.getElementById('codex-title').textContent = source.title;
+  document.getElementById('codex-meta').innerHTML = `
+    <strong>ID:</strong> <code>${source.source_id}</code> &bull; <strong>Author:</strong> ${escapeHtml(source.author)} &bull;
+    <strong>Tier:</strong> ${source.epistemic_tier} &bull; <strong>Status:</strong> ${source.decoding_status}
+    ${isFixture ? '<span class="badge badge-fixture" style="margin-left:0.5rem;">TEST FIXTURE BENCHMARK</span>' : ''}
+  `;
+
   // Fetch codex markdown text
   const codexUrl = `../knowledge/sources/${sourceId}/codex.md`;
   fetch(codexUrl)
     .then(r => r.text())
     .then(txt => {
+      // 1. Extract video metadata from codex markdown if present
+      const titleMatch = txt.match(/^#\s+(.+)$/m);
+      const cleanTitle = titleMatch ? titleMatch[1].trim() : source.title;
+
+      const speakerMatch = txt.match(/\*\*Speaker(?:\s*\/\s*Channel)?:\*\*\s*([^|\n]+)/i);
+      const speaker = speakerMatch ? speakerMatch[1].trim() : (source.author || 'Unknown');
+
+      const durationMatch = txt.match(/\*\*Duration:\*\*\s*([^|\n]+)/i);
+      const duration = durationMatch ? durationMatch[1].trim() : (source.duration || '');
+
+      const urlMatch = txt.match(/\*\*URL:\*\*\s*(?:\[([^\]]+)\]\(([^)]+)\)|([^\s|\n]+))/i);
+      const videoUrl = urlMatch ? (urlMatch[2] || urlMatch[1] || urlMatch[3]) : (source.video_id ? `https://www.youtube.com/watch?v=${source.video_id}` : (source.url || ''));
+
+      const tierMatch = txt.match(/\*\*Epistemic Tier:\*\*\s*([^|\n]+)/i);
+      const tier = tierMatch ? tierMatch[1].trim() : (source.epistemic_tier || 'tier_3');
+
+      // Update Upper Box: Title + Full Video Info
+      document.getElementById('codex-title').textContent = cleanTitle;
+      if (source.medium === 'youtube' || videoUrl || duration) {
+        document.getElementById('codex-meta').innerHTML = `
+          <div class="video-meta-bar">
+            <span class="video-meta-item"><strong>Speaker / Channel:</strong> ${escapeHtml(speaker)}</span>
+            ${duration ? `<span>&bull;</span><span class="video-duration-pill">⏱️ ${escapeHtml(duration)}</span>` : ''}
+            <span>&bull;</span>
+            <span class="video-meta-item"><strong>Source ID:</strong> <code>${source.source_id}</code></span>
+            ${videoUrl ? `<span>&bull;</span><a href="${videoUrl}" target="_blank" rel="noopener noreferrer" class="video-url-pill">▶ Watch on YouTube ↗</a>` : ''}
+            <span>&bull;</span>
+            <span class="video-meta-item"><strong>Tier:</strong> ${escapeHtml(tier)}</span>
+            <span>&bull;</span>
+            <span class="badge badge-tier1" style="font-size:0.75rem;">${source.decoding_status || 'VERIFIED'}</span>
+            ${isFixture ? '<span class="badge badge-fixture" style="margin-left:0.5rem;">TEST FIXTURE BENCHMARK</span>' : ''}
+          </div>
+        `;
+      }
+
+      // 2. Prepare Lower Box: starts directly with the content i.e (The Speaker's Spoken Delivery)
+      let contentTxt = txt;
+      const deliveryIndex = txt.search(/^##\s+(?:(?:\d+\.\s*)?The Speaker's Spoken Delivery|Spoken Delivery)/m);
+      if (deliveryIndex !== -1) {
+        contentTxt = txt.slice(deliveryIndex);
+      } else {
+        // Fallback for non-speech codices: start at the first markdown section (##)
+        const firstSectionIndex = txt.search(/^##\s+/m);
+        if (firstSectionIndex !== -1) {
+          contentTxt = txt.slice(firstSectionIndex);
+        }
+      }
+
       const banner = isFixture ? `> [!WARNING]
 > **TEST FIXTURE BENCHMARK ADVISORY**
 > This analytical codex is generated from an automated regression test fixture for OS pipeline verification.
 > Its claims, mechanisms, and models are synthetic test artifacts, not verified scientific literature.
 
 ` : '';
-      const renderedHtml = renderMarkdown(banner + txt);
+      const renderedHtml = renderMarkdown(banner + contentTxt);
       document.getElementById('codex-content').innerHTML = renderedHtml;
       applyReadingMode();
     })

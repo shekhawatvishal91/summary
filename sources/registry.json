@@ -57,7 +57,10 @@
       "created_at": "2026-10-11T06:17:08.908Z",
       "updated_at": "2026-10-11T11:03:32.754Z",
       "is_test_fixture": false,
-      "source_role": "real_user_source"
+      "source_role": "real_user_source",
+      "video_id": "UGW27Z_Q0SY",
+      "duration": "9m 31s",
+      "url": "https://www.youtube.com/watch?v=UGW27Z_Q0SY"
     },
     {
       "source_id": "SRC-YT-2026-002",
@@ -76,7 +79,10 @@
       "is_test_fixture": false,
       "source_role": "real_user_source",
       "created_at": "2026-10-11T10:21:29.857Z",
-      "updated_at": "2026-10-11T11:03:32.953Z"
+      "updated_at": "2026-10-11T11:03:32.953Z",
+      "video_id": "VRaH3Dxm8Qc",
+      "duration": "48m 12s",
+      "url": "https://www.youtube.com/watch?v=VRaH3Dxm8Qc"
     },
     {
       "source_id": "SRC-YT-2026-003",
@@ -96,7 +102,9 @@
       "is_test_fixture": false,
       "source_role": "real_user_source",
       "created_at": "2026-10-11T12:15:03.981Z",
-      "updated_at": "2026-10-11T12:16:49.828Z"
+      "updated_at": "2026-10-11T12:16:49.828Z",
+      "duration": "49s",
+      "url": "https://www.youtube.com/watch?v=6eGdOk3IiOg"
     },
     {
       "source_id": "SRC-YT-2026-004",
@@ -116,7 +124,9 @@
       "is_test_fixture": false,
       "source_role": "real_user_source",
       "created_at": "2026-10-11T13:53:56.897Z",
-      "updated_at": "2026-10-11T13:56:04.926Z"
+      "updated_at": "2026-10-11T13:56:04.926Z",
+      "duration": "2m 40s",
+      "url": "https://www.youtube.com/watch?v=AFWiUq91ryE"
     },
     {
       "source_id": "SRC-YT-2026-005",
@@ -136,7 +146,9 @@
       "is_test_fixture": false,
       "source_role": "real_user_source",
       "created_at": "2026-10-11T14:19:25.992Z",
-      "updated_at": "2026-10-11T14:21:40.905Z"
+      "updated_at": "2026-10-11T14:21:40.905Z",
+      "duration": "2m 14s",
+      "url": "https://www.youtube.com/watch?v=xYLYavaY_Jk"
     },
     {
       "source_id": "SRC-YT-2026-006",
@@ -156,7 +168,9 @@
       "is_test_fixture": false,
       "source_role": "real_user_source",
       "created_at": "2026-10-11T15:17:14.754Z",
-      "updated_at": "2026-10-11T15:21:23.933Z"
+      "updated_at": "2026-10-11T15:21:23.933Z",
+      "duration": "6m 16s",
+      "url": "https://www.youtube.com/watch?v=klGTH_Cjw8Q"
     },
     {
       "source_id": "SRC-YT-2026-007",
@@ -176,7 +190,9 @@
       "is_test_fixture": false,
       "source_role": "real_user_source",
       "created_at": "2026-10-11T15:44:51.543Z",
-      "updated_at": "2026-10-11T15:47:14.345Z"
+      "updated_at": "2026-10-11T15:47:14.345Z",
+      "duration": "5m 03s",
+      "url": "https://www.youtube.com/watch?v=wzXEqmbfaqA"
     },
     {
       "source_id": "SRC-YT-2026-008",
@@ -196,7 +212,9 @@
       "is_test_fixture": false,
       "source_role": "real_user_source",
       "created_at": "2026-10-12T01:34:14.751Z",
-      "updated_at": "2026-10-12T01:37:30.323Z"
+      "updated_at": "2026-10-12T01:37:30.323Z",
+      "duration": "6m 33s",
+      "url": "https://www.youtube.com/watch?v=c0eHlCZsu6g"
     }
   ]
 }

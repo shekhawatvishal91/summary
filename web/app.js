@@ -557,6 +557,44 @@ function applyReadingMode() {}
 function setReaderSection() {}
 function syncReaderSectionUI() {}
 
+
+function filterReaderCategory(cat) {
+  document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+  const activePill = document.getElementById(`pill-cat-${cat}`);
+  if (activePill) activePill.classList.add('active');
+
+  const aspirantGroup = document.getElementById('cat-group-aspirant');
+  const relGroup = document.getElementById('cat-group-relationships');
+
+  if (cat === 'all') {
+    if (aspirantGroup) aspirantGroup.style.display = 'block';
+    if (relGroup) relGroup.style.display = 'block';
+  } else if (cat === 'aspirant') {
+    if (aspirantGroup) aspirantGroup.style.display = 'block';
+    if (relGroup) relGroup.style.display = 'none';
+  } else if (cat === 'relationships') {
+    if (aspirantGroup) aspirantGroup.style.display = 'none';
+    if (relGroup) relGroup.style.display = 'block';
+  }
+}
+
+function handleReaderSearch(query) {
+  const q = (query || '').toLowerCase().trim();
+  const cards = document.querySelectorAll('.source-card-compact');
+  cards.forEach(card => {
+    const title = card.querySelector('.source-card-title')?.textContent.toLowerCase() || '';
+    const channel = card.querySelector('.source-card-channel')?.textContent.toLowerCase() || '';
+    const matches = !q || title.includes(q) || channel.includes(q);
+    card.style.display = matches ? 'flex' : 'none';
+  });
+
+  // Check if groups have any visible cards
+  document.querySelectorAll('.reader-category-group').forEach(group => {
+    const visibleCards = group.querySelectorAll('.source-card-compact:not([style*="display: none"])');
+    group.style.display = visibleCards.length > 0 ? 'block' : 'none';
+  });
+}
+
 function viewCodex(sourceId) {
   if (sourceId === 'MASTER-ASPIRANT-DECISION') {
     currentActiveCodexId = sourceId;
@@ -794,6 +832,8 @@ if (typeof window !== 'undefined') {
   window.setReaderSection = setReaderSection;
   window.syncReaderSectionUI = syncReaderSectionUI;
   window.viewCodex = viewCodex;
+  window.filterReaderCategory = filterReaderCategory;
+  window.handleReaderSearch = handleReaderSearch;
   window.switchTab = switchTab;
   window.navigateHome = navigateHome;
 }

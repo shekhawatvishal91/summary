@@ -208,49 +208,107 @@
         </div>
       </div>
 
-      <!-- Individual Source Codices Selector (Categorized by Topic) -->
+      <!-- Individual Source Codices Selector (Categorized & Scalable) -->
       <div id="reader-subnav-individual" class="reader-subnav">
-        <div class="individual-category-group">
-          <div class="category-group-header">
-            <span class="category-icon">🎓</span>
-            <span class="category-name">Competitive Exam Aspirant Psychology</span>
-            <span class="category-count">2 Individual Sources</span>
-          </div>
-          <div class="subnav-buttons">
-            <button id="btn-switch-SRC-YT-2026-002" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-002')">
-              📖 Aspirant Psychology &amp; Self-Determination <span class="btn-time">51m</span>
-            </button>
-            <button id="btn-switch-SRC-YT-2026-001" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-001')">
-              📖 Sunk Cost Fallacy in Preparation <span class="btn-time">9m</span>
-            </button>
+        <!-- Scalable Category & Quick-Filter Bar -->
+        <div class="reader-category-bar">
+          <button class="cat-pill active" id="pill-cat-all" onclick="filterReaderCategory('all')">All Codices (8)</button>
+          <button class="cat-pill" id="pill-cat-aspirant" onclick="filterReaderCategory('aspirant')">🎓 Exam Preparation (2)</button>
+          <button class="cat-pill" id="pill-cat-relationships" onclick="filterReaderCategory('relationships')">💕 Relationship Dynamics (6)</button>
+          <div class="reader-quick-search">
+            <input type="text" id="reader-search-input" class="reader-search-box" placeholder="🔍 Quick search titles or channels..." oninput="handleReaderSearch(this.value)">
           </div>
         </div>
 
-        <div class="individual-category-group" style="margin-top:0.85rem;">
-          <div class="category-group-header">
-            <span class="category-icon">💕</span>
-            <span class="category-name">Relationship Dynamics &amp; Emotional Autonomy</span>
-            <span class="category-count">6 Individual Sources</span>
+        <!-- Category Group 1: Exam Preparation -->
+        <div class="reader-category-group" id="cat-group-aspirant">
+          <div class="reader-category-header">
+            <span class="category-icon">🎓</span>
+            <span class="category-name">Competitive Exam Aspirant Psychology &amp; Decision Architecture</span>
+            <span class="reader-category-count">2 Sources</span>
           </div>
-          <div class="subnav-buttons">
-            <button id="btn-switch-SRC-YT-2026-003" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-003')">
-              📖 10 Relationship Habits That Push A Partner Away <span class="btn-time">49s</span>
-            </button>
-            <button id="btn-switch-SRC-YT-2026-004" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-004')">
-              ⚡ Emotional Remote Control &amp; Carl Jung Triggers <span class="btn-time">2m</span>
-            </button>
-            <button id="btn-switch-SRC-YT-2026-005" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-005')">
-              💔 Love-Cruelty Cycle &amp; Narcissistic Hoovering <span class="btn-time">2m</span>
-            </button>
-            <button id="btn-switch-SRC-YT-2026-006" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-006')">
-              🔥 7 Steps to Make Her Miss You &amp; Autonomous Desire <span class="btn-time">6m</span>
-            </button>
-            <button id="btn-switch-SRC-YT-2026-007" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-007')">
-              ⚠️ 4 Warning Signs You're Dating a Narcissist <span class="btn-time">5m</span>
-            </button>
-            <button id="btn-switch-SRC-YT-2026-008" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-008')">
-              🎮 8 Signs She Is Playing Mind Games <span class="btn-time">6m</span>
-            </button>
+          <div class="source-cards-grid">
+            <div id="btn-switch-SRC-YT-2026-002" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-002')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">📖</span>
+                <span class="source-card-duration">51m</span>
+              </div>
+              <div class="source-card-title">Competitive Exam Aspirant Psychology &amp; Self-Determination</div>
+              <div class="source-card-channel"><em>ABrainoConscious</em></div>
+            </div>
+
+            <div id="btn-switch-SRC-YT-2026-001" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-001')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">📖</span>
+                <span class="source-card-duration">9m</span>
+              </div>
+              <div class="source-card-title">Sunk Cost Fallacy in Competitive Exam Preparation</div>
+              <div class="source-card-channel"><em>ABrainOConscious</em></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Group 2: Relationship Dynamics -->
+        <div class="reader-category-group" id="cat-group-relationships" style="margin-top:1.25rem;">
+          <div class="reader-category-header">
+            <span class="category-icon">💕</span>
+            <span class="category-name">Relationship Dynamics, Emotional Autonomy &amp; Attachment</span>
+            <span class="reader-category-count">6 Sources</span>
+          </div>
+          <div class="source-cards-grid">
+            <div id="btn-switch-SRC-YT-2026-003" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-003')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">📖</span>
+                <span class="source-card-duration">49s</span>
+              </div>
+              <div class="source-card-title">10 Relationship Habits That Push A Partner Away</div>
+              <div class="source-card-channel"><em>The Cool Therapist</em></div>
+            </div>
+
+            <div id="btn-switch-SRC-YT-2026-004" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-004')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">⚡</span>
+                <span class="source-card-duration">2m</span>
+              </div>
+              <div class="source-card-title">Emotional Remote Control &amp; Carl Jung Triggers</div>
+              <div class="source-card-channel"><em>The Cool Therapist</em></div>
+            </div>
+
+            <div id="btn-switch-SRC-YT-2026-005" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-005')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">💔</span>
+                <span class="source-card-duration">2m</span>
+              </div>
+              <div class="source-card-title">Love-Cruelty Cycle &amp; Narcissistic Hoovering</div>
+              <div class="source-card-channel"><em>The Cool Therapist</em></div>
+            </div>
+
+            <div id="btn-switch-SRC-YT-2026-006" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-006')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">🔥</span>
+                <span class="source-card-duration">6m</span>
+              </div>
+              <div class="source-card-title">7 Steps to Make Her Miss You &amp; Autonomous Desire</div>
+              <div class="source-card-channel"><em>The Cool Therapist</em></div>
+            </div>
+
+            <div id="btn-switch-SRC-YT-2026-007" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-007')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">⚠️</span>
+                <span class="source-card-duration">5m</span>
+              </div>
+              <div class="source-card-title">4 Warning Signs You're Dating a Narcissist</div>
+              <div class="source-card-channel"><em>The Cool Therapist</em></div>
+            </div>
+
+            <div id="btn-switch-SRC-YT-2026-008" class="source-card-compact switcher-btn" onclick="viewCodex('SRC-YT-2026-008')">
+              <div class="source-card-meta-top">
+                <span class="source-card-icon">🎮</span>
+                <span class="source-card-duration">6m</span>
+              </div>
+              <div class="source-card-title">8 Signs a Girl is Playing Mind Games &amp; How to Stop</div>
+              <div class="source-card-channel"><em>The Cool Therapist</em></div>
+            </div>
           </div>
         </div>
       </div>

@@ -192,54 +192,90 @@
 
     <!-- VIEW 3: MASTER NOTES READER -->
     <section id="codex-reader" class="view-section">
-      <div class="reader-toolbar">
-        <button onclick="switchTab('dashboard-view')" class="switcher-btn">
-          &larr; Back to Library
-        </button>
-        <div class="note-switcher">
-          <!-- Category Unified Syntheses -->
-          <div style="display:inline-flex; align-items:center; gap:0.4rem; padding-right:0.6rem; border-right:1px solid var(--border-color);">
-            <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-secondary); font-weight:700;">Topic Syntheses:</span>
-            <button id="btn-switch-MASTER-ASPIRANT-DECISION" class="switcher-btn active" style="font-weight:600; border-color:#1f883d;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
-              ✨ Aspirant Psychology &amp; Decision Matrix
-            </button>
-            <button id="btn-switch-MASTER-RELATIONSHIP-DYNAMICS" class="switcher-btn" style="font-weight:600; border-color:#bf3989;" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
-              💕 Emotional Independence &amp; Relationships
-            </button>
+      <!-- Reader Mode Top Header Bar -->
+      <div class="reader-mode-header">
+        <div class="reader-mode-tabs" role="tablist">
+          <button id="reader-tab-unified" class="reader-mode-tab active" onclick="setReaderSection('unified')" role="tab" aria-selected="true">
+            <span class="tab-icon">📚</span>
+            <span class="tab-title">Unified Master Treatises</span>
+            <span class="tab-count">2 Treatises</span>
+          </button>
+          <button id="reader-tab-individual" class="reader-mode-tab" onclick="setReaderSection('individual')" role="tab" aria-selected="false">
+            <span class="tab-icon">📑</span>
+            <span class="tab-title">Individual Source Notes</span>
+            <span class="tab-count">8 Codices</span>
+          </button>
+        </div>
+
+        <div class="reader-actions">
+          <button onclick="switchTab('dashboard-view')" class="btn-back-library">
+            &larr; Back to Master Library
+          </button>
+          <!-- Reading Mode Toggle (Essay vs Field Guide) -->
+          <div class="reading-mode-toggle">
+            <button id="btn-mode-field" class="mode-btn active" onclick="setReadingMode('field')">🛠️ Field Guide</button>
+            <button id="btn-mode-essay" class="mode-btn" onclick="setReadingMode('essay')">📖 Continuous Prose</button>
           </div>
-          <!-- Individual Source Notes -->
-          <div style="display:inline-flex; align-items:center; gap:0.4rem; padding-left:0.2rem;">
-            <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-secondary); font-weight:700;">Individual Sources:</span>
-            <button id="btn-switch-SRC-YT-2026-008" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-008')">
-              🎮 8 Mind Games (6m)
+        </div>
+      </div>
+
+      <!-- Subnav 1: Unified Master Treatises Selector -->
+      <div id="reader-subnav-unified" class="reader-subnav">
+        <div class="subnav-label">Select Unified Topic Treatise to Read:</div>
+        <div class="subnav-buttons">
+          <button id="btn-switch-MASTER-ASPIRANT-DECISION" class="switcher-btn active unified-btn" style="border-left:3px solid #1f883d;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
+            📖 Mega-Book: Aspirant Psychology &amp; Decision Architecture <span class="btn-time">2 Sources Unified &bull; 5 Ch.</span>
+          </button>
+          <button id="btn-switch-MASTER-RELATIONSHIP-DYNAMICS" class="switcher-btn unified-btn" style="border-left:3px solid #bf3989;" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
+            💕 Master Treatise: Love Without Losing Yourself <span class="btn-time">6 Sources Unified &bull; 25 Dynamics</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Subnav 2: Individual Source Codices Selector (Categorized & Separated) -->
+      <div id="reader-subnav-individual" class="reader-subnav" style="display:none;">
+        <div class="individual-category-group">
+          <div class="category-group-header">
+            <span class="category-icon">🎓</span>
+            <span class="category-name">Competitive Exam Aspirant Psychology</span>
+            <span class="category-count">2 Individual Sources</span>
+          </div>
+          <div class="subnav-buttons">
+            <button id="btn-switch-SRC-YT-2026-002" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-002')">
+              📖 Aspirant Psychology &amp; Self-Determination <span class="btn-time">51m</span>
             </button>
-            <button id="btn-switch-SRC-YT-2026-007" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-007')">
-              ⚠️ 4 Signs of a Narcissist (5m)
-            </button>
-            <button id="btn-switch-SRC-YT-2026-006" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-006')">
-              🔥 7 Laws of Attraction (6m)
-            </button>
-            <button id="btn-switch-SRC-YT-2026-005" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-005')">
-              💔 Love-Cruelty Cycle (2m)
-            </button>
-            <button id="btn-switch-SRC-YT-2026-004" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-004')">
-              ⚡ Emotional Remote Control (2m)
-            </button>
-            <button id="btn-switch-SRC-YT-2026-003" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-003')">
-              📖 10 Relationship Habits (49s)
-            </button>
-            <button id="btn-switch-SRC-YT-2026-002" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-002')">
-              📖 Aspirant Psychology (51m)
-            </button>
-            <button id="btn-switch-SRC-YT-2026-001" class="switcher-btn" onclick="viewCodex('SRC-YT-2026-001')">
-              📖 Sunk Cost Trap (9m)
+            <button id="btn-switch-SRC-YT-2026-001" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-001')">
+              📖 Sunk Cost Fallacy in Preparation <span class="btn-time">9m</span>
             </button>
           </div>
         </div>
-        <!-- Reading Mode Toggle (Essay vs Field Guide) -->
-        <div class="reading-mode-toggle">
-          <button id="btn-mode-field" class="mode-btn active" onclick="setReadingMode('field')">🛠️ Field Guide (Practical)</button>
-          <button id="btn-mode-essay" class="mode-btn" onclick="setReadingMode('essay')">📖 Diagnostic Essay</button>
+
+        <div class="individual-category-group" style="margin-top:0.85rem;">
+          <div class="category-group-header">
+            <span class="category-icon">💕</span>
+            <span class="category-name">Relationship Dynamics &amp; Emotional Autonomy</span>
+            <span class="category-count">6 Individual Sources</span>
+          </div>
+          <div class="subnav-buttons">
+            <button id="btn-switch-SRC-YT-2026-003" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-003')">
+              📖 10 Relationship Habits That Push A Partner Away <span class="btn-time">49s</span>
+            </button>
+            <button id="btn-switch-SRC-YT-2026-004" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-004')">
+              ⚡ Emotional Remote Control &amp; Carl Jung Triggers <span class="btn-time">2m</span>
+            </button>
+            <button id="btn-switch-SRC-YT-2026-005" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-005')">
+              💔 Love-Cruelty Cycle &amp; Narcissistic Hoovering <span class="btn-time">2m</span>
+            </button>
+            <button id="btn-switch-SRC-YT-2026-006" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-006')">
+              🔥 7 Steps to Make Her Miss You &amp; Autonomous Desire <span class="btn-time">6m</span>
+            </button>
+            <button id="btn-switch-SRC-YT-2026-007" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-007')">
+              ⚠️ 4 Warning Signs You're Dating a Narcissist <span class="btn-time">5m</span>
+            </button>
+            <button id="btn-switch-SRC-YT-2026-008" class="switcher-btn individual-btn" onclick="viewCodex('SRC-YT-2026-008')">
+              🎮 8 Signs She Is Playing Mind Games <span class="btn-time">6m</span>
+            </button>
+          </div>
         </div>
       </div>
       <div class="codex-header-card" style="margin-bottom:1.5rem; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; box-shadow:var(--shadow-subtle);">

@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-121-001",
+  "node_type": "claim",
+  "statement": "Relational mind games are defined as the intentional and repetitive manipulation of a partner's emotions, attention, and uncertainty to achieve control, power, and validation.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-008",
+      "locator_type": "paragraph",
+      "locator": "Cue 8 (00:00:16.758 --> 00:00:20.892)",
+      "verbatim_quote": "uses your emotions, your attention, and"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-121"
+  ],
+  "created_at": "2026-10-12T01:37:30.290Z"
+}

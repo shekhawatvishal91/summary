@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-117",
+  "node_type": "concept",
+  "canonical_name": "Asymmetric Initiation Pattern",
+  "aliases": [
+    "Never Texting First",
+    "Unilateral Initiation",
+    "Passive Chasing Trap"
+  ],
+  "domain": "Interpersonal Psychology & Communication Dynamics",
+  "definition": "A relational pattern wherein one partner deliberately refrains from ever initiating text messages, phone calls, or date plans, forcing the other partner to sustain all relational momentum.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-117-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-008"
+  ],
+  "created_at": "2026-10-12T01:37:30.286Z",
+  "updated_at": "2026-10-12T01:37:30.286Z"
+}

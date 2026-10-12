@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-125-001",
+  "node_type": "claim",
+  "statement": "The scarcity game involves flaunting alternative options and ex-partners to trigger abandonment panic, forcing the victim to focus all their energy on keeping the relationship.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-008",
+      "locator_type": "paragraph",
+      "locator": "Cue 82 (00:03:33.134 --> 00:03:36.264)",
+      "verbatim_quote": "called the scarcity game."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-125"
+  ],
+  "created_at": "2026-10-12T01:37:30.298Z"
+}

@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-121-004",
+  "node_type": "claim",
+  "statement": "Negging consists of backhanded compliments and subtle insults engineered to erode the partner's self-confidence and manufacture artificial superiority in the relationship.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-008",
+      "locator_type": "paragraph",
+      "locator": "Cue 66 (00:02:52.055 --> 00:02:55.520)",
+      "verbatim_quote": "you backhanded compliments."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-121"
+  ],
+  "created_at": "2026-10-12T01:37:30.295Z"
+}

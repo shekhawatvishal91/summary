@@ -60,6 +60,17 @@ function msToVttTimestamp(ms) {
 }
 
 /**
+ * Converts MM:SS or HH:MM:SS timestamp strings into milliseconds
+ */
+function parseTimeStrToMs(timeStr) {
+  if (!timeStr) return 0;
+  const parts = timeStr.trim().split(':').map(Number);
+  if (parts.length === 2) return (parts[0] * 60 + parts[1]) * 1000;
+  if (parts.length === 3) return (parts[0] * 3600 + parts[1] * 60 + parts[2]) * 1000;
+  return 0;
+}
+
+/**
  * Validates cue array fidelity and completeness
  */
 function validateCueFidelity(cues, videoDurationSec = null) {
@@ -277,6 +288,8 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
       let channelName = null;
       let videoDuration = 0;
       let languageCaptured = 'en';
+      let activatorTicks = 0;
+      let lastSeenDomCues = null;
 
       clientWs.onopen = () => {
         clientWs.send(JSON.stringify({ id: 1, method: 'Network.enable' }));
@@ -368,6 +381,26 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
                       capBtn.click();
                     }
 
+                    // 3b. "Show transcript" button in action bar / description
+                    const showTransBtn = btns.find(b => b.innerText.includes('Show transcript') || (b.getAttribute('aria-label') && b.getAttribute('aria-label').includes('Show transcript')));
+                    if (showTransBtn) {
+                      showTransBtn.click();
+                    }
+
+                    // 3c. Extract DOM transcript segments if rendered
+                    const domSegments = Array.from(document.querySelectorAll('ytd-transcript-segment-renderer'));
+                    let domCues = null;
+                    if (domSegments.length > 0) {
+                      domCues = domSegments.map(s => {
+                        const tsEl = s.querySelector('.segment-timestamp, [class*="timestamp"]');
+                        const textEl = s.querySelector('.segment-text, [class*="text"]');
+                        return {
+                          timeStr: tsEl ? tsEl.innerText.trim() : '0:00',
+                          text: textEl ? textEl.innerText.trim() : s.innerText.trim()
+                        };
+                      }).filter(c => c.text);
+                    }
+
                     // 4. Player metadata
                     const p = document.getElementById("movie_player");
                     let title = document.title.replace(/ - YouTube$/, "").trim();
@@ -383,7 +416,7 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
                       if (p.loadModule) p.loadModule("captions");
                       if (p.playVideo) p.playVideo();
                     }
-                    return { title, author, duration };
+                    return { title, author, duration, domCues };
                   })()`,
                   returnByValue: true
                 }
@@ -393,10 +426,33 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
 
           if (msg.id === 2 && msg.result && msg.result.result) {
             const info = msg.result.result.value;
+            activatorTicks++;
             if (info) {
               if (info.title && info.title !== 'YouTube') videoTitle = info.title;
               if (info.author && info.author !== 'YouTube Creator') channelName = info.author;
               if (info.duration) videoDuration = info.duration;
+              if (info.domCues && info.domCues.length > 0) {
+                lastSeenDomCues = info.domCues;
+              }
+            }
+
+            // Fallback: If no network timedtext arrives after 5 ticks (approx 7.5 seconds) and we have DOM cues, resolve immediately
+            if (!targetTimedtextRequestId && activatorTicks >= 5 && lastSeenDomCues && lastSeenDomCues.length > 0) {
+              if (activatorInterval) clearInterval(activatorInterval);
+              clearTimeout(timeout);
+              const convertedCues = lastSeenDomCues.map((c, i) => {
+                const startMs = parseTimeStrToMs(c.timeStr);
+                const nextStart = lastSeenDomCues[i + 1] ? parseTimeStrToMs(lastSeenDomCues[i + 1].timeStr) : startMs + 2000;
+                const durMs = Math.max(1000, nextStart - startMs);
+                return { startMs, durMs, text: c.text };
+              });
+              return resolve({
+                cues: convertedCues,
+                title: videoTitle,
+                author: channelName,
+                duration: videoDuration || (convertedCues[convertedCues.length - 1].startMs / 1000),
+                language: 'auto'
+              });
             }
           }
         } catch (err) {
@@ -407,9 +463,11 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
       clientWs.onerror = reject;
     });
 
-    // Parse JSON3 into normalized cues
+    // Parse cues
     const cues = [];
-    if (rawResult.json3 && rawResult.json3.events) {
+    if (rawResult.cues && rawResult.cues.length > 0) {
+      cues.push(...rawResult.cues);
+    } else if (rawResult.json3 && rawResult.json3.events) {
       for (const ev of rawResult.json3.events) {
         if (!ev.segs) continue;
         const text = ev.segs.map(s => s.utf8).join('').trim();
@@ -423,6 +481,14 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
       }
     }
 
+    const payload = rawResult.json3 || {
+      events: cues.map(c => ({
+        tStartMs: c.startMs,
+        dDurationMs: c.durMs,
+        segs: [{ utf8: c.text }]
+      }))
+    };
+
     return {
       success: true,
       method: 'BROWSER_CDP_PLAYER_INTERCEPT',
@@ -432,7 +498,7 @@ async function captureMethodC_ChromeCdp(videoId, options = {}) {
       duration: rawResult.duration,
       language: rawResult.language,
       cues,
-      rawPayload: rawResult.json3
+      rawPayload: payload
     };
   } catch (err) {
     return {
@@ -549,6 +615,7 @@ module.exports = {
   extractVideoId,
   computeSHA256,
   msToVttTimestamp,
+  parseTimeStrToMs,
   validateCueFidelity,
   buildVttContent,
   buildNormalizedText,

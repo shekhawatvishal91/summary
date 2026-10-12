@@ -1,0 +1,24 @@
+{
+  "node_id": "CON-121",
+  "node_type": "concept",
+  "canonical_name": "Negging Dynamics",
+  "aliases": [
+    "Backhanded Compliments",
+    "Erosion of Self-Worth",
+    "Status Degradation Game"
+  ],
+  "domain": "Interpersonal Psychology & Manipulation",
+  "definition": "A manipulative tactic involving backhanded compliments and deliberate status-undermining remarks designed to erode a partner's self-esteem and create an artificial power imbalance.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-121-001",
+    "CLM-CON-121-002",
+    "CLM-CON-121-003",
+    "CLM-CON-121-004"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-008"
+  ],
+  "created_at": "2026-10-12T01:37:30.289Z",
+  "updated_at": "2026-10-12T01:37:30.289Z"
+}

@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-129-001",
+  "node_type": "claim",
+  "statement": "Prolonged silent treatment used as a weapon to punish a partner without mutual willingness to resolve conflict constitutes emotional abuse rather than healthy space.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-008",
+      "locator_type": "paragraph",
+      "locator": "Cue 103 (00:04:21.701 --> 00:04:24.609)",
+      "verbatim_quote": "abuse. Yes, you heard me right. It is"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-129"
+  ],
+  "created_at": "2026-10-12T01:37:30.301Z"
+}

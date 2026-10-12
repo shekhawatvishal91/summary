@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-11T16:03:15.170Z",
+  "built_at": "2026-10-12T01:40:42.695Z",
   "metrics": {
-    "total_sources": 9,
-    "total_concepts": 31,
-    "total_claims": 50,
-    "total_edges": 10,
+    "total_sources": 10,
+    "total_concepts": 36,
+    "total_claims": 58,
+    "total_edges": 14,
     "total_docs": 18
   },
   "sources": [
@@ -184,6 +184,26 @@
       "source_role": "real_user_source",
       "created_at": "2026-10-11T15:44:51.543Z",
       "updated_at": "2026-10-11T15:47:14.345Z"
+    },
+    {
+      "source_id": "SRC-YT-2026-008",
+      "video_id": "c0eHlCZsu6g",
+      "title": "8 Signs a Girl is Playing Mind Games and How to Stop Them 🤬👍",
+      "author": "The Cool Therapist",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "16c81e5295ec37f27c7c77a9cbf830f54e1a1fe0974b3e6583c023a82fc920ef",
+      "raw_path": "sources/raw/SRC-YT-2026-008_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-008.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-008/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-12T01:34:14.751Z",
+      "updated_at": "2026-10-12T01:37:30.323Z"
     }
   ],
   "concepts": [
@@ -850,6 +870,114 @@
       ],
       "created_at": "2026-10-11T15:47:14.341Z",
       "updated_at": "2026-10-11T15:47:14.341Z"
+    },
+    {
+      "node_id": "CON-117",
+      "node_type": "concept",
+      "canonical_name": "Asymmetric Initiation Pattern",
+      "aliases": [
+        "Never Texting First",
+        "Unilateral Initiation",
+        "Passive Chasing Trap"
+      ],
+      "domain": "Interpersonal Psychology & Communication Dynamics",
+      "definition": "A relational pattern wherein one partner deliberately refrains from ever initiating text messages, phone calls, or date plans, forcing the other partner to sustain all relational momentum.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-117-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-008"
+      ],
+      "created_at": "2026-10-12T01:37:30.286Z",
+      "updated_at": "2026-10-12T01:37:30.286Z"
+    },
+    {
+      "node_id": "CON-121",
+      "node_type": "concept",
+      "canonical_name": "Negging Dynamics",
+      "aliases": [
+        "Backhanded Compliments",
+        "Erosion of Self-Worth",
+        "Status Degradation Game"
+      ],
+      "domain": "Interpersonal Psychology & Manipulation",
+      "definition": "A manipulative tactic involving backhanded compliments and deliberate status-undermining remarks designed to erode a partner's self-esteem and create an artificial power imbalance.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-121-001",
+        "CLM-CON-121-002",
+        "CLM-CON-121-003",
+        "CLM-CON-121-004"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-008"
+      ],
+      "created_at": "2026-10-12T01:37:30.289Z",
+      "updated_at": "2026-10-12T01:37:30.289Z"
+    },
+    {
+      "node_id": "CON-125",
+      "node_type": "concept",
+      "canonical_name": "Relational Scarcity Tactics",
+      "aliases": [
+        "Scarcity Game",
+        "Triangulation Threat",
+        "Replacement Panic"
+      ],
+      "domain": "Behavioral Game Theory & Relationship Psychology",
+      "definition": "The deliberate manufacturing of perceived competition—such as boasting of external options or past exes—to induce fear of replacement and provoke unilateral over-investment.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-125-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-008"
+      ],
+      "created_at": "2026-10-12T01:37:30.298Z",
+      "updated_at": "2026-10-12T01:37:30.298Z"
+    },
+    {
+      "node_id": "CON-129",
+      "node_type": "concept",
+      "canonical_name": "Prolonged Silent Treatment",
+      "aliases": [
+        "Weaponized Stonewalling",
+        "Punitive Silence",
+        "Stonewalling Abuse"
+      ],
+      "domain": "Relational Abuse & Communication Pathology",
+      "definition": "The weaponized withdrawal of verbal contact and refusal to engage in conflict resolution, serving as emotional punishment and control rather than a constructive cooling-off period.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-129-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-008"
+      ],
+      "created_at": "2026-10-12T01:37:30.301Z",
+      "updated_at": "2026-10-12T01:37:30.301Z"
+    },
+    {
+      "node_id": "CON-133",
+      "node_type": "concept",
+      "canonical_name": "Manufactured Jealousy",
+      "aliases": [
+        "Jealousy Testing",
+        "Triangulation Bait",
+        "Manufactured Envy"
+      ],
+      "domain": "Relational Manipulation & Attachment Distress",
+      "definition": "The intentional elicitation of jealousy through overt disclosures of outside romantic interest to test a partner's emotional compliance, dependency, and distress.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-133-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-008"
+      ],
+      "created_at": "2026-10-12T01:37:30.305Z",
+      "updated_at": "2026-10-12T01:37:30.305Z"
     }
   ],
   "claims": [
@@ -1802,6 +1930,158 @@
         "CON-113"
       ],
       "created_at": "2026-10-11T15:47:14.341Z"
+    },
+    {
+      "node_id": "CLM-CON-117-001",
+      "node_type": "claim",
+      "statement": "Asymmetric initiation—where one partner never texts, calls, or initiates plans first—creates an exhausting dynamic where the pursuer continuously chases validation.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 15 (00:00:44.391 --> 00:00:48.136)",
+          "verbatim_quote": "sign is they never text you first."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-117"
+      ],
+      "created_at": "2026-10-12T01:37:30.287Z"
+    },
+    {
+      "node_id": "CLM-CON-121-001",
+      "node_type": "claim",
+      "statement": "Relational mind games are defined as the intentional and repetitive manipulation of a partner's emotions, attention, and uncertainty to achieve control, power, and validation.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 8 (00:00:16.758 --> 00:00:20.892)",
+          "verbatim_quote": "uses your emotions, your attention, and"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-121"
+      ],
+      "created_at": "2026-10-12T01:37:30.290Z"
+    },
+    {
+      "node_id": "CLM-CON-121-002",
+      "node_type": "claim",
+      "statement": "In a healthy relationship, an individual should never have to exhaust themselves every single day attempting to prove their worth to earn basic care and affection.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 35 (00:00:39.271 --> 00:00:42.957)",
+          "verbatim_quote": "that every single day you need to prove"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-121"
+      ],
+      "created_at": "2026-10-12T01:37:30.291Z"
+    },
+    {
+      "node_id": "CLM-CON-121-003",
+      "node_type": "claim",
+      "statement": "Calculated nonchalance and feigned indifference are deliberate strategies used to heighten a partner's desperation, urgency, and frantic pursuit.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 46 (00:02:04.433 --> 00:02:07.226)",
+          "verbatim_quote": "pretend not to care, this nonchalant"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-121"
+      ],
+      "created_at": "2026-10-12T01:37:30.292Z"
+    },
+    {
+      "node_id": "CLM-CON-121-004",
+      "node_type": "claim",
+      "statement": "Negging consists of backhanded compliments and subtle insults engineered to erode the partner's self-confidence and manufacture artificial superiority in the relationship.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 66 (00:02:52.055 --> 00:02:55.520)",
+          "verbatim_quote": "you backhanded compliments."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-121"
+      ],
+      "created_at": "2026-10-12T01:37:30.295Z"
+    },
+    {
+      "node_id": "CLM-CON-125-001",
+      "node_type": "claim",
+      "statement": "The scarcity game involves flaunting alternative options and ex-partners to trigger abandonment panic, forcing the victim to focus all their energy on keeping the relationship.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 82 (00:03:33.134 --> 00:03:36.264)",
+          "verbatim_quote": "called the scarcity game."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-125"
+      ],
+      "created_at": "2026-10-12T01:37:30.298Z"
+    },
+    {
+      "node_id": "CLM-CON-129-001",
+      "node_type": "claim",
+      "statement": "Prolonged silent treatment used as a weapon to punish a partner without mutual willingness to resolve conflict constitutes emotional abuse rather than healthy space.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 103 (00:04:21.701 --> 00:04:24.609)",
+          "verbatim_quote": "abuse. Yes, you heard me right. It is"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-129"
+      ],
+      "created_at": "2026-10-12T01:37:30.301Z"
+    },
+    {
+      "node_id": "CLM-CON-133-001",
+      "node_type": "claim",
+      "statement": "When confronted with manufactured jealousy or chronic manipulative games, one must place self-respect above everything and be prepared to calmly walk away.",
+      "claim_type": "empirical_finding",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-008",
+          "locator_type": "paragraph",
+          "locator": "Cue 137 (00:05:46.695 --> 00:05:49.593)",
+          "verbatim_quote": "walk out of it. You have to put your"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-133"
+      ],
+      "created_at": "2026-10-12T01:37:30.305Z"
     }
   ],
   "edges": [
@@ -1915,6 +2195,54 @@
       "locator": null,
       "epistemic_classification": null,
       "created_at": "2026-10-11T14:21:40.904Z"
+    },
+    {
+      "edge_id": "EDG-012",
+      "source_node_id": "CON-117",
+      "target_node_id": "CON-045",
+      "relation_type": "causes",
+      "description": "Negging and status erosion trigger the over-pursuit loop as the victim scrambles to regain approval.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-12T01:37:30.312Z"
+    },
+    {
+      "edge_id": "EDG-013",
+      "source_node_id": "CON-121",
+      "target_node_id": "CON-049",
+      "relation_type": "reinforces",
+      "description": "Relational scarcity tactics activate the anxious attachment system through perceived threat of abandonment.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-12T01:37:30.315Z"
+    },
+    {
+      "edge_id": "EDG-014",
+      "source_node_id": "CON-125",
+      "target_node_id": "CON-045",
+      "relation_type": "causes",
+      "description": "Prolonged silent treatment induces panic and frantic repair attempts in the anxious partner.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-12T01:37:30.319Z"
+    },
+    {
+      "edge_id": "EDG-015",
+      "source_node_id": "CON-129",
+      "target_node_id": "CON-121",
+      "relation_type": "correlates_with",
+      "description": "Manufactured jealousy and relational scarcity tactics are co-occurring mechanisms of manipulative control.",
+      "dispute_details": null,
+      "source_id": null,
+      "locator": null,
+      "epistemic_classification": null,
+      "created_at": "2026-10-12T01:37:30.322Z"
     }
   ],
   "documentation": [

@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-121-002",
+  "node_type": "claim",
+  "statement": "In a healthy relationship, an individual should never have to exhaust themselves every single day attempting to prove their worth to earn basic care and affection.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-008",
+      "locator_type": "paragraph",
+      "locator": "Cue 35 (00:00:39.271 --> 00:00:42.957)",
+      "verbatim_quote": "that every single day you need to prove"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-121"
+  ],
+  "created_at": "2026-10-12T01:37:30.291Z"
+}

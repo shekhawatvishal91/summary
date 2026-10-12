@@ -1,0 +1,276 @@
+{
+  "source_id": "SRC-YT-2026-008",
+  "agent_identifier": "antigravity-native-agent",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "dimensions": {
+    "dim_1_core_thesis": {
+      "premise": "Relational mind games are intentional or recurring manipulative behaviors where one partner exploits the other's emotions, attention, and uncertainty to establish power, asymmetric control, and unilateral validation within the dynamic.",
+      "paradigm_shift": "Conventional intuition often misinterprets coldness, delayed responses, and mixed signals as cute shyness, playing hard to get, or signs that a partner is simply upset and needs more pursuit. In reality, persistent asymmetric initiation, feigned nonchalance, backhanded insults (negging), artificial scarcity threats, weaponized silent treatment, and manufactured jealousy are structural power dynamics designed to erode the partner's self-esteem and induce desperate pursuit."
+    },
+    "dim_2_causal_model": {
+      "mechanism": "The Mind Game Escalation Loop: Unilateral Withdrawal / Neg / Scarcity Signal -> Induction of Uncertainty & Fear of Loss in Partner -> Accelerated Desperation & Over-Pursuit (200% effort, gifts, compliments) -> Confirmation of Asymmetric Power & Validation Extraction -> Deepened Hierarchy & Depleted Self-Respect.",
+      "ratios_in_prose": "The Over-Pursuit Effort Inversion: when an individual supplies 200% of the initiation, emotional labor, and reassurance while their partner supplies 0%, the resulting dynamic produces exhaustion and anxiety rather than relational security."
+    },
+    "dim_3_master_analogy": {
+      "analogy": "The Casino Slot Machine (Intermittent Reinforcement Trap): Mind games function precisely like a slot machine. If the player won every pull or lost every pull reliably, they would walk away. By alternating feigned indifference ('I don't even care'), scarcity threats ('my ex still texts me'), and sudden crumb rewards, the manipulator keeps the partner emotionally hooked, frantically pulling the lever of validation at increasing personal cost."
+    },
+    "dim_4_diagnostics": {
+      "classifications": [
+        {
+          "state": "Asymmetric Initiation Deficit",
+          "symptom": "Never sending the first text, calling, or planning dates; leaving 100% of the relational ignition to the partner.",
+          "etiology": "Maintaining superior status and testing how much effort the other person is willing to expend."
+        },
+        {
+          "state": "The Chronic Worth-Proving Trap",
+          "symptom": "Feeling compelled to offer daily gifts, excessive compliments, and altered behavior in an exhausting attempt to earn basic care.",
+          "etiology": "Conditioned belief that love is conditional on performance and continuous placation."
+        },
+        {
+          "state": "Calculated Nonchalance (Feigned Indifference)",
+          "symptom": "Responding to conflicts or plans with 'I don't even care, do whatever you want' to provoke anxiety and frantic bids for connection.",
+          "etiology": "Strategic emotional distancing engineered to trigger the partner's abandonment fears."
+        },
+        {
+          "state": "The Negging Dynamic",
+          "symptom": "Delivering backhanded compliments and status-undermining critiques ('You are not my type, but I still chose you') disguised as teasing.",
+          "etiology": "Deliberate chipping away of the partner's self-worth so they feel lucky to receive attention."
+        },
+        {
+          "state": "Artificial Scarcity & Triangulation",
+          "symptom": "Flaunting alternative romantic options or ex-partners ('my ex still texts me') to manufacture fear of replacement.",
+          "etiology": "Creating an artificial sense of high demand to monopolize the partner's focus and effort."
+        },
+        {
+          "state": "Weaponized Silent Treatment",
+          "symptom": "Prolonged, stonewalling silence used as punishment and emotional abuse rather than a temporary cooling-off period followed by repair.",
+          "etiology": "Exerting dominance by stripping the partner of voice, resolution, and emotional safety."
+        },
+        {
+          "state": "Manufactured Jealousy",
+          "symptom": "Openly boasting about giving numbers to strangers or being pursued by others to test the partner's emotional reactivity.",
+          "etiology": "Extracting jealous distress as proof of value and dominance."
+        }
+      ],
+      "failure_modes": [
+        "Retaliatory Mind Games: Attempting to 'counter-game' a manipulative partner by playing cold, which simply escalates toxicity and compromises integrity.",
+        "Over-Explaining and Begging: Trying to logically debate or persuade a manipulator into showing care, which feeds their validation.",
+        "Confusing Abuse with Affection: Believing that intense jealousy tests and silent treatments are evidence of passionate love rather than control."
+      ]
+    },
+    "dim_5_field_protocols": {
+      "algorithm": [
+        "1. Identify the Pattern: Differentiate a temporary bad mood from repeated, structural mind games over time.",
+        "2. Break the Desperation Loop: Cease reactive chasing, excessive texting, and panic-driven reassurance seeking when faced with coldness.",
+        "3. Enforce Equal Initiation: Step back from unilateral initiation; allow the other person space to reach out, miss you, and plan dates.",
+        "4. Neutralize Negging Instantly: Do not accept backhanded compliments; maintain unwavering certainty in your intrinsic worth.",
+        "5. Refuse Triangulation & Manufactured Jealousy: Respond with calm neutrality ('If you feel they are a better match, you should pursue them') and walk away.",
+        "6. Establish Self-Respect as Non-Negotiable: Never trade personal dignity to keep someone in your life."
+      ],
+      "verbatim_scripts": [
+        {
+          "label": "Definition of Mind Games",
+          "locator": "Cue 8 (00:00:16.758 --> 00:00:20.892)",
+          "verbatim_text": "uses your emotions, your attention, and"
+        },
+        {
+          "label": "The Asymmetric Initiation Pattern",
+          "locator": "Cue 15 (00:00:44.391 --> 00:00:48.136)",
+          "verbatim_text": "sign is they never text you first."
+        },
+        {
+          "label": "The Exhausting Worth-Proving Trap",
+          "locator": "Cue 35 (00:00:39.271 --> 00:00:42.957)",
+          "verbatim_text": "that every single day you need to prove"
+        },
+        {
+          "label": "Calculated Nonchalance Mechanism",
+          "locator": "Cue 46 (00:02:04.433 --> 00:02:07.226)",
+          "verbatim_text": "they pretend not to care, this nonchalant"
+        },
+        {
+          "label": "The Negging Dynamic",
+          "locator": "Cue 66 (00:02:52.055 --> 00:02:55.520)",
+          "verbatim_text": "gives you backhanded compliments."
+        },
+        {
+          "label": "The Scarcity Game Mechanism",
+          "locator": "Cue 82 (00:03:33.134 --> 00:03:36.264)",
+          "verbatim_text": "called the scarcity game."
+        },
+        {
+          "label": "The Silent Treatment as Emotional Abuse",
+          "locator": "Cue 103 (00:04:21.701 --> 00:04:24.609)",
+          "verbatim_text": "abuse. Yes, you heard me right. It is"
+        },
+        {
+          "label": "The Walk-Away Standard",
+          "locator": "Cue 137 (00:05:46.695 --> 00:05:49.593)",
+          "verbatim_text": "walk out of it. You have to put your"
+        }
+      ],
+      "verbatim_fragments": [],
+      "ai_generated_practical_applications": [
+        "The Initiation Audit: Count who initiates communication over a 7-day span. If initiation is 100% unilateral, pause initiation to test for organic reciprocity.",
+        "The Calm Non-Reactivity Stance: When confronted with manufactured jealousy or scarcity claims, do not display frantic anxiety. Offer calm release without competition.",
+        "The Exit Boundary: If silent treatment or negging persists as a chronic dynamic, prioritize self-respect and walk away cleanly."
+      ]
+    },
+    "dim_6_skeptic_box": {
+      "pop_culture_distortion": "Dating culture often normalizes games like 'the 3-day rule', playing aloof, or making partners jealous as exciting romantic courtship or harmless playful tension.",
+      "clinical_empirical_reality": "In interpersonal psychology, sustained manipulation of attention and uncertainty triggers attachment distress, somatic anxiety, and trauma bonding. Healthy attachment thrives on predictability, mutual initiation, and direct communication. When mind games become chronic, they transition from awkward dating behavior into emotional abuse."
+    }
+  },
+  "extracted_claims": [
+    {
+      "statement": "Relational mind games are defined as the intentional and repetitive manipulation of a partner's emotions, attention, and uncertainty to achieve control, power, and validation.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "uses your emotions, your attention, and",
+      "locator": "Cue 8 (00:00:16.758 --> 00:00:20.892)",
+      "associated_concepts": [
+        "Negging Dynamics"
+      ]
+    },
+    {
+      "statement": "Asymmetric initiation—where one partner never texts, calls, or initiates plans first—creates an exhausting dynamic where the pursuer continuously chases validation.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "sign is they never text you first.",
+      "locator": "Cue 15 (00:00:44.391 --> 00:00:48.136)",
+      "associated_concepts": [
+        "Asymmetric Initiation Pattern"
+      ]
+    },
+    {
+      "statement": "In a healthy relationship, an individual should never have to exhaust themselves every single day attempting to prove their worth to earn basic care and affection.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "that every single day you need to prove",
+      "locator": "Cue 35 (00:00:39.271 --> 00:00:42.957)",
+      "associated_concepts": [
+        "Negging Dynamics"
+      ]
+    },
+    {
+      "statement": "Calculated nonchalance and feigned indifference are deliberate strategies used to heighten a partner's desperation, urgency, and frantic pursuit.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "pretend not to care, this nonchalant",
+      "locator": "Cue 46 (00:02:04.433 --> 00:02:07.226)",
+      "associated_concepts": [
+        "Negging Dynamics"
+      ]
+    },
+    {
+      "statement": "Negging consists of backhanded compliments and subtle insults engineered to erode the partner's self-confidence and manufacture artificial superiority in the relationship.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "you backhanded compliments.",
+      "locator": "Cue 66 (00:02:52.055 --> 00:02:55.520)",
+      "associated_concepts": [
+        "Negging Dynamics"
+      ]
+    },
+    {
+      "statement": "The scarcity game involves flaunting alternative options and ex-partners to trigger abandonment panic, forcing the victim to focus all their energy on keeping the relationship.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "called the scarcity game.",
+      "locator": "Cue 82 (00:03:33.134 --> 00:03:36.264)",
+      "associated_concepts": [
+        "Relational Scarcity Tactics"
+      ]
+    },
+    {
+      "statement": "Prolonged silent treatment used as a weapon to punish a partner without mutual willingness to resolve conflict constitutes emotional abuse rather than healthy space.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "abuse. Yes, you heard me right. It is",
+      "locator": "Cue 103 (00:04:21.701 --> 00:04:24.609)",
+      "associated_concepts": [
+        "Prolonged Silent Treatment"
+      ]
+    },
+    {
+      "statement": "When confronted with manufactured jealousy or chronic manipulative games, one must place self-respect above everything and be prepared to calmly walk away.",
+      "epistemic_class": "DIRECT_QUOTE",
+      "verbatim_quote": "walk out of it. You have to put your",
+      "locator": "Cue 137 (00:05:46.695 --> 00:05:49.593)",
+      "associated_concepts": [
+        "Manufactured Jealousy"
+      ]
+    }
+  ],
+  "proposed_concepts": [
+    {
+      "name": "Asymmetric Initiation Pattern",
+      "domain": "Interpersonal Psychology & Communication Dynamics",
+      "definition": "A relational pattern wherein one partner deliberately refrains from ever initiating text messages, phone calls, or date plans, forcing the other partner to sustain all relational momentum.",
+      "aliases": [
+        "Never Texting First",
+        "Unilateral Initiation",
+        "Passive Chasing Trap"
+      ]
+    },
+    {
+      "name": "Negging Dynamics",
+      "domain": "Interpersonal Psychology & Manipulation",
+      "definition": "A manipulative tactic involving backhanded compliments and deliberate status-undermining remarks designed to erode a partner's self-esteem and create an artificial power imbalance.",
+      "aliases": [
+        "Backhanded Compliments",
+        "Erosion of Self-Worth",
+        "Status Degradation Game"
+      ]
+    },
+    {
+      "name": "Relational Scarcity Tactics",
+      "domain": "Behavioral Game Theory & Relationship Psychology",
+      "definition": "The deliberate manufacturing of perceived competition—such as boasting of external options or past exes—to induce fear of replacement and provoke unilateral over-investment.",
+      "aliases": [
+        "Scarcity Game",
+        "Triangulation Threat",
+        "Replacement Panic"
+      ]
+    },
+    {
+      "name": "Prolonged Silent Treatment",
+      "domain": "Relational Abuse & Communication Pathology",
+      "definition": "The weaponized withdrawal of verbal contact and refusal to engage in conflict resolution, serving as emotional punishment and control rather than a constructive cooling-off period.",
+      "aliases": [
+        "Weaponized Stonewalling",
+        "Punitive Silence",
+        "Stonewalling Abuse"
+      ]
+    },
+    {
+      "name": "Manufactured Jealousy",
+      "domain": "Relational Manipulation & Attachment Distress",
+      "definition": "The intentional elicitation of jealousy through overt disclosures of outside romantic interest to test a partner's emotional compliance, dependency, and distress.",
+      "aliases": [
+        "Jealousy Testing",
+        "Triangulation Bait",
+        "Manufactured Envy"
+      ]
+    }
+  ],
+  "proposed_relationships": [
+    {
+      "source_node_id": "CON-117",
+      "target_node_id": "CON-045",
+      "relation_type": "causes",
+      "description": "Negging and status erosion trigger the over-pursuit loop as the victim scrambles to regain approval."
+    },
+    {
+      "source_node_id": "CON-121",
+      "target_node_id": "CON-049",
+      "relation_type": "reinforces",
+      "description": "Relational scarcity tactics activate the anxious attachment system through perceived threat of abandonment."
+    },
+    {
+      "source_node_id": "CON-125",
+      "target_node_id": "CON-045",
+      "relation_type": "causes",
+      "description": "Prolonged silent treatment induces panic and frantic repair attempts in the anxious partner."
+    },
+    {
+      "source_node_id": "CON-129",
+      "target_node_id": "CON-121",
+      "relation_type": "correlates_with",
+      "description": "Manufactured jealousy and relational scarcity tactics are co-occurring mechanisms of manipulative control."
+    }
+  ]
+}

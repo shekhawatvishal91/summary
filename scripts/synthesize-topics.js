@@ -95,7 +95,7 @@ function classifySources(topicsRegistry, sourcesRegistry) {
 function synthesizeRelationshipsTopic(topic, contributingSources) {
   const masterFilePath = path.join(REPO_ROOT, topic.master_path);
 
-  // Content synthesis integrating all 5 sources across 4 Parts and 21 Dynamics
+  // Content synthesis integrating all 5 sources across 4 Parts and 25 Dynamics
   const content = `# Love Without Losing Yourself
 ## Understanding emotional triggers, breaking unhealthy relationship patterns, and learning to recognize genuine love
 
@@ -625,7 +625,107 @@ They do not share their authentic emotions because they refuse to be emotionally
 
 ---
 
-## 18. When Hurt Is Followed by Sudden Affection
+## 18. The Negging Game (Status Degradation Disguised as Teasing)
+
+Negging is a manipulative tactic designed to erode your baseline self-esteem while maintaining plausible deniability under the guise of playful banter or "brutal honesty."
+
+It arrives as backhanded compliments and casual insults:
+
+- *“You're really not my usual type, but I still decided to give you a chance.”*
+- *“You're so lucky that I'm even talking to you.”*
+- *“That outfit looks nice on you, but your hair looks strangely messy today. Why don't you fix it?”*
+
+Each remark contains a subtle barb. The compliment elevates them as the generous benefactor, while the criticism reminds you that you are fundamentally flawed, fortunate to be tolerated, and socially subordinate.
+
+Over time, this corrosive dripping erodes your baseline self-confidence. You begin seeking their approval to repair the tiny wounds they deliberately inflict.
+
+**The problem:** Negging establishes an artificial hierarchy where the manipulator stands above you as the superior judge, and you stand below as the flawed applicant.
+
+### Practical steps — Neutralize status undermining
+
+- **Recognize the subtle insult.** Notice whenever a compliment leaves you feeling diminished, insecure, or self-conscious rather than appreciated.
+- **Do not accept backhanded validation.** Never internalize the premise that you are "lucky" to be chosen by anyone. Mutual attraction is a meeting of equals.
+- **Do not laugh off blatant disrespect.** When a partner consistently critiques your appearance, intelligence, or worth under the guise of "just joking," address it directly once: *"I don't appreciate backhanded remarks."* If it continues, remove yourself.
+
+*A partner who truly appreciates you elevates your confidence; a manipulator dismantles it to keep you compliant.*
+
+---
+
+## 19. The Artificial Scarcity Trap & Triangulation ("You're Lucky I Date You")
+
+The scarcity game manufactures artificial competition to induce intense replacement panic.
+
+The individual regularly highlights their boundless romantic alternatives:
+
+- *“I could delete anyone from my life in two seconds.”*
+- *“I have so many options waiting in my DMs.”*
+- *“Do you know my ex still texts me every week telling me how much he misses me? But I still choose to spend time with you.”*
+
+By constantly parading past suitors and present admirers, they keep you on edge. You feel that your position is fragile, that you are perpetually on probation, and that any failure on your part will result in immediate substitution.
+
+In response, you redouble your efforts, pour in more validation, and tolerate poorer treatment just to protect your standing in the dynamic.
+
+**The problem:** Manufactured competition diverts all your cognitive bandwidth toward keeping the partner, blinding you to the fact that you are being emotionally exploited.
+
+### Practical steps — Disarm manufactured competition
+
+- **Recognize triangulation.** Understand that someone boasting of their romantic options is not demonstrating high value; they are demonstrating high insecurity and an insatiable need for ego-stroking.
+- **Refuse to enter the tournament.** Never compete with another person—real or imaginary—for someone's affection. If someone boasts about an ex texting them, say calmly: *"If you still have unresolved feelings or want to explore other options, feel free. I only invest in reciprocal, exclusive connections."*
+- **Protect your focus.** Do not let someone's manufactured scarcity monopolize your life. Direct your focus back onto your work, your physical health, and your independent goals.
+
+*Anyone who tries to make you feel replaceable should be shown that they are easily replaced.*
+
+---
+
+## 20. Weaponized Silent Treatment vs Healthy Emotional Space
+
+Every relationship encounters heated conflict where partners need time to calm down before continuing a constructive conversation. That is healthy emotional regulation.
+
+**The weaponized silent treatment is fundamentally different: it is an act of psychological coercion.**
+
+In this dynamic, one partner stonewalls you for days or weeks following a disagreement:
+- They ignore your calls, leave your messages on read, and treat you like a ghost in shared physical spaces.
+- They refuse to state why they are upset or what is needed to repair the rupture.
+- They watch you squirm, panic, apologize for things you didn't do, and beg for communication.
+
+Neurologically, social ostracization activates the exact same pain receptors in the human brain as physical injury. When deployed repeatedly, prolonged stonewalling is classified in clinical psychology as emotional abuse.
+
+**The problem:** Silent treatment punishes you by stripping away psychological safety, conditioning you to suppress your own boundaries in future conflicts out of terror of being discarded.
+
+### Practical steps — Distinguish cooling off from punitive stonewalling
+
+- **Look for repair orientation.** A mature partner says: *"I'm angry right now. I need an hour to cool off, and then we will talk."* Within hours, they return to resolve the issue.
+- **Do not grovel during stonewalling.** When subjected to punitive silence, do not send dozens of frantic texts or show up at their doorstep begging for forgiveness. Send a single grounded message: *"I am ready to talk when you are willing to have a respectful conversation,"* and then step away completely.
+- **Enforce consequences on chronic stonewallers.** If a partner uses days-long silence as a recurring punishment tool, understand that conflict resolution is impossible. Walking away is the only self-respecting response.
+
+*Silence used to de-escalate is wisdom; silence used to punish is abuse.*
+
+---
+
+## 21. Manufactured Jealousy Tests (Baiting Attachment Panic)
+
+In this pattern, the individual deliberately stages scenarios designed to spark your jealousy and test your emotional distress:
+
+- *“I met this amazing guy at the gym today, and he asked for my number, so I gave it to him.”*
+- *“My coworker took me out to lunch and paid for everything; he's so attentive.”*
+
+They observe your reaction with keen interest. If you become upset, confrontational, or visibly distressed, they secretly gloat: your pain is taken as proof of their immense desirability and control over you.
+
+If you confront them, they invert the blame: *"Why are you so insecure? We're just friends! You're completely crazy and controlling."*
+
+**The problem:** Manufactured jealousy weaponizes your attachment security, forcing you into a lose-lose trap of either suffering in silence or being accused of irrational jealousy.
+
+### Practical steps — Deploy the calm walk-away stance
+
+- **Do not play mind games in return.** Never attempt to "counter-game" someone by flirting with others or trying to make them jealous. Sinking to manipulation destroys your character and deepens the toxicity.
+- **Respond with calm release.** When someone boasts about giving their number to another person, do not explode in rage. Look at them calmly and say: *"It sounds like you're very interested in him. You two should pursue that. I'm going to step away from this relationship."*
+- **Prioritize self-respect over preservation.** You cannot negotiate basic fidelity with someone who gets their dopamine from your heartbreak. Walk out cleanly.
+
+*If someone enjoys watching you hurt to feel powerful, they do not love you. They are using you as a mirror for their ego.*
+
+---
+
+## 22. When Hurt Is Followed by Sudden Affection
 
 Imagine that you have experienced repeated disrespect, broken promises, emotional neglect, or painful conflict.
 
@@ -665,7 +765,7 @@ A sincere apology includes an understanding of the harm caused, a willingness to
 
 ---
 
-## 19. When the Good Moments Keep You Hoping
+## 23. When the Good Moments Keep You Hoping
 
 Relationships rarely consist exclusively of pain. Even in deeply dysfunctional dynamics, there are often moments of laughter, affection, warmth, and genuine connection.
 
@@ -694,7 +794,7 @@ Someone can have positive qualities and still behave in ways that make a relatio
 
 ---
 
-## 20. When Your Standards Gradually Shrink
+## 24. When Your Standards Gradually Shrink
 
 At the beginning of a relationship, you may have clear expectations about respect, honesty, reliability, and emotional consideration.
 
@@ -735,7 +835,7 @@ You do not need to expect perfection. Every relationship involves mistakes and d
 
 ---
 
-## 21. Recognize Harmful Patterns Without Relying on Labels
+## 25. Recognize Harmful Patterns Without Relying on Labels
 
 These behaviours are sometimes described online as signs of a “narcissist.” However, alternating affection and cruelty does not, by itself, establish narcissistic personality disorder or prove that every affectionate act is calculated manipulation.
 
@@ -847,6 +947,7 @@ When a relationship repeatedly causes distress, evaluate these five critical dim
 | **Effort Balance** | Who is carrying the initiation and emotional labor? | Mutual initiation (approx. 50/50); both plan dates and call. | 90/10 effort trap; one person does all the chasing while the other stays passive. |
 | **Autonomy & Priorities** | Does each person maintain a full life outside the union? | Protecting gym, work, friendships, and goals; saying "no" freely. | Dropping all personal priorities; making the partner the entire container of identity. |
 | **Accountability** | Are mistakes repaired with sustained conduct? | Specific apologies followed by permanent changes in behavior. | Dramatic tears only when you pack your bags; 100/0 ex-smear martyr stories. |
+| **Psychological Safety** | Is communication direct or weaponized with mind games? | Direct requests, clear feedback, prompt repair after conflict. | Negging, artificial scarcity, punitive silent treatment, manufactured jealousy. |
 | **Exit Readiness** | Can I walk away cleanly if minimum respect is absent? | Knowing life will thrive alone; enforcing non-negotiable standards. | Bargaining away standards; accepting ultimatums to cut off loved ones. |
 
 This framework avoids two common traps:
@@ -894,7 +995,7 @@ The goal is not to need nobody. It is to love without losing yourself—and to k
   return {
     master_path: topic.master_path,
     parts_count: 4,
-    dynamics_count: 21,
+    dynamics_count: 25,
     causal_loops_count: 3,
     sources_count: contributingSources.length
   };
@@ -911,7 +1012,7 @@ function updateUIAndManifest(topicsRegistry) {
     const sourceCount = relTopic.sources.length;
     html = html.replace(
       /(<span class="topic-stats">)\d+ Sources Unified &bull; 4 Parts &bull; \d+ Dynamics &bull; 3 Causal Loops(<\/span>\s*<button class="btn-read"[^>]*onclick="viewCodex\('MASTER-RELATIONSHIP-DYNAMICS'\)")/,
-      `$1${sourceCount} Sources Unified &bull; 4 Parts &bull; 21 Dynamics &bull; 3 Causal Loops$2`
+      `$1${sourceCount} Sources Unified &bull; 4 Parts &bull; 25 Dynamics &bull; 3 Causal Loops$2`
     );
     fs.writeFileSync(INDEX_HTML_PATH, html, 'utf-8');
 

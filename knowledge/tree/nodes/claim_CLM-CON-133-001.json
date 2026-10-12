@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-133-001",
+  "node_type": "claim",
+  "statement": "When confronted with manufactured jealousy or chronic manipulative games, one must place self-respect above everything and be prepared to calmly walk away.",
+  "claim_type": "empirical_finding",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-008",
+      "locator_type": "paragraph",
+      "locator": "Cue 137 (00:05:46.695 --> 00:05:49.593)",
+      "verbatim_quote": "walk out of it. You have to put your"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-133"
+  ],
+  "created_at": "2026-10-12T01:37:30.305Z"
+}

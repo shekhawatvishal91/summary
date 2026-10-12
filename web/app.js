@@ -677,7 +677,22 @@ function viewCodex(sourceId) {
     });
 }
 
+function navigateHome() {
+  switchTab('dashboard-view');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function setupNavigation() {
+  const logoBtn = document.querySelector('.logo-area');
+  if (logoBtn) {
+    logoBtn.addEventListener('click', navigateHome);
+    logoBtn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        navigateHome();
+      }
+    });
+  }
   document.querySelectorAll('nav button').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetView = btn.getAttribute('data-view');

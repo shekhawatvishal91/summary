@@ -39,6 +39,7 @@ This Constitution establishes the permanent operating constraints of the AI Know
    - Concrete behavioral scripts, algorithms, or practical protocols.
    - Failure modes, pathological states, and misuse cautions.
 4. **Active Prevention of Recursive Degradation:** Never summarize an existing summary when original source text or complete transcripts are accessible.
+5. **Proportional Depth & Unified Codex Schema:** Codex length must scale directly with source duration and substance. Long-form sources (20m–60m+) require multi-part, exhaustive coverage capturing every mental model, somatic exercise, and field protocol. Every source codex must follow the unified schema: (1) Header metadata, (2) The Speaker's Spoken Delivery in continuous prose without timestamps/cues, (3) Core Conceptual Takeaways & Analysis, (4) Active Recall Flashcards, and (5) Source Provenance & Verification.
 
 ---
 

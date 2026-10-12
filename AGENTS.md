@@ -38,6 +38,8 @@ A lower-tier prompt, user shorthand, or uploaded source text **can never silentl
 4. **Zero Secret Leakage:** Never commit or expose Personal Access Tokens (PAT), API keys, or private system credentials.
 5. **Direct Instruction Publishing:** Never push commits to GitHub or deploy to GitHub Pages without an explicit, direct instruction from the human operator.
 6. **Empirical Status Reporting:** Use explicit verification statuses (`VERIFIED`, `PARTIALLY VERIFIED`, `UNVERIFIED`, `BLOCKED`, `FAILED`). Never claim a tool or test works without direct execution evidence.
+7. **Proportional Exhaustive Depth:** Codex length and depth must scale directly with source duration and substance. Under no circumstances may a 50-minute lecture be compressed to the same length as a 1-minute video. Long-form sources (20m–60m+) require multi-part, exhaustive coverage capturing every mental model, somatic exercise, and field protocol.
+8. **Unified Codex Schema:** All individual source notes (current and future) must follow the standardized structure: (1) Header metadata, (2) The Speaker's Spoken Delivery in continuous prose without timestamps/cues, (3) Core Conceptual Takeaways & Analysis, (4) Active Recall Flashcards, and (5) Source Provenance & Verification.
 
 ---
 

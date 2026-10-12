@@ -43,47 +43,53 @@ The YouTube Decoding Engine guarantees:
 
 ## 3. Product A Codex Structure for Video Materials
 
-The generated codex in `knowledge/sources/{source-id}/codex.md` must follow this structure:
+The generated codex in `knowledge/sources/{source-id}/codex.md` must follow this ratified unified structure:
 
 ```markdown
-# [LECTURE_TITLE]: Video Lecture Codex
-**Speaker(s):** [Name(s)] | **Channel / Institution:** [Name]
-**Duration:** [HH:MM:SS] | **URL:** [YouTube Link] | **Source ID:** [SRC-YT-YYYY-NNN]
+# [Video / Lecture Title]
+
+**Speaker / Channel:** [Name] | **Duration:** [HH:MM:SS] | **Source ID:** [SRC-YT-YYYY-NNN]  
+**URL:** [YouTube Link] | **Epistemic Tier:** [tier_X]  
+**Document Type:** Individual Source Codex (Verbatim Spoken Delivery in Continuous Written Prose)
 
 ---
 
-## Executive Summary & Core Contribution
-* (High-density summary of the lecture's core intellectual contribution).
+> **Note on Source Voice:** This codex presents the speaker's spoken delivery as delivered in the video audio, structured into continuous written prose without timestamps, cue markers, or subtitle breaks.
 
 ---
 
-## Speaker Perspective & Epistemic Stance
-* (Speaker's clinical, industry, or academic background and potential biases).
+## The Speaker's Spoken Delivery
+
+[Continuous, natural, high-fidelity prose capturing the complete spoken delivery of the speaker.
+CRITICAL DEPTH INVARIANT: The length and depth of this section MUST be proportional to the source duration:
+- Short videos (under 2 minutes): 150–400 words capturing every sentence and reverse-psychology premise.
+- Medium videos (5–10 minutes): 1,000–2,000 words broken into logical thematic paragraphs capturing all examples, stories, and mechanisms.
+- Long-form lectures (20–60+ minutes): 3,000–6,000+ words divided into structured Parts (e.g., Part 1: Phase Breakdown, Part 2: Cognitive Engines, Part 3: Protocols), thoroughly detailing every single mental model, script, field exercise, and physiological coping strategy. Superficial summaries that flatten a 50-minute lecture to look like a 1-minute video are strictly prohibited.]
 
 ---
 
-## Chronological Analytical Reconstruction
+## Core Conceptual Takeaways & Analysis
 
-### Section 1: [Topic Title] `[00:00 - 14:32]`
-* **Core Argument:** ...
-* **Key Evidence / Demonstration:** ...
-* **Verbatim Statement:** > "Exact quote of critical definition." `[08:14]`
-* **Slide / Code / Diagram Recreation:**
-  (Mermaid diagram, table, or code block representing visual assets).
+### 1. [Framework / Mechanism Name]
+[Deep analytical deconstruction, psychological models, causal diagrams, mathematical equations, or comparative tables].
 
-### Section 2: [Topic Title] `[14:33 - 32:10]`
-...
+### 2. [Operational Protocols]
+[Specific field rules, diagnostic taxonomies, or behavioral algorithms extracted from the lecture].
 
 ---
 
-## Audience Q&A & Edge Cases `[32:11 - End]`
-* **Question 1:** [Audience question asked at 34:12]
-  * **Answer & Nuance:** [Speaker's response, edge cases acknowledged].
+## Active Recall Flashcards
+
+- **Q: [Targeted question testing core insight]?**  
+  **A:** [Direct, rigorous answer].
 
 ---
 
-## Key Takeaways & Applied Protocols
-* (Actionable methodologies or mental models extracted from the lecture).
+## Source Provenance & Verification
+
+- **Transcription Fidelity:** [Verbatim cue count and speech duration].
+- **Verification Hash:** Verified against raw artifact in `sources/raw/{source-id}_captions.vtt`.
+- **Epistemic Classification:** [Tier and rationale].
 ```
 
 ---

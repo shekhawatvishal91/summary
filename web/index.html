@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Knowledge Brain OS — Research & Notes Workspace</title>
-  <link rel="stylesheet" href="styles.css?v=20261012-06">
+  <link rel="stylesheet" href="styles.css?v=20261012-07">
 </head>
 <body>
 
@@ -45,26 +45,19 @@
 
       <div class="topic-category-grid">
         <!-- Topic Box 1: Aspirant Psychology & Decision Architecture -->
-        <div class="topic-box" style="border-left: 4px solid #1f883d;">
+        <div class="topic-box" style="border-left: 4px solid #1f883d; cursor:pointer;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
           <div>
             <div class="topic-box-header">
               <span class="topic-badge topic-badge-book">📖 MEGA-BOOK VOLUME I</span>
               <span class="topic-badge" style="background:#eaf5ea; color:#1f883d;">60m Consolidated</span>
             </div>
             <h3 class="topic-box-title">Competitive Exam Aspirant Psychology &amp; Decision Architecture</h3>
-            <p class="topic-box-desc">
-              A chronological multi-chapter master treatise consolidating candidate psychology across multi-year preparation: 
-              <strong>Ch. 1</strong> The 3-Phase Motivation Curve &bull; 
-              <strong>Ch. 2</strong> Self-Determination Triad &bull; 
-              <strong>Ch. 3</strong> The Sunk Cost Trap &bull; 
-              <strong>Ch. 4</strong> Identity Fusion &bull; 
-              <strong>Ch. 5</strong> 5-Phase Master Action Playbook.
-            </p>
-            <div class="topic-source-pills">
-              <span style="font-size:0.75rem; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:0.04em; margin-right:0.25rem;">Included Sources:</span>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-002')" title="Read Individual Source Codex in Reader Mode">📖 Aspirant Psychology (51m)</button>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-001')" title="Read Individual Source Codex in Reader Mode">📖 Sunk Cost Trap (9m)</button>
+            <div class="topic-box-channel">
+              <span>🎙️ Channel: <em>ABrainOConscious</em></span> &bull; <span>2 Lectures Unified</span>
             </div>
+            <p class="topic-box-desc">
+              Chronological master synthesis of candidate psychology across multi-year preparation, integrating motivation curves, the sunk cost trap, and the 5-phase decision playbook.
+            </p>
           </div>
           <div class="topic-box-footer">
             <span class="topic-stats">2 Sources Unified &bull; 5 Chapters</span>
@@ -75,30 +68,19 @@
         </div>
 
         <!-- Topic Box 2: Relationship Dynamics & Romantic Psychology -->
-        <div class="topic-box" style="border-left: 4px solid #bf3989;">
+        <div class="topic-box" style="border-left: 4px solid #bf3989; cursor:pointer;" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
           <div>
             <div class="topic-box-header">
               <span class="topic-badge" style="background:#bf3989; color:#FFFFFF;">💕 MASTER TREATISE</span>
-              <span class="topic-badge" style="background:#fdf2f8; color:#bf3989;">Relationships &amp; Emotional Autonomy</span>
+              <span class="topic-badge" style="background:#fdf2f8; color:#bf3989;">Relationships &amp; Autonomy</span>
             </div>
             <h3 class="topic-box-title">Love Without Losing Yourself</h3>
-            <p class="topic-box-desc">
-              Understanding emotional triggers, breaking unhealthy relationship patterns, and learning to recognize genuine love: 
-              <strong>Part I</strong> Understand What Happens Inside You &bull; 
-              <strong>Part II</strong> How Insecurity Becomes Relationship Behaviour (Over-Pursuit &amp; 90/10 Effort Trap) &bull; 
-              <strong>Part III</strong> When the Relationship Itself Is the Problem &bull; 
-              <strong>Part IV</strong> Break the Cycle (3 Causal Loops &amp; Walk-Away Decision Matrix) &bull; 
-              <strong>Practical System</strong> Behavior-First Protocol &amp; The Central Lesson.
-            </p>
-            <div class="topic-source-pills">
-              <span style="font-size:0.75rem; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:0.04em; margin-right:0.25rem;">Included Sources:</span>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-003')" title="Read Individual Source Codex in Reader Mode">📖 10 Habits (49s)</button>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-004')" title="Read Individual Source Codex in Reader Mode">⚡ Remote Control (2m)</button>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-005')" title="Read Individual Source Codex in Reader Mode">💔 Love-Cruelty Cycle (2m)</button>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-006')" title="Read Individual Source Codex in Reader Mode">🔥 7 Steps (6m)</button>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-007')" title="Read Individual Source Codex in Reader Mode">⚠️ 4 Signs Narcissist (5m)</button>
-              <button class="topic-source-pill" onclick="viewCodex('SRC-YT-2026-008')" title="Read Individual Source Codex in Reader Mode">🎮 8 Mind Games (6m)</button>
+            <div class="topic-box-channel">
+              <span>🎙️ Channel: <em>The Cool Therapist</em></span> &bull; <span>6 Lectures Unified</span>
             </div>
+            <p class="topic-box-desc">
+              Exhaustive master treatise on emotional triggers, anxious-avoidant attachment loops, over-pursuit dynamics, and the walk-away decision matrix.
+            </p>
           </div>
           <div class="topic-box-footer">
             <span class="topic-stats">6 Sources Unified &bull; 4 Parts &bull; 25 Dynamics &bull; 3 Causal Loops</span>
@@ -193,7 +175,7 @@
     <!-- VIEW 3: MASTER NOTES READER -->
     <section id="codex-reader" class="view-section">
       <!-- Reader Mode Top Header Bar -->
-      <div class="reader-mode-header">
+      <div class="reader-mode-header" id="reader-mode-header-bar">
         <div class="reader-mode-title-group" style="display:flex; align-items:center; gap:0.6rem;">
           <h2 style="font-size:1.1rem; font-weight:700; margin:0; color:var(--text-primary); display:inline-flex; align-items:center; gap:0.4rem;">
             📑 Individual Source Codices

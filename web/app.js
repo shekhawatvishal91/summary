@@ -606,12 +606,19 @@ function viewCodex(sourceId) {
   if (sourceId === 'MASTER-ASPIRANT-DECISION') {
     currentActiveCodexId = sourceId;
     switchTab('codex-reader');
+    const headerBar = document.getElementById('reader-mode-header-bar');
+    if (headerBar) headerBar.style.display = 'none';
     const subnav = document.getElementById('reader-subnav-individual');
     if (subnav) subnav.style.display = 'none';
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById('codex-title').textContent = 'Competitive Exam Aspirant Psychology & Decision Architecture: Unified Master Synthesis';
+    document.getElementById('codex-title').innerHTML = `
+      <div style="margin-bottom:0.75rem;">
+        <button class="btn-read" style="background:var(--bg-subtle); color:var(--text-secondary); border:1px solid var(--border-color); padding:0.3rem 0.75rem; font-size:0.78rem; border-radius:var(--radius-sm); cursor:pointer;" onclick="navigateHome()">&larr; Back to Master Notes Library</button>
+      </div>
+      <span>Competitive Exam Aspirant Psychology &amp; Decision Architecture: Unified Master Synthesis</span>
+    `;
     document.getElementById('codex-meta').innerHTML = `
-      <span class="badge badge-accent" style="margin-right:0.4rem;">CROSS-SOURCE MASTER SYNTHESIS</span>
+      <span class="badge badge-accent" style="margin-right:0.4rem; background:#1f883d; color:#fff;">CROSS-SOURCE MASTER SYNTHESIS</span>
       <strong>Topic:</strong> Aspirant Psychology &amp; Behavioral Decision Theory &bull;
       <strong>Sources Unified:</strong> <code>SRC-YT-2026-002</code> &bull; <code>SRC-YT-2026-001</code> &bull;
       <strong>Status:</strong> DEDUPLICATED &amp; VERIFIED
@@ -638,12 +645,19 @@ function viewCodex(sourceId) {
   if (sourceId === 'MASTER-RELATIONSHIP-DYNAMICS') {
     currentActiveCodexId = sourceId;
     switchTab('codex-reader');
+    const headerBar = document.getElementById('reader-mode-header-bar');
+    if (headerBar) headerBar.style.display = 'none';
     const subnav = document.getElementById('reader-subnav-individual');
     if (subnav) subnav.style.display = 'none';
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById('codex-title').textContent = 'Love Without Losing Yourself';
+    document.getElementById('codex-title').innerHTML = `
+      <div style="margin-bottom:0.75rem;">
+        <button class="btn-read" style="background:var(--bg-subtle); color:var(--text-secondary); border:1px solid var(--border-color); padding:0.3rem 0.75rem; font-size:0.78rem; border-radius:var(--radius-sm); cursor:pointer;" onclick="navigateHome()">&larr; Back to Master Notes Library</button>
+      </div>
+      <span>Love Without Losing Yourself</span>
+    `;
     document.getElementById('codex-meta').innerHTML = `
-      <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989;">CROSS-SOURCE MASTER TREATISE</span>
+      <span class="badge badge-accent" style="margin-right:0.4rem; background:#bf3989; color:#fff;">CROSS-SOURCE MASTER TREATISE</span>
       <strong>Theme:</strong> Emotional Triggers, Relationship Patterns &amp; Genuine Love &bull;
       <strong>Sources Unified:</strong> <code>SRC-YT-2026-003</code> &bull; <code>SRC-YT-2026-004</code> &bull; <code>SRC-YT-2026-005</code> &bull; <code>SRC-YT-2026-006</code> &bull; <code>SRC-YT-2026-007</code> &bull; <code>SRC-YT-2026-008</code> &bull;
       <strong>Status:</strong> MASTER TOPIC TREATISE (4 PARTS &bull; 21 DYNAMICS &bull; 3 CAUSAL LOOPS)
@@ -674,6 +688,8 @@ function viewCodex(sourceId) {
   currentActiveCodexId = sourceId;
   const isFixture = isFixtureSource(source);
   switchTab('codex-reader');
+  const headerBar = document.getElementById('reader-mode-header-bar');
+  if (headerBar) headerBar.style.display = 'flex';
   const subnav = document.getElementById('reader-subnav-individual');
   if (subnav) subnav.style.display = 'block';
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -781,7 +797,7 @@ function setupNavigation() {
   document.querySelectorAll('nav button').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetView = btn.getAttribute('data-view');
-      switchTab(targetView);
+      switchTab(targetView, true);
     });
   });
 
@@ -804,7 +820,7 @@ function setupNavigation() {
   }
 }
 
-function switchTab(viewId) {
+function switchTab(viewId, isNavClick = false) {
   document.querySelectorAll('nav button').forEach(b => {
     b.classList.toggle('active', b.getAttribute('data-view') === viewId);
   });
@@ -812,9 +828,11 @@ function switchTab(viewId) {
     sec.classList.toggle('active', sec.id === viewId);
   });
 
-  // If opening Reader Mode directly, default to first individual note
-  if (viewId === 'codex-reader' && (!currentActiveCodexId || currentActiveCodexId.startsWith('MASTER-'))) {
-    viewCodex('SRC-YT-2026-003');
+  // If opening Reader Mode tab directly from navbar or with no active note, default to first individual note
+  if (viewId === 'codex-reader') {
+    if (!currentActiveCodexId || (isNavClick && currentActiveCodexId.startsWith('MASTER-'))) {
+      viewCodex('SRC-YT-2026-003');
+    }
   }
 }
 

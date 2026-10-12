@@ -959,7 +959,7 @@ footer a:hover {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
+  padding: 1rem 1.25rem;
   box-shadow: var(--shadow-subtle);
   transition: all 0.2s ease;
   display: flex;
@@ -967,27 +967,28 @@ footer a:hover {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .topic-box:hover {
   transform: translateY(-2px);
   border-color: var(--accent-color);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .topic-box-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
 }
 
 .topic-badge {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 0.2rem 0.55rem;
+  padding: 0.15rem 0.5rem;
   border-radius: var(--radius-sm);
   background: var(--bg-subtle);
   color: var(--accent-color);
@@ -1001,18 +1002,34 @@ footer a:hover {
 }
 
 .topic-box-title {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-top: 0.35rem;
-  line-height: 1.35;
+  margin-top: 0.15rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.topic-box-channel {
+  font-size: 0.775rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.topic-box-channel em {
+  color: var(--text-primary);
+  font-style: italic;
+  font-weight: 600;
 }
 
 .topic-box-desc {
-  font-size: 0.885rem;
+  font-size: 0.825rem;
   color: var(--text-secondary);
-  line-height: 1.55;
-  margin-bottom: 0.85rem;
+  line-height: 1.45;
+  margin-bottom: 0.65rem;
   flex: 1;
 }
 

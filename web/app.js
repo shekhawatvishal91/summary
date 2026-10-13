@@ -32,6 +32,9 @@ function initApp() {
   renderConcepts();
   renderDocs();
   setupNavigation();
+  if (typeof window !== 'undefined' && window.location && window.document) {
+    viewCodex('SRC-YT-2026-003');
+  }
 }
 
 function isFixtureSource(s) {
@@ -831,7 +834,7 @@ function viewCodex(sourceId) {
 }
 
 function navigateHome() {
-  switchTab('dashboard-view');
+  switchTab('codex-reader');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -873,6 +876,9 @@ function setupNavigation() {
 }
 
 function switchTab(viewId, isNavClick = false) {
+  if (viewId === 'dashboard-view' || viewId === 'docs-view') {
+    viewId = 'codex-reader';
+  }
   document.querySelectorAll('nav button').forEach(b => {
     b.classList.toggle('active', b.getAttribute('data-view') === viewId);
   });

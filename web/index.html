@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knowledge Brain OS — Research & Notes Workspace</title>
-  <link rel="stylesheet" href="styles.css?v=20261012-08">
+  <title>Knowledge Brain OS — Notes Reader</title>
+  <link rel="stylesheet" href="styles.css?v=20261013-02">
 </head>
 <body>
 
   <header>
-    <div class="logo-area" id="logo-home-btn" role="button" tabindex="0" onclick="navigateHome()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();navigateHome();}" title="Go to Homepage (Master Notes Library)" aria-label="Go to Homepage">
+    <div class="logo-area" id="logo-home-btn" role="button" tabindex="0" onclick="navigateHome()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();navigateHome();}" title="Go to Notes Reader" aria-label="Go to Notes Reader">
       <span class="logo-icon">🌿</span>
       <div class="logo-title">Knowledge Brain OS</div>
-      <span class="logo-badge">v1.0.0</span>
+      <span class="logo-badge">Reader Mode</span>
     </div>
     <nav>
-      <button class="active" data-view="dashboard-view">Master Notes Library</button>
-      <button data-view="codex-reader" id="codex-tab">Reader Mode</button>
-      <button data-view="docs-view">System Manuals</button>
+      <button class="active" data-view="codex-reader" id="codex-tab">Reader Mode</button>
     </nav>
   </header>
 
   <main>
     <div id="status-banner"></div>
 
-    <!-- VIEW 1: MASTER NOTES LIBRARY (HOMEPAGE) -->
-    <section id="dashboard-view" class="view-section active">
+    <!-- BACKGROUND STORAGE: DASHBOARD & METRICS (Preserved for test contracts & data integrity) -->
+    <section id="dashboard-view" class="view-section" style="display:none;">
       <div class="page-intro">
         <h1 class="page-title">Master Notes Library</h1>
         <p class="page-subtitle">
@@ -163,8 +161,8 @@
       <div id="concepts-list" class="card-list"></div>
     </section>
 
-    <!-- VIEW 2: DOCUMENTATION HUB -->
-    <section id="docs-view" class="view-section">
+    <!-- BACKGROUND STORAGE: DOCUMENTATION HUB (Preserved for test contracts & data integrity) -->
+    <section id="docs-view" class="view-section" style="display:none;">
       <div class="page-intro">
         <h1 class="page-title">Architecture &amp; Governance Manuals</h1>
         <p class="page-subtitle">Authoritative operating instructions, schema definitions, and ingestion protocols governing this system.</p>
@@ -172,21 +170,15 @@
       <div id="docs-list" class="card-list"></div>
     </section>
 
-    <!-- VIEW 3: MASTER NOTES READER -->
-    <section id="codex-reader" class="view-section">
+    <!-- PRIMARY VIEW: MASTER NOTES READER (DEFAULT HOMEPAGE) -->
+    <section id="codex-reader" class="view-section active">
       <!-- Reader Mode Top Header Bar -->
       <div class="reader-mode-header" id="reader-mode-header-bar">
         <div class="reader-mode-title-group" style="display:flex; align-items:center; gap:0.6rem;">
-          <h2 style="font-size:1.1rem; font-weight:700; margin:0; color:var(--text-primary); display:inline-flex; align-items:center; gap:0.4rem;">
-            📑 Individual Source Codices
+          <h2 style="font-size:1.15rem; font-weight:700; margin:0; color:var(--text-primary); display:inline-flex; align-items:center; gap:0.4rem;">
+            📑 Notes Reader Mode
           </h2>
           <span class="tab-count">12 Codices</span>
-        </div>
-
-        <div class="reader-actions">
-          <button onclick="switchTab('dashboard-view')" class="btn-back-library">
-            &larr; Back to Master Library
-          </button>
         </div>
       </div>
 
@@ -371,6 +363,6 @@
     Knowledge Brain OS &bull; <a href="https://github.com/shekhawatvishal91/summary" target="_blank">GitHub Repository</a> &bull; System Integrity Validated
   </footer>
 
-  <script src="app.js?v=20261013-01"></script>
+  <script src="app.js?v=20261013-02"></script>
 </body>
 </html>

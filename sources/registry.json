@@ -259,6 +259,28 @@
       "updated_at": "2026-10-13T02:44:40.000Z",
       "duration": "30m 51s",
       "url": "https://www.youtube.com/watch?v=K7Mo3ctFo8g"
+    },
+    {
+      "source_id": "SRC-YT-2026-011",
+      "video_id": "hm4b5_veNrE",
+      "title": "Why rebound is a great idea after breakup // Divorce Just do it the right way ( Psychology 101 )",
+      "author": "Human Behaviour",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "aca8b16a7121b9c8b70916e09db67446f2ebd7b1646fe1fdded4adbc4fdf79a1",
+      "raw_path": "sources/raw/SRC-YT-2026-011_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-011.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-011/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-13T03:33:14.000Z",
+      "updated_at": "2026-10-13T03:33:14.000Z",
+      "duration": "10m 10s",
+      "url": "https://www.youtube.com/watch?v=hm4b5_veNrE"
     }
   ]
 }

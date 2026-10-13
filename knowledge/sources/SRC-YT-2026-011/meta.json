@@ -1,0 +1,30 @@
+{
+  "sourceId": "SRC-YT-2026-011",
+  "type": "youtube_lecture",
+  "title": "Why rebound is a great idea after breakup // Divorce Just do it the right way ( Psychology 101 )",
+  "author": "Human Behaviour",
+  "channel": "Human Behaviour",
+  "url": "https://www.youtube.com/watch?v=hm4b5_veNrE",
+  "publishedDate": "2026-10-12",
+  "durationSeconds": 610,
+  "durationFormatted": "10m 10s",
+  "language": "en",
+  "originalLanguage": "en",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Relationship Dynamics",
+    "Post-Breakup Recovery",
+    "Attachment Psychology",
+    "Rebound Relationships",
+    "Emotional Void & Self-Expansion"
+  ],
+  "provenance": {
+    "audioFile": "sources/raw/SRC-YT-2026-011_audio.opus",
+    "captionsFile": "sources/raw/SRC-YT-2026-011_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-011.txt",
+    "captionsHash": "5b07ad8e344383f050ed500929a66786cd3dd833ed7ab618f2878a5bf3946768",
+    "textHash": "aca8b16a7121b9c8b70916e09db67446f2ebd7b1646fe1fdded4adbc4fdf79a1",
+    "transcriptionEngine": "whisper.cpp_ggml-tiny.en.bin",
+    "ingestedAt": "2026-10-13T03:33:14Z"
+  }
+}

@@ -1315,7 +1315,17 @@ footer a:hover {
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.cat-pill {
+.header-category-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  flex: 1;
+  margin-left: 1.25rem;
+}
+
+.cat-pill,
+.header-category-nav .cat-pill {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
@@ -1328,17 +1338,19 @@ footer a:hover {
   user-select: none;
 }
 
-.cat-pill:hover {
+.cat-pill:hover,
+.header-category-nav .cat-pill:hover {
   background: var(--bg-subtle);
   color: var(--text-primary);
   border-color: var(--accent-color);
 }
 
-.cat-pill.active {
-  background: var(--accent-color);
-  color: #FFFFFF;
-  border-color: var(--accent-color);
-  font-weight: 600;
+.cat-pill.active,
+.header-category-nav .cat-pill.active {
+  background: var(--accent-color) !important;
+  color: #FFFFFF !important;
+  border-color: var(--accent-color) !important;
+  font-weight: 600 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 

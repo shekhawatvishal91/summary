@@ -625,6 +625,23 @@ function syncReaderSectionUI() {}
 
 
 function filterReaderCategory(cat) {
+  // Ensure codex-reader view is active
+  const readerSec = document.getElementById('codex-reader');
+  if (readerSec && !readerSec.classList.contains('active')) {
+    document.querySelectorAll('.view-section').forEach(sec => {
+      sec.classList.toggle('active', sec.id === 'codex-reader');
+    });
+  }
+  const subnav = document.getElementById('reader-subnav-individual');
+  if (subnav) subnav.style.display = 'block';
+
+  // Clear quick search filter when category changes
+  const searchInput = document.getElementById('reader-search-input');
+  if (searchInput && searchInput.value) {
+    searchInput.value = '';
+    handleReaderSearch('');
+  }
+
   document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
   const activePill = document.getElementById(`pill-cat-${cat}`);
   if (activePill) activePill.classList.add('active');
@@ -650,6 +667,8 @@ function filterReaderCategory(cat) {
     if (relGroup) relGroup.style.display = 'none';
     if (cogGroup) cogGroup.style.display = 'block';
   }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function handleReaderSearch(query) {
@@ -957,10 +976,12 @@ function setupNavigation() {
       }
     });
   }
-  document.querySelectorAll('nav button').forEach(btn => {
+  document.querySelectorAll('nav button[data-view]').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetView = btn.getAttribute('data-view');
-      switchTab(targetView, true);
+      if (targetView) {
+        switchTab(targetView, true);
+      }
     });
   });
 
@@ -984,10 +1005,11 @@ function setupNavigation() {
 }
 
 function switchTab(viewId, isNavClick = false) {
+  if (!viewId) return;
   if (viewId === 'dashboard-view' || viewId === 'docs-view') {
     viewId = 'codex-reader';
   }
-  document.querySelectorAll('nav button').forEach(b => {
+  document.querySelectorAll('nav button[data-view]').forEach(b => {
     b.classList.toggle('active', b.getAttribute('data-view') === viewId);
   });
   document.querySelectorAll('.view-section').forEach(sec => {

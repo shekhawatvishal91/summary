@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-13T06:25:17.007Z",
+  "built_at": "2026-10-13T07:24:10.285Z",
   "metrics": {
-    "total_sources": 15,
+    "total_sources": 16,
     "total_concepts": 36,
     "total_claims": 58,
     "total_edges": 14,
@@ -332,6 +332,28 @@
       "updated_at": "2026-10-13T11:52:25.000Z",
       "duration": "10m 54s",
       "url": "https://www.youtube.com/watch?v=1b4XeguGQhc"
+    },
+    {
+      "source_id": "SRC-YT-2026-014",
+      "video_id": "tW4zOOZADyM",
+      "title": "How I (IAS AIR 50) Cracked UPSC 3 Times: The Brutal Truth Nobody Tells You",
+      "author": "UPSC TIME",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "b439595929bb0eeacf27f2b28fe4ffa5cb811af90f44d79626f955e3631cafb6",
+      "raw_path": "sources/raw/SRC-YT-2026-014_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-014.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-014/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-13T12:51:44.000Z",
+      "updated_at": "2026-10-13T12:51:44.000Z",
+      "duration": "20m 05s",
+      "url": "https://www.youtube.com/watch?v=tW4zOOZADyM"
     }
   ],
   "concepts": [

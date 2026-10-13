@@ -1,0 +1,31 @@
+{
+  "sourceId": "SRC-YT-2026-014",
+  "type": "youtube_lecture",
+  "title": "How I (IAS AIR 50) Cracked UPSC 3 Times: The Brutal Truth Nobody Tells You",
+  "author": "UPSC TIME",
+  "channel": "UPSC TIME",
+  "url": "https://www.youtube.com/watch?v=tW4zOOZADyM",
+  "publishedDate": "2026-09-21",
+  "durationSeconds": 1205,
+  "durationFormatted": "20m 05s",
+  "language": "hi",
+  "originalLanguage": "hi",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Competitive Exam Preparation Architecture",
+    "Layered Revision & Color-Coded Post-It Protocol",
+    "100-Mock Error Log Analysis & Cutoff Modeling",
+    "Mains Answer Enrichment (Case Laws, Maps, Ethics Exemplars)",
+    "Sociology Optional 80/20 Rule & Topper Copy Synthesis",
+    "100-Word Syllabus Rule & Personality Test Criteria"
+  ],
+  "provenance": {
+    "audioFile": "sources/raw/SRC-YT-2026-014_audio.mp3",
+    "captionsFile": "sources/raw/SRC-YT-2026-014_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-014.txt",
+    "captionsHash": "f09b9b6219d23ef50eb297d4e4d7af7ba8f5c9c39834643b806a6cc9165ec77c",
+    "textHash": "b439595929bb0eeacf27f2b28fe4ffa5cb811af90f44d79626f955e3631cafb6",
+    "transcriptionEngine": "youtube_timedtext_asr_hi",
+    "ingestedAt": "2026-10-13T12:51:44Z"
+  }
+}

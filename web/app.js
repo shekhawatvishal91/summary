@@ -565,16 +565,24 @@ function filterReaderCategory(cat) {
 
   const aspirantGroup = document.getElementById('cat-group-aspirant');
   const relGroup = document.getElementById('cat-group-relationships');
+  const cogGroup = document.getElementById('cat-group-cognitive');
 
   if (cat === 'all') {
     if (aspirantGroup) aspirantGroup.style.display = 'block';
     if (relGroup) relGroup.style.display = 'block';
+    if (cogGroup) cogGroup.style.display = 'block';
   } else if (cat === 'aspirant') {
     if (aspirantGroup) aspirantGroup.style.display = 'block';
     if (relGroup) relGroup.style.display = 'none';
+    if (cogGroup) cogGroup.style.display = 'none';
   } else if (cat === 'relationships') {
     if (aspirantGroup) aspirantGroup.style.display = 'none';
     if (relGroup) relGroup.style.display = 'block';
+    if (cogGroup) cogGroup.style.display = 'none';
+  } else if (cat === 'cognitive') {
+    if (aspirantGroup) aspirantGroup.style.display = 'none';
+    if (relGroup) relGroup.style.display = 'none';
+    if (cogGroup) cogGroup.style.display = 'block';
   }
 }
 

@@ -1,0 +1,30 @@
+{
+  "sourceId": "SRC-YT-2026-010",
+  "type": "youtube_lecture",
+  "title": "Why the hell you can't change?",
+  "author": "Jasthinks",
+  "channel": "Jasthinks",
+  "url": "https://www.youtube.com/watch?v=K7Mo3ctFo8g",
+  "publishedDate": "2024-05-18",
+  "durationSeconds": 1851,
+  "durationFormatted": "30m 51s",
+  "language": "en",
+  "originalLanguage": "hi",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Cognitive Psychology",
+    "Subconscious Conditioning",
+    "Somatic Habit Loops",
+    "Behavioral Change",
+    "Neuroplasticity & Identity"
+  ],
+  "provenance": {
+    "audioFile": "sources/raw/SRC-YT-2026-010_audio.opus",
+    "captionsFile": "sources/raw/SRC-YT-2026-010_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-010.txt",
+    "captionsHash": "5ccc7a27caf560bcd60fb51cef5b13ddea945e2a5a8e9676944aa75b10df7a59",
+    "textHash": "e06478c09840a2c7ba16bd4185ffc828b865142c52d8d9f09f90e376b6ed29cc",
+    "transcriptionEngine": "whisper.cpp_ggml-base.bin",
+    "ingestedAt": "2026-10-13T02:44:40Z"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-141",
+  "node_type": "concept",
+  "canonical_name": "The Hedonic Treadmill & Commodity Escapism",
+  "aliases": [
+    "Hedonic Treadmill",
+    "Commodity Escapism",
+    "Chemical Malaise Suppression"
+  ],
+  "domain": "Behavioral Economics",
+  "definition": "The psychological tendency for dopamine surges derived from consumption, alcohol, or psychiatric suppression to rapidly degrade, forcing continuous reinvestment in wage labor to finance subsequent temporary highs.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-141-001",
+    "CLM-CON-141-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-018"
+  ],
+  "created_at": "2026-10-13T17:46:07.518Z",
+  "updated_at": "2026-10-13T17:46:07.518Z"
+}

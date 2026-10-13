@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-137",
+  "node_type": "concept",
+  "canonical_name": "The Rat Race Paradigm & Manufactured Discontent",
+  "aliases": [
+    "Rat Race Metaphor",
+    "Manufactured Discontent",
+    "Urban Alienation Loop"
+  ],
+  "domain": "Socio-Cognitive Psychology",
+  "definition": "A socio-economic condition where individuals are systematically conditioned through mass advertising to pursue material commodities as substitutes for psychological fulfillment, resulting in continuous labor entrapment.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-137-001",
+    "CLM-CON-137-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-018"
+  ],
+  "created_at": "2026-10-13T17:46:07.509Z",
+  "updated_at": "2026-10-13T17:46:07.509Z"
+}

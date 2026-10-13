@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-141-001",
+  "node_type": "claim",
+  "statement": "Chemical and pharmaceutical suppression of malaise provides only ephemeral aesthetic detachment while leaving structural material misery unresolved.",
+  "claim_type": "theoretical_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-018",
+      "locator_type": "timestamp",
+      "locator": "[03:05 - 03:45]",
+      "verbatim_quote": "The pastel colors drain violently from the canvas, snapping the rat back into the gray, freezing reality with amplified sensory shock and withdrawal panic."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-141"
+  ],
+  "created_at": "2026-10-13T17:46:07.518Z"
+}

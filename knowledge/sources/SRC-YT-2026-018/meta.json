@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC-YT-2026-018",
+  "video_id": "e9dZQelULDk",
+  "title": "Happiness (Animated Short Film)",
+  "author": "Steve Cutts",
+  "year": 2017,
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "sha256": "eb1dfd8e6f89343ee188a1594ec3945369cae564e6fe27ece7525a918a683c93",
+  "char_count": 5323,
+  "word_count": 709,
+  "cue_count": 20,
+  "time_span_sec": 256,
+  "capture_method": "visual_scene_transcript_reconstruction",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "created_at": "2026-10-13T17:46:07.502Z"
+}

@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-13T17:38:38.019Z",
+  "built_at": "2026-10-13T17:47:49.414Z",
   "metrics": {
-    "total_sources": 19,
-    "total_concepts": 36,
-    "total_claims": 58,
+    "total_sources": 20,
+    "total_concepts": 38,
+    "total_claims": 62,
     "total_edges": 14,
     "total_docs": 18
   },
@@ -420,6 +420,28 @@
       "updated_at": "2026-10-13T22:38:00.000Z",
       "duration": "1h 57m 02s",
       "url": "https://www.youtube.com/watch?v=Vx9nPyxLSSo"
+    },
+    {
+      "source_id": "SRC-YT-2026-018",
+      "video_id": "e9dZQelULDk",
+      "title": "Happiness (Animated Short Film)",
+      "author": "Steve Cutts",
+      "published_year": 2017,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "eb1dfd8e6f89343ee188a1594ec3945369cae564e6fe27ece7525a918a683c93",
+      "raw_path": "sources/raw/SRC-YT-2026-018_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-018.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-018/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-13T17:46:07.499Z",
+      "updated_at": "2026-10-13T17:46:07.499Z",
+      "duration": "4m 16s",
+      "url": "https://www.youtube.com/watch?v=e9dZQelULDk"
     }
   ],
   "concepts": [
@@ -1194,6 +1216,50 @@
       ],
       "created_at": "2026-10-12T01:37:30.305Z",
       "updated_at": "2026-10-12T01:37:30.305Z"
+    },
+    {
+      "node_id": "CON-137",
+      "node_type": "concept",
+      "canonical_name": "The Rat Race Paradigm & Manufactured Discontent",
+      "aliases": [
+        "Rat Race Metaphor",
+        "Manufactured Discontent",
+        "Urban Alienation Loop"
+      ],
+      "domain": "Socio-Cognitive Psychology",
+      "definition": "A socio-economic condition where individuals are systematically conditioned through mass advertising to pursue material commodities as substitutes for psychological fulfillment, resulting in continuous labor entrapment.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-137-001",
+        "CLM-CON-137-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-018"
+      ],
+      "created_at": "2026-10-13T17:46:07.509Z",
+      "updated_at": "2026-10-13T17:46:07.509Z"
+    },
+    {
+      "node_id": "CON-141",
+      "node_type": "concept",
+      "canonical_name": "The Hedonic Treadmill & Commodity Escapism",
+      "aliases": [
+        "Hedonic Treadmill",
+        "Commodity Escapism",
+        "Chemical Malaise Suppression"
+      ],
+      "domain": "Behavioral Economics",
+      "definition": "The psychological tendency for dopamine surges derived from consumption, alcohol, or psychiatric suppression to rapidly degrade, forcing continuous reinvestment in wage labor to finance subsequent temporary highs.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-141-001",
+        "CLM-CON-141-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-018"
+      ],
+      "created_at": "2026-10-13T17:46:07.518Z",
+      "updated_at": "2026-10-13T17:46:07.518Z"
     }
   ],
   "claims": [
@@ -2298,6 +2364,82 @@
         "CON-133"
       ],
       "created_at": "2026-10-12T01:37:30.305Z"
+    },
+    {
+      "node_id": "CLM-CON-137-001",
+      "node_type": "claim",
+      "statement": "Mass commercial advertising systematically semanticizes brand logos as emotional proxies for happiness, creating artificial urgency and consumer panic.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-018",
+          "locator_type": "timestamp",
+          "locator": "[00:12 - 00:38]",
+          "verbatim_quote": "Giant commercial billboards dominate the skyline, substituting major corporate logos (Nike, McDonald’s, Apple, Starbucks, Visa) with the singular neon mandate: \"Happiness\"."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-137"
+      ],
+      "created_at": "2026-10-13T17:46:07.509Z"
+    },
+    {
+      "node_id": "CLM-CON-137-002",
+      "node_type": "claim",
+      "statement": "The Autonomy Paradox: Purchasing status symbols like sports cars under the marketing promise of freedom results in identical collective paralysis within urban gridlock.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-018",
+          "locator_type": "timestamp",
+          "locator": "[01:18 - 01:32]",
+          "verbatim_quote": "The promised freedom is instantly extinguished as he becomes trapped in an endless, catastrophic multilane highway gridlock with thousands of identical frustrated drivers."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-137"
+      ],
+      "created_at": "2026-10-13T17:46:07.511Z"
+    },
+    {
+      "node_id": "CLM-CON-141-001",
+      "node_type": "claim",
+      "statement": "Chemical and pharmaceutical suppression of malaise provides only ephemeral aesthetic detachment while leaving structural material misery unresolved.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-018",
+          "locator_type": "timestamp",
+          "locator": "[03:05 - 03:45]",
+          "verbatim_quote": "The pastel colors drain violently from the canvas, snapping the rat back into the gray, freezing reality with amplified sensory shock and withdrawal panic."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-141"
+      ],
+      "created_at": "2026-10-13T17:46:07.518Z"
+    },
+    {
+      "node_id": "CLM-CON-141-002",
+      "node_type": "claim",
+      "statement": "Corporate wage labor functions as an inescapable mousetrap where fiat currency serves as survival bait that permanently encloses the worker in cubicle servitude.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-018",
+          "locator_type": "timestamp",
+          "locator": "[03:55 - 04:16]",
+          "verbatim_quote": "The camera pulls backward to reveal an endless corporate office tower where millions of identical rats are permanently trapped in cubicle mousetraps, endlessly slaving as wage cogs in the machinery."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-141"
+      ],
+      "created_at": "2026-10-13T17:46:07.520Z"
     }
   ],
   "edges": [

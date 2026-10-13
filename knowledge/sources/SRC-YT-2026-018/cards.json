@@ -1,0 +1,50 @@
+[
+  {
+    "card_id": "CARD-SRC-YT-2026-018-001",
+    "question": "How does Steve Cutts visually subvert major corporate logos (Nike, McDonald’s, Apple, Starbucks) in Happiness?",
+    "answer": "Every brand logo is uniformly altered to display the single word \"Happiness,\" demonstrating how modern hyper-capitalism semanticizes brand consumption as an emotional substitute for genuine fulfillment.",
+    "source_id": "SRC-YT-2026-018",
+    "locator": "[00:12 - 00:25]",
+    "dimension": "Core Thesis & Paradigm Shift"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-018-002",
+    "question": "What psychological paradox is exposed by the protagonist’s purchase of a sports car in the film?",
+    "answer": "The Autonomy Paradox: The car is purchased under the marketing promise of speed, status, and personal freedom, but immediately traps the owner inside suffocating multilane highway gridlock alongside thousands of identical drivers.",
+    "source_id": "SRC-YT-2026-018",
+    "locator": "[01:18 - 01:32]",
+    "dimension": "Causal & Theoretical Models"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-018-003",
+    "question": "What is the significance of the 1930s rubber-hose animation shift following the ingestion of Fluoxetine?",
+    "answer": "It represents the superficial, chemically induced hallucination of joy manufactured by pharmaceutical band-aids. The vintage pastel aesthetic highlights how psychiatric over-medication temporarily detaches the individual from grim systemic reality rather than curing the root malaise.",
+    "source_id": "SRC-YT-2026-018",
+    "locator": "[03:05 - 03:32]",
+    "dimension": "Master Analogy & Aesthetic Metaphor"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-018-004",
+    "question": "What does the dollar bill bait on the mousetrap represent at the film’s conclusion?",
+    "answer": "It symbolizes Corporate Wage Slavery: In an economic model where survival and consumer highs require fiat currency, individuals willingly spring the fatal trap of monotonous cubicle labor for survival tokens.",
+    "source_id": "SRC-YT-2026-018",
+    "locator": "[03:55 - 04:16]",
+    "dimension": "Structural Diagnosis"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-018-005",
+    "question": "What classical musical compositions frame the narrative arc of Happiness, and what is their dramatic irony?",
+    "answer": "Edvard Grieg’s \"Morning Mood\" (accompanying the drug-induced pastoral hallucination) and Georges Bizet’s \"Carmen: Habanera\" (framing the ruthless capitalist trap), contrasting triumphant romanticism against urban degradation and entrapment.",
+    "source_id": "SRC-YT-2026-018",
+    "locator": "[03:05 - 04:16]",
+    "dimension": "Audiovisual Provenance"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-018-006",
+    "question": "What is the Hedonic Treadmill loop depicted across the three stages of the protagonist rat’s journey?",
+    "answer": "The cycle of (1) Manufactured deprivation through advertising -> (2) Ephemeral dopamine spikes via retail, alcohol, or pharmaceuticals -> (3) Severe baseline crash and debt, forcing a return to wage labor to restart the loop.",
+    "source_id": "SRC-YT-2026-018",
+    "locator": "[00:38 - 04:16]",
+    "dimension": "Behavioral Economics"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-137-001",
+  "node_type": "claim",
+  "statement": "Mass commercial advertising systematically semanticizes brand logos as emotional proxies for happiness, creating artificial urgency and consumer panic.",
+  "claim_type": "theoretical_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-018",
+      "locator_type": "timestamp",
+      "locator": "[00:12 - 00:38]",
+      "verbatim_quote": "Giant commercial billboards dominate the skyline, substituting major corporate logos (Nike, McDonald’s, Apple, Starbucks, Visa) with the singular neon mandate: \"Happiness\"."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-137"
+  ],
+  "created_at": "2026-10-13T17:46:07.509Z"
+}

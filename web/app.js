@@ -649,23 +649,33 @@ function filterReaderCategory(cat) {
   const aspirantGroup = document.getElementById('cat-group-aspirant');
   const relGroup = document.getElementById('cat-group-relationships');
   const cogGroup = document.getElementById('cat-group-cognitive');
+  const philGroup = document.getElementById('cat-group-philosophy');
 
   if (cat === 'all') {
     if (aspirantGroup) aspirantGroup.style.display = 'block';
     if (relGroup) relGroup.style.display = 'block';
     if (cogGroup) cogGroup.style.display = 'block';
+    if (philGroup) philGroup.style.display = 'block';
   } else if (cat === 'aspirant') {
     if (aspirantGroup) aspirantGroup.style.display = 'block';
     if (relGroup) relGroup.style.display = 'none';
     if (cogGroup) cogGroup.style.display = 'none';
+    if (philGroup) philGroup.style.display = 'none';
   } else if (cat === 'relationships') {
     if (aspirantGroup) aspirantGroup.style.display = 'none';
     if (relGroup) relGroup.style.display = 'block';
     if (cogGroup) cogGroup.style.display = 'none';
+    if (philGroup) philGroup.style.display = 'none';
   } else if (cat === 'cognitive') {
     if (aspirantGroup) aspirantGroup.style.display = 'none';
     if (relGroup) relGroup.style.display = 'none';
     if (cogGroup) cogGroup.style.display = 'block';
+    if (philGroup) philGroup.style.display = 'none';
+  } else if (cat === 'philosophy') {
+    if (aspirantGroup) aspirantGroup.style.display = 'none';
+    if (relGroup) relGroup.style.display = 'none';
+    if (cogGroup) cogGroup.style.display = 'none';
+    if (philGroup) philGroup.style.display = 'block';
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });

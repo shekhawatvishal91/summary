@@ -1,0 +1,30 @@
+{
+  "sourceId": "SRC-YT-2026-015",
+  "type": "youtube_lecture",
+  "title": "Ep 6: Buddha's Life Story | Buddhism Part-1 | Philosophy Series | Dr. Vikas Divyakirti",
+  "author": "Vikas Divyakirti",
+  "channel": "Vikas Divyakirti",
+  "url": "https://www.youtube.com/watch?v=6Z23K9lQ89s",
+  "publishedDate": "2026-03-28",
+  "durationSeconds": 20733,
+  "durationFormatted": "5h 45m 33s",
+  "language": "hi",
+  "originalLanguage": "hi",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Buddhist Philosophy & Life of Siddhartha Gautama",
+    "Avyakruta & The Pragmatic Therapeutic Stance (Noble Silence)",
+    "Historical Narratives of Renunciation: Ashvaghosha vs. B.R. Ambedkar",
+    "Socio-Political Conditions of 6th Century BCE & The Shramana Revolution",
+    "Majjhima Patipada (The Middle Path) & Enlightenment at Bodh Gaya",
+    "Sangha Governance, Gender Equity & The Mahaparinirvana"
+  ],
+  "provenance": {
+    "captionsFile": "sources/raw/SRC-YT-2026-015_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-015.txt",
+    "captionsHash": "0886d3ea9fa98186807aac5716fdc22f89a156af3973f8b69febe93c9bb33f29",
+    "textHash": "14c21b648cff3313e2177363cd99e5ad0e4713fa17ed0d67a3bc1481364bc426",
+    "transcriptionEngine": "youtube_timedtext_asr_hi",
+    "ingestedAt": "2026-10-13T21:40:00Z"
+  }
+}

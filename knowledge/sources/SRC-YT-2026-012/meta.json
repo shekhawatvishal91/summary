@@ -1,0 +1,30 @@
+{
+  "sourceId": "SRC-YT-2026-012",
+  "type": "youtube_lecture",
+  "title": "How more sleeping makes you more lucky and creates your destiny ( Psycology 101 )",
+  "author": "Human Behaviour",
+  "channel": "Human Behaviour",
+  "url": "https://www.youtube.com/watch?v=eFXdZexooyg",
+  "publishedDate": "2026-10-12",
+  "durationSeconds": 748,
+  "durationFormatted": "12m 28s",
+  "language": "en",
+  "originalLanguage": "en",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Neurobiology of Sleep",
+    "Circadian Biology & Melatonin",
+    "Cognitive Decision Making",
+    "Pattern Recognition & Hippocampus",
+    "Emotional Regulation & Relationships"
+  ],
+  "provenance": {
+    "audioFile": "sources/raw/SRC-YT-2026-012_audio.opus",
+    "captionsFile": "sources/raw/SRC-YT-2026-012_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-012.txt",
+    "captionsHash": "82f4c854c6b235ec30328e27a56c5b39b7bcf88692e18577b1901bea871672e1",
+    "textHash": "574bf6254a23d3aafc7e4ff5388f6178c48d0b6a0b7d8012fb5b7f9166573093",
+    "transcriptionEngine": "whisper.cpp_ggml-tiny.en.bin",
+    "ingestedAt": "2026-10-13T03:49:45Z"
+  }
+}

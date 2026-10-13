@@ -700,8 +700,6 @@ function viewCodex(sourceId) {
   if (headerBar) headerBar.style.display = 'flex';
   const subnav = document.getElementById('reader-subnav-individual');
   if (subnav) subnav.style.display = 'block';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-
   // Update switcher button active state
   document.querySelectorAll('.switcher-btn').forEach(btn => {
     btn.classList.remove('active');
@@ -780,6 +778,13 @@ function viewCodex(sourceId) {
 ` : '';
       const renderedHtml = renderMarkdown(banner + contentTxt);
       document.getElementById('codex-content').innerHTML = renderedHtml;
+
+      // Scroll directly to the note header card with margin for sticky navbar
+      const headerCard = document.getElementById('codex-header-card');
+      if (headerCard) {
+        const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+      }
     })
     .catch(err => {
       document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch codex at ${codexUrl}: ${err.message}</p>`;

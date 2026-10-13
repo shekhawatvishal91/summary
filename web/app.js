@@ -619,9 +619,27 @@ function formatInline(text) {
 let currentActiveCodexId = null;
 function setReadingMode() {}
 function applyReadingMode() {}
-
 function setReaderSection() {}
 function syncReaderSectionUI() {}
+
+function toggleSidebar(forceState) {
+  const sidebar = document.getElementById('reader-sidebar');
+  const backdrop = document.getElementById('sidebar-backdrop');
+  const toggleBtn = document.getElementById('sidebar-toggle-btn');
+  if (!sidebar) return;
+
+  const isMobile = window.innerWidth <= 1024;
+  if (isMobile) {
+    const shouldOpen = typeof forceState === 'boolean' ? forceState : !sidebar.classList.contains('mobile-open');
+    sidebar.classList.toggle('mobile-open', shouldOpen);
+    if (backdrop) backdrop.classList.toggle('active', shouldOpen);
+    if (toggleBtn) toggleBtn.classList.toggle('active', shouldOpen);
+  } else {
+    const shouldCollapse = typeof forceState === 'boolean' ? !forceState : !sidebar.classList.contains('collapsed');
+    sidebar.classList.toggle('collapsed', shouldCollapse);
+    if (toggleBtn) toggleBtn.classList.toggle('active', !shouldCollapse);
+  }
+}
 
 
 function filterReaderCategory(cat) {
@@ -706,13 +724,22 @@ function handleReaderSearch(query) {
 }
 
 function viewCodex(sourceId, shouldScroll = true) {
+  if (typeof window !== 'undefined' && window.innerWidth <= 1024) {
+    const sidebar = document.getElementById('reader-sidebar');
+    const backdrop = document.getElementById('sidebar-backdrop');
+    const toggleBtn = document.getElementById('sidebar-toggle-btn');
+    if (sidebar) sidebar.classList.remove('mobile-open');
+    if (backdrop) backdrop.classList.remove('active');
+    if (toggleBtn) toggleBtn.classList.remove('active');
+  }
+
   if (sourceId === 'MASTER-ASPIRANT-DECISION') {
     currentActiveCodexId = sourceId;
     switchTab('codex-reader');
     const headerBar = document.getElementById('reader-mode-header-bar');
     if (headerBar) headerBar.style.display = 'none';
     const subnav = document.getElementById('reader-subnav-individual');
-    if (subnav) subnav.style.display = 'none';
+    if (subnav) subnav.style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.getElementById('codex-title').innerHTML = `
       <div style="margin-bottom:0.75rem;">
@@ -751,7 +778,7 @@ function viewCodex(sourceId, shouldScroll = true) {
     const headerBar = document.getElementById('reader-mode-header-bar');
     if (headerBar) headerBar.style.display = 'none';
     const subnav = document.getElementById('reader-subnav-individual');
-    if (subnav) subnav.style.display = 'none';
+    if (subnav) subnav.style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.getElementById('codex-title').innerHTML = `
       <div style="margin-bottom:0.75rem;">
@@ -1013,6 +1040,10 @@ function viewCodex(sourceId, shouldScroll = true) {
 
 function navigateHome() {
   filterReaderCategory('all');
+  const sidebar = document.getElementById('reader-sidebar');
+  if (sidebar && sidebar.classList.contains('collapsed')) {
+    toggleSidebar(true);
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -1100,6 +1131,7 @@ if (typeof window !== 'undefined') {
   window.handleReaderSearch = handleReaderSearch;
   window.switchTab = switchTab;
   window.navigateHome = navigateHome;
+  window.toggleSidebar = toggleSidebar;
 }
 
 // Expose internal helpers for test runners when running in Node.js / vm

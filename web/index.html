@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Knowledge Brain OS — Notes Reader</title>
-  <link rel="stylesheet" href="styles.css?v=20261013-05">
+  <link rel="stylesheet" href="styles.css?v=20261013-06">
 </head>
 <body>
 
@@ -13,6 +13,9 @@
       <span class="logo-icon">🌿</span>
       <div class="logo-title">Knowledge Brain OS</div>
     </div>
+    <button id="sidebar-toggle-btn" class="sidebar-toggle-btn active" onclick="toggleSidebar()" title="Toggle Library Sidebar">
+      <span>☰</span> <span>Library</span>
+    </button>
     <nav class="header-category-nav">
       <button class="cat-pill active" id="pill-cat-all" onclick="filterReaderCategory('all')">All Codices (17)</button>
       <button class="cat-pill" id="pill-cat-aspirant" onclick="filterReaderCategory('aspirant')">🎓 Exam Preparation &amp; Decisions (7)</button>
@@ -199,13 +202,40 @@
       <div id="docs-list" class="card-list"></div>
     </section>
 
-    <!-- PRIMARY VIEW: MASTER NOTES READER (DEFAULT HOMEPAGE) -->
-    <section id="codex-reader" class="view-section active">
-      <!-- Hidden compatibility hooks for existing script queries -->
-      <div id="reader-mode-header-bar" style="display:none;"><span class="tab-count">14 Codices</span></div>
+    <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="toggleSidebar()"></div>
 
-      <!-- Categorized Channel Grids Container -->
-      <div id="reader-subnav-individual" class="reader-subnav" style="margin-top: 0.5rem;">
+    <div class="app-layout-container">
+      <!-- LEFT SIDEBAR: CHANNEL & NOTE NAVIGATION TREE -->
+      <aside id="reader-sidebar" class="reader-sidebar" aria-label="Library Navigation">
+        <div class="sidebar-header">
+          <div class="sidebar-title">
+            <span>📚 Library Index</span>
+          </div>
+          <button class="switcher-btn" style="padding:0.2rem 0.5rem; font-size:0.75rem;" onclick="toggleSidebar()" title="Close Sidebar">✕</button>
+        </div>
+
+        <div style="font-size:0.72rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary); margin-bottom:0.4rem; letter-spacing:0.04em;">
+          ⭐ Master Treatises
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.85rem;">
+          <div id="btn-switch-MASTER-ASPIRANT-DECISION" class="channel-video-item switcher-btn" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
+            <span class="video-item-icon">📖</span>
+            <span class="video-item-title">Aspirant Psychology Mega-Book</span>
+            <span class="video-item-duration">60m</span>
+          </div>
+          <div id="btn-switch-MASTER-RELATIONSHIP-DYNAMICS" class="channel-video-item switcher-btn" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
+            <span class="video-item-icon">💕</span>
+            <span class="video-item-title">Love Without Losing Yourself</span>
+            <span class="video-item-duration">4 Parts</span>
+          </div>
+        </div>
+
+        <div style="font-size:0.72rem; font-weight:700; text-transform:uppercase; color:var(--text-secondary); margin-bottom:0.4rem; letter-spacing:0.04em;">
+          🎙️ Channels &amp; Lectures
+        </div>
+
+        <!-- Categorized Channel Grids Container -->
+        <div id="reader-subnav-individual" class="reader-subnav">
         <!-- Category Group 1: Exam Preparation & Decision Architecture -->
         <div class="reader-category-group" id="cat-group-aspirant">
           <div class="reader-category-header">
@@ -450,20 +480,31 @@
           </div>
         </div>
       </div>
-      <div id="codex-header-card" class="codex-header-card" style="margin-bottom:1.5rem; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; box-shadow:var(--shadow-subtle);">
-        <h1 id="codex-title" class="page-title" style="margin-bottom:0.35rem;">Source Title</h1>
-        <p id="codex-meta" style="color:var(--text-secondary); font-size:0.875rem; margin-bottom:0;"></p>
+      </aside>
+
+      <!-- MAIN READING PANE -->
+      <div class="reader-main-pane">
+        <!-- PRIMARY VIEW: MASTER NOTES READER (DEFAULT HOMEPAGE) -->
+        <section id="codex-reader" class="view-section active">
+          <!-- Hidden compatibility hooks for existing script queries -->
+          <div id="reader-mode-header-bar" style="display:none;"><span class="tab-count">14 Codices</span></div>
+
+          <div id="codex-header-card" class="codex-header-card" style="margin-bottom:1.5rem; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; box-shadow:var(--shadow-subtle);">
+            <h1 id="codex-title" class="page-title" style="margin-bottom:0.35rem;">Source Title</h1>
+            <p id="codex-meta" style="color:var(--text-secondary); font-size:0.875rem; margin-bottom:0;"></p>
+          </div>
+          <div class="codex-viewer">
+            <div id="codex-content">Loading note...</div>
+          </div>
+        </section>
       </div>
-      <div class="codex-viewer">
-        <div id="codex-content">Loading note...</div>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer>
     Knowledge Brain OS &bull; <a href="https://github.com/shekhawatvishal91/summary" target="_blank">GitHub Repository</a> &bull; System Integrity Validated
   </footer>
 
-  <script src="app.js?v=20261013-05"></script>
+  <script src="app.js?v=20261013-06"></script>
 </body>
 </html>

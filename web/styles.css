@@ -170,7 +170,7 @@ nav button.active {
 /* Main Workspace Canvas */
 main {
   flex: 1;
-  max-width: 1140px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1.5rem 3rem 1.5rem;
@@ -1668,5 +1668,164 @@ footer a:hover {
   padding: 1.25rem;
   border-top: 1px solid var(--border-color);
   background: var(--bg-surface);
+}
+
+/* ========================================================== */
+/* OPTION 1: COLLAPSIBLE LEFT SIDEBAR LAYOUT ARCHITECTURE     */
+/* ========================================================== */
+
+.app-layout-container {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: flex-start;
+  position: relative;
+}
+
+.reader-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+  position: sticky;
+  top: 4.5rem;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  z-index: 90;
+}
+
+.reader-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+.reader-sidebar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 999px;
+}
+
+.reader-sidebar.collapsed {
+  display: none !important;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sidebar-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sidebar-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease;
+  margin-left: 0.5rem;
+}
+
+.sidebar-toggle-btn:hover {
+  background-color: var(--bg-subtle);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.sidebar-toggle-btn.active {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.reader-main-pane {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.reader-sidebar .channel-card-box {
+  padding: 0.75rem 0.85rem;
+  margin-bottom: 0.75rem;
+  border-radius: var(--radius-md);
+}
+
+.reader-sidebar .channel-videos-grid {
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.reader-sidebar .channel-video-item {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.825rem;
+}
+
+.reader-sidebar .channel-name-title {
+  font-size: 0.825rem;
+}
+
+.reader-sidebar .reader-category-header {
+  font-size: 0.8rem;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .reader-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-height: 100vh;
+    border-radius: 0;
+    border-top: none;
+    border-bottom: none;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .reader-sidebar.mobile-open {
+    transform: translateX(0);
+    display: block !important;
+  }
+
+  .sidebar-backdrop.active {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+  }
 }
 

@@ -731,6 +731,45 @@ function viewCodex(sourceId) {
     return;
   }
 
+  if (sourceId === 'CHAPTER-ABRAIN-ASPIRANT-PSYCHOLOGY') {
+    currentActiveCodexId = sourceId;
+    switchTab('codex-reader');
+    const headerBar = document.getElementById('reader-mode-header-bar');
+    if (headerBar) headerBar.style.display = 'flex';
+    const subnav = document.getElementById('reader-subnav-individual');
+    if (subnav) subnav.style.display = 'block';
+
+    document.querySelectorAll('.switcher-btn').forEach(btn => btn.classList.remove('active'));
+    const activeSwitcherBtn = document.getElementById(`btn-switch-${sourceId}`);
+    if (activeSwitcherBtn) activeSwitcherBtn.classList.add('active');
+
+    document.getElementById('codex-title').textContent = 'The Aspirant’s Cage: Sunk Cost Trap & Autonomous Identity (Unified Master Chapter)';
+    document.getElementById('codex-meta').innerHTML = `
+      <span class="badge badge-accent" style="margin-right:0.4rem; background:#1f883d; color:#fff;">CHANNEL MASTER CHAPTER</span>
+      <strong>Channel:</strong> ABrainOConscious &bull; <strong>Structure:</strong> 2 Parts &bull; Diagnosis to Architecture &bull;
+      <strong>Reading Time:</strong> 61m 11s &bull; <strong>Originality:</strong> 100% Verbatim Spoken Delivery
+    `;
+
+    const chapterUrl = `../knowledge/chapters/abrainoconscious_aspirant_psychology.md`;
+    fetch(chapterUrl)
+      .then(r => r.text())
+      .then(txt => {
+        // Strip top # Title line so content starts directly with the act overview
+        const contentTxt = txt.replace(/^#[^\n]+\n+(?:##[^\n]+\n+)?/, '');
+        document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
+
+        const headerCard = document.getElementById('codex-header-card');
+        if (headerCard) {
+          const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+        }
+      })
+      .catch(err => {
+        document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch chapter at ${chapterUrl}: ${err.message}</p>`;
+      });
+    return;
+  }
+
   if (!manifestData || !manifestData.sources) return;
   const source = manifestData.sources.find(s => s.source_id === sourceId);
   if (!source) return;

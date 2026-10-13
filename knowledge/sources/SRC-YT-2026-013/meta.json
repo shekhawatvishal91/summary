@@ -1,0 +1,31 @@
+{
+  "sourceId": "SRC-YT-2026-013",
+  "type": "youtube_lecture",
+  "title": "How to deal with Pain when it’s unbearable",
+  "author": "Human Behaviour",
+  "channel": "Human Behaviour",
+  "url": "https://www.youtube.com/watch?v=1b4XeguGQhc",
+  "publishedDate": "2026-07-19",
+  "durationSeconds": 654,
+  "durationFormatted": "10m 54s",
+  "language": "hi",
+  "originalLanguage": "hi",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Three Tiers of Inevitable Sadness",
+    "Mortality, Relational Rupture & Micro-Insecurities",
+    "Refutation of Curated Sadness vs Gravitational Despair",
+    "Derivative Purpose Trap & Vicarious Attachment",
+    "The Sovereign Safe Space & Water Shield Metaphor",
+    "The State of Surrender & Extreme Moments of Joy"
+  ],
+  "provenance": {
+    "audioFile": "sources/raw/SRC-YT-2026-013_audio.mp3",
+    "captionsFile": "sources/raw/SRC-YT-2026-013_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-013.txt",
+    "captionsHash": "f7744bc1a720b08aaba13d7980492d987d50eea37b62f530d1f4c494c0a5241a",
+    "textHash": "88eb96d18ef7146ae0727051440c752afa3ccf3961c29a43b6e6f42ec3e3d17a",
+    "transcriptionEngine": "youtube_timedtext_asr_hi",
+    "ingestedAt": "2026-10-13T11:52:25Z"
+  }
+}

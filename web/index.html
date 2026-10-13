@@ -4,18 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Knowledge Brain OS — Notes Reader</title>
-  <link rel="stylesheet" href="styles.css?v=20261013-02">
+  <link rel="stylesheet" href="styles.css?v=20261013-03">
 </head>
 <body>
 
   <header>
-    <div class="logo-area" id="logo-home-btn" role="button" tabindex="0" onclick="navigateHome()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();navigateHome();}" title="Go to Notes Reader" aria-label="Go to Notes Reader">
+    <div class="logo-area" id="logo-home-btn" role="button" tabindex="0" onclick="navigateHome()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();navigateHome();}" title="View All Notes" aria-label="View All Notes">
       <span class="logo-icon">🌿</span>
       <div class="logo-title">Knowledge Brain OS</div>
-      <span class="logo-badge">Reader Mode</span>
     </div>
-    <nav>
-      <button class="active" data-view="codex-reader" id="codex-tab">Reader Mode</button>
+    <nav class="header-category-nav">
+      <button class="cat-pill active" id="pill-cat-all" onclick="filterReaderCategory('all')">All Codices (12)</button>
+      <button class="cat-pill" id="pill-cat-aspirant" onclick="filterReaderCategory('aspirant')">🎓 Exam Preparation &amp; Decisions (5)</button>
+      <button class="cat-pill" id="pill-cat-relationships" onclick="filterReaderCategory('relationships')">💕 Relationship Dynamics (6)</button>
+      <button class="cat-pill" id="pill-cat-cognitive" onclick="filterReaderCategory('cognitive')">🧠 Cognitive Psychology &amp; Behavioral Change (1)</button>
+      <div class="reader-quick-search">
+        <input type="text" id="reader-search-input" class="reader-search-box" placeholder="🔍 Quick search titles or channels..." oninput="handleReaderSearch(this.value)">
+      </div>
     </nav>
   </header>
 
@@ -172,29 +177,11 @@
 
     <!-- PRIMARY VIEW: MASTER NOTES READER (DEFAULT HOMEPAGE) -->
     <section id="codex-reader" class="view-section active">
-      <!-- Reader Mode Top Header Bar -->
-      <div class="reader-mode-header" id="reader-mode-header-bar">
-        <div class="reader-mode-title-group" style="display:flex; align-items:center; gap:0.6rem;">
-          <h2 style="font-size:1.15rem; font-weight:700; margin:0; color:var(--text-primary); display:inline-flex; align-items:center; gap:0.4rem;">
-            📑 Notes Reader Mode
-          </h2>
-          <span class="tab-count">12 Codices</span>
-        </div>
-      </div>
+      <!-- Hidden compatibility hooks for existing script queries -->
+      <div id="reader-mode-header-bar" style="display:none;"><span class="tab-count">12 Codices</span></div>
 
-      <!-- Individual Source Codices Selector (Categorized & Scalable) -->
-      <div id="reader-subnav-individual" class="reader-subnav">
-        <!-- Scalable Category & Quick-Filter Bar -->
-        <div class="reader-category-bar">
-          <button class="cat-pill active" id="pill-cat-all" onclick="filterReaderCategory('all')">All Codices (12)</button>
-          <button class="cat-pill" id="pill-cat-aspirant" onclick="filterReaderCategory('aspirant')">🎓 Exam Preparation &amp; Decisions (5)</button>
-          <button class="cat-pill" id="pill-cat-relationships" onclick="filterReaderCategory('relationships')">💕 Relationship Dynamics (6)</button>
-          <button class="cat-pill" id="pill-cat-cognitive" onclick="filterReaderCategory('cognitive')">🧠 Cognitive Psychology &amp; Behavioral Change (1)</button>
-          <div class="reader-quick-search">
-            <input type="text" id="reader-search-input" class="reader-search-box" placeholder="🔍 Quick search titles or channels..." oninput="handleReaderSearch(this.value)">
-          </div>
-        </div>
-
+      <!-- Categorized Channel Grids Container -->
+      <div id="reader-subnav-individual" class="reader-subnav" style="margin-top: 0.5rem;">
         <!-- Category Group 1: Exam Preparation & Decision Architecture -->
         <div class="reader-category-group" id="cat-group-aspirant">
           <div class="reader-category-header">
@@ -378,6 +365,6 @@
     Knowledge Brain OS &bull; <a href="https://github.com/shekhawatvishal91/summary" target="_blank">GitHub Repository</a> &bull; System Integrity Validated
   </footer>
 
-  <script src="app.js?v=20261013-02"></script>
+  <script src="app.js?v=20261013-03"></script>
 </body>
 </html>

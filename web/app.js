@@ -32,8 +32,9 @@ function initApp() {
   renderConcepts();
   renderDocs();
   setupNavigation();
+  filterReaderCategory('all');
   if (typeof window !== 'undefined' && window.location && window.document) {
-    viewCodex('SRC-YT-2026-003');
+    viewCodex('SRC-YT-2026-003', false);
   }
 }
 
@@ -613,7 +614,7 @@ function handleReaderSearch(query) {
   });
 }
 
-function viewCodex(sourceId) {
+function viewCodex(sourceId, shouldScroll = true) {
   if (sourceId === 'MASTER-ASPIRANT-DECISION') {
     currentActiveCodexId = sourceId;
     switchTab('codex-reader');
@@ -719,10 +720,12 @@ function viewCodex(sourceId) {
         const contentTxt = txt.replace(/^#[^\n]+\n+(?:##[^\n]+\n+)?/, '');
         document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
 
-        const headerCard = document.getElementById('codex-header-card');
-        if (headerCard) {
-          const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
-          window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+        if (shouldScroll) {
+          const headerCard = document.getElementById('codex-header-card');
+          if (headerCard) {
+            const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+          }
         }
       })
       .catch(err => {
@@ -758,10 +761,12 @@ function viewCodex(sourceId) {
         const contentTxt = txt.replace(/^#[^\n]+\n+(?:##[^\n]+\n+)?/, '');
         document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
 
-        const headerCard = document.getElementById('codex-header-card');
-        if (headerCard) {
-          const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
-          window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+        if (shouldScroll) {
+          const headerCard = document.getElementById('codex-header-card');
+          if (headerCard) {
+            const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+          }
         }
       })
       .catch(err => {
@@ -861,10 +866,12 @@ function viewCodex(sourceId) {
       document.getElementById('codex-content').innerHTML = renderedHtml;
 
       // Scroll directly to the note header card with margin for sticky navbar
-      const headerCard = document.getElementById('codex-header-card');
-      if (headerCard) {
-        const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
-        window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+      if (shouldScroll) {
+        const headerCard = document.getElementById('codex-header-card');
+        if (headerCard) {
+          const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+        }
       }
     })
     .catch(err => {
@@ -873,7 +880,7 @@ function viewCodex(sourceId) {
 }
 
 function navigateHome() {
-  switchTab('codex-reader');
+  filterReaderCategory('all');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 

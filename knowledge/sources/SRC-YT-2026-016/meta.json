@@ -1,0 +1,30 @@
+{
+  "sourceId": "SRC-YT-2026-016",
+  "type": "youtube_lecture",
+  "title": "Ep 7: Buddha's Philosophy | Buddhism Part-2 | Philosophy Series | Dr. Vikas Divyakirti",
+  "author": "Vikas Divyakirti",
+  "channel": "Vikas Divyakirti",
+  "url": "https://www.youtube.com/watch?v=v6yBQCVmdxI",
+  "publishedDate": "2026-05-16",
+  "durationSeconds": 19397,
+  "durationFormatted": "5h 23m 17s",
+  "language": "hi",
+  "originalLanguage": "hi",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Four Noble Truths & Classification of Dukkha",
+    "Pratityasamutpada (Dependent Origination) & The 12 Nidanas",
+    "Anityavada & Kshanikavada (Momentariness & Universal Flux)",
+    "Anattavada (Non-Self) & The Five Skandhas (Milindapanha Chariot Analogy)",
+    "Buddhist Anishvaravada (Non-Theism & Critique of Creator God)",
+    "Mahayana Transformation, Bodhisattva Ideal & The Four Buddhist Schools"
+  ],
+  "provenance": {
+    "captionsFile": "sources/raw/SRC-YT-2026-016_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-016.txt",
+    "captionsHash": "ddf1f5df662d06aaa5a5f8b4262d0285db51803fb679c021083849f86548b34b",
+    "textHash": "68ea043aa37bdfc959f5e480e631e7577d776726681bd2b41a895b8d131a1ca6",
+    "transcriptionEngine": "youtube_timedtext_asr_hi",
+    "ingestedAt": "2026-10-13T21:52:00Z"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-13T16:21:20.152Z",
+  "built_at": "2026-10-13T16:28:16.798Z",
   "metrics": {
-    "total_sources": 17,
+    "total_sources": 18,
     "total_concepts": 36,
     "total_claims": 58,
     "total_edges": 14,
@@ -376,6 +376,28 @@
       "updated_at": "2026-10-13T21:40:00.000Z",
       "duration": "5h 45m 33s",
       "url": "https://www.youtube.com/watch?v=6Z23K9lQ89s"
+    },
+    {
+      "source_id": "SRC-YT-2026-016",
+      "video_id": "v6yBQCVmdxI",
+      "title": "Ep 7: Buddha's Philosophy | Buddhism Part-2 | Philosophy Series | Dr. Vikas Divyakirti",
+      "author": "Vikas Divyakirti",
+      "published_year": 2026,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "68ea043aa37bdfc959f5e480e631e7577d776726681bd2b41a895b8d131a1ca6",
+      "raw_path": "sources/raw/SRC-YT-2026-016_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-016.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-016/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-13T21:52:00.000Z",
+      "updated_at": "2026-10-13T21:52:00.000Z",
+      "duration": "5h 23m 17s",
+      "url": "https://www.youtube.com/watch?v=v6yBQCVmdxI"
     }
   ],
   "concepts": [

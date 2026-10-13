@@ -866,6 +866,47 @@ function viewCodex(sourceId, shouldScroll = true) {
     return;
   }
 
+  if (sourceId === 'CHAPTER-VIKAS-BUDDHA-CANON') {
+    currentActiveCodexId = sourceId;
+    switchTab('codex-reader');
+    const headerBar = document.getElementById('reader-mode-header-bar');
+    if (headerBar) headerBar.style.display = 'flex';
+    const subnav = document.getElementById('reader-subnav-individual');
+    if (subnav) subnav.style.display = 'block';
+
+    document.querySelectorAll('.switcher-btn').forEach(btn => btn.classList.remove('active'));
+    const activeSwitcherBtn = document.getElementById(`btn-switch-${sourceId}`);
+    if (activeSwitcherBtn) activeSwitcherBtn.classList.add('active');
+
+    document.getElementById('codex-title').textContent = 'The Complete Buddhist Canon: Life, Historical Context & Core Philosophy (Unified Master Chapter)';
+    document.getElementById('codex-meta').innerHTML = `
+      <span class="badge badge-accent" style="margin-right:0.4rem; background:#d97706; color:#fff;">CHANNEL MASTER CHAPTER</span>
+      <strong>Channel:</strong> Vikas Divyakirti &bull; <strong>Structure:</strong> 2 Volumes &bull; 38 Acts &bull;
+      <strong>Reading Time:</strong> 11h 08m 50s &bull; <strong>Originality:</strong> 100% Verbatim Spoken Delivery
+    `;
+
+    const chapterUrl = `../knowledge/chapters/vikas_divyakirti_buddha_canon.md`;
+    fetch(chapterUrl)
+      .then(r => r.text())
+      .then(txt => {
+        // Strip top # Title line so content starts directly with the act overview
+        const contentTxt = txt.replace(/^#[^\n]+\n+(?:##[^\n]+\n+)?/, '');
+        document.getElementById('codex-content').innerHTML = renderMarkdown(contentTxt);
+
+        if (shouldScroll) {
+          const headerCard = document.getElementById('codex-header-card');
+          if (headerCard) {
+            const topPos = headerCard.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+          }
+        }
+      })
+      .catch(err => {
+        document.getElementById('codex-content').innerHTML = `<p style="color:var(--text-secondary);">Failed to fetch chapter at ${chapterUrl}: ${err.message}</p>`;
+      });
+    return;
+  }
+
   if (!manifestData || !manifestData.sources) return;
   const source = manifestData.sources.find(s => s.source_id === sourceId);
   if (!source) return;

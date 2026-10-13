@@ -1602,3 +1602,59 @@ footer a:hover {
   font-weight: 600;
   flex-shrink: 0;
 }
+
+/* Provenance & Verification Audit (Collapsible & Closed by Default) */
+.provenance-details-box {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.provenance-details-box[open] {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.provenance-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.25rem;
+  background: var(--bg-subtle);
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 0.925rem;
+  color: var(--text-primary);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.provenance-summary:hover {
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--accent-color);
+}
+
+.provenance-summary-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.provenance-summary-hint {
+  font-size: 0.775rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.provenance-content {
+  padding: 1.25rem;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-surface);
+}
+

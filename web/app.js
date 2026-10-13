@@ -463,6 +463,68 @@ function renderMarkdown(md) {
       continue;
     }
 
+    // Source Provenance & Verification Audit (Collapsible & Closed by Default)
+    if (line.startsWith('## Source Provenance') || (line.startsWith('## ') && line.includes('Provenance & Verification'))) {
+      if (inList) { html.push('</ul>'); inList = false; }
+      const headerTitle = line.slice(3).trim();
+      let provHtml = `<details class="provenance-details-box"><summary class="provenance-summary"><span class="provenance-summary-title">🛡️ ${formatInline(headerTitle)}</span><span class="provenance-summary-hint">Click to inspect audit &amp; verification &darr;</span></summary><div class="provenance-content">`;
+      i++;
+      let provInList = false;
+      while (i < lines.length) {
+        let pLine = lines[i];
+        if (pLine.startsWith('## ') || pLine.startsWith('# ') || pLine.trim() === '---') {
+          i--;
+          break;
+        }
+
+        // Table inside provenance
+        if (pLine.trim().startsWith('|') && pLine.trim().endsWith('|')) {
+          if (provInList) { provHtml += '</ul>'; provInList = false; }
+          let tableRows = [];
+          let isHeader = true;
+          while (i < lines.length && lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|')) {
+            let tLine = lines[i].trim();
+            if (tLine.match(/^\|(\s*:?-+:?\s*\|)+$/)) {
+              isHeader = false;
+              i++;
+              continue;
+            }
+            const cells = tLine.slice(1, -1).split('|').map(c => c.trim());
+            if (isHeader) {
+              tableRows.push(`<tr>${cells.map(c => `<th>${formatInline(c)}</th>`).join('')}</tr>`);
+              isHeader = false;
+            } else {
+              tableRows.push(`<tr>${cells.map(c => `<td>${formatInline(c)}</td>`).join('')}</tr>`);
+            }
+            i++;
+          }
+          i--;
+          provHtml += `<div class="table-container" style="margin-top:0.5rem;"><table class="codex-table">${tableRows.join('')}</table></div>`;
+          i++;
+          continue;
+        }
+
+        const bulletMatch = pLine.match(/^(\s*)[*-]\s+(.*)$/);
+        if (bulletMatch) {
+          if (!provInList) { provHtml += '<ul class="codex-list">'; provInList = true; }
+          provHtml += `<li>${formatInline(bulletMatch[2])}</li>`;
+        } else {
+          if (provInList && pLine.trim() === '') {
+            provHtml += '</ul>';
+            provInList = false;
+          }
+          if (pLine.trim().length > 0) {
+            provHtml += `<p class="codex-p">${formatInline(pLine)}</p>`;
+          }
+        }
+        i++;
+      }
+      if (provInList) provHtml += '</ul>';
+      provHtml += '</div></details>';
+      html.push(provHtml);
+      continue;
+    }
+
     // Markdown Table handling
     if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
       if (inList) { html.push('</ul>'); inList = false; }

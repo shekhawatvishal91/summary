@@ -1,0 +1,30 @@
+{
+  "sourceId": "SRC-YT-2026-017",
+  "type": "youtube_lecture",
+  "title": "Sardar Sangoshthi | Sardar Vallabhbhai Patel | Shri Morari Bapu | Dr Vikas Divyakirti",
+  "author": "Vikas Divyakirti",
+  "channel": "Vikas Divyakirti",
+  "url": "https://www.youtube.com/watch?v=Vx9nPyxLSSo",
+  "publishedDate": "2025-03-11",
+  "durationSeconds": 7022,
+  "durationFormatted": "1h 57m 02s",
+  "language": "hi",
+  "originalLanguage": "hi",
+  "epistemicTier": "tier_3",
+  "topics": [
+    "Sardar Vallabhbhai Patel & The National Movement",
+    "Bardoli Satyagraha & The Ethics of Mass Mobilization",
+    "Integration of 562 Princely States (Patel vs. Bismarck)",
+    "1946 Congress Presidency, Gandhi & Nehru-Patel Relationship",
+    "Founding of the All India Services (The Steel Frame)",
+    "Morari Bapu's Presidential Discourse on Karma Yoga & Trust"
+  ],
+  "provenance": {
+    "captionsFile": "sources/raw/SRC-YT-2026-017_captions.vtt",
+    "textFile": "sources/text/SRC-YT-2026-017.txt",
+    "captionsHash": "8a6d6eac3f444973255e1d178d4b2d48f3f420b5d4752fa47ffc4386ec700610",
+    "textHash": "3c0ef3fe7f4e97d097af153f2f5392836ea03989fd4ecb33d2f6ae36b8daa22d",
+    "transcriptionEngine": "youtube_timedtext_asr_hi",
+    "ingestedAt": "2026-10-13T22:38:00Z"
+  }
+}

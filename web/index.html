@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knowledge Brain OS — Notes Reader</title>
+  <title>Green Study Hub — Knowledge Brain OS</title>
   <link rel="stylesheet" href="styles.css?v=20261014-01">
 </head>
 <body>
@@ -11,13 +11,17 @@
   <header>
     <div class="logo-area" id="logo-home-btn" role="button" tabindex="0" onclick="navigateHome()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();navigateHome();}" title="View All Notes" aria-label="View All Notes">
       <span class="logo-icon">🌿</span>
-      <div class="logo-title">Knowledge Brain OS</div>
+      <div class="logo-title">Green Study Hub</div>
+      <span class="logo-badge">Knowledge Brain</span>
     </div>
     <button id="sidebar-toggle-btn" class="sidebar-toggle-btn active" onclick="toggleSidebar()" title="Toggle Library Sidebar">
       <span>☰</span> <span>Library</span>
     </button>
     <nav class="header-category-nav">
-      <button class="cat-pill active" id="pill-cat-all" onclick="filterReaderCategory('all')">All Codices (20)</button>
+      <button class="cat-pill active" id="btn-mode-hub" onclick="navigateHome()" style="font-weight:700;">🌿 Study Hub</button>
+      <button class="cat-pill" id="btn-mode-reader" onclick="openReaderMode()" style="font-weight:700;">📖 Library Reader</button>
+      <span style="color:var(--border-color); margin:0 0.2rem;">|</span>
+      <button class="cat-pill" id="pill-cat-all" onclick="filterReaderCategory('all')">All (20)</button>
       <button class="cat-pill" id="pill-cat-aspirant" onclick="filterReaderCategory('aspirant')">🎓 Exam Preparation &amp; Decisions (7)</button>
       <button class="cat-pill" id="pill-cat-relationships" onclick="filterReaderCategory('relationships')">💕 Relationship Dynamics (6)</button>
       <button class="cat-pill" id="pill-cat-cognitive" onclick="filterReaderCategory('cognitive')">🧠 Cognitive Psychology &amp; Behavioral Change (3)</button>
@@ -32,152 +36,492 @@
     <div id="status-banner"></div>
 
     <!-- BACKGROUND STORAGE: DASHBOARD & METRICS (Preserved for test contracts & data integrity) -->
-    <section id="dashboard-view" class="view-section" style="display:none;">
-      <div class="page-intro">
-        <h1 class="page-title">Master Notes Library</h1>
-        <p class="page-subtitle">
-          Exhaustive, self-contained analytical master codices distilled from long-form lectures and research—structured with zero fluff and verifiable timestamps.
+        <!-- ============================================================== -->
+    <!-- GREEN STUDY HUB DASHBOARD (HOMEPAGE) -->
+    <!-- ============================================================== -->
+    <section id="dashboard-view" class="view-section active">
+      <!-- HERO BANNER -->
+      <div class="hub-hero-banner">
+        <div class="hub-hero-badge">🌿 Aesthetic Student &amp; Researcher Sanctuary</div>
+        <h1 class="hub-hero-title">Green Study Hub</h1>
+        <p class="hub-hero-desc">
+          An intentional, distraction-free knowledge sanctuary distilled from long-form lectures and literature.
+          Structured with zero fluff, multi-year mental models, active recall flashcards, and empirical primary citations.
         </p>
-      </div>
 
-      <!-- SECTION A: CATEGORY & TOPIC HUBS (Synthesized Mega-Books & Subject Volumes) -->
-      <div class="section-heading-row" style="margin-top:0.5rem;">
-        <div>
-          <h2 class="section-heading-title">📚 Category &amp; Topic Hubs (Unified Master Knowledge)</h2>
-          <p style="font-size:0.875rem; color:var(--text-secondary); margin-top:0.15rem; margin-bottom:0;">
-            Curated mega-books and thematic compendiums synthesized from clusters of videos, books, and papers into chronological chapters.
-          </p>
+        <!-- NOTION MOTIVATIONAL QUOTE CALLOUT -->
+        <div class="hub-quote-card" id="hub-quote-card">
+          <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+            <span style="font-size:1.4rem; line-height:1;">🌱</span>
+            <div>
+              <div class="hub-quote-text" id="hub-quote-display">“~ Learn from failure ~”</div>
+              <span class="hub-quote-author" id="hub-quote-author">Philosophical Axiom &bull; Resilient Growth Mindset</span>
+            </div>
+          </div>
+          <button class="hub-quote-btn" onclick="shuffleWisdom()" title="Next Wisdom">↻ Next Wisdom</button>
+        </div>
+
+        <div class="hub-status-chip">
+          <span class="hub-status-dot"></span>
+          <span><strong>Active Study Session:</strong> 20 Codices Available &bull; 3 Master Treatises &bull; 43 Core Models &bull; 100% Primary Evidence</span>
         </div>
       </div>
 
-      <div class="topic-category-grid">
-        <!-- Topic Box 1: Aspirant Psychology & Decision Architecture -->
-        <div class="topic-box" style="border-left: 4px solid #1f883d; cursor:pointer;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
-          <div>
-            <div class="topic-box-header">
-              <span class="topic-badge topic-badge-book">📖 MEGA-BOOK VOLUME I</span>
-              <span class="topic-badge" style="background:#eaf5ea; color:#1f883d;">60m Consolidated</span>
-            </div>
-            <h3 class="topic-box-title">Competitive Exam Aspirant Psychology &amp; Decision Architecture</h3>
-            <div class="topic-box-channel">
-              <span>🎙️ Channels: <em>ABrainOConscious &bull; Human Behaviour</em></span> &bull; <span>3 Lectures Unified</span>
-            </div>
-            <p class="topic-box-desc">
-              Chronological master synthesis of candidate psychology across multi-year preparation, integrating motivation curves, the sunk cost trap, and the 5-phase decision playbook.
-            </p>
-          </div>
-          <div class="topic-box-footer">
-            <span class="topic-stats">3 Sources Unified &bull; 66m Consolidated</span>
-            <button class="btn-read" style="background:#1f883d; padding:0.4rem 0.9rem; font-size:0.825rem;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
-              Open Mega-Book &rarr;
-            </button>
-          </div>
-        </div>
-
-        <!-- Topic Box 2: Relationship Dynamics & Romantic Psychology -->
-        <div class="topic-box" style="border-left: 4px solid #bf3989; cursor:pointer;" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
-          <div>
-            <div class="topic-box-header">
-              <span class="topic-badge" style="background:#bf3989; color:#FFFFFF;">💕 MASTER TREATISE</span>
-              <span class="topic-badge" style="background:#fdf2f8; color:#bf3989;">Relationships &amp; Autonomy</span>
-            </div>
-            <h3 class="topic-box-title">Love Without Losing Yourself</h3>
-            <div class="topic-box-channel">
-              <span>🎙️ Channel: <em>The Cool Therapist</em></span> &bull; <span>6 Lectures Unified</span>
-            </div>
-            <p class="topic-box-desc">
-              Exhaustive master treatise on emotional triggers, anxious-avoidant attachment loops, over-pursuit dynamics, and the walk-away decision matrix.
-            </p>
-          </div>
-          <div class="topic-box-footer">
-            <span class="topic-stats">6 Sources Unified &bull; 4 Parts &bull; 25 Dynamics &bull; 3 Causal Loops</span>
-            <button class="btn-read" style="background:#bf3989; padding:0.4rem 0.9rem; font-size:0.825rem;" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
-              Read Master Treatise &rarr;
-            </button>
-          </div>
-        </div>
-
-        <!-- Topic Box 3: Buddhist Philosophy & Intellectual History -->
-        <div class="topic-box" style="border-left: 4px solid #d97706; cursor:pointer;" onclick="viewCodex('CHAPTER-VIKAS-BUDDHA-CANON')">
-          <div>
-            <div class="topic-box-header">
-              <span class="topic-badge" style="background:#d97706; color:#FFFFFF;">🏛️ MASTER TREATISE</span>
-              <span class="topic-badge" style="background:#fef3c7; color:#d97706;">Philosophy &amp; Ethics</span>
-            </div>
-            <h3 class="topic-box-title">The Complete Buddhist Canon</h3>
-            <div class="topic-box-channel">
-              <span>🎙️ Channel: <em>Vikas Divyakirti</em></span> &bull; <span>2 Volumes Unified</span>
-            </div>
-            <p class="topic-box-desc">
-              Encyclopedic master synthesis spanning the 6th-century BCE historical crucible, renunciation, Pratityasamutpada, Anattavada, and the Four Classical Schools.
-            </p>
-          </div>
-          <div class="topic-box-footer">
-            <span class="topic-stats">2 Sources Unified &bull; 2 Volumes &bull; 38 Acts &bull; 11h 08m</span>
-            <button class="btn-read" style="background:#d97706; padding:0.4rem 0.9rem; font-size:0.825rem;" onclick="viewCodex('CHAPTER-VIKAS-BUDDHA-CANON')">
-              Read Master Chapter &rarr;
-            </button>
-          </div>
-        </div>
+      <!-- QUICK ACTION BAR -->
+      <div class="hub-quick-bar">
+        <button class="hub-action-btn" onclick="scrollToSection('hub-mega-books')">
+          <span>⚡</span> <span>Master Treatises</span>
+        </button>
+        <button class="hub-action-btn" onclick="openReaderMode()">
+          <span>📚</span> <span>Library Reader</span>
+        </button>
+        <button class="hub-action-btn" onclick="scrollToSection('hub-goals-card')">
+          <span>🎯</span> <span>3-Tier Goals</span>
+        </button>
+        <button class="hub-action-btn" onclick="scrollToSection('hub-flashcards-card')">
+          <span>🧠</span> <span>Active Recall</span>
+        </button>
+        <button class="hub-action-btn" onclick="scrollToSection('hub-menu-card')">
+          <span>🗓️</span> <span>Reading Schedule</span>
+        </button>
+        <button class="hub-action-btn" onclick="scrollToSection('hub-system-diagnostics')">
+          <span>⚙️</span> <span>Brain Diagnostics</span>
+        </button>
       </div>
 
-      <!-- Subtle System Diagnostics & Architecture Drawer -->
-      <details style="margin-top:2.5rem; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:1rem 1.25rem;">
-        <summary style="cursor:pointer; font-weight:600; font-size:0.9rem; color:var(--text-secondary); user-select:none;">
-          ⚙️ System Diagnostics &amp; Knowledge Index Health
-        </summary>
-        <div style="margin-top:1.25rem;">
-          <div class="metrics-grid">
-            <div class="metric-card">
-              <div class="metric-label">Processed Sources</div>
-              <div class="metric-value-row">
-                <span class="metric-value" id="metric-sources">0</span>
-                <span class="metric-benchmark" id="metric-sources-benchmark">Benchmark: 0</span>
-              </div>
+      <!-- 3-COLUMN NOTION LAYOUT GRID -->
+      <div class="hub-main-grid">
+        <!-- ============================================== -->
+        <!-- LEFT COLUMN: MENU, TO-DO & QUICK LINKS -->
+        <!-- ============================================== -->
+        <div class="hub-grid-col-left">
+          <!-- Hub Navigation Menu -->
+          <div class="hub-card" id="hub-menu-card">
+            <div class="hub-card-header">
+              <span class="hub-card-title"><span>📋</span> <span>Study Menu</span></span>
+              <span class="hub-menu-tag">Core Hub</span>
             </div>
-            <div class="metric-card">
-              <div class="metric-label">Key Concepts</div>
-              <div class="metric-value-row">
-                <span class="metric-value" id="metric-concepts">0</span>
-                <span class="metric-benchmark" id="metric-concepts-benchmark">Benchmark: 0</span>
+            <div class="hub-menu-list">
+              <div class="hub-menu-item" onclick="filterReaderCategory('all'); openReaderMode();">
+                <span>📚 Master Codices</span>
+                <span class="hub-menu-tag">20</span>
               </div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Anchored Claims</div>
-              <div class="metric-value-row">
-                <span class="metric-value" id="metric-claims">0</span>
-                <span class="metric-benchmark" id="metric-claims-benchmark">Benchmark: 0</span>
+              <div class="hub-menu-item" onclick="scrollToSection('hub-mega-books')">
+                <span>⭐ Master Treatises</span>
+                <span class="hub-menu-tag">3</span>
               </div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Idea Connections</div>
-              <div class="metric-value-row">
-                <span class="metric-value" id="metric-edges">0</span>
-                <span class="metric-benchmark" id="metric-edges-benchmark">Benchmark: 0</span>
+              <div class="hub-menu-item" onclick="filterReaderCategory('aspirant'); openReaderMode();">
+                <span>🎓 Exam Decisions</span>
+                <span class="hub-menu-tag">7</span>
               </div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">System Manuals</div>
-              <div class="metric-value-row">
-                <span class="metric-value" id="metric-docs">18</span>
-                <span class="metric-benchmark">Authoritative</span>
+              <div class="hub-menu-item" onclick="filterReaderCategory('relationships'); openReaderMode();">
+                <span>💕 Relationships</span>
+                <span class="hub-menu-tag">6</span>
+              </div>
+              <div class="hub-menu-item" onclick="filterReaderCategory('philosophy'); openReaderMode();">
+                <span>🏛️ Philosophy &amp; Ethics</span>
+                <span class="hub-menu-tag">4</span>
+              </div>
+              <div class="hub-menu-item" onclick="scrollToSection('hub-goals-card')">
+                <span>🎯 Goal Roadmap</span>
+                <span class="hub-menu-tag">9 Goals</span>
+              </div>
+              <div class="hub-menu-item" onclick="scrollToSection('hub-system-diagnostics')">
+                <span>📊 Brain Metrics</span>
+                <span class="hub-menu-tag">Live</span>
               </div>
             </div>
           </div>
 
-          <div class="status-card" style="margin-top:1rem; margin-bottom:0;">
-            <div class="item-header">
-              <span class="item-title">System Health &amp; Standards</span>
+          <!-- Interactive To-Do List -->
+          <div class="hub-card">
+            <div class="hub-card-header">
+              <span class="hub-card-title"><span>✅</span> <span>Study Focus Queue</span></span>
+              <button class="hub-quote-btn" onclick="resetTodos()" style="padding:0.15rem 0.45rem; font-size:0.7rem;">Reset</button>
+            </div>
+            <div class="hub-todo-list" id="hub-todo-list">
+              <label class="hub-todo-item" id="todo-item-1">
+                <input type="checkbox" onchange="toggleTodo(1)" id="todo-chk-1">
+                <span>Aspirant Psychology &amp; Decision Mega-Book (60m)</span>
+              </label>
+              <label class="hub-todo-item" id="todo-item-2">
+                <input type="checkbox" onchange="toggleTodo(2)" id="todo-chk-2">
+                <span>Love Without Losing Yourself: Autonomy &amp; Attachment</span>
+              </label>
+              <label class="hub-todo-item" id="todo-item-3">
+                <input type="checkbox" onchange="toggleTodo(3)" id="todo-chk-3">
+                <span>Complete Buddhist Canon (Vikas Divyakirti)</span>
+              </label>
+              <label class="hub-todo-item" id="todo-item-4">
+                <input type="checkbox" onchange="toggleTodo(4)" id="todo-chk-4">
+                <span>Guru-Disciple Discourse (Prof Rameshwar Rai)</span>
+              </label>
+              <label class="hub-todo-item" id="todo-item-5">
+                <input type="checkbox" onchange="toggleTodo(5)" id="todo-chk-5">
+                <span>Complete 10 Active Recall Flashcards</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="hub-card">
+            <div class="hub-card-header">
+              <span class="hub-card-title"><span>🔗</span> <span>Quick Resources</span></span>
+            </div>
+            <div class="hub-menu-list">
+              <a class="hub-menu-item" href="https://github.com/shekhawatvishal91/summary" target="_blank">
+                <span>🐙 GitHub Repository</span>
+                <span>↗</span>
+              </a>
+              <div class="hub-menu-item" onclick="scrollToSection('hub-system-diagnostics')">
+                <span>📜 18 Governance Manuals</span>
+                <span>&darr;</span>
+              </div>
+              <a class="hub-menu-item" href="https://paint-magic-fdb.notion.site/Green-Study-Hub-ef5269d2211a820d896081fd4398207d" target="_blank">
+                <span>🌿 Notion Green Study Hub</span>
+                <span>↗</span>
+              </a>
+              <a class="hub-menu-item" href="https://buymeacoffee.com/kittylikesworld" target="_blank">
+                <span>☕ Creator Tribute (Kitty)</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Brain Dump Scratchpad -->
+          <div class="hub-card">
+            <div class="hub-card-header">
+              <span class="hub-card-title"><span>💭</span> <span>Brain Dump Scratchpad</span></span>
+              <button class="hub-quote-btn" onclick="clearScratchpad()" style="padding:0.15rem 0.45rem; font-size:0.7rem;">Clear</button>
+            </div>
+            <textarea id="hub-scratchpad" class="hub-scratchpad" placeholder="Jot down quick thoughts, session goals, or questions..." oninput="saveScratchpad(this.value)"></textarea>
+            <div style="font-size:0.72rem; color:var(--text-muted); margin-top:0.35rem; display:flex; justify-content:space-between;">
+              <span>Auto-saves locally</span>
+              <span id="scratchpad-status">Saved</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- CENTER COLUMN: MASTER TREATISES & CHANNEL CODICES -->
+        <!-- ============================================== -->
+        <div class="hub-grid-col-center">
+          <!-- SECTION 1: MASTER TREATISES (MEGA-BOOKS) -->
+          <div id="hub-mega-books" style="margin-bottom:1.75rem;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.85rem;">
+              <div>
+                <h2 style="font-size:1.15rem; font-weight:800; color:var(--text-primary); display:flex; align-items:center; gap:0.45rem;">
+                  <span>⭐</span> <span>Curated Master Treatises &amp; Mega-Books</span>
+                </h2>
+                <p style="font-size:0.825rem; color:var(--text-secondary); margin-top:0.1rem;">
+                  Full-length synthesized compendiums combining multi-part video series into comprehensive chapters.
+                </p>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+              <!-- Mega-Book 1 -->
+              <div class="topic-box" style="border-left: 4px solid #1f883d; cursor:pointer;" onclick="viewCodex('MASTER-ASPIRANT-DECISION')">
+                <div>
+                  <div class="topic-box-header">
+                    <span class="topic-badge topic-badge-book">📖 MEGA-BOOK VOLUME I</span>
+                    <span class="topic-badge" style="background:#eaf5ea; color:#1f883d;">60m Consolidated</span>
+                  </div>
+                  <h3 class="topic-box-title">Competitive Exam Aspirant Psychology &amp; Decision Architecture</h3>
+                  <div class="topic-box-channel">
+                    <span>🎙️ Channels: <em>ABrainOConscious &bull; Human Behaviour</em></span> &bull; <span>3 Lectures Unified</span>
+                  </div>
+                  <p class="topic-box-desc">
+                    Exhaustive synthesis of candidate psychology across multi-year preparation: motivation curves, the sunk cost trap, identity foreclosure, and the 5-phase decision playbook.
+                  </p>
+                </div>
+                <div class="topic-box-footer">
+                  <span class="topic-stats">3 Sources Unified &bull; 60m Consolidated Flow</span>
+                  <button class="btn-read" style="background:#1f883d; padding:0.4rem 0.9rem; font-size:0.825rem;" onclick="event.stopPropagation(); viewCodex('MASTER-ASPIRANT-DECISION')">
+                    Open Mega-Book &rarr;
+                  </button>
+                </div>
+              </div>
+
+              <!-- Mega-Book 2 -->
+              <div class="topic-box" style="border-left: 4px solid #bf3989; cursor:pointer;" onclick="viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
+                <div>
+                  <div class="topic-box-header">
+                    <span class="topic-badge" style="background:#bf3989; color:#FFFFFF;">💕 MASTER TREATISE</span>
+                    <span class="topic-badge" style="background:#fdf2f8; color:#bf3989;">Relationships &amp; Autonomy</span>
+                  </div>
+                  <h3 class="topic-box-title">Love Without Losing Yourself</h3>
+                  <div class="topic-box-channel">
+                    <span>🎙️ Channel: <em>The Cool Therapist</em></span> &bull; <span>6 Lectures Unified</span>
+                  </div>
+                  <p class="topic-box-desc">
+                    Master treatise on emotional triggers, anxious-avoidant attachment loops, over-pursuit dynamics, somatic self-soothing, and the walk-away decision matrix.
+                  </p>
+                </div>
+                <div class="topic-box-footer">
+                  <span class="topic-stats">6 Sources Unified &bull; 4 Parts &bull; 25 Dynamics &bull; 3 Causal Loops</span>
+                  <button class="btn-read" style="background:#bf3989; padding:0.4rem 0.9rem; font-size:0.825rem;" onclick="event.stopPropagation(); viewCodex('MASTER-RELATIONSHIP-DYNAMICS')">
+                    Read Master Treatise &rarr;
+                  </button>
+                </div>
+              </div>
+
+              <!-- Mega-Book 3 -->
+              <div class="topic-box" style="border-left: 4px solid #d97706; cursor:pointer;" onclick="viewCodex('CHAPTER-VIKAS-BUDDHA-CANON')">
+                <div>
+                  <div class="topic-box-header">
+                    <span class="topic-badge" style="background:#d97706; color:#FFFFFF;">🏛️ MASTER TREATISE</span>
+                    <span class="topic-badge" style="background:#fef3c7; color:#d97706;">Philosophy &amp; Ethics</span>
+                  </div>
+                  <h3 class="topic-box-title">The Complete Buddhist Canon</h3>
+                  <div class="topic-box-channel">
+                    <span>🎙️ Channel: <em>Vikas Divyakirti</em></span> &bull; <span>2 Volumes Unified</span>
+                  </div>
+                  <p class="topic-box-desc">
+                    Encyclopedic master synthesis spanning the 6th-century BCE historical crucible, renunciation, Pratityasamutpada, Anattavada, and the Four Classical Schools.
+                  </p>
+                </div>
+                <div class="topic-box-footer">
+                  <span class="topic-stats">2 Sources Unified &bull; 2 Volumes &bull; 38 Acts &bull; 11h 08m</span>
+                  <button class="btn-read" style="background:#d97706; padding:0.4rem 0.9rem; font-size:0.825rem;" onclick="event.stopPropagation(); viewCodex('CHAPTER-VIKAS-BUDDHA-CANON')">
+                    Read Master Chapter &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2: SUBJECT DOMAINS & LECTURE EXPLORER -->
+          <div>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.85rem;">
+              <div>
+                <h2 style="font-size:1.15rem; font-weight:800; color:var(--text-primary); display:flex; align-items:center; gap:0.45rem;">
+                  <span>📖</span> <span>Academic Subjects &amp; Knowledge Streams</span>
+                </h2>
+                <p style="font-size:0.825rem; color:var(--text-secondary); margin-top:0.1rem;">
+                  Direct access to individual analytical codices across all four active intellectual pillars.
+                </p>
+              </div>
+            </div>
+
+            <!-- Subject Cards Grid -->
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1rem;">
+              <!-- Subject 1 -->
+              <div class="hub-card" style="margin-bottom:0;">
+                <div class="hub-card-header">
+                  <span class="hub-card-title"><span>🎓</span> <span>Exam Preparation</span></span>
+                  <span class="hub-menu-tag">7 Notes</span>
+                </div>
+                <p style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+                  Psychological resilience, the Sunk Cost trap, UPSC AIR 50 strategies, and career transitions.
+                </p>
+                <div style="display:flex; flex-direction:column; gap:0.35rem;">
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-001')">
+                    <span>Sunk Cost Fallacy in Prep</span>
+                    <span class="hub-menu-tag">9m</span>
+                  </div>
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-002')">
+                    <span>Aspirant Self-Determination</span>
+                    <span class="hub-menu-tag">51m</span>
+                  </div>
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-014')">
+                    <span>Cracking UPSC 3 Times (AIR 50)</span>
+                    <span class="hub-menu-tag">20m</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subject 2 -->
+              <div class="hub-card" style="margin-bottom:0;">
+                <div class="hub-card-header">
+                  <span class="hub-card-title"><span>💕</span> <span>Relationship Dynamics</span></span>
+                  <span class="hub-menu-tag">6 Notes</span>
+                </div>
+                <p style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+                  Attachment theory, communication de-escalation, emotional triggers, and boundaries.
+                </p>
+                <div style="display:flex; flex-direction:column; gap:0.35rem;">
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-003')">
+                    <span>Communication Pitfalls</span>
+                    <span class="hub-menu-tag">1m</span>
+                  </div>
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-004')">
+                    <span>Avoiding the Pursuit Trap</span>
+                    <span class="hub-menu-tag">1m</span>
+                  </div>
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-008')">
+                    <span>Healing Anxious Attachment</span>
+                    <span class="hub-menu-tag">1m</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subject 3 -->
+              <div class="hub-card" style="margin-bottom:0;">
+                <div class="hub-card-header">
+                  <span class="hub-card-title"><span>🧠</span> <span>Cognitive Psychology</span></span>
+                  <span class="hub-menu-tag">3 Notes</span>
+                </div>
+                <p style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+                  Behavioral change, ego depletion, habit formation, and emotional regulation.
+                </p>
+                <div style="display:flex; flex-direction:column; gap:0.35rem;">
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-018')">
+                    <span>Dopamine &amp; Habit Loops</span>
+                    <span class="hub-menu-tag">18m</span>
+                  </div>
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-019')">
+                    <span>Cognitive Biases in Choices</span>
+                    <span class="hub-menu-tag">15m</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subject 4 -->
+              <div class="hub-card" style="margin-bottom:0;">
+                <div class="hub-card-header">
+                  <span class="hub-card-title"><span>🏛️</span> <span>Philosophy &amp; Pedagogy</span></span>
+                  <span class="hub-menu-tag">4 Notes</span>
+                </div>
+                <p style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+                  Buddhist philosophy, Sardar Patel statecraft, and classical Guru-Shishya mentorship.
+                </p>
+                <div style="display:flex; flex-direction:column; gap:0.35rem;">
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-020')">
+                    <span>Guru-Disciple Discourse</span>
+                    <span class="hub-menu-tag">1h 40m</span>
+                  </div>
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-017')">
+                    <span>Sardar Patel Jayanti Lecture</span>
+                    <span class="hub-menu-tag">1h 57m</span>
+                  </div>
+                  <div class="hub-menu-item" onclick="viewCodex('SRC-YT-2026-015')">
+                    <span>Gautam Buddha: Life &amp; Teachings</span>
+                    <span class="hub-menu-tag">6h 18m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- RIGHT COLUMN: GOALS, FLASHCARDS & DIAGNOSTICS -->
+        <!-- ============================================== -->
+        <div class="hub-grid-col-right">
+          <!-- 3-Tier Goals Widget -->
+          <div class="hub-card" id="hub-goals-card">
+            <div class="hub-card-header">
+              <span class="hub-card-title"><span>🎯</span> <span>3-Tier Study Goals</span></span>
+              <span class="hub-menu-tag">Active</span>
+            </div>
+
+            <div class="hub-goal-section">
+              <div class="hub-goal-heading"><span>🏫</span> <span>School &amp; Academic Mastery</span></div>
+              <ul class="hub-goal-list">
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Internalize competitive exam decision playbook</li>
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Maintain zero-fluff synthesis for each lecture</li>
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Achieve 95%+ retention on active recall decks</li>
+              </ul>
+            </div>
+
+            <div class="hub-goal-section">
+              <div class="hub-goal-heading"><span>🌱</span> <span>Psychological &amp; Relational Growth</span></div>
+              <ul class="hub-goal-list">
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Break anxious-avoidant pursuit loops</li>
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Spot sunk cost traps in real-time</li>
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Protect 90-minute daily focus sprints</li>
+              </ul>
+            </div>
+
+            <div class="hub-goal-section" style="margin-bottom:0;">
+              <div class="hub-goal-heading"><span>🏛️</span> <span>Life &amp; Philosophical Wisdom</span></div>
+              <ul class="hub-goal-list">
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Embody the Banyan Tree mentorship dynamic</li>
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Anchor claims in empirical, verifiable truth</li>
+                <li class="hub-goal-item"><span class="hub-goal-bullet">&bull;</span> Live with intellectual courage &amp; Diogenes stance</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Interactive Active Recall Flashcard Deck -->
+          <div class="hub-card" id="hub-flashcards-card">
+            <div class="hub-card-header">
+              <span class="hub-card-title"><span>🧠</span> <span>Active Recall Deck</span></span>
+              <span class="hub-menu-tag" id="flashcard-counter">Card 1 / 6</span>
+            </div>
+
+            <div class="hub-flashcard-box">
+              <div>
+                <div class="hub-flashcard-dim" id="flashcard-dimension">Mentorship Dynamics</div>
+                <div class="hub-flashcard-question" id="flashcard-question">
+                  How does Dr. Vikas Divyakirti deconstruct Prof. Rameshwar Rai's "Watering the Banyan Tree" metaphor?
+                </div>
+                <div class="hub-flashcard-answer" id="flashcard-answer">
+                  When a tree is in its initial vulnerable seed and sapling stage, timely water and intellectual nutrients dictate whether it withers or expands into a massive canopy.
+                </div>
+              </div>
+              <div class="hub-flashcard-ctrls">
+                <button class="hub-flashcard-btn" onclick="prevFlashcard()">&larr; Prev</button>
+                <button class="hub-flashcard-btn" id="flashcard-toggle-btn" onclick="toggleFlashcardAnswer()" style="background:var(--accent-color); color:#fff; border-color:var(--accent-color);">Show Answer</button>
+                <button class="hub-flashcard-btn" onclick="nextFlashcard()">Next &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Diagnostics & Knowledge Health (Contains all required DOM test contracts) -->
+          <div class="hub-card" id="hub-system-diagnostics">
+            <div class="hub-card-header">
+              <span class="hub-card-title"><span>⚙️</span> <span>Brain OS Diagnostics</span></span>
               <span class="badge badge-tier1" id="system-status-badge">CHECKS PASSED</span>
             </div>
-            <ul>
-              <li><strong>Zero Hallucination Anchoring:</strong> 100% of claims are tied to verbatim timestamps or physical line locators.</li>
-              <li><strong>Dual Knowledge Storage:</strong> Exhaustive standalone notes and connected idea graphs are kept in sync.</li>
-              <li><strong>Catalog Index Last Updated:</strong> <span id="last-built">Never</span></li>
-            </ul>
+
+            <div class="metrics-grid" style="grid-template-columns:1fr 1fr; gap:0.65rem; margin-bottom:1rem;">
+              <div class="metric-card" style="padding:0.75rem;">
+                <div class="metric-label" style="font-size:0.72rem;">Sources</div>
+                <div class="metric-value-row">
+                  <span class="metric-value" id="metric-sources" style="font-size:1.35rem;">0</span>
+                  <span class="metric-benchmark" id="metric-sources-benchmark">Benchmark: 0</span>
+                </div>
+              </div>
+              <div class="metric-card" style="padding:0.75rem;">
+                <div class="metric-label" style="font-size:0.72rem;">Concepts</div>
+                <div class="metric-value-row">
+                  <span class="metric-value" id="metric-concepts" style="font-size:1.35rem;">0</span>
+                  <span class="metric-benchmark" id="metric-concepts-benchmark">Benchmark: 0</span>
+                </div>
+              </div>
+              <div class="metric-card" style="padding:0.75rem;">
+                <div class="metric-label" style="font-size:0.72rem;">Claims</div>
+                <div class="metric-value-row">
+                  <span class="metric-value" id="metric-claims" style="font-size:1.35rem;">0</span>
+                  <span class="metric-benchmark" id="metric-claims-benchmark">Benchmark: 0</span>
+                </div>
+              </div>
+              <div class="metric-card" style="padding:0.75rem;">
+                <div class="metric-label" style="font-size:0.72rem;">Edges</div>
+                <div class="metric-value-row">
+                  <span class="metric-value" id="metric-edges" style="font-size:1.35rem;">0</span>
+                  <span class="metric-benchmark" id="metric-edges-benchmark">Benchmark: 0</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="font-size:0.76rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+              <div><strong>Catalog Updated:</strong> <span id="last-built">Never</span></div>
+              <div><strong>System Manuals:</strong> <span id="metric-docs">18</span> Constitutional Volumes</div>
+            </div>
+
+            <!-- Collapsible Governance Manuals Hub (Houses #docs-list for Test 6) -->
+            <details style="border-top:1px solid var(--border-subtle); padding-top:0.65rem; margin-top:0.5rem;">
+              <summary style="cursor:pointer; font-size:0.78rem; font-weight:600; color:var(--accent-color);">
+                📖 View 18 Constitutional Manuals
+              </summary>
+              <div id="docs-list" class="card-list" style="margin-top:0.65rem; font-size:0.78rem; max-height:220px; overflow-y:auto;"></div>
+            </details>
           </div>
         </div>
-      </details>
+      </div>
     </section>
 
     <!-- HIDDEN BACKGROUND CONTAINERS (Preserving search & indexing functions for tests) -->
@@ -516,6 +860,10 @@
         <section id="codex-reader" class="view-section active">
           <!-- Hidden compatibility hooks for existing script queries -->
           <div id="reader-mode-header-bar" style="display:none;"><span class="tab-count">14 Codices</span></div>
+
+          <button class="hub-back-btn" onclick="navigateHome()">
+            <span>&larr;</span> <span>🌿 Back to Green Study Hub Dashboard</span>
+          </button>
 
           <div id="codex-header-card" class="codex-header-card" style="margin-bottom:1.5rem; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; box-shadow:var(--shadow-subtle);">
             <h1 id="codex-title" class="page-title" style="margin-bottom:0.35rem;">Source Title</h1>

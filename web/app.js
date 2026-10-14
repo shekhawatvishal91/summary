@@ -33,8 +33,14 @@ function initApp() {
   renderDocs();
   setupNavigation();
   filterReaderCategory('all');
+  initHubInteractions();
   if (typeof window !== 'undefined' && window.location && window.document) {
-    viewCodex('SRC-YT-2026-003', false);
+    const hash = window.location.hash.replace('#', '').trim();
+    if (hash && (hash.startsWith('SRC-') || hash.startsWith('MASTER-') || hash.startsWith('CHAPTER-'))) {
+      viewCodex(hash, false);
+    } else {
+      navigateHome();
+    }
   }
 }
 
@@ -724,6 +730,16 @@ function handleReaderSearch(query) {
 }
 
 function viewCodex(sourceId, shouldScroll = true) {
+  const dash = document.getElementById('dashboard-view');
+  const appLayout = document.querySelector('.app-layout-container');
+  const btnHub = document.getElementById('btn-mode-hub');
+  const btnReader = document.getElementById('btn-mode-reader');
+
+  if (dash) dash.style.display = 'none';
+  if (appLayout) appLayout.style.display = 'flex';
+  if (btnHub) btnHub.classList.remove('active');
+  if (btnReader) btnReader.classList.add('active');
+
   if (typeof window !== 'undefined' && window.innerWidth <= 1024) {
     const sidebar = document.getElementById('reader-sidebar');
     const backdrop = document.getElementById('sidebar-backdrop');
@@ -1039,12 +1055,221 @@ function viewCodex(sourceId, shouldScroll = true) {
 }
 
 function navigateHome() {
+  const dash = document.getElementById('dashboard-view');
+  const appLayout = document.querySelector('.app-layout-container');
+  const btnHub = document.getElementById('btn-mode-hub');
+  const btnReader = document.getElementById('btn-mode-reader');
+
+  if (dash) dash.style.display = 'block';
+  if (appLayout) appLayout.style.display = 'none';
+  if (btnHub) btnHub.classList.add('active');
+  if (btnReader) btnReader.classList.remove('active');
+
   filterReaderCategory('all');
-  const sidebar = document.getElementById('reader-sidebar');
-  if (sidebar && sidebar.classList.contains('collapsed')) {
-    toggleSidebar(true);
+  if (typeof window !== 'undefined') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function openReaderMode(sourceId) {
+  const dash = document.getElementById('dashboard-view');
+  const appLayout = document.querySelector('.app-layout-container');
+  const btnHub = document.getElementById('btn-mode-hub');
+  const btnReader = document.getElementById('btn-mode-reader');
+
+  if (dash) dash.style.display = 'none';
+  if (appLayout) appLayout.style.display = 'flex';
+  if (btnHub) btnHub.classList.remove('active');
+  if (btnReader) btnReader.classList.add('active');
+
+  if (sourceId) {
+    viewCodex(sourceId);
+  } else if (!currentActiveCodexId) {
+    viewCodex('MASTER-ASPIRANT-DECISION');
+  }
+  if (typeof window !== 'undefined') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+/* ============================================================== */
+/* GREEN STUDY HUB INTERACTIVE FEATURES */
+/* ============================================================== */
+
+const WISDOM_QUOTES = [
+  { quote: "“~ Learn from failure ~”", author: "Philosophical Axiom • Resilient Growth Mindset" },
+  { quote: "“The mark of an autonomous mind is the courage to walk away from a sunk cost.”", author: "Aspirant Psychology • Decision Architecture" },
+  { quote: "“Pratityasamutpada: When this exists, that comes to be; with the arising of this, that arises.”", author: "Gautam Buddha • The Complete Buddhist Canon" },
+  { quote: "“A true guru does not create a clone under their shadow; they nurture an independent banyan tree.”", author: "Prof. Rameshwar Rai & Dr. Vikas Divyakirti" },
+  { quote: "“In love, over-pursuit breeds avoidance; sovereignty and emotional self-regulation restore equilibrium.”", author: "The Cool Therapist • Love Without Losing Yourself" },
+  { quote: "“Decouple economic utility from intellectual identity: do your work with discipline, but keep your mind free.”", author: "Classical Pedagogy & Practical Ethics" },
+  { quote: "“Stand a little out of my sunlight.”", author: "Diogenes to Alexander the Great • Supreme Intellectual Autonomy" },
+  { quote: "“Literature serves as emotional hygiene: it prevents technocratic dehumanization.”", author: "Hindi Literature & Critical Consciousness" }
+];
+let currentWisdomIdx = 0;
+
+function shuffleWisdom() {
+  currentWisdomIdx = (currentWisdomIdx + 1) % WISDOM_QUOTES.length;
+  const q = WISDOM_QUOTES[currentWisdomIdx];
+  const disp = document.getElementById('hub-quote-display');
+  const auth = document.getElementById('hub-quote-author');
+  if (disp) disp.textContent = q.quote;
+  if (auth) auth.textContent = q.author;
+}
+
+const HUB_FLASHCARDS = [
+  {
+    dim: "Mentorship Dynamics & Epistemic Timing",
+    q: "How does Dr. Vikas Divyakirti deconstruct Prof. Rameshwar Rai’s 'Watering the Banyan Tree' metaphor?",
+    a: "When a tree is in its initial vulnerable seed and sapling stage, timely water and intellectual nutrients dictate whether it withers or expands into a massive canopy."
+  },
+  {
+    dim: "Decision Architecture & Sunk Cost",
+    q: "What is the psychological trap that keeps multi-year aspirants locked in diminishing returns?",
+    a: "The Sunk Cost Fallacy: conflating past non-recoverable time and identity investments with rational assessment of future marginal utility."
+  },
+  {
+    dim: "Attachment Dynamics & Relational Autonomy",
+    q: "What is the critical intervention for breaking the anxious-avoidant pursuit loop?",
+    a: "Halting over-pursuit, self-soothing emotional panic somatic triggers, and establishing autonomous emotional sovereignty."
+  },
+  {
+    dim: "Buddhist Epistemology & Causality",
+    q: "What is the core philosophical implication of Pratityasamutpada (Dependent Origination)?",
+    a: "Nothing possesses svabhava (inherent, independent existence); all phenomena arise, persist, and dissolve strictly through interdependent conditions."
+  },
+  {
+    dim: "Intellectual Autonomy & Ethical Stance",
+    q: "How is the Diogenes stance applied to modern intellectual and professional life?",
+    a: "Refusing to sacrifice internal dignity, truth, and critical freedom for institutional accolades or worldly patronization."
+  },
+  {
+    dim: "Pedagogy of Humility",
+    q: "What is the true benchmark of a great mentor articulated by Prof. Rameshwar Rai?",
+    a: "Cultivating independent disciples who expand beyond the mentor's own intellectual and institutional boundaries."
+  }
+];
+let currentCardIdx = 0;
+
+function updateCardDisplay() {
+  const card = HUB_FLASHCARDS[currentCardIdx];
+  const dim = document.getElementById('flashcard-dimension');
+  const q = document.getElementById('flashcard-question');
+  const a = document.getElementById('flashcard-answer');
+  const counter = document.getElementById('flashcard-counter');
+  const btn = document.getElementById('flashcard-toggle-btn');
+
+  if (dim) dim.textContent = card.dim;
+  if (q) q.textContent = card.q;
+  if (a) {
+    a.textContent = card.a;
+    a.classList.remove('visible');
+  }
+  if (btn) btn.textContent = 'Show Answer';
+  if (counter) counter.textContent = `Card ${currentCardIdx + 1} / ${HUB_FLASHCARDS.length}`;
+}
+
+function toggleFlashcardAnswer() {
+  const a = document.getElementById('flashcard-answer');
+  const btn = document.getElementById('flashcard-toggle-btn');
+  if (a) {
+    const isVis = a.classList.toggle('visible');
+    if (btn) btn.textContent = isVis ? 'Hide Answer' : 'Show Answer';
+  }
+}
+
+function nextFlashcard() {
+  currentCardIdx = (currentCardIdx + 1) % HUB_FLASHCARDS.length;
+  updateCardDisplay();
+}
+
+function prevFlashcard() {
+  currentCardIdx = (currentCardIdx - 1 + HUB_FLASHCARDS.length) % HUB_FLASHCARDS.length;
+  updateCardDisplay();
+}
+
+function toggleTodo(idx) {
+  const item = document.getElementById(`todo-item-${idx}`);
+  const chk = document.getElementById(`todo-chk-${idx}`);
+  if (item && chk) {
+    if (chk.checked) {
+      item.classList.add('completed');
+    } else {
+      item.classList.remove('completed');
+    }
+    saveTodos();
+  }
+}
+
+function saveTodos() {
+  if (typeof localStorage === 'undefined') return;
+  const states = {};
+  for (let i = 1; i <= 5; i++) {
+    const chk = document.getElementById(`todo-chk-${i}`);
+    if (chk) states[i] = chk.checked;
+  }
+  localStorage.setItem('hub_todos_state', JSON.stringify(states));
+}
+
+function loadTodos() {
+  if (typeof localStorage === 'undefined') return;
+  try {
+    const raw = localStorage.getItem('hub_todos_state');
+    if (!raw) return;
+    const states = JSON.parse(raw);
+    for (let i = 1; i <= 5; i++) {
+      if (states[i]) {
+        const chk = document.getElementById(`todo-chk-${i}`);
+        const item = document.getElementById(`todo-item-${i}`);
+        if (chk) chk.checked = true;
+        if (item) item.classList.add('completed');
+      }
+    }
+  } catch (e) {}
+}
+
+function resetTodos() {
+  for (let i = 1; i <= 5; i++) {
+    const chk = document.getElementById(`todo-chk-${i}`);
+    const item = document.getElementById(`todo-item-${i}`);
+    if (chk) chk.checked = false;
+    if (item) item.classList.remove('completed');
+  }
+  saveTodos();
+}
+
+function saveScratchpad(val) {
+  if (typeof localStorage === 'undefined') return;
+  localStorage.setItem('hub_scratchpad_content', val);
+  const st = document.getElementById('scratchpad-status');
+  if (st) {
+    st.textContent = 'Saved';
+    setTimeout(() => { if (st) st.textContent = 'Saved'; }, 1000);
+  }
+}
+
+function loadScratchpad() {
+  if (typeof localStorage === 'undefined') return;
+  const saved = localStorage.getItem('hub_scratchpad_content');
+  const sp = document.getElementById('hub-scratchpad');
+  if (sp && saved) sp.value = saved;
+}
+
+function clearScratchpad() {
+  const sp = document.getElementById('hub-scratchpad');
+  if (sp) sp.value = '';
+  if (typeof localStorage !== 'undefined') localStorage.removeItem('hub_scratchpad_content');
+}
+
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+function initHubInteractions() {
+  loadTodos();
+  loadScratchpad();
+  updateCardDisplay();
 }
 
 function setupNavigation() {
@@ -1128,6 +1353,17 @@ if (typeof window !== 'undefined') {
   window.syncReaderSectionUI = syncReaderSectionUI;
   window.viewCodex = viewCodex;
   window.filterReaderCategory = filterReaderCategory;
+  window.navigateHome = navigateHome;
+  window.openReaderMode = openReaderMode;
+  window.shuffleWisdom = shuffleWisdom;
+  window.toggleTodo = toggleTodo;
+  window.resetTodos = resetTodos;
+  window.saveScratchpad = saveScratchpad;
+  window.clearScratchpad = clearScratchpad;
+  window.nextFlashcard = nextFlashcard;
+  window.prevFlashcard = prevFlashcard;
+  window.toggleFlashcardAnswer = toggleFlashcardAnswer;
+  window.scrollToSection = scrollToSection;
   window.handleReaderSearch = handleReaderSearch;
   window.switchTab = switchTab;
   window.navigateHome = navigateHome;

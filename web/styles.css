@@ -1881,13 +1881,14 @@ footer a:hover {
 
 .hub-quote-card {
   background: var(--bg-surface);
+  border: 1px solid var(--border-color);
   border-left: 4px solid var(--accent-color);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  padding: 0.9rem 1.25rem;
-  margin-bottom: 1.15rem;
-  box-shadow: 0 1px 3px rgba(39, 51, 43, 0.04);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.35rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-subtle);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }

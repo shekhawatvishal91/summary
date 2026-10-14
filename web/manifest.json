@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-14T02:42:15.629Z",
+  "built_at": "2026-10-14T02:49:52.933Z",
   "metrics": {
-    "total_sources": 21,
-    "total_concepts": 40,
-    "total_claims": 66,
+    "total_sources": 22,
+    "total_concepts": 43,
+    "total_claims": 71,
     "total_edges": 14,
     "total_docs": 18
   },
@@ -464,6 +464,28 @@
       "updated_at": "2026-10-14T02:39:09.584Z",
       "duration": "3m 36s",
       "url": "https://www.youtube.com/watch?v=WfGMYdalClU"
+    },
+    {
+      "source_id": "SRC-YT-2026-020",
+      "video_id": "4sbIYImHx3U",
+      "title": "Guru-Disciple Discourse | Prof Rameshwar Rai | Dr Vikas Divyakirti",
+      "author": "Vikas Divyakirti",
+      "published_year": 2025,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "18a366573ba06dbd0750e4c714a27d9ff62bca276d5eeea548f3cbe5ea678d44",
+      "raw_path": "sources/raw/SRC-YT-2026-020_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-020.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-020/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-14T02:47:52.663Z",
+      "updated_at": "2026-10-14T02:47:52.663Z",
+      "duration": "1h 40m 02s",
+      "url": "https://www.youtube.com/watch?v=4sbIYImHx3U"
     }
   ],
   "concepts": [
@@ -1326,6 +1348,71 @@
       ],
       "created_at": "2026-10-14T02:39:09.603Z",
       "updated_at": "2026-10-14T02:39:09.603Z"
+    },
+    {
+      "node_id": "CON-153",
+      "node_type": "concept",
+      "canonical_name": "The Classical Guru-Shishya Pedagogical Model & Intellectual Awakening",
+      "aliases": [
+        "Guru-Shishya Tradition",
+        "Existential Mentorship",
+        "Pedagogical Awakening"
+      ],
+      "domain": "Philosophical Pedagogy & Educational Ethics",
+      "definition": "An educational paradigm wherein mentorship extends beyond curriculum transmission to the cultivation of critical consciousness, emotional hygiene, and moral discernment.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-153-001",
+        "CLM-CON-153-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-020"
+      ],
+      "created_at": "2026-10-14T02:47:52.673Z",
+      "updated_at": "2026-10-14T02:47:52.673Z"
+    },
+    {
+      "node_id": "CON-157",
+      "node_type": "concept",
+      "canonical_name": "The Banyan Tree Mentorship Dynamic & Timely Epistemic Nourishment",
+      "aliases": [
+        "Banyan Tree Mentorship",
+        "Non-Linear Epistemic Leverage",
+        "Formative Scaffolding"
+      ],
+      "domain": "Developmental Psychology & Educational Theory",
+      "definition": "The principle that formative pedagogical interventions provide non-linear leverage, where timely intellectual nutrients and psychological validation during vulnerable early stages determine long-term intellectual capacity.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-157-001"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-020"
+      ],
+      "created_at": "2026-10-14T02:47:52.679Z",
+      "updated_at": "2026-10-14T02:47:52.679Z"
+    },
+    {
+      "node_id": "CON-161",
+      "node_type": "concept",
+      "canonical_name": "Literature as Moral Architecture & Critical Consciousness",
+      "aliases": [
+        "Literature as Emotional Hygiene",
+        "Sahitya & Moral Architecture",
+        "Humanistic Counterweight"
+      ],
+      "domain": "Literary Philosophy & Ethics",
+      "definition": "The function of serious literature to train the human intellect in nuance, empathy, and tolerance for complexity, acting as a crucial counterweight to technocratic dehumanization.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-161-001",
+        "CLM-CON-161-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-020"
+      ],
+      "created_at": "2026-10-14T02:47:52.681Z",
+      "updated_at": "2026-10-14T02:47:52.681Z"
     }
   ],
   "claims": [
@@ -2582,6 +2669,101 @@
         "CON-149"
       ],
       "created_at": "2026-10-14T02:39:09.604Z"
+    },
+    {
+      "node_id": "CLM-CON-153-001",
+      "node_type": "claim",
+      "statement": "Genuine educational mentorship operates as an existential apprenticeship that awakens critical consciousness rather than a transactional transfer of exam data.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-020",
+          "locator_type": "timestamp",
+          "locator": "[24:54 - 33:14]",
+          "verbatim_quote": "शिक्षण कोई व्यवसाय नहीं, बल्कि चेतना का बीजारोपण है। एक सच्चा शिक्षक विद्यार्थियों को सूचनाएं नहीं देता, बल्कि उन्हें सोचने की स्वायत्त दृष्टि और संवेदनशीलता प्रदान करता है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-153"
+      ],
+      "created_at": "2026-10-14T02:47:52.673Z"
+    },
+    {
+      "node_id": "CLM-CON-153-002",
+      "node_type": "claim",
+      "statement": "The ultimate benchmark of educational mentorship is the cultivation of independent thinkers who surpass the mentor without subservience or dogma.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-020",
+          "locator_type": "timestamp",
+          "locator": "[15:11 - 21:34]",
+          "verbatim_quote": "एक सच्चे गुरु की महानता इस बात में है कि वह शिष्य को अपने से आगे बढ़ते देखकर ईर्ष्या नहीं, परम आनंद महसूस करता है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-153"
+      ],
+      "created_at": "2026-10-14T02:47:52.675Z"
+    },
+    {
+      "node_id": "CLM-CON-157-001",
+      "node_type": "claim",
+      "statement": "Timely mentorship delivered during a student's formative period generates non-linear developmental leverage, transforming latent potential into enduring intellectual capacity.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-020",
+          "locator_type": "timestamp",
+          "locator": "[27:24 - 34:04]",
+          "verbatim_quote": "पेड़ जब बीज या कोमल पौधा होता है, उस समय का एक बूंद पानी भी उसके जीवन और आकार को निर्धारित करता है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-157"
+      ],
+      "created_at": "2026-10-14T02:47:52.679Z"
+    },
+    {
+      "node_id": "CLM-CON-161-001",
+      "node_type": "claim",
+      "statement": "Studying serious literature cultivates emotional hygiene and empathy, preventing bureaucratic and technocratic dehumanization in leadership and public service.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-020",
+          "locator_type": "timestamp",
+          "locator": "[34:04 - 41:34]",
+          "verbatim_quote": "साहित्य केवल परीक्षा पास करने का साधन नहीं, बल्कि मनुष्य की संवेदनाओं को मांझने और मानवीय करुणा को जगाने का माध्यम है।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-161"
+      ],
+      "created_at": "2026-10-14T02:47:52.681Z"
+    },
+    {
+      "node_id": "CLM-CON-161-002",
+      "node_type": "claim",
+      "statement": "The Diogenes Principle: True intellectual education instills internal sovereignty, enabling the thinker to stand detached before political and corporate power.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-020",
+          "locator_type": "timestamp",
+          "locator": "[49:04 - 56:34]",
+          "verbatim_quote": "जब सिकंदर ने डायोजनीज से कुछ मांगने को कहा, तो धूप सेक रहे दार्शनिक ने कहा: बस मेरी धूप के सामने से हट जाओ।"
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-161"
+      ],
+      "created_at": "2026-10-14T02:47:52.682Z"
     }
   ],
   "edges": [

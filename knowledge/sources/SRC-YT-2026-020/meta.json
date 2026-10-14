@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC-YT-2026-020",
+  "video_id": "4sbIYImHx3U",
+  "title": "Guru-Disciple Discourse | Prof Rameshwar Rai | Dr Vikas Divyakirti",
+  "author": "Vikas Divyakirti",
+  "year": 2025,
+  "medium": "youtube",
+  "epistemic_tier": "tier_3",
+  "sha256": "18a366573ba06dbd0750e4c714a27d9ff62bca276d5eeea548f3cbe5ea678d44",
+  "char_count": 3840,
+  "word_count": 614,
+  "cue_count": 15,
+  "time_span_sec": 6002,
+  "capture_method": "timestamped_chapter_transcript_reconstruction",
+  "decoding_status": "NATIVE_AGENT_DECODED",
+  "created_at": "2026-10-14T02:47:52.667Z"
+}

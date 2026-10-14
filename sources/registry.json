@@ -457,6 +457,28 @@
       "updated_at": "2026-10-14T02:39:09.584Z",
       "duration": "3m 36s",
       "url": "https://www.youtube.com/watch?v=WfGMYdalClU"
+    },
+    {
+      "source_id": "SRC-YT-2026-020",
+      "video_id": "4sbIYImHx3U",
+      "title": "Guru-Disciple Discourse | Prof Rameshwar Rai | Dr Vikas Divyakirti",
+      "author": "Vikas Divyakirti",
+      "published_year": 2025,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "18a366573ba06dbd0750e4c714a27d9ff62bca276d5eeea548f3cbe5ea678d44",
+      "raw_path": "sources/raw/SRC-YT-2026-020_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-020.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-020/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-14T02:47:52.663Z",
+      "updated_at": "2026-10-14T02:47:52.663Z",
+      "duration": "1h 40m 02s",
+      "url": "https://www.youtube.com/watch?v=4sbIYImHx3U"
     }
   ]
 }

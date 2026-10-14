@@ -1,0 +1,21 @@
+{
+  "node_id": "CON-157",
+  "node_type": "concept",
+  "canonical_name": "The Banyan Tree Mentorship Dynamic & Timely Epistemic Nourishment",
+  "aliases": [
+    "Banyan Tree Mentorship",
+    "Non-Linear Epistemic Leverage",
+    "Formative Scaffolding"
+  ],
+  "domain": "Developmental Psychology & Educational Theory",
+  "definition": "The principle that formative pedagogical interventions provide non-linear leverage, where timely intellectual nutrients and psychological validation during vulnerable early stages determine long-term intellectual capacity.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-157-001"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-020"
+  ],
+  "created_at": "2026-10-14T02:47:52.679Z",
+  "updated_at": "2026-10-14T02:47:52.679Z"
+}

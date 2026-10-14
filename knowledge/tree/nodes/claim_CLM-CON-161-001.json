@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-161-001",
+  "node_type": "claim",
+  "statement": "Studying serious literature cultivates emotional hygiene and empathy, preventing bureaucratic and technocratic dehumanization in leadership and public service.",
+  "claim_type": "theoretical_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-020",
+      "locator_type": "timestamp",
+      "locator": "[34:04 - 41:34]",
+      "verbatim_quote": "साहित्य केवल परीक्षा पास करने का साधन नहीं, बल्कि मनुष्य की संवेदनाओं को मांझने और मानवीय करुणा को जगाने का माध्यम है।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-161"
+  ],
+  "created_at": "2026-10-14T02:47:52.681Z"
+}

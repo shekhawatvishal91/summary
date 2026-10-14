@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-153-001",
+  "node_type": "claim",
+  "statement": "Genuine educational mentorship operates as an existential apprenticeship that awakens critical consciousness rather than a transactional transfer of exam data.",
+  "claim_type": "theoretical_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-020",
+      "locator_type": "timestamp",
+      "locator": "[24:54 - 33:14]",
+      "verbatim_quote": "शिक्षण कोई व्यवसाय नहीं, बल्कि चेतना का बीजारोपण है। एक सच्चा शिक्षक विद्यार्थियों को सूचनाएं नहीं देता, बल्कि उन्हें सोचने की स्वायत्त दृष्टि और संवेदनशीलता प्रदान करता है।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-153"
+  ],
+  "created_at": "2026-10-14T02:47:52.673Z"
+}

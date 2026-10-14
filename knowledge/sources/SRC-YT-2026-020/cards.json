@@ -1,0 +1,50 @@
+[
+  {
+    "card_id": "CARD-SRC-YT-2026-020-001",
+    "question": "How does Dr. Vikas Divyakirti deconstruct Prof. Rameshwar Rai’s \"Watering the Banyan Tree\" metaphor?",
+    "answer": "While Prof. Rai modestly claimed he merely watered an already-capable banyan tree, Vikas asserts that when a tree is in its initial vulnerable seed and sapling stage, timely water and intellectual nutrients dictate whether it withers or expands into a massive canopy.",
+    "source_id": "SRC-YT-2026-020",
+    "locator": "[27:24 - 34:04]",
+    "dimension": "Mentorship Dynamics & Epistemic Timing"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-020-002",
+    "question": "What fundamental distinction does Dr. Divyakirti draw between commercial education and classical Guru-Shishya pedagogical bonding?",
+    "answer": "Commercial education treats students as economic clients purchasing exam-clearing data packages, whereas the classical Guru-Shishya tradition operates as an existential apprenticeship that transforms values, linguistic mastery, and critical consciousness.",
+    "source_id": "SRC-YT-2026-020",
+    "locator": "[41:34 - 49:04]",
+    "dimension": "Pedagogical Philosophy"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-020-003",
+    "question": "How is the Diogenes and Alexander the Great anecdote utilized in Dr. Divyakirti’s discourse?",
+    "answer": "Diogenes telling Emperor Alexander to \"stand out of my sunlight\" symbolizes supreme intellectual autonomy and philosophical non-attachment—the refusal to sacrifice internal dignity and truth before institutional power or worldly riches.",
+    "source_id": "SRC-YT-2026-020",
+    "locator": "[49:04 - 56:34]",
+    "dimension": "Intellectual Autonomy & Cynic Philosophy"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-020-004",
+    "question": "According to Prof. Rameshwar Rai and Dr. Divyakirti, what role does literature (Sahitya) play in student development?",
+    "answer": "Literature serves as emotional hygiene and moral architecture: it deepens empathy, cultivates tolerance for life’s ambiguities, and prevents technocratic and bureaucratic dehumanization.",
+    "source_id": "SRC-YT-2026-020",
+    "locator": "[34:04 - 41:34]",
+    "dimension": "Literary Sensibility & Human Values"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-020-005",
+    "question": "What is the true benchmark of a great teacher articulated by Prof. Rameshwar Rai?",
+    "answer": "Intellectual Generosity: A genuine mentor measures their legacy not by institutional accolades or subservient followers, but by cultivating independent disciples who expand beyond the mentor's own intellectual boundaries.",
+    "source_id": "SRC-YT-2026-020",
+    "locator": "[15:11 - 21:34]",
+    "dimension": "Pedagogy of Humility"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-020-006",
+    "question": "How should aspirants and university students resolve the tension between livelihood anxiety and intellectual exploration?",
+    "answer": "By decoupling economic utility from intellectual identity: securing livelihood through disciplined competence while preserving literature and philosophy as an incorruptible inner sanctum of critical freedom.",
+    "source_id": "SRC-YT-2026-020",
+    "locator": "[01:11:02 - 01:25:34]",
+    "dimension": "Life Architecture & Practical Ethics"
+  }
+]

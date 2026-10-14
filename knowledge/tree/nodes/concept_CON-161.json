@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-161",
+  "node_type": "concept",
+  "canonical_name": "Literature as Moral Architecture & Critical Consciousness",
+  "aliases": [
+    "Literature as Emotional Hygiene",
+    "Sahitya & Moral Architecture",
+    "Humanistic Counterweight"
+  ],
+  "domain": "Literary Philosophy & Ethics",
+  "definition": "The function of serious literature to train the human intellect in nuance, empathy, and tolerance for complexity, acting as a crucial counterweight to technocratic dehumanization.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-161-001",
+    "CLM-CON-161-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-020"
+  ],
+  "created_at": "2026-10-14T02:47:52.681Z",
+  "updated_at": "2026-10-14T02:47:52.681Z"
+}

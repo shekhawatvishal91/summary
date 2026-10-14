@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-157-001",
+  "node_type": "claim",
+  "statement": "Timely mentorship delivered during a student's formative period generates non-linear developmental leverage, transforming latent potential into enduring intellectual capacity.",
+  "claim_type": "theoretical_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-020",
+      "locator_type": "timestamp",
+      "locator": "[27:24 - 34:04]",
+      "verbatim_quote": "पेड़ जब बीज या कोमल पौधा होता है, उस समय का एक बूंद पानी भी उसके जीवन और आकार को निर्धारित करता है।"
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-157"
+  ],
+  "created_at": "2026-10-14T02:47:52.679Z"
+}

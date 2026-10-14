@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-153",
+  "node_type": "concept",
+  "canonical_name": "The Classical Guru-Shishya Pedagogical Model & Intellectual Awakening",
+  "aliases": [
+    "Guru-Shishya Tradition",
+    "Existential Mentorship",
+    "Pedagogical Awakening"
+  ],
+  "domain": "Philosophical Pedagogy & Educational Ethics",
+  "definition": "An educational paradigm wherein mentorship extends beyond curriculum transmission to the cultivation of critical consciousness, emotional hygiene, and moral discernment.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-153-001",
+    "CLM-CON-153-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-020"
+  ],
+  "created_at": "2026-10-14T02:47:52.673Z",
+  "updated_at": "2026-10-14T02:47:52.673Z"
+}

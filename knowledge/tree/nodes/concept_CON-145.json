@@ -1,0 +1,22 @@
+{
+  "node_id": "CON-145",
+  "node_type": "concept",
+  "canonical_name": "Anthropocene Extraction & Ecological Imperialism",
+  "aliases": [
+    "Instrumental Extractivism",
+    "Commodity Conversion of Nature",
+    "Ecological Imperialism"
+  ],
+  "domain": "Ecological Economics & Environmental Ethics",
+  "definition": "An economic and civilizational paradigm that reduces all non-human sentience and ecosystems to raw material inputs for capital accumulation, resulting in planetary biospheric collapse.",
+  "epistemic_tier": "tier_3",
+  "associated_claims": [
+    "CLM-CON-145-001",
+    "CLM-CON-145-002"
+  ],
+  "sources_contributing": [
+    "SRC-YT-2026-019"
+  ],
+  "created_at": "2026-10-14T02:39:09.595Z",
+  "updated_at": "2026-10-14T02:39:09.595Z"
+}

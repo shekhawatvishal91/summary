@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "built_at": "2026-10-13T17:47:49.414Z",
+  "built_at": "2026-10-14T02:42:15.629Z",
   "metrics": {
-    "total_sources": 20,
-    "total_concepts": 38,
-    "total_claims": 62,
+    "total_sources": 21,
+    "total_concepts": 40,
+    "total_claims": 66,
     "total_edges": 14,
     "total_docs": 18
   },
@@ -442,6 +442,28 @@
       "updated_at": "2026-10-13T17:46:07.499Z",
       "duration": "4m 16s",
       "url": "https://www.youtube.com/watch?v=e9dZQelULDk"
+    },
+    {
+      "source_id": "SRC-YT-2026-019",
+      "video_id": "WfGMYdalClU",
+      "title": "MAN (Animated Short Film)",
+      "author": "Steve Cutts",
+      "published_year": 2012,
+      "medium": "youtube",
+      "epistemic_tier": "tier_3",
+      "sha256": "d142bd79a23212118b8b2386c0dd4359a019ccb7e4a45dea4ba30a94a736d0b5",
+      "raw_path": "sources/raw/SRC-YT-2026-019_captions.vtt",
+      "extracted_path": "sources/text/SRC-YT-2026-019.txt",
+      "codex_path": "knowledge/sources/SRC-YT-2026-019/codex.md",
+      "locator_type": "timestamp",
+      "coverage_status": "complete",
+      "decoding_status": "NATIVE_AGENT_DECODED",
+      "is_test_fixture": false,
+      "source_role": "real_user_source",
+      "created_at": "2026-10-14T02:39:09.584Z",
+      "updated_at": "2026-10-14T02:39:09.584Z",
+      "duration": "3m 36s",
+      "url": "https://www.youtube.com/watch?v=WfGMYdalClU"
     }
   ],
   "concepts": [
@@ -1260,6 +1282,50 @@
       ],
       "created_at": "2026-10-13T17:46:07.518Z",
       "updated_at": "2026-10-13T17:46:07.518Z"
+    },
+    {
+      "node_id": "CON-145",
+      "node_type": "concept",
+      "canonical_name": "Anthropocene Extraction & Ecological Imperialism",
+      "aliases": [
+        "Instrumental Extractivism",
+        "Commodity Conversion of Nature",
+        "Ecological Imperialism"
+      ],
+      "domain": "Ecological Economics & Environmental Ethics",
+      "definition": "An economic and civilizational paradigm that reduces all non-human sentience and ecosystems to raw material inputs for capital accumulation, resulting in planetary biospheric collapse.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-145-001",
+        "CLM-CON-145-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-019"
+      ],
+      "created_at": "2026-10-14T02:39:09.595Z",
+      "updated_at": "2026-10-14T02:39:09.595Z"
+    },
+    {
+      "node_id": "CON-149",
+      "node_type": "concept",
+      "canonical_name": "The Dominion Delusion & Asymmetrical Predation",
+      "aliases": [
+        "Dominion Delusion",
+        "Asymmetrical Predation",
+        "Cosmic Hierarchy Inversion"
+      ],
+      "domain": "Philosophical Anthropology",
+      "definition": "The cognitive fallacy that humanity possesses inherent moral immunity from predation, which collapses immediately when confronted by an asymmetrically superior intelligence applying identical extractive logic to humans.",
+      "epistemic_tier": "tier_3",
+      "associated_claims": [
+        "CLM-CON-149-001",
+        "CLM-CON-149-002"
+      ],
+      "sources_contributing": [
+        "SRC-YT-2026-019"
+      ],
+      "created_at": "2026-10-14T02:39:09.603Z",
+      "updated_at": "2026-10-14T02:39:09.603Z"
     }
   ],
   "claims": [
@@ -2440,6 +2506,82 @@
         "CON-141"
       ],
       "created_at": "2026-10-13T17:46:07.520Z"
+    },
+    {
+      "node_id": "CLM-CON-145-001",
+      "node_type": "claim",
+      "statement": "Technological acceleration converts ancient old-growth ecosystems into industrial throughput, producing linear waste streams that overwhelm planetary absorption limits.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-019",
+          "locator_type": "timestamp",
+          "locator": "[01:42 - 02:08]",
+          "verbatim_quote": "In place of the cleared forests, he constructs colossal industrial factories, refineries, and paper mills that spew thick, pitch-black toxic smoke into the atmosphere."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-145"
+      ],
+      "created_at": "2026-10-14T02:39:09.595Z"
+    },
+    {
+      "node_id": "CLM-CON-145-002",
+      "node_type": "claim",
+      "statement": "The commodification of wildlife systematically strips animals of ecological agency, transforming sentient creatures into status symbols and disposable consumer goods.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-019",
+          "locator_type": "timestamp",
+          "locator": "[01:03 - 01:16]",
+          "verbatim_quote": "Man subdues the beast instantly with high-tech weaponry, cuts off its ivory tusks, and converts the majestic mammal into a luxury piano and ornamental furniture."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-145"
+      ],
+      "created_at": "2026-10-14T02:39:09.597Z"
+    },
+    {
+      "node_id": "CLM-CON-149-001",
+      "node_type": "claim",
+      "statement": "The pyrrhic victory of extractivism leaves humanity reigning as supreme sovereign over an uninhabitable planetary landfill.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-019",
+          "locator_type": "timestamp",
+          "locator": "[02:47 - 03:00]",
+          "verbatim_quote": "He sits triumphantly upon a golden throne labeled \"Welcome,\" wearing a glittering crown, puffing a thick cigar, smiling proudly over his kingdom of garbage."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-149"
+      ],
+      "created_at": "2026-10-14T02:39:09.603Z"
+    },
+    {
+      "node_id": "CLM-CON-149-002",
+      "node_type": "claim",
+      "statement": "Poetic Karmic Reversal: Justifying the exploitation of living beings on the basis of superior power exposes humanity to identical exploitation by higher cosmic apex predators.",
+      "claim_type": "theoretical_model",
+      "epistemic_tier": "tier_3",
+      "evidence": [
+        {
+          "source_id": "SRC-YT-2026-019",
+          "locator_type": "timestamp",
+          "locator": "[03:22 - 03:36]",
+          "verbatim_quote": "The alien lifts its colossal foot and violently stomps down, crushing the man into red paste against the concrete—mirroring the exact gesture with which man crushed the bug in the opening scene."
+        }
+      ],
+      "associated_concept_ids": [
+        "CON-149"
+      ],
+      "created_at": "2026-10-14T02:39:09.604Z"
     }
   ],
   "edges": [

@@ -1,0 +1,50 @@
+[
+  {
+    "card_id": "CARD-SRC-YT-2026-019-001",
+    "question": "How does Steve Cutts frame humanity’s entrance onto Earth in the opening seconds of MAN?",
+    "answer": "A cheerful man drops from the sky and casually steps on an insect underfoot without looking down, establishing the core thesis: human dominion is defined from its origin by unconscious cruelty and total disregard for non-human life.",
+    "source_id": "SRC-YT-2026-019",
+    "locator": "[00:00 - 00:15]",
+    "dimension": "Core Thesis & Anthropocentrism"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-019-002",
+    "question": "What commodity transformation is depicted in the elephant sequence in MAN?",
+    "answer": "The elephant is subdued by modern technological weapons, and its living body is instantly commodified into ivory piano keys and luxury decorative furniture, exposing how human industry reduces magnificent sentient creatures to status symbols.",
+    "source_id": "SRC-YT-2026-019",
+    "locator": "[01:03 - 01:16]",
+    "dimension": "Commodity Fetishism & Wildlife Exploitation"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-019-003",
+    "question": "What ecological feedback loop is depicted in the forest-to-factory transition in MAN?",
+    "answer": "Ancient biodiverse rainforests are clearcut by mechanical chainsaws and bulldozers, replaced by heavy industrial factories and paper mills that poison waterways with radioactive runoff and choke the atmosphere with toxic smog.",
+    "source_id": "SRC-YT-2026-019",
+    "locator": "[01:42 - 02:08]",
+    "dimension": "Ecological Destruction & Industrialization"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-019-004",
+    "question": "What is the dramatic irony and philosophical purpose of the alien twist ending in MAN?",
+    "answer": "Poetic Karmic Reversal: An extraterrestrial apex predator steps down from a UFO, squashes the proud human into red paste underfoot, and wears his skin as a fur coat—treating humanity with the exact same casual cruelty and commodification humans inflicted on Earth’s creatures.",
+    "source_id": "SRC-YT-2026-019",
+    "locator": "[03:12 - 03:36]",
+    "dimension": "Poetic Justice & Hierarchy Reversal"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-019-005",
+    "question": "What musical masterpiece scores the relentless destruction in MAN, and how does its structure mirror the plot?",
+    "answer": "Edvard Grieg’s \"In the Hall of the Mountain King\": The piece begins with a slow, creeping tempo that progressively accelerates into a frantic, chaotic crescendo, perfectly synchronizing with the exponential acceleration of human industrial devastation.",
+    "source_id": "SRC-YT-2026-019",
+    "locator": "[00:00 - 03:36]",
+    "dimension": "Audiovisual Integration"
+  },
+  {
+    "card_id": "CARD-SRC-YT-2026-019-006",
+    "question": "What does the man’s throne of skulls and garbage labeled \"Welcome\" represent?",
+    "answer": "The pyrrhic victory of unchecked extractivism: Man achieves absolute mastery over nature, but his reward is a desolate, poisoned wasteland where he reigns as king over garbage, filth, and extinction.",
+    "source_id": "SRC-YT-2026-019",
+    "locator": "[02:47 - 03:00]",
+    "dimension": "Civilizational Pathology"
+  }
+]

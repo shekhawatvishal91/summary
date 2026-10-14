@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-145-002",
+  "node_type": "claim",
+  "statement": "The commodification of wildlife systematically strips animals of ecological agency, transforming sentient creatures into status symbols and disposable consumer goods.",
+  "claim_type": "theoretical_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-019",
+      "locator_type": "timestamp",
+      "locator": "[01:03 - 01:16]",
+      "verbatim_quote": "Man subdues the beast instantly with high-tech weaponry, cuts off its ivory tusks, and converts the majestic mammal into a luxury piano and ornamental furniture."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-145"
+  ],
+  "created_at": "2026-10-14T02:39:09.597Z"
+}

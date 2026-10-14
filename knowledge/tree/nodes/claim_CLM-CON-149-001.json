@@ -1,0 +1,19 @@
+{
+  "node_id": "CLM-CON-149-001",
+  "node_type": "claim",
+  "statement": "The pyrrhic victory of extractivism leaves humanity reigning as supreme sovereign over an uninhabitable planetary landfill.",
+  "claim_type": "theoretical_model",
+  "epistemic_tier": "tier_3",
+  "evidence": [
+    {
+      "source_id": "SRC-YT-2026-019",
+      "locator_type": "timestamp",
+      "locator": "[02:47 - 03:00]",
+      "verbatim_quote": "He sits triumphantly upon a golden throne labeled \"Welcome,\" wearing a glittering crown, puffing a thick cigar, smiling proudly over his kingdom of garbage."
+    }
+  ],
+  "associated_concept_ids": [
+    "CON-149"
+  ],
+  "created_at": "2026-10-14T02:39:09.603Z"
+}
